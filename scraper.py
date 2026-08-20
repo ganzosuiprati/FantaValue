@@ -4,18 +4,11 @@ import requests
 
 
 def get_wikipedia_photo(player_name):
-    """Recupera l'avatar da Wikipedia.
-
-    Usa un try/except veloce per non rallentare lo script.
-    """
+    """Recupera l'avatar da Wikipedia in modo sicuro."""
     try:
         query = f"{player_name} calciatore"
         url = f"https://it.wikipedia.org/w/api.php?action=query&titles={urllib.parse.quote(query)}&prop=pageimages&format=json&pithumbsize=150"
-        headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-            )
-        }
+        headers = {"User-Agent": "Mozilla/5.0"}
         res = requests.get(url, headers=headers, timeout=1.5).json()
         pages = res.get("query", {}).get("pages", {})
         for _, val in pages.items():
@@ -27,7 +20,6 @@ def get_wikipedia_photo(player_name):
 
 
 def clean_role(raw_role):
-    """Mappa i ruoli ufficiali Fantacalcio."""
     r = str(raw_role).strip().upper()
     if r in ["P", "POR", "1"]:
         return "P"
@@ -38,83 +30,84 @@ def clean_role(raw_role):
     return "A"
 
 
-def update_database():
-    print("🔄 Scaricamento listone completo Serie A in corso...")
-
-    # Endpoint JSON pubblico con tutte le quotazioni ufficiali aggiornate
-    url = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
-    backup_url = "https://fantaservice.com/api/v1/players"
-
+def fetch_from_sources():
     headers = {
         "User-Agent": (
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0"
-            " Safari/537.36"
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
         )
     }
 
-    players_db = []
-
+    # Endpoint 1: API pubblica Fantagazzetta/Fantacalcio
     try:
-        res = requests.get(url, headers=headers, timeout=10)
-        if res.status_code == 200:
-            data = res.json()
-            for p in data:
-                # Estrazione e pulizia campi
-                nome = p.get("nome") or p.get("Nome") or "Sconosciuto"
-                squadra = (
-                    p.get("squadra") or p.get("Squadra") or "Serie A"
-                ).upper()
-                ruolo = clean_role(p.get("ruolo") or p.get("R") or "A")
-
-                # Quotazione reale iniziale (Pma/Qt)
-                pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or 1)
-
-                # Statistiche
-                fm = float(p.get("fm") or p.get("Fm") or 6.0)
-                tit = int(p.get("tit") or p.get("Tit") or 75)
-
-                players_db.append({
-                    "nome": nome.title(),
-                    "squadra": squadra[:3],  # Tr Tronca a 3 lettere (es. INT, NAP, ROM)
-                    "ruolo": ruolo,
-                    "fantamedia": fm,
-                    "titolarita": tit,
-                    "pma": pma,
-                    "foto": "",  # Le foto verranno caricate dinamicamente o per i top player
-                })
-        else:
-            raise Exception(f"HTTP Error {res.status_code}")
-
+        url = "https://raw.githubusercontent.com/luigi-s/fantacalcio-dataset/main/quotazioni.json"
+        res = requests.get(url, headers=headers, timeout=5)
+        if res.status_code == 200 and len(res.json()) > 50:
+            return [
+                {
+                    "nome": str(p.get("Nome", p.get("nome", ""))).title(),
+                    "squadra": str(
+                        p.get("Squadra", p.get("squadra", "SER"))
+                    )[:3].upper(),
+                    "ruolo": clean_role(p.get("R", p.get("ruolo", "A"))),
+                    "fantamedia": float(p.get("Fm", p.get("fantamedia", 6.0))),
+                    "titolarita": int(p.get("Tit", p.get("titolarita", 75))),
+                    "pma": int(p.get("Qt", p.get("pma", 1))),
+                    "foto": "",
+                }
+                for p in res.json()
+            ]
     except Exception as e:
-        print(f"⚠️ Impossibile scaricare dal primario ({e}), provo sorgente di riserva...")
-        try:
-            res_alt = requests.get(backup_url, headers=headers, timeout=10)
-            data_alt = res_alt.json()
-            for p in data_alt:
-                players_db.append({
-                    "nome": p.get("name", "Player").title(),
-                    "squadra": p.get("team", "SER")[:3].upper(),
+        print(f"⚠️ Query Fonte 1 fallita: {e}")
+
+    # Endpoint 2: Fallback API di backup
+    try:
+        url_backup = "https://fantapazz.com/api/v1/players"
+        res = requests.get(url_backup, headers=headers, timeout=5)
+        if res.status_code == 200 and len(res.json()) > 50:
+            return [
+                {
+                    "nome": str(p.get("name", "")).title(),
+                    "squadra": str(p.get("team", "SER"))[:3].upper(),
                     "ruolo": clean_role(p.get("role", "A")),
-                    "fantamedia": float(p.get("avg", 6.0)),
-                    "titolarita": int(p.get("starter_percent", 70)),
+                    "fantamedia": float(p.get("fm", 6.0)),
+                    "titolarita": int(p.get("starter_rate", 70)),
                     "pma": int(p.get("price", 1)),
                     "foto": "",
-                })
-        except Exception as err:
-            print(f"❌ Errore fatale: {err}")
+                }
+                for p in res.json()
+            ]
+    except Exception as e:
+        print(f"⚠️ Query Fonte 2 fallita: {e}")
 
-    # Aggiunta foto Wikipedia per i giocatori principali (evita di fare 500 chiamate di rete che bloccano il workflow)
-    print("📸 Recupero avatar per i calciatori principali...")
-    for player in players_db:
-        if player["pma"] >= 15:  # Prende la foto solo per i giocatori con quotazione alta
-            player["foto"] = get_wikipedia_photo(player["nome"])
+    return []
 
-    # Salva il file JSON
+
+def update_database():
+    print("🔄 Avvio recupero listone Serie A...")
+    players_db = fetch_from_sources()
+
+    # PROTEZIONE FONDAMENTALE: Se il fetch restituisce 0 giocatori, interrompe la sovrascrittura!
+    if not players_db or len(players_db) < 50:
+        print(
+            "❌ ERRORE CRITICO: Impossibile scaricare i dati online. Il file 'players.json' NON verrà sovrascritto con un array vuoto."
+        )
+        # Forza l'uscita con codice d'errore per segnalare il fallimento su GitHub Actions
+        exit(1)
+
+    print(
+        f"✅ Estratti {len(players_db)} calciatori! Caricamento foto Wikipedia..."
+    )
+
+    # Aggiunta foto per i top player (pma >= 15)
+    for p in players_db:
+        if p["pma"] >= 15:
+            p["foto"] = get_wikipedia_photo(p["nome"])
+
+    # Salvataggio sicuro nel JSON
     with open("players.json", "w", encoding="utf-8") as f:
         json.dump(players_db, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Completato! 'players.json' generato con {len(players_db)} giocatori reali.")
+    print("🎉 File 'players.json' aggiornato con successo!")
 
 
 if __name__ == "__main__":
