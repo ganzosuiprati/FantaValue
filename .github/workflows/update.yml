@@ -15,21 +15,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Configura Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Esegui scraper.py
+      - name: Genera index.html e players.json
         run: python scraper.py
 
-      - name: Salva e fai il push del nuovo players.json
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add players.json
-          git commit -m "Auto-update listone calciatori" || exit 0
-          git push
+      - name: Deploy su GitHub Pages
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update listone e index.html"
