@@ -1,10 +1,9 @@
 import json
 import urllib.request
 
-def main():
+def fetch_data():
     url = "https://raw.githubusercontent.com/statmilk/fantacalcio-api/main/data/players.json"
     formatted_players = []
-
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=15) as response:
@@ -19,12 +18,15 @@ def main():
                     "pma": int(item.get("quotazione", item.get("price", 10)))
                 })
     except Exception as e:
-        print(f"Errore nello scaricamento: {e}")
+        print(f"Errore download: {e}")
+    return formatted_players
 
-    if len(formatted_players) > 10:
+def main():
+    players = fetch_data()
+    if players:
         with open("players.json", "w", encoding="utf-8") as f:
-            json.dump(formatted_players, f, ensure_ascii=False, indent=2)
-        print(f"OK: Salvati {len(formatted_players)} giocatori.")
+            json.dump(players, f, ensure_ascii=False, indent=2)
+        print(f"Salvati {len(players)} giocatori.")
 
 if __name__ == "__main__":
     main()
