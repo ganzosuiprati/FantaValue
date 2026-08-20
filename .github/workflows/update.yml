@@ -1,0 +1,32 @@
+name: Aggiornamento Automatico Listone Fantacalcio
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Tutti i giorni alle 06:00
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Esegui scraper.py
+        run: python scraper.py
+
+      - name: Salva e fai il push del nuovo players.json
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add players.json
+          git commit -m "Auto-update listone calciatori" || exit 0
+          git push
