@@ -1,82 +1,5602 @@
 [
   {
-    "nome": "Lautaro Martinez",
-    "squadra": "Inter",
+    "nome": "Calciatore",
+    "squadra": "Serie A",
     "ruolo": "A",
-    "fantamedia": 8.5,
-    "titolarita": 95,
-    "pma": 35
-  },
-  {
-    "nome": "Marcus Thuram",
-    "squadra": "Inter",
-    "ruolo": "A",
-    "fantamedia": 8.0,
-    "titolarita": 90,
-    "pma": 28
-  },
-  {
-    "nome": "Nicolò Barella",
-    "squadra": "Inter",
-    "ruolo": "C",
-    "fantamedia": 7.2,
-    "titolarita": 92,
-    "pma": 18
-  },
-  {
-    "nome": "Federico Dimarco",
-    "squadra": "Inter",
-    "ruolo": "D",
-    "fantamedia": 7.0,
-    "titolarita": 88,
-    "pma": 15
-  },
-  {
-    "nome": "Yann Sommer",
-    "squadra": "Inter",
-    "ruolo": "P",
     "fantamedia": 6.5,
-    "titolarita": 95,
-    "pma": 12
-  },
-  {
-    "nome": "Khvicha Kvaratskhelia",
-    "squadra": "Napoli",
-    "ruolo": "A",
-    "fantamedia": 8.1,
-    "titolarita": 90,
-    "pma": 30
-  },
-  {
-    "nome": "Romelu Lukaku",
-    "squadra": "Napoli",
-    "ruolo": "A",
-    "fantamedia": 7.8,
     "titolarita": 85,
-    "pma": 26
+    "pma": 10
   },
   {
-    "nome": "Rafael Leao",
-    "squadra": "Milan",
+    "nome": "Calciatore",
+    "squadra": "Serie A",
     "ruolo": "A",
-    "fantamedia": 7.9,
-    "titolarita": 88,
-    "pma": 27
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
   },
   {
-    "nome": "Dusan Vlahovic",
-    "squadra": "Juventus",
+    "nome": "Calciatore",
+    "squadra": "Serie A",
     "ruolo": "A",
-    "fantamedia": 8.2,
-    "titolarita": 92,
-    "pma": 32
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
   },
   {
-    "nome": "Paulo Dybala",
-    "squadra": "Roma",
+    "nome": "Calciatore",
+    "squadra": "Serie A",
     "ruolo": "A",
-    "fantamedia": 8.0,
-    "titolarita": 75,
-    "pma": 25
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "Calciatore",
+    "squadra": "Serie A",
+    "ruolo": "A",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
   }
 ]
