@@ -5,15 +5,18 @@ on:
     - cron: '0 6 * * *' # Tutti i giorni alle 06:00
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configura Python
         uses: actions/setup-python@v5
@@ -25,8 +28,8 @@ jobs:
 
       - name: Salva e fai il push del nuovo players.json
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add players.json
-          git commit -m "Auto-update listone calciatori" || exit 0
-          git push
+          git commit -m "Auto-update listone calciatori" || echo "Nessuna modifica da committare"
+          git push origin main
