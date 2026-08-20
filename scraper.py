@@ -1,15 +1,22 @@
 import json
-import re
 import urllib.parse
 import requests
 
 
 def get_wikipedia_photo(player_name):
-    """Cerca la foto del calciatore via API di Wikipedia Italia."""
+    """Recupera l'avatar da Wikipedia.
+
+    Usa un try/except veloce per non rallentare lo script.
+    """
     try:
         query = f"{player_name} calciatore"
         url = f"https://it.wikipedia.org/w/api.php?action=query&titles={urllib.parse.quote(query)}&prop=pageimages&format=json&pithumbsize=150"
-        res = requests.get(url, timeout=2).json()
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            )
+        }
+        res = requests.get(url, headers=headers, timeout=1.5).json()
         pages = res.get("query", {}).get("pages", {})
         for _, val in pages.items():
             if "thumbnail" in val:
@@ -20,7 +27,7 @@ def get_wikipedia_photo(player_name):
 
 
 def clean_role(raw_role):
-    """Mappa i ruoli ufficiali in P, D, C, A."""
+    """Mappa i ruoli ufficiali Fantacalcio."""
     r = str(raw_role).strip().upper()
     if r in ["P", "POR", "1"]:
         return "P"
@@ -32,97 +39,82 @@ def clean_role(raw_role):
 
 
 def update_database():
-    print("🔄 Avvio sincronizzazione dati reali...")
+    print("🔄 Scaricamento listone completo Serie A in corso...")
 
-    # API o fonte dati ufficiale di quotazioni/statistiche Fantacalcio
-    # NOTA: Estragga quotazioni (Qt) e ruoli reali per ogni giocatore
-    source_url = "https://www.fantacalcio.it/api/v1/excel/quotazioni"
-    headers = {"User-Agent": "Mozilla/5.0"}
+    # Endpoint JSON pubblico con tutte le quotazioni ufficiali aggiornate
+    url = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
+    backup_url = "https://fantaservice.com/api/v1/players"
+
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0"
+            " Safari/537.36"
+        )
+    }
 
     players_db = []
 
     try:
-        # Tenta il recupero dal webservice
-        res = requests.get(source_url, headers=headers, timeout=10)
-        # Se si usa scraping HTML o JSON diretto:
-        data = res.json() if res.status_code == 200 else []
+        res = requests.get(url, headers=headers, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            for p in data:
+                # Estrazione e pulizia campi
+                nome = p.get("nome") or p.get("Nome") or "Sconosciuto"
+                squadra = (
+                    p.get("squadra") or p.get("Squadra") or "Serie A"
+                ).upper()
+                ruolo = clean_role(p.get("ruolo") or p.get("R") or "A")
 
-        for p in data:
-            players_db.append({
-                "nome": p.get("Nome", "Unknown"),
-                "squadra": p.get("Squadra", "Serie A"),
-                "ruolo": clean_role(p.get("R", "A")),
-                "fantamedia": float(p.get("Fm", 6.0)),
-                "titolarita": int(p.get("Tit", 80)),
-                "pma": int(p.get("Qt", 10)),  # Quotazione ufficiale Fantacalcio
-                "foto": get_wikipedia_photo(p.get("Nome", "")),
-            })
+                # Quotazione reale iniziale (Pma/Qt)
+                pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or 1)
+
+                # Statistiche
+                fm = float(p.get("fm") or p.get("Fm") or 6.0)
+                tit = int(p.get("tit") or p.get("Tit") or 75)
+
+                players_db.append({
+                    "nome": nome.title(),
+                    "squadra": squadra[:3],  # Tr Tronca a 3 lettere (es. INT, NAP, ROM)
+                    "ruolo": ruolo,
+                    "fantamedia": fm,
+                    "titolarita": tit,
+                    "pma": pma,
+                    "foto": "",  # Le foto verranno caricate dinamicamente o per i top player
+                })
+        else:
+            raise Exception(f"HTTP Error {res.status_code}")
+
     except Exception as e:
-        print(f"⚠️ Errore durante il fetch automatico: {e}")
+        print(f"⚠️ Impossibile scaricare dal primario ({e}), provo sorgente di riserva...")
+        try:
+            res_alt = requests.get(backup_url, headers=headers, timeout=10)
+            data_alt = res_alt.json()
+            for p in data_alt:
+                players_db.append({
+                    "nome": p.get("name", "Player").title(),
+                    "squadra": p.get("team", "SER")[:3].upper(),
+                    "ruolo": clean_role(p.get("role", "A")),
+                    "fantamedia": float(p.get("avg", 6.0)),
+                    "titolarita": int(p.get("starter_percent", 70)),
+                    "pma": int(p.get("price", 1)),
+                    "foto": "",
+                })
+        except Exception as err:
+            print(f"❌ Errore fatale: {err}")
 
-    # Fallback/Test con dati veri di Serie A se il fetch fallisce
-    if not players_db:
-        players_db = [
-            {
-                "nome": "Lautaro Martinez",
-                "squadra": "Inter",
-                "ruolo": "A",
-                "fantamedia": 8.8,
-                "titolarita": 95,
-                "pma": 38,
-                "foto": get_wikipedia_photo("Lautaro Martínez"),
-            },
-            {
-                "nome": "Federico Dimarco",
-                "squadra": "Inter",
-                "ruolo": "D",
-                "fantamedia": 7.4,
-                "titolarita": 90,
-                "pma": 18,
-                "foto": get_wikipedia_photo("Federico Dimarco"),
-            },
-            {
-                "nome": "Ademola Lookman",
-                "squadra": "Atalanta",
-                "ruolo": "A",
-                "fantamedia": 8.2,
-                "titolarita": 85,
-                "pma": 30,
-                "foto": get_wikipedia_photo("Ademola Lookman"),
-            },
-            {
-                "nome": "Scott McTominay",
-                "squadra": "Napoli",
-                "ruolo": "C",
-                "fantamedia": 7.5,
-                "titolarita": 92,
-                "pma": 22,
-                "foto": get_wikipedia_photo("Scott McTominay"),
-            },
-            {
-                "nome": "Nico Paz",
-                "squadra": "Como",
-                "ruolo": "C",
-                "fantamedia": 7.2,
-                "titolarita": 88,
-                "pma": 15,
-                "foto": get_wikipedia_photo("Nico Paz"),
-            },
-            {
-                "nome": "Yann Sommer",
-                "squadra": "Inter",
-                "ruolo": "P",
-                "fantamedia": 6.8,
-                "titolarita": 98,
-                "pma": 16,
-                "foto": get_wikipedia_photo("Yann Sommer"),
-            },
-        ]
+    # Aggiunta foto Wikipedia per i giocatori principali (evita di fare 500 chiamate di rete che bloccano il workflow)
+    print("📸 Recupero avatar per i calciatori principali...")
+    for player in players_db:
+        if player["pma"] >= 15:  # Prende la foto solo per i giocatori con quotazione alta
+            player["foto"] = get_wikipedia_photo(player["nome"])
 
+    # Salva il file JSON
     with open("players.json", "w", encoding="utf-8") as f:
         json.dump(players_db, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ 'players.json' aggiornato con {len(players_db)} calciatori.")
+    print(f"✅ Completato! 'players.json' generato con {len(players_db)} giocatori reali.")
 
 
 if __name__ == "__main__":
