@@ -42,7 +42,6 @@
 </head>
 <body class="min-h-screen p-2 md:p-6">
 
-  <!-- TOP BAR / HEADER STILE PES -->
   <header class="max-w-5xl mx-auto mb-6 flex justify-between items-center border-b-2 border-cyan-400 pb-3">
     <div class="pes-header px-6 py-1 text-white shadow-lg">
       <h1 class="pes-font text-lg md:text-xl tracking-tighter uppercase italic">FANTA-VALUE <span class="text-yellow-300">2000</span></h1>
@@ -54,8 +53,6 @@
   </header>
 
   <main class="max-w-5xl mx-auto space-y-5">
-    
-    <!-- PANNELLO CONFIGURAZIONE E FILTRI -->
     <section class="pes-card p-4 rounded-none">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4 text-lg">
         <div>
@@ -72,7 +69,6 @@
         </div>
       </div>
 
-      <!-- BOTTONI RUOLO STILE SELEZIONE SQUADRA -->
       <div class="flex gap-2 justify-center my-3 text-xl font-bold">
         <button onclick="setRole('ALL')" id="btn-ALL" class="pes-btn bg-cyan-400 text-slate-950 px-6 py-1">TUTTI</button>
         <button onclick="setRole('P')" id="btn-P" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">POR</button>
@@ -82,7 +78,6 @@
       </div>
     </section>
 
-    <!-- LISTONE GIOCATORI -->
     <section class="pes-card p-2 md:p-4 rounded-none">
       <div class="flex justify-between items-center mb-2 px-2 text-xl">
         <span class="text-pink-500 font-bold uppercase tracking-wider">LISTA CALCIATORI DISPONIBILI</span>
@@ -107,40 +102,26 @@
         </table>
       </div>
     </section>
-
   </main>
 
   <script>
     let rawPlayers = [];
     let activeRole = 'ALL';
 
-    // API Pubblica con il listone completo aggiornato automaticamente
-    const API_URL = 'https://raw.githubusercontent.com/statmilk/fantacalcio-api/main/data/players.json';
-
     async function fetchPlayers() {
       const statusEl = document.getElementById('statusIndicator');
       try {
-        const res = await fetch(API_URL);
-        if (!res.ok) throw new Error("Errore HTTP " + res.status);
-        const data = await res.json();
+        const res = await fetch('players.json?v=' + Date.now());
+        if (!res.ok) throw new Error("File players.json non trovato");
         
-        rawPlayers = data.map(p => ({
-          nome: p.nome || p.name || 'Sconosciuto',
-          squadra: p.squadra || p.team || '-',
-          ruolo: (p.ruolo || p.role || 'A').toUpperCase().charAt(0),
-          fantamedia: parseFloat(p.fantamedia || p.fm || 6.0),
-          titolarita: parseInt(p.titolarita || p.starter || 80),
-          pma: parseInt(p.quotazione || p.price || 10)
-        }));
+        rawPlayers = await res.json();
 
-        statusIndicator.innerText = "ONLINE - DATI IN TEMPO REALE";
-        statusIndicator.className = "text-xs font-bold text-emerald-400";
+        statusEl.innerText = "ONLINE - DATI IN TEMPO REALE";
+        statusEl.className = "text-xs font-bold text-emerald-400";
       } catch (err) {
-        console.warn("API principale offline, carico dati di backup...", err);
-        statusIndicator.innerText = "MODALITÀ OFFLINE";
-        statusIndicator.className = "text-xs font-bold text-pink-500";
+        statusEl.innerText = "MODALITÀ OFFLINE";
+        statusEl.className = "text-xs font-bold text-pink-500";
         
-        // Backup interno minimo in caso di problemi di rete
         rawPlayers = [
           { nome: "Lautaro Martinez", squadra: "Inter", ruolo: "A", fantamedia: 8.5, titolarita: 95, pma: 35 },
           { nome: "Barella", squadra: "Inter", ruolo: "C", fantamedia: 7.2, titolarita: 90, pma: 18 },
