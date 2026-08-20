@@ -104,177 +104,135 @@
     </section>
   </main>
 
-  <script>
-    let rawPlayers = [];
-    let activeRole = 'ALL';
+<script>
+  let rawPlayers = [];
+  let activeRole = 'ALL';
 
-    // Scarica i dati aggiornati tramite proxy CORS trasparente
-    const API_URL = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://raw.githubusercontent.com/statmilk/fantacalcio-api/main/data/players.json');
+  // Legge il file JSON direttamente dalla stessa cartella
+  const API_URL = './players.json';
 
-    async function fetchPlayers() {
-      const statusEl = document.getElementById('statusIndicator');
-      try {
-        const res = await fetch(API_URL);
-        if (!res.ok) throw new Error("Errore durante il download");
-        
-        const data = await res.json();
-        
-        rawPlayers = data.map(p => ({
-          nome: p.nome || p.name || 'Calciatore',
-          squadra: p.squadra || p.team || 'Serie A',
-          ruolo: (p.ruolo || p.role || 'A').toUpperCase().charAt(0),
-          fantamedia: parseFloat(p.fantamedia || p.fm || 6.0),
-          titolarita: parseInt(p.titolarita || p.starter || 80),
-          pma: parseInt(p.quotazione || p.price || 10)
-        }));
+  async function fetchPlayers() {
+    const statusEl = document.getElementById('statusIndicator');
+    try {
+      const res = await fetch(API_URL);
+      if (!res.ok) throw new Error("Errore HTTP: " + res.status);
+      
+      const data = await res.json();
+      
+      if (!Array.isArray(data)) throw new Error("Formato JSON non valido");
 
-        statusEl.innerText = "ONLINE - DATI IN TEMPO REALE";
-        statusEl.className = "text-xs font-bold text-emerald-400";
-      } catch (err) {
-        console.error("Errore di caricamento:", err);
-        statusEl.innerText = "ERRORE CONNESSIONE";
-        statusEl.className = "text-xs font-bold text-pink-500";
-      }
-      renderTable();
-    }
-
-    function setRole(role) {
-      activeRole = role;
-      document.querySelectorAll('.pes-btn').forEach(btn => {
-        if (btn.id.startsWith('btn-')) {
-          btn.className = 'pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500';
-        }
-      });
-      document.getElementById(`btn-${role}`).className = 'pes-btn bg-cyan-400 text-slate-950 px-6 py-1 font-black';
-      renderTable();
-    }
-
-    function calculatePrices() {
-      const partecipanti = parseInt(document.getElementById('numPartecipanti').value) || 10;
-      const budgetSingolo = parseInt(document.getElementById('budgetSingolo').value) || 500;
-      const budgetLega = partecipanti * budgetSingolo;
-
-      const budgetReparto = {
-        'A': budgetLega * 0.55,
-        'C': budgetLega * 0.25,
-        'D': budgetLega * 0.12,
-        'P': budgetLega * 0.08
-      };
-
-      const efsScores = rawPlayers.map(p => {
-        const efs = (p.fantamedia * 0.7) + ((p.titolarita / 100) * 3);
-        return { ...p, efs };
-      });
-
-      const sumEfs = { 'A': 0, 'C': 0, 'D': 0, 'P': 0 };
-      efsScores.forEach(p => {
-        if (sumEfs[p.ruolo] !== undefined) sumEfs[p.ruolo] += p.efs;
-      });
-
-      return efsScores.map(p => {
-        const share = sumEfs[p.ruolo] > 0 ? (p.efs / sumEfs[p.ruolo]) : 0;
-        const pMaxTotale = (budgetReparto[p.ruolo] || 0) * share;
-        const pMaxSingolo = Math.max(1, Math.round(pMaxTotale / partecipanti));
-
-        let status = 'EQUO';
-        if (p.pma) {
-          if (p.pma > pMaxSingolo * 1.2) status = 'OVERPAY';
-          else if (p.pma < pMaxSingolo * 0.8) status = 'AFFARE';
-        }
-
-        return { ...p, pMaxSingolo, status };
-      });
-    }
-
-    function renderTable() {
-      const computed = calculatePrices();
-      const search = document.getElementById('searchInput').value.toLowerCase();
-
-      let filtered = computed.filter(p => {
-        const matchSearch = p.nome.toLowerCase().includes(search) || p.squadra.toLowerCase().includes(search);
-        const matchRole = (activeRole === 'ALL' || p.ruolo === activeRole);
-        return matchSearch && matchRole;
-      });
-
-      filtered.sort((a, b) => b.pMaxSingolo - a.pMaxSingolo);
-
-      document.getElementById('playerCount').innerText = `${filtered.length} GIOCATORI`;
-
-      const tbody = document.getElementById('tableBody');
-      tbody.innerHTML = '';
-
-      filtered.forEach(p => {
-        let badge = '<span class="bg-slate-700 text-slate-300 px-2 py-0.5 text-xs font-bold">EQUO</span>';
-        if (p.status === 'OVERPAY') {
-          badge = '<span class="bg-red-600 text-white px-2 py-0.5 text-xs font-black tracking-widest border border-red-400">RISCHIO</span>';
-        } else if (p.status === 'AFFARE') {
-          badge = '<span class="bg-emerald-500 text-slate-950 px-2 py-0.5 text-xs font-black tracking-widest border border-emerald-300">🔥 AFFARE</span>';
-        }
-
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td class="p-2 text-left font-black text-white uppercase">${p.nome}</td>
-          <td class="p-2 text-slate-400 text-base uppercase">${p.squadra}</td>
-          <td class="p-2 font-bold text-cyan-400">${p.ruolo}</td>
-          <td class="p-2 text-slate-200">${p.fantamedia}</td>
-          <td class="p-2 text-slate-300">${p.titolarita}%</td>
-          <td class="p-2 text-yellow-300 font-black text-2xl">${p.pMaxSingolo} <span class="text-xs text-slate-400">CR</span></td>
-          <td class="p-2">${badge}</td>
-        `;
-        tbody.appendChild(tr);
-      });
-    }
-
-    document.getElementById('numPartecipanti').addEventListener('input', renderTable);
-    document.getElementById('budgetSingolo').addEventListener('input', renderTable);
-    document.getElementById('searchInput').addEventListener('input', renderTable);
-
-    fetchPlayers();
-let rawPlayers = [];
-let activeRole = 'ALL';
-
-// 1. Inserisci qui l'URL Raw del TUO file JSON su GitHub (es. 'https://raw.githubusercontent.com/ganzosuiprati/FantaValue/main/players.json')
-const API_URL = 'https://raw.githubusercontent.com/ganzosuiprati/FantaValue/main/players.json';
-
-// Mappa numerica per convertire i ruoli da FantaPazz/JSON a lettere
-const MAPPA_RUOLI = {
-  '1': 'P', // o in base a come sono mappati nel tuo JSON (es. 1=P, 2=D, 3=C, 4=A)
-  '2': 'D',
-  '3': 'C',
-  '4': 'A'
-};
-
-async function fetchPlayers() {
-  const statusEl = document.getElementById('statusIndicator');
-  try {
-    const res = await fetch(API_URL);
-    if (!res.ok) throw new Error("Errore durante il download");
-    
-    const data = await res.json();
-    
-    // Mappatura corretta invertendo i campi 'nome' e 'squadra'
-    rawPlayers = data.map(p => {
-      // Se il ruolo è numerico usa la mappa, altrimenti usa la lettera
-      const ruoloCalcolato = MAPPA_RUOLI[p.ruolo] || (p.ruolo || 'A').toString().toUpperCase().charAt(0);
-
-      return {
-        nome: p.squadra || 'Calciatore',  // Nel JSON il nome sta in 'squadra'
-        squadra: p.nome || 'Serie A',     // Nel JSON il ruolo/squadra sta in 'nome'
-        ruolo: ruoloCalcolato,
+      // Mappatura adatta al tuo JSON (dove 'squadra' è il nome e 'nome' è il ruolo)
+      rawPlayers = data.map(p => ({
+        nome: p.squadra || 'Calciatore', 
+        squadra: 'Serie A',
+        ruolo: (p.nome || 'A').toString().toUpperCase().charAt(0),
         fantamedia: parseFloat(p.fantamedia || 6.0),
         titolarita: parseInt(p.titolarita || 80),
         pma: parseInt(p.pma || 10)
-      };
+      }));
+
+      statusEl.innerText = "ONLINE - DATI IN TEMPO REALE";
+      statusEl.className = "text-xs font-bold text-emerald-400";
+    } catch (err) {
+      console.error("Errore caricamento:", err);
+      statusEl.innerText = "ERRORE CONNESSIONE DATI";
+      statusEl.className = "text-xs font-bold text-pink-500";
+    }
+    renderTable();
+  }
+
+  function setRole(role) {
+    activeRole = role;
+    document.querySelectorAll('.pes-btn').forEach(btn => {
+      if (btn.id.startsWith('btn-')) {
+        btn.className = 'pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500';
+      }
+    });
+    document.getElementById(`btn-${role}`).className = 'pes-btn bg-cyan-400 text-slate-950 px-6 py-1 font-black';
+    renderTable();
+  }
+
+  function calculatePrices() {
+    const partecipanti = parseInt(document.getElementById('numPartecipanti').value) || 10;
+    const budgetSingolo = parseInt(document.getElementById('budgetSingolo').value) || 500;
+    const budgetLega = partecipanti * budgetSingolo;
+
+    const budgetReparto = {
+      'A': budgetLega * 0.55,
+      'C': budgetLega * 0.25,
+      'D': budgetLega * 0.12,
+      'P': budgetLega * 0.08
+    };
+
+    const efsScores = rawPlayers.map(p => {
+      const efs = (p.fantamedia * 0.7) + ((p.titolarita / 100) * 3);
+      return { ...p, efs };
     });
 
-    statusEl.innerText = "ONLINE - DATI IN TEMPO REALE";
-    statusEl.className = "text-xs font-bold text-emerald-400";
-  } catch (err) {
-    console.error("Errore di caricamento:", err);
-    statusEl.innerText = "ERRORE CONNESSIONE";
-    statusEl.className = "text-xs font-bold text-pink-500";
+    const sumEfs = { 'A': 0, 'C': 0, 'D': 0, 'P': 0 };
+    efsScores.forEach(p => {
+      if (sumEfs[p.ruolo] !== undefined) sumEfs[p.ruolo] += p.efs;
+    });
+
+    return efsScores.map(p => {
+      const share = sumEfs[p.ruolo] > 0 ? (p.efs / sumEfs[p.ruolo]) : 0;
+      const pMaxTotale = (budgetReparto[p.ruolo] || 0) * share;
+      const pMaxSingolo = Math.max(1, Math.round(pMaxTotale / partecipanti));
+
+      let status = 'EQUO';
+      if (p.pma) {
+        if (p.pma > pMaxSingolo * 1.2) status = 'OVERPAY';
+        else if (p.pma < pMaxSingolo * 0.8) status = 'AFFARE';
+      }
+
+      return { ...p, pMaxSingolo, status };
+    });
   }
-  renderTable();
-}
+
+  function renderTable() {
+    const computed = calculatePrices();
+    const search = document.getElementById('searchInput').value.toLowerCase();
+
+    let filtered = computed.filter(p => {
+      const matchSearch = p.nome.toLowerCase().includes(search) || p.squadra.toLowerCase().includes(search);
+      const matchRole = (activeRole === 'ALL' || p.ruolo === activeRole);
+      return matchSearch && matchRole;
+    });
+
+    filtered.sort((a, b) => b.pMaxSingolo - a.pMaxSingolo);
+
+    document.getElementById('playerCount').innerText = `${filtered.length} GIOCATORI`;
+
+    const tbody = document.getElementById('tableBody');
+    tbody.innerHTML = '';
+
+    filtered.forEach(p => {
+      let badge = '<span class="bg-slate-700 text-slate-300 px-2 py-0.5 text-xs font-bold">EQUO</span>';
+      if (p.status === 'OVERPAY') {
+        badge = '<span class="bg-red-600 text-white px-2 py-0.5 text-xs font-black tracking-widest border border-red-400">RISCHIO</span>';
+      } else if (p.status === 'AFFARE') {
+        badge = '<span class="bg-emerald-500 text-slate-950 px-2 py-0.5 text-xs font-black tracking-widest border border-emerald-300">🔥 AFFARE</span>';
+      }
+
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td class="p-2 text-left font-black text-white uppercase">${p.nome}</td>
+        <td class="p-2 text-slate-400 text-base uppercase">${p.squadra}</td>
+        <td class="p-2 font-bold text-cyan-400">${p.ruolo}</td>
+        <td class="p-2 text-slate-200">${p.fantamedia}</td>
+        <td class="p-2 text-slate-300">${p.titolarita}%</td>
+        <td class="p-2 text-yellow-300 font-black text-2xl">${p.pMaxSingolo} <span class="text-xs text-slate-400">CR</span></td>
+        <td class="p-2">${badge}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  document.getElementById('numPartecipanti').addEventListener('input', renderTable);
+  document.getElementById('budgetSingolo').addEventListener('input', renderTable);
+  document.getElementById('searchInput').addEventListener('input', renderTable);
+
+  fetchPlayers();
+</script>
 </body>
 </html>
