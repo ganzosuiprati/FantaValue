@@ -230,6 +230,51 @@
     document.getElementById('searchInput').addEventListener('input', renderTable);
 
     fetchPlayers();
-  </script>
+let rawPlayers = [];
+let activeRole = 'ALL';
+
+// 1. Inserisci qui l'URL Raw del TUO file JSON su GitHub (es. 'https://raw.githubusercontent.com/ganzosuiprati/FantaValue/main/players.json')
+const API_URL = 'https://raw.githubusercontent.com/ganzosuiprati/FantaValue/main/players.json';
+
+// Mappa numerica per convertire i ruoli da FantaPazz/JSON a lettere
+const MAPPA_RUOLI = {
+  '1': 'P', // o in base a come sono mappati nel tuo JSON (es. 1=P, 2=D, 3=C, 4=A)
+  '2': 'D',
+  '3': 'C',
+  '4': 'A'
+};
+
+async function fetchPlayers() {
+  const statusEl = document.getElementById('statusIndicator');
+  try {
+    const res = await fetch(API_URL);
+    if (!res.ok) throw new Error("Errore durante il download");
+    
+    const data = await res.json();
+    
+    // Mappatura corretta invertendo i campi 'nome' e 'squadra'
+    rawPlayers = data.map(p => {
+      // Se il ruolo è numerico usa la mappa, altrimenti usa la lettera
+      const ruoloCalcolato = MAPPA_RUOLI[p.ruolo] || (p.ruolo || 'A').toString().toUpperCase().charAt(0);
+
+      return {
+        nome: p.squadra || 'Calciatore',  // Nel JSON il nome sta in 'squadra'
+        squadra: p.nome || 'Serie A',     // Nel JSON il ruolo/squadra sta in 'nome'
+        ruolo: ruoloCalcolato,
+        fantamedia: parseFloat(p.fantamedia || 6.0),
+        titolarita: parseInt(p.titolarita || 80),
+        pma: parseInt(p.pma || 10)
+      };
+    });
+
+    statusEl.innerText = "ONLINE - DATI IN TEMPO REALE";
+    statusEl.className = "text-xs font-bold text-emerald-400";
+  } catch (err) {
+    console.error("Errore di caricamento:", err);
+    statusEl.innerText = "ERRORE CONNESSIONE";
+    statusEl.className = "text-xs font-bold text-pink-500";
+  }
+  renderTable();
+}
 </body>
 </html>
