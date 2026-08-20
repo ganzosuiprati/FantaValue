@@ -38,11 +38,18 @@
     }
     .pes-table tr:nth-child(even) { background: rgba(255, 255, 255, 0.03); }
     .pes-table tr:hover { background: rgba(0, 255, 204, 0.15); }
+    .player-img {
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #00ffcc;
+    }
   </style>
 </head>
 <body class="min-h-screen p-2 md:p-6">
 
-  <!-- BANNER CREDITI / FOOTER HEADER -->
+  <!-- BANNER CREDITI -->
   <div class="max-w-5xl mx-auto mb-3 bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 border border-cyan-400/40 p-2 text-center rounded flex items-center justify-between px-4">
     <span class="pes-font text-[10px] text-yellow-300">⚡ FANTA-VALUE ENGINE</span>
     <span class="text-sm font-bold tracking-wider text-slate-200">
@@ -97,7 +104,7 @@
         <table class="w-full text-left pes-table text-xl">
           <thead>
             <tr class="uppercase text-center">
-              <th class="p-2 text-left">NOME GIOCATORE</th>
+              <th class="p-2 text-left">GIOCATORE</th>
               <th class="p-2">SQUADRA</th>
               <th class="p-2">RUOLO</th>
               <th class="p-2">FM</th>
@@ -119,7 +126,6 @@
 
     const API_URL = './players.json';
 
-    // Mappa per decodificare il ruolo se salvato in formato numerico o esteso
     function normalizzaRuolo(r) {
       if (!r) return 'A';
       const val = r.toString().trim().toUpperCase();
@@ -137,25 +143,21 @@
         if (!res.ok) throw new Error("Errore HTTP: " + res.status);
         
         const data = await res.json();
-        
         if (!Array.isArray(data)) throw new Error("Formato JSON non valido");
 
         rawPlayers = data.map(p => {
-          // Gestione inversione nome/squadra o lettura standard
-          const nomeGiocatore = p.squadra && p.squadra.length > 3 && isNaN(p.squadra) ? p.squadra : (p.nome || p.name || 'Calciatore');
-          const squadraCalcio = p.club || p.team || p.squadra_reale || (p.nome && p.nome.length > 2 && isNaN(p.nome) ? p.nome : 'SERIE A');
-
-          const fmRaw = p.fantamedia || p.fm || 6.0;
-          const titRaw = p.titolarita || p.starter || 80;
-          const pmaRaw = p.pma || p.quotazione || p.price || 10;
+          // Gestione dinamica chiave/valore
+          const nomeVal = p.nome || p.squadra || 'Calciatore';
+          const squadraVal = (p.squadra && p.squadra !== nomeVal && isNaN(p.squadra)) ? p.squadra : (p.club || p.team || 'Serie A');
 
           return {
-            nome: String(nomeGiocatore),
-            squadra: String(squadraCalcio),
+            nome: String(nomeVal).trim(),
+            squadra: String(squadraVal).trim(),
             ruolo: normalizzaRuolo(p.ruolo || p.role),
-            fantamedia: parseFloat(String(fmRaw).replace(',', '.')) || 6.0,
-            titolarita: parseInt(String(titRaw).replace('%', '')) || 80,
-            pma: parseInt(pmaRaw) || 10
+            fantamedia: parseFloat(String(p.fantamedia || p.fm || 6.0).replace(',', '.')) || 6.0,
+            titolarita: parseInt(String(p.titolarita || p.starter || 80).replace('%', '')) || 80,
+            pma: parseInt(p.pma || p.quotazione || p.price || 10) || 10,
+            foto: p.foto || p.image || ''
           };
         });
 
@@ -183,35 +185,39 @@
     function calculatePrices() {
       const partecipanti = parseInt(document.getElementById('numPartecipanti').value) || 10;
       const budgetSingolo = parseInt(document.getElementById('budgetSingolo').value) || 500;
-      const budgetLega = partecipanti * budgetSingolo;
 
+      // Budget per reparto in percentuale sul budget del singolo fantallenatore
       const budgetReparto = {
-        'A': budgetLega * 0.55,
-        'C': budgetLega * 0.25,
-        'D': budgetLega * 0.12,
-        'P': budgetLega * 0.08
+        'A': budgetSingolo * 0.50, // 50% per l'attacco
+        'C': budgetSingolo * 0.25, // 25% per il centrocampo
+        'D': budgetSingolo * 0.15, // 15% per la difesa
+        'P': budgetSingolo * 0.10  // 10% per i portieri
       };
 
+      // Calcolo indice di valore (FM + Titolarità)
       const efsScores = rawPlayers.map(p => {
-        const efs = (p.fantamedia * 0.7) + ((p.titolarita / 100) * 3);
+        const bonusFM = Math.max(0, p.fantamedia - 5.5); 
+        const efs = Math.pow(bonusFM, 2.5) * (p.titolarita / 100);
         return { ...p, efs };
       });
 
-      const sumEfs = { 'A': 0, 'C': 0, 'D': 0, 'P': 0 };
+      const maxEfsPerRuolo = { 'A': 0, 'C': 0, 'D': 0, 'P': 0 };
       efsScores.forEach(p => {
-        if (sumEfs[p.ruolo] !== undefined) sumEfs[p.ruolo] += p.efs;
+        if (p.efs > (maxEfsPerRuolo[p.ruolo] || 0)) maxEfsPerRuolo[p.ruolo] = p.efs;
       });
 
       return efsScores.map(p => {
-        const share = sumEfs[p.ruolo] > 0 ? (p.efs / sumEfs[p.ruolo]) : 0;
-        const pMaxTotale = (budgetReparto[p.ruolo] || 0) * share;
-        const pMaxSingolo = Math.max(1, Math.round(pMaxTotale / partecipanti));
+        const maxRuolo = maxEfsPerRuolo[p.ruolo] || 1;
+        const percentualeQuota = p.efs / maxRuolo; // da 0 a 1 rispetto al top del ruolo
+
+        // Il Top Player di un reparto prende fino al ~60-70% del budget destinato a quel reparto
+        let pMaxSingolo = Math.round((budgetReparto[p.ruolo] || 0) * percentualeQuota * 0.65);
+        pMaxSingolo = Math.max(1, pMaxSingolo);
 
         let status = 'EQUO';
-        if (p.pma) {
-          if (p.pma > pMaxSingolo * 1.2) status = 'OVERPAY';
-          else if (p.pma < pMaxSingolo * 0.8) status = 'AFFARE';
-        }
+        const pmaScalato = Math.round((p.pma / 500) * budgetSingolo);
+        if (pmaScalato > pMaxSingolo * 1.25) status = 'OVERPAY';
+        else if (pmaScalato < pMaxSingolo * 0.75) status = 'AFFARE';
 
         return { ...p, pMaxSingolo, status };
       });
@@ -242,12 +248,21 @@
           badge = '<span class="bg-emerald-500 text-slate-950 px-2 py-0.5 text-xs font-black tracking-widest border border-emerald-300">🔥 AFFARE</span>';
         }
 
+        // Generatore di Avatar Fallback se la foto Wikipedia non c'è
+        const initial = p.nome.charAt(0).toUpperCase();
+        const imgTag = p.foto 
+          ? `<img src="${p.foto}" class="player-img" alt="${p.nome}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(p.nome)}&background=0d1117&color=00ffcc'">`
+          : `<div class="player-img bg-slate-800 text-cyan-400 font-bold flex items-center justify-center border border-cyan-400">${initial}</div>`;
+
         const tr = document.createElement('tr');
         tr.innerHTML = `
-          <td class="p-2 text-left font-black text-white uppercase">${p.nome}</td>
-          <td class="p-2 text-slate-400 text-base uppercase">${p.squadra}</td>
+          <td class="p-2 text-left font-black text-white uppercase flex items-center gap-3">
+            ${imgTag}
+            <span>${p.nome}</span>
+          </td>
+          <td class="p-2 text-slate-400 text-base uppercase font-bold">${p.squadra}</td>
           <td class="p-2 font-bold text-cyan-400">${p.ruolo}</td>
-          <td class="p-2 text-slate-200">${p.fantamedia.toFixed(1)}</td>
+          <td class="p-2 text-slate-200 font-bold">${p.fantamedia.toFixed(1)}</td>
           <td class="p-2 text-slate-300">${p.titolarita}%</td>
           <td class="p-2 text-yellow-300 font-black text-2xl">${p.pMaxSingolo} <span class="text-xs text-slate-400">CR</span></td>
           <td class="p-2">${badge}</td>
@@ -256,7 +271,6 @@
       });
     }
 
-    // Event listeners per ricalcolo dinamico istantaneo
     ['input', 'change'].forEach(evt => {
       document.getElementById('numPartecipanti').addEventListener(evt, renderTable);
       document.getElementById('budgetSingolo').addEventListener(evt, renderTable);
