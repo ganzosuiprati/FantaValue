@@ -2,9 +2,25 @@ import json
 import urllib.parse
 import requests
 
+# Sorgente aperta raw GitHub (nessun blocco IP o Cloudflare)
+PRIMARY_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
+BACKUP_URL = "https://raw.githubusercontent.com/luigi-s/fantacalcio-dataset/main/quotazioni.json"
+
+
+def clean_role(raw_role):
+    """Normalizza i ruoli nei quattro standard del Fantacalcio (P, D, C, A)."""
+    r = str(raw_role).strip().upper()
+    if r in ["P", "POR", "1"]:
+        return "P"
+    if r in ["D", "DIF", "2"]:
+        return "D"
+    if r in ["C", "CEN", "3"]:
+        return "C"
+    return "A"
+
 
 def get_wikipedia_photo(player_name):
-    """Recupera l'avatar da Wikipedia in modo sicuro."""
+    """Recupera l'avatar da Wikipedia solo per i top player per velocizzare l'esecuzione."""
     try:
         query = f"{player_name} calciatore"
         url = f"https://it.wikipedia.org/w/api.php?action=query&titles={urllib.parse.quote(query)}&prop=pageimages&format=json&pithumbsize=150"
@@ -19,95 +35,76 @@ def get_wikipedia_photo(player_name):
     return ""
 
 
-def clean_role(raw_role):
-    r = str(raw_role).strip().upper()
-    if r in ["P", "POR", "1"]:
-        return "P"
-    if r in ["D", "DIF", "2"]:
-        return "D"
-    if r in ["C", "CEN", "3"]:
-        return "C"
-    return "A"
+def fetch_data():
+    headers = {"User-Agent": "Mozilla/5.0"}
 
-
-def fetch_from_sources():
-    headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-        )
-    }
-
-    # Endpoint 1: API pubblica Fantagazzetta/Fantacalcio
+    # Prova la prima sorgente
     try:
-        url = "https://raw.githubusercontent.com/luigi-s/fantacalcio-dataset/main/quotazioni.json"
-        res = requests.get(url, headers=headers, timeout=5)
-        if res.status_code == 200 and len(res.json()) > 50:
-            return [
-                {
-                    "nome": str(p.get("Nome", p.get("nome", ""))).title(),
-                    "squadra": str(
-                        p.get("Squadra", p.get("squadra", "SER"))
-                    )[:3].upper(),
-                    "ruolo": clean_role(p.get("R", p.get("ruolo", "A"))),
-                    "fantamedia": float(p.get("Fm", p.get("fantamedia", 6.0))),
-                    "titolarita": int(p.get("Tit", p.get("titolarita", 75))),
-                    "pma": int(p.get("Qt", p.get("pma", 1))),
-                    "foto": "",
-                }
-                for p in res.json()
-            ]
+        res = requests.get(PRIMARY_URL, headers=headers, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            if len(data) > 50:
+                return data, "primary"
     except Exception as e:
-        print(f"⚠️ Query Fonte 1 fallita: {e}")
+        print(f"⚠️ Sorgente primaria fallita: {e}")
 
-    # Endpoint 2: Fallback API di backup
+    # Prova la sorgente di riserva
     try:
-        url_backup = "https://fantapazz.com/api/v1/players"
-        res = requests.get(url_backup, headers=headers, timeout=5)
-        if res.status_code == 200 and len(res.json()) > 50:
-            return [
-                {
-                    "nome": str(p.get("name", "")).title(),
-                    "squadra": str(p.get("team", "SER"))[:3].upper(),
-                    "ruolo": clean_role(p.get("role", "A")),
-                    "fantamedia": float(p.get("fm", 6.0)),
-                    "titolarita": int(p.get("starter_rate", 70)),
-                    "pma": int(p.get("price", 1)),
-                    "foto": "",
-                }
-                for p in res.json()
-            ]
+        res = requests.get(BACKUP_URL, headers=headers, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            if len(data) > 50:
+                return data, "backup"
     except Exception as e:
-        print(f"⚠️ Query Fonte 2 fallita: {e}")
+        print(f"⚠️ Sorgente backup fallita: {e}")
 
-    return []
+    return None, None
 
 
 def update_database():
-    print("🔄 Avvio recupero listone Serie A...")
-    players_db = fetch_from_sources()
+    print("🔄 Avvio download listone Serie A...")
+    raw_data, source_type = fetch_data()
 
-    # PROTEZIONE FONDAMENTALE: Se il fetch restituisce 0 giocatori, interrompe la sovrascrittura!
-    if not players_db or len(players_db) < 50:
-        print(
-            "❌ ERRORE CRITICO: Impossibile scaricare i dati online. Il file 'players.json' NON verrà sovrascritto con un array vuoto."
-        )
-        # Forza l'uscita con codice d'errore per segnalare il fallimento su GitHub Actions
+    if not raw_data:
+        print("❌ Impossibile scaricare i dati. Annullamento per proteggere il file locale.")
         exit(1)
 
-    print(
-        f"✅ Estratti {len(players_db)} calciatori! Caricamento foto Wikipedia..."
-    )
+    players_db = []
 
-    # Aggiunta foto per i top player (pma >= 15)
-    for p in players_db:
-        if p["pma"] >= 15:
-            p["foto"] = get_wikipedia_photo(p["nome"])
+    for p in raw_data:
+        # Pescaggio dinamico flessibile basato sulla struttura del JSON
+        nome = p.get("nome") or p.get("Nome") or p.get("name")
+        if not nome:
+            continue
 
-    # Salvataggio sicuro nel JSON
+        squadra = str(p.get("squadra") or p.get("Squadra") or p.get("team") or "SER")[:3].upper()
+        ruolo = clean_role(p.get("ruolo") or p.get("R") or p.get("role") or "A")
+        pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or p.get("price") or 1)
+        fm = float(p.get("fm") or p.get("Fm") or p.get("fantamedia") or 6.0)
+        tit = int(p.get("tit") or p.get("Tit") or p.get("titolarita") or 75)
+
+        players_db.append({
+            "nome": str(nome).title(),
+            "squadra": squadra,
+            "ruolo": ruolo,
+            "fantamedia": fm,
+            "titolarita": tit,
+            "pma": pma,
+            "foto": ""
+        })
+
+    print(f"✅ Processati {len(players_db)} calciatori da sorgente ({source_type}). Recupero avatar...")
+
+    # Aggiunge la foto da Wikipedia ai top player (PMA >= 18)
+    for player in players_db:
+        if player["pma"] >= 18:
+            player["foto"] = get_wikipedia_photo(player["nome"])
+
+    # Salva e popola automaticamente il file players.json
     with open("players.json", "w", encoding="utf-8") as f:
         json.dump(players_db, f, ensure_ascii=False, indent=2)
 
-    print("🎉 File 'players.json' aggiornato con successo!")
+    print("🎉 'players.json' aggiornato con successo!")
 
 
 if __name__ == "__main__":
