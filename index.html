@@ -108,26 +108,32 @@
     let rawPlayers = [];
     let activeRole = 'ALL';
 
+    // Scarica i dati aggiornati tramite proxy CORS trasparente
+    const API_URL = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://raw.githubusercontent.com/statmilk/fantacalcio-api/main/data/players.json');
+
     async function fetchPlayers() {
       const statusEl = document.getElementById('statusIndicator');
       try {
-        const res = await fetch('players.json?v=' + Date.now());
-        if (!res.ok) throw new Error("File players.json non trovato");
+        const res = await fetch(API_URL);
+        if (!res.ok) throw new Error("Errore durante il download");
         
-        rawPlayers = await res.json();
+        const data = await res.json();
+        
+        rawPlayers = data.map(p => ({
+          nome: p.nome || p.name || 'Calciatore',
+          squadra: p.squadra || p.team || 'Serie A',
+          ruolo: (p.ruolo || p.role || 'A').toUpperCase().charAt(0),
+          fantamedia: parseFloat(p.fantamedia || p.fm || 6.0),
+          titolarita: parseInt(p.titolarita || p.starter || 80),
+          pma: parseInt(p.quotazione || p.price || 10)
+        }));
 
         statusEl.innerText = "ONLINE - DATI IN TEMPO REALE";
         statusEl.className = "text-xs font-bold text-emerald-400";
       } catch (err) {
-        statusEl.innerText = "MODALITÀ OFFLINE";
+        console.error("Errore di caricamento:", err);
+        statusEl.innerText = "ERRORE CONNESSIONE";
         statusEl.className = "text-xs font-bold text-pink-500";
-        
-        rawPlayers = [
-          { nome: "Lautaro Martinez", squadra: "Inter", ruolo: "A", fantamedia: 8.5, titolarita: 95, pma: 35 },
-          { nome: "Barella", squadra: "Inter", ruolo: "C", fantamedia: 7.2, titolarita: 90, pma: 18 },
-          { nome: "Di Lorenzo", squadra: "Napoli", ruolo: "D", fantamedia: 6.5, titolarita: 95, pma: 12 },
-          { nome: "Svilar", squadra: "Roma", ruolo: "P", fantamedia: 6.2, titolarita: 85, pma: 10 }
-        ];
       }
       renderTable();
     }
