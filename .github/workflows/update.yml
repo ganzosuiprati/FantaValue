@@ -2,7 +2,8 @@ name: Aggiornamento Automatico Listone Fantacalcio
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    # 02:00 UTC corrispondono alle 04:00 italiane (CEST)
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 permissions:
@@ -21,10 +22,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Genera index.html e players.json
+      - name: Install Dependencies
+        run: pip install beautifulsoup4 requests
+
+      - name: Esegui Scraper FantaPazz
         run: python scraper.py
 
-      - name: Deploy su GitHub Pages
+      - name: Deploy delle modifiche
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-update listone e index.html"
+          commit_message: "Auto-update listone da FantaPazz"
