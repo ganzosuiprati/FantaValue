@@ -42,6 +42,15 @@
 </head>
 <body class="min-h-screen p-2 md:p-6">
 
+  <!-- BANNER CREDITI / FOOTER HEADER -->
+  <div class="max-w-5xl mx-auto mb-3 bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 border border-cyan-400/40 p-2 text-center rounded flex items-center justify-between px-4">
+    <span class="pes-font text-[10px] text-yellow-300">⚡ FANTA-VALUE ENGINE</span>
+    <span class="text-sm font-bold tracking-wider text-slate-200">
+      CREATED BY <span class="text-cyan-400 font-black">FRANCESCO COPPOLA</span> 
+      <a href="https://instagram.com/ganzosuiprati" target="_blank" class="ml-2 text-pink-400 hover:text-pink-300 underline font-black">@ganzosuiprati</a>
+    </span>
+  </div>
+
   <header class="max-w-5xl mx-auto mb-6 flex justify-between items-center border-b-2 border-cyan-400 pb-3">
     <div class="pes-header px-6 py-1 text-white shadow-lg">
       <h1 class="pes-font text-lg md:text-xl tracking-tighter uppercase italic">FANTA-VALUE <span class="text-yellow-300">2000</span></h1>
@@ -70,7 +79,7 @@
       </div>
 
       <div class="flex gap-2 justify-center my-3 text-xl font-bold">
-        <button onclick="setRole('ALL')" id="btn-ALL" class="pes-btn bg-cyan-400 text-slate-950 px-6 py-1">TUTTI</button>
+        <button onclick="setRole('ALL')" id="btn-ALL" class="pes-btn bg-cyan-400 text-slate-950 px-6 py-1 font-black">TUTTI</button>
         <button onclick="setRole('P')" id="btn-P" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">POR</button>
         <button onclick="setRole('D')" id="btn-D" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">DIF</button>
         <button onclick="setRole('C')" id="btn-C" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">CEN</button>
@@ -104,135 +113,157 @@
     </section>
   </main>
 
-<script>
-  let rawPlayers = [];
-  let activeRole = 'ALL';
+  <script>
+    let rawPlayers = [];
+    let activeRole = 'ALL';
 
-  // Legge il file JSON direttamente dalla stessa cartella
-  const API_URL = './players.json';
+    const API_URL = './players.json';
 
-  async function fetchPlayers() {
-    const statusEl = document.getElementById('statusIndicator');
-    try {
-      const res = await fetch(API_URL);
-      if (!res.ok) throw new Error("Errore HTTP: " + res.status);
-      
-      const data = await res.json();
-      
-      if (!Array.isArray(data)) throw new Error("Formato JSON non valido");
-
-      // Mappatura adatta al tuo JSON (dove 'squadra' è il nome e 'nome' è il ruolo)
-      rawPlayers = data.map(p => ({
-        nome: p.squadra || 'Calciatore', 
-        squadra: 'Serie A',
-        ruolo: (p.nome || 'A').toString().toUpperCase().charAt(0),
-        fantamedia: parseFloat(p.fantamedia || 6.0),
-        titolarita: parseInt(p.titolarita || 80),
-        pma: parseInt(p.pma || 10)
-      }));
-
-      statusEl.innerText = "ONLINE - DATI IN TEMPO REALE";
-      statusEl.className = "text-xs font-bold text-emerald-400";
-    } catch (err) {
-      console.error("Errore caricamento:", err);
-      statusEl.innerText = "ERRORE CONNESSIONE DATI";
-      statusEl.className = "text-xs font-bold text-pink-500";
+    // Mappa per decodificare il ruolo se salvato in formato numerico o esteso
+    function normalizzaRuolo(r) {
+      if (!r) return 'A';
+      const val = r.toString().trim().toUpperCase();
+      if (val === '1' || val === 'POR' || val === 'P') return 'P';
+      if (val === '2' || val === 'DIF' || val === 'D') return 'D';
+      if (val === '3' || val === 'CEN' || val === 'C') return 'C';
+      if (val === '4' || val === 'ATT' || val === 'A') return 'A';
+      return val.charAt(0);
     }
-    renderTable();
-  }
 
-  function setRole(role) {
-    activeRole = role;
-    document.querySelectorAll('.pes-btn').forEach(btn => {
-      if (btn.id.startsWith('btn-')) {
-        btn.className = 'pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500';
+    async function fetchPlayers() {
+      const statusEl = document.getElementById('statusIndicator');
+      try {
+        const res = await fetch(API_URL);
+        if (!res.ok) throw new Error("Errore HTTP: " + res.status);
+        
+        const data = await res.json();
+        
+        if (!Array.isArray(data)) throw new Error("Formato JSON non valido");
+
+        rawPlayers = data.map(p => {
+          // Gestione inversione nome/squadra o lettura standard
+          const nomeGiocatore = p.squadra && p.squadra.length > 3 && isNaN(p.squadra) ? p.squadra : (p.nome || p.name || 'Calciatore');
+          const squadraCalcio = p.club || p.team || p.squadra_reale || (p.nome && p.nome.length > 2 && isNaN(p.nome) ? p.nome : 'SERIE A');
+
+          const fmRaw = p.fantamedia || p.fm || 6.0;
+          const titRaw = p.titolarita || p.starter || 80;
+          const pmaRaw = p.pma || p.quotazione || p.price || 10;
+
+          return {
+            nome: String(nomeGiocatore),
+            squadra: String(squadraCalcio),
+            ruolo: normalizzaRuolo(p.ruolo || p.role),
+            fantamedia: parseFloat(String(fmRaw).replace(',', '.')) || 6.0,
+            titolarita: parseInt(String(titRaw).replace('%', '')) || 80,
+            pma: parseInt(pmaRaw) || 10
+          };
+        });
+
+        statusEl.innerText = "ONLINE - DATI IN TEMPO REALE";
+        statusEl.className = "text-xs font-bold text-emerald-400";
+      } catch (err) {
+        console.error("Errore caricamento:", err);
+        statusEl.innerText = "ERRORE CONNESSIONE DATI";
+        statusEl.className = "text-xs font-bold text-pink-500";
       }
+      renderTable();
+    }
+
+    function setRole(role) {
+      activeRole = role;
+      document.querySelectorAll('.pes-btn').forEach(btn => {
+        if (btn.id.startsWith('btn-')) {
+          btn.className = 'pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500';
+        }
+      });
+      document.getElementById(`btn-${role}`).className = 'pes-btn bg-cyan-400 text-slate-950 px-6 py-1 font-black';
+      renderTable();
+    }
+
+    function calculatePrices() {
+      const partecipanti = parseInt(document.getElementById('numPartecipanti').value) || 10;
+      const budgetSingolo = parseInt(document.getElementById('budgetSingolo').value) || 500;
+      const budgetLega = partecipanti * budgetSingolo;
+
+      const budgetReparto = {
+        'A': budgetLega * 0.55,
+        'C': budgetLega * 0.25,
+        'D': budgetLega * 0.12,
+        'P': budgetLega * 0.08
+      };
+
+      const efsScores = rawPlayers.map(p => {
+        const efs = (p.fantamedia * 0.7) + ((p.titolarita / 100) * 3);
+        return { ...p, efs };
+      });
+
+      const sumEfs = { 'A': 0, 'C': 0, 'D': 0, 'P': 0 };
+      efsScores.forEach(p => {
+        if (sumEfs[p.ruolo] !== undefined) sumEfs[p.ruolo] += p.efs;
+      });
+
+      return efsScores.map(p => {
+        const share = sumEfs[p.ruolo] > 0 ? (p.efs / sumEfs[p.ruolo]) : 0;
+        const pMaxTotale = (budgetReparto[p.ruolo] || 0) * share;
+        const pMaxSingolo = Math.max(1, Math.round(pMaxTotale / partecipanti));
+
+        let status = 'EQUO';
+        if (p.pma) {
+          if (p.pma > pMaxSingolo * 1.2) status = 'OVERPAY';
+          else if (p.pma < pMaxSingolo * 0.8) status = 'AFFARE';
+        }
+
+        return { ...p, pMaxSingolo, status };
+      });
+    }
+
+    function renderTable() {
+      const computed = calculatePrices();
+      const search = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      let filtered = computed.filter(p => {
+        const matchSearch = p.nome.toLowerCase().includes(search) || p.squadra.toLowerCase().includes(search);
+        const matchRole = (activeRole === 'ALL' || p.ruolo === activeRole);
+        return matchSearch && matchRole;
+      });
+
+      filtered.sort((a, b) => b.pMaxSingolo - a.pMaxSingolo);
+
+      document.getElementById('playerCount').innerText = `${filtered.length} GIOCATORI`;
+
+      const tbody = document.getElementById('tableBody');
+      tbody.innerHTML = '';
+
+      filtered.forEach(p => {
+        let badge = '<span class="bg-slate-700 text-slate-300 px-2 py-0.5 text-xs font-bold">EQUO</span>';
+        if (p.status === 'OVERPAY') {
+          badge = '<span class="bg-red-600 text-white px-2 py-0.5 text-xs font-black tracking-widest border border-red-400">RISCHIO</span>';
+        } else if (p.status === 'AFFARE') {
+          badge = '<span class="bg-emerald-500 text-slate-950 px-2 py-0.5 text-xs font-black tracking-widest border border-emerald-300">🔥 AFFARE</span>';
+        }
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="p-2 text-left font-black text-white uppercase">${p.nome}</td>
+          <td class="p-2 text-slate-400 text-base uppercase">${p.squadra}</td>
+          <td class="p-2 font-bold text-cyan-400">${p.ruolo}</td>
+          <td class="p-2 text-slate-200">${p.fantamedia.toFixed(1)}</td>
+          <td class="p-2 text-slate-300">${p.titolarita}%</td>
+          <td class="p-2 text-yellow-300 font-black text-2xl">${p.pMaxSingolo} <span class="text-xs text-slate-400">CR</span></td>
+          <td class="p-2">${badge}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Event listeners per ricalcolo dinamico istantaneo
+    ['input', 'change'].forEach(evt => {
+      document.getElementById('numPartecipanti').addEventListener(evt, renderTable);
+      document.getElementById('budgetSingolo').addEventListener(evt, renderTable);
+      document.getElementById('searchInput').addEventListener(evt, renderTable);
     });
-    document.getElementById(`btn-${role}`).className = 'pes-btn bg-cyan-400 text-slate-950 px-6 py-1 font-black';
-    renderTable();
-  }
 
-  function calculatePrices() {
-    const partecipanti = parseInt(document.getElementById('numPartecipanti').value) || 10;
-    const budgetSingolo = parseInt(document.getElementById('budgetSingolo').value) || 500;
-    const budgetLega = partecipanti * budgetSingolo;
-
-    const budgetReparto = {
-      'A': budgetLega * 0.55,
-      'C': budgetLega * 0.25,
-      'D': budgetLega * 0.12,
-      'P': budgetLega * 0.08
-    };
-
-    const efsScores = rawPlayers.map(p => {
-      const efs = (p.fantamedia * 0.7) + ((p.titolarita / 100) * 3);
-      return { ...p, efs };
-    });
-
-    const sumEfs = { 'A': 0, 'C': 0, 'D': 0, 'P': 0 };
-    efsScores.forEach(p => {
-      if (sumEfs[p.ruolo] !== undefined) sumEfs[p.ruolo] += p.efs;
-    });
-
-    return efsScores.map(p => {
-      const share = sumEfs[p.ruolo] > 0 ? (p.efs / sumEfs[p.ruolo]) : 0;
-      const pMaxTotale = (budgetReparto[p.ruolo] || 0) * share;
-      const pMaxSingolo = Math.max(1, Math.round(pMaxTotale / partecipanti));
-
-      let status = 'EQUO';
-      if (p.pma) {
-        if (p.pma > pMaxSingolo * 1.2) status = 'OVERPAY';
-        else if (p.pma < pMaxSingolo * 0.8) status = 'AFFARE';
-      }
-
-      return { ...p, pMaxSingolo, status };
-    });
-  }
-
-  function renderTable() {
-    const computed = calculatePrices();
-    const search = document.getElementById('searchInput').value.toLowerCase();
-
-    let filtered = computed.filter(p => {
-      const matchSearch = p.nome.toLowerCase().includes(search) || p.squadra.toLowerCase().includes(search);
-      const matchRole = (activeRole === 'ALL' || p.ruolo === activeRole);
-      return matchSearch && matchRole;
-    });
-
-    filtered.sort((a, b) => b.pMaxSingolo - a.pMaxSingolo);
-
-    document.getElementById('playerCount').innerText = `${filtered.length} GIOCATORI`;
-
-    const tbody = document.getElementById('tableBody');
-    tbody.innerHTML = '';
-
-    filtered.forEach(p => {
-      let badge = '<span class="bg-slate-700 text-slate-300 px-2 py-0.5 text-xs font-bold">EQUO</span>';
-      if (p.status === 'OVERPAY') {
-        badge = '<span class="bg-red-600 text-white px-2 py-0.5 text-xs font-black tracking-widest border border-red-400">RISCHIO</span>';
-      } else if (p.status === 'AFFARE') {
-        badge = '<span class="bg-emerald-500 text-slate-950 px-2 py-0.5 text-xs font-black tracking-widest border border-emerald-300">🔥 AFFARE</span>';
-      }
-
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td class="p-2 text-left font-black text-white uppercase">${p.nome}</td>
-        <td class="p-2 text-slate-400 text-base uppercase">${p.squadra}</td>
-        <td class="p-2 font-bold text-cyan-400">${p.ruolo}</td>
-        <td class="p-2 text-slate-200">${p.fantamedia}</td>
-        <td class="p-2 text-slate-300">${p.titolarita}%</td>
-        <td class="p-2 text-yellow-300 font-black text-2xl">${p.pMaxSingolo} <span class="text-xs text-slate-400">CR</span></td>
-        <td class="p-2">${badge}</td>
-      `;
-      tbody.appendChild(tr);
-    });
-  }
-
-  document.getElementById('numPartecipanti').addEventListener('input', renderTable);
-  document.getElementById('budgetSingolo').addEventListener('input', renderTable);
-  document.getElementById('searchInput').addEventListener('input', renderTable);
-
-  fetchPlayers();
-</script>
+    fetchPlayers();
+  </script>
 </body>
 </html>
