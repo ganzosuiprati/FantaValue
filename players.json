@@ -1,5626 +1,4754 @@
 [
   {
-    "nome": "P",
-    "squadra": "Svilar",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Maignan",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Carnesecchi",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Butez",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Martinez J.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Vicario",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "De Gea",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Meret",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Caprile",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Skorupski",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Okoye",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Suzuki",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Bijlow",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Falcone",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Paleari",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Muric",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Di Gregorio",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Mandas",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Palmisani",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Milinkovic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Thiam D.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Montipo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Motta",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Provedel",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Stankovic F.",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Perin",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Ravaglia",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Corvi",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Israel",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Turati",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Audero",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Borbei",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Brezzo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Christensen",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Ciocci",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Contini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Daffara",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "De Marzi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Desplanches",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Di Gennaro",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Fruchtl",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Furlanetto",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Gollini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Grandi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Lezzerini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Lolic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Lysionok",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Mascardi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Padelli",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Pessina M.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Pinsoglio",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Pisseri",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Pizzignacco",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Pozzi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Renzetti",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Rossi Fr.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Samooja",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Sherri",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Siviero",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Sommariva",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Sportiello",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Stolz",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Strajnar",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Terracciano",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Tornqvist",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Torriani",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Vannucchi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Vigorito",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Vismara",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Zacchi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Zelezny",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Piana",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Radunovic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Vasquez D.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Happonen",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Russo A.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Satalino",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "P",
-    "squadra": "Bleve",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Dimarco",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Wesley",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bremer",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bastoni A.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Pavlovic",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Mancini",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Di Lorenzo",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Spence",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Akanji",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kalulu",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ndicka",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Solet",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Stones",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Dodo",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Chalobah",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bisseck",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Rrahmani",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Cambiaso",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ramon",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Scalvini",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Spinazzola",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Valle",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Zappacosta",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Hien",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gila",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kelly",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Hermoso",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Miranda J.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Carlos Augusto",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Celik",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Delprato",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Doekhi",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kempf",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Lucumi",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bellanova",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Holm",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ostigard",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Vasquez",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Jimenez",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ahanor",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Buongiorno",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Dragusin",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gabbia",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Martin",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Coco",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gutierrez",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Marcandalli",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Norton Cuffy",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Pedersen",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Pongracic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Molina N.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bernasconi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Comuzzo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gabriel",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Heggem",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kabasele",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Marusic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Provstgaard",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Romagnoli A.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Tomori",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Valeri",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Veiga D.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Walukiewicz",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Pavard",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Koulierakis",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bertola",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Circati",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "De Winter",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Djimsiti",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Moreno M.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Obert",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Olivera",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Parisi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Pedraza",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Vojvoda",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bartesaghi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Beukema",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ghilardi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Joao Mario",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kristensen T.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ranieri",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Valenti",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Zortea",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Couto",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Britschgi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gallo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Mina",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Smolcic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Athekame",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Doig",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gatti",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Helland",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kamara",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kossounou",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Marin R.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Pellegrini Lu.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Terracciano F.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Troilo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Vitik",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Zappa",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Obrador",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Cabal",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Idzes",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ismajli",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kaiki",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Oyono A.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Rensch",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Tavares",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Van der Brempt",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Viery",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bella Kotchap",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Estupinan",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Floriani",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gaspar",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Idrissi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kolasinac",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Rodriguez Ju.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Siebert",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Valentini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Zanoli",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Salah Eddine",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Haps",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Patric",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ze Pedro",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Zemura",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Angelino",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Dossena",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ebosse",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Fortini",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Lazzari",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Mangas",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Marianucci",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Schingtienne",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ziolkowski",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Birindelli",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Carboni A.",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Correia",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Delli Carri",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Monterisi",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Puczka",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Sverko",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Odenthal",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Wieteska",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Comert",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Terzic",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Favasuli",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bakker",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Calvani",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Cande",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "De Silvestri",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Lucchesi",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ndaba",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ndiaye",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Otoa",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Palma",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Posch",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Valdepenas",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Alhassane",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Cuenca A.",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Goldaniga",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Oyono J.",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Sabelli",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Diawara S.",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Akpoguma",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Mitaj",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Antov",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Casale",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Cittadini",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Mazzocchi",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Rugani",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Sagrado",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Goglichidze",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kumbulla",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bracaglia",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Corrado",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Esposito Se.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Franjic",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Seck",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Fayed",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Amey",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Arizala",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Balbo",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Biraghi",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Brorsson",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Carboni F.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gigot",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gomes A.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Jean",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kouadio",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Marcelo Vaz",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Mlacic",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Pieragnolo",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Hainaut",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bonfanti G.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ilic M.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kouassi",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Rui Modesto",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Halhal",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Aurelio",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Abankwah",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Addo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Altare",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bakoune",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Balcot",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Barbini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bordon",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Buta",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Dellavalle",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Di Bitonto",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Doucoure",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Drobnic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gallea",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Garofalo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Gelli J.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Grandu",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Junior Ligue",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kalaj",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kospo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Macchioni",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Mannini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Matturro",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Obaretin",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Odogu",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Papazov",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Perez M.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Raterink",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Reale",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Sidibe A.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Ubani",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Venturi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Vezzosi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Amoran",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Balogh",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Dembele",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Fares",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Missori",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Paz Y.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Rouhi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Veroli",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Vogliacco",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Kofler",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "D",
-    "squadra": "Bovio",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Yildiz",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mctominay",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Paz",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Calhanoglu",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pulisic",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "De Ketelaere",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Neres",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Baturina",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Rabiot",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "De Bruyne",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Anguissa",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kone M.",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Da Cunha",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mckennie",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ederson",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Modric",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Santos",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Vlasic",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Barella",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Zaccagni",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Conceicao",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Zielinski",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Perrone",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Zaniolo",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Bernardeschi",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Rowe",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Boga",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Politano",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Alajbegovic",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Thuram K.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Caqueret",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Lang",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mastantuono",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mora R.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Atta",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kone I.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Rodriguez J.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Isaksen",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Saelemaekers",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Sucic",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Locatelli",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Taylor",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Fagioli",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Loftus Cheek",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cancellieri",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Fofana",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mkhitaryan",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Odgaard",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Zalewski",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Moreira",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cristante",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mandragora",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Thorstvedt",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Addai",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Bernabe",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ferguson",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Luis Henrique",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pierotti",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pisilli",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ricci",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cambiaghi",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Frattesi",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pasalic",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Diouf",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Gaetano",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Karlstrom",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Lobotka",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Casadei",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Frendrup",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Maldini",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Samardzic",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Baldanzi",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Basic",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Coulibaly L.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "De Roon",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ekkelenkamp",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "El Aynaoui",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Koopmeiners",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Matic",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Moro",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Piotrowski",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Prati",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Sorensen",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Busio",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Dominguez B.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "NDour",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Sulemana I.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Vergara",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Volpato",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Zhegrova",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Adzic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Fabbian",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Fazzini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Keita",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Messias",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Miretti",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Traore",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ellertsson",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Oulai",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pessina",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Douglas Luiz",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Sow",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Adopo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Bondo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cataldi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Fadera",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Gilmour",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Gineitis",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Jashari",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Nicolussi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Payero",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pobega",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Sohm",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Berisha",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Brescianini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kuhn",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Milla",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Stankovic A.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Venturino",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pellegrini Lo.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Dele Bashiru",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Lipani",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Masini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Miller",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Musah",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ordonez",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Sottil",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Toure I.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Folorunsho",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ilkhan",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kvernadze",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ondrejka",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Calo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Deiola",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Gandelman",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Maleh",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Oristanio",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Rovella",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Asllani",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Aboukhlal",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Colpani",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Unai Gomez",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Winks",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Robinson J.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Belahyane",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "El Azzouzi A.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mazzitelli",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Zerbin",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Chukwueze",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Akinsanmiro",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Anjorin",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ilic",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Koutsoupias",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Perez K.",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Zarraga",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Liberali",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Lindstrom",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Amondarain",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Schmid R.",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Amorim",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cichella",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Felici",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Lovric",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ngom",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Bakola",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Chakvetadze",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ciurria",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Colombo L.",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Gelli F.",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Iannoni",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Lisman",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "El Azzouzi O.",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Boloca",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cacciamani",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cremaschi",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Dagasso",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Helgason",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Lahdo",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Massolin",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Meichtry",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Rispoli",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Comotto",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Hasa",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pafundi",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Grillitsch",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Duncan",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Bennacer",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kone B.",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Bah M.",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Bjarkason",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cajuste",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Liteta",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Przyborek",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Arthur",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ciervo",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cisse A.",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Compagnon",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cuenca H.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Doumbia C.B.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kovac",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Martins",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Fitz-Jim",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Acquah",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Akarakiri",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Albarracin",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Berardi L.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Camara A.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Lella",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Rao",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Wiafe",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Bohinen",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mazzaglia",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Berretta",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Caligara",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cinquegrano",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "D'Andrea",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Dalla Vecchia",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Deli",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Di Paolo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "El Haddad",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Fanne",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Farcomeni",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Farji",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Fofana S.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Forson",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Galassi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Galazzi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Gorter",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Grosso",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Iaccarino",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Konate A.S.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kumi",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Leone K.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mariani",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Nuamah",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ondoa",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pagano",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Panada",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Romano A.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Saco",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Sulev",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Tavernaro",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ali Jasim",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Barak",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Braunoder",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Cavuoti",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ciammaglichella",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Ghion",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Joujou",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kaba",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Kouda",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Le Borgne",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mcjannet",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Pejicic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Mout",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "C",
-    "squadra": "Luongo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Martinez L.",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Malen",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Kolo Muani",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Goncalo Ramos",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Hojlund",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Thuram",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Douvikas",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Kean",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Leao",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Scamacca",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Berardi",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Krstovic",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Davis",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Orsolini",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Diao",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Nkunku",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Pinamonti",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Simeone",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Esposito Pio",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Soule",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "David",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Dybala",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Lauriente",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Dovbyk",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Che Adams",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Lukaku",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Raspadori",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Zapata",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Esposito S.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Bonny",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Colombo",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Pellegrino",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Castro",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Stulic",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Vitinha",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Gudmundsson",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Banda",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Piccoli",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Geubbels",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Gimenez",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Ratkov",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Dallinga",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Sulemana K.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Noslin",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Ekhator",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Lucca",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Adams A.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Borrelli",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Dia",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Nzola",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Openda",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Romero D.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Kevin Carlos",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Raimondo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Buksa",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Vaz",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Yeboah",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Elphege",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Morata",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Cutrone",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Adorante",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Ghedjemis",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Giovane",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Havel",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Toure E.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Gueye",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Njie",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Bowie",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "NDri",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Gonzalez N.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Cheddira",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Kulenovic",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Varela",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Ngonge",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Almqvist",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Bayo",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Camarda",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Mendy",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Mota",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Petagna",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Rrahmani A.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Diallo O.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Alvarez",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Karlsson",
-    "ruolo": "9",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Keita B.",
-    "ruolo": "8",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Casas",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Fini",
-    "ruolo": "7",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Frigan",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Jovic M.",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Moro L.",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Benedyczak",
-    "ruolo": "6",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Milik",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Azon",
-    "ruolo": "5",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Lauberbach",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Mikolajewski",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Mutandwa",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Trepy",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Cherubini",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Mulattieri",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Pellegri",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Pierini",
-    "ruolo": "4",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Antiste",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Artistico",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Barcella",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Cichero",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Fernandes S.",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Loubao",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Okoro",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Burnete",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Lontani",
-    "ruolo": "3",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Braschi",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Debenedetti",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Laerke",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Mustapha",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Nuredini",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Toure M.",
-    "ruolo": "2",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Colley M.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Esteban",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Fumagalli",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Gabellini",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Russo F.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Serra",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Sgarbi L.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Vinciati",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Vlahovic V.",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Gabrielloni",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
-  },
-  {
-    "nome": "A",
-    "squadra": "Skjellerup",
-    "ruolo": "1",
-    "fantamedia": 6.5,
-    "titolarita": 85,
-    "pma": 10
+    "nome": "Martinez L.",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Malen",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dimarco",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Paz N.",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Thuram",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "McTominay",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Hojlund",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Calhanoglu",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ramos G.",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Orsolini",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kolo Muani",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kean",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pulisic",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Yildiz",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rabiot",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Douvikas",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Scamacca",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Baturina",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Davis K.",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mora",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Krstovic",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Da Cunha",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Leao",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Svilar",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Berardi",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zaniolo",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Molina N.",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "De Ketelaere",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Atta",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Martinez Jo.",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Barella",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "McKennie",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Wesley",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Carnesecchi",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dovbyk",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Butez",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Akanji",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Esposito F.P.",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zaccagni",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vicario",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bremer",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Maignan",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "De Bruyne",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pellegrino M.",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mancini",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Laurientè",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Simeone",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bastoni",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pavlovic",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rrahmani",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Santos A.",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dybala",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Castro S.",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vlasic",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Raspadori",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Esposito Se.",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "De Gea",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gudmundsson A.",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kalulu",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Taylor K.",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Nkunku",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "N'Dicka",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pinamonti",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Solet",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kevin Carlos",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ederson D.S.",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Samardzic",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rodriguez Je.",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Stones",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Alajbegovic",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Conceicao",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gila",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Modric",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Di Lorenzo",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Soulè",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Adams A.",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mastantuono",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Spence",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Moreira",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rowe",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Diao",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ostigard",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Baldanzi",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Colombo",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bisseck",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Meret",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zambo Anguissa",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Tourè E.",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Scalvini",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Skorupski",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ramon",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Perrone",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dodò",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zielinski",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Thuram K.",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dia",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ratkov",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Saelemaekers",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Politano",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lukaku\n\n*",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Hermoso",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Konè M.",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Thorstvedt",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bowie",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Casadei",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ekkelenkamp",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pellegrini Lo.",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Romero D.",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pasalic",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bernardeschi",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Caprile",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mandragora",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ghedjemis",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vasquez",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Di Gregorio",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cambiaso",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "David",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mandas",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cancellieri",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Isaksen",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Geubbels",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cutrone",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Konè I.",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Adams C.",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Okoye",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Chalobah T.",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Hien",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zappacosta",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lucumì",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Miranda J.",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Odgaard",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cambiaghi",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dallinga\n\n*",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mina",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dragusin",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Jimenez A.",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fagioli",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ndour",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Piccoli",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bijlow",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Norton-Cuffy",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vitinha O.",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Diouf",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sucic P.",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Celik",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Locatelli",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Falcone",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bartesaghi",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Colpani",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gutierrez\n\n*",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Spinazzola",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vergara",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Delprato",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Valeri",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Koulierakis",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cristante",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vojvoda",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Yeboah J.",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rrahmani Al.",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Couto",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Schmid",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Djimsiti\n\n*",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gaetano",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ferguson",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Obert",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fazzini",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kaiki",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Calò",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Raimondo",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Frendrup",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Carlos Augusto",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Frattesi",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bonny",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Doekhi",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Romagnoli",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Tiago Gabriel",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Stulic",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gabbia",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Tomori",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pessina",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Buongiorno",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lobotka",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Daffara",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Suzuki\n\n*",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bernabè",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Muric",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Idzes",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Volpato",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Coco",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ismajli",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Oristanio",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zapata D.",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kristensen T.",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Unai Gomez",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sow",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ahanor",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bellanova",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bernasconi",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zalewski",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sulemana K.",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Heggem",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zortea",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pobega",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Adopo",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Winks",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mutandwa",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Valle",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Caqueret",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Liberali",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Valdepenas",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Viery",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Oulai",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Monterisi",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Marcandalli",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ellertsson",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pavard",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Perin",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zhegrova",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Boga",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Tavares N.",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Marusic",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rovella",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Noslin",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gallo",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Coulibaly L.",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pierotti",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Chukwueze",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gimenez",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mangas",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Akinsanmiro",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Beukema",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Neres",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Circati\n\n*",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Nicolussi Caviglia",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Comuzzo",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kamara H.",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Karlstrom",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Stankovic F.",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bella-Kotchap",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Basic",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Obrador",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Tourè I.",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kolasinac",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Maldini",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vitik",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Holm",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Amondarain",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kofler",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zè Pedro",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Romano",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Felici",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kempf",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Milla",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Addai",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Parisi",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bracaglia",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Oyono A.",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zerbin",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Martin",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Meichtry",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Traorè Hj.",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mkhitaryan",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kelly L.",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Koopmeiners",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pedraza",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dele-Bashiru",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gaspar K.",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Veiga D.",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Berisha M.",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gandelman",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fofana Y.",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Camarda",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Thiam",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mota",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Milinkovic-Savic V.",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Olivera",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Keita M.",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ondrejka\n\n*",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Frigan",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rensch",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pisilli",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Matic",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Adzic",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bakola",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pedersen",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cacciamani",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gineitis",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Piotrowski",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Moreno M.",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Haps",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Busio",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sohm",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Perez K.",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Adorante",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Grillitsch",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Milik",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "De Roon",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Moro N.",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zappa",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Prati",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Borrelli",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mendy P.",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Smolcic I.",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Morata",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pongracic",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fabbian",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Palmisani",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Calvani",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cichella",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Koutsoupias",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kvernadze",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mitaj",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Amorim",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Havel",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Luis Henrique",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gatti",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Douglas Luiz",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cataldi",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Siebert",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ngom",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ricci S.",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Jashari",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Loftus-Cheek",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Delli Carri",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lucchesi",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Birindelli",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Folorunsho",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Giovane",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Valenti",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Almqvist",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ghilardi",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "El Aynaoui",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Walukiewicz",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Doig",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Comert",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fitz-Jim",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ilkhan",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Njie",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kulenovic",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kabasele",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bertola",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zanoli",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Arizala",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gueye",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Halhal",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Correia T.",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Robinson J.",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Terzic",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Favasuli",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kossounou",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sulemana I.",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Casale",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dominguez B.",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rodriguez Ju.",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Idrissi R.",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Deiola",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kuhn",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ranieri L.",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Joao Mario",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Brescianini",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Akpoguma",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cittadini",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gelli F.",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fini",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Messias",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Stankovic A.",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Miretti",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ekhator",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Provstgaard",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Floriani Mussolini",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "N'Dri",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "De Winter",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Athekame\n\n*",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Estupinan",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kouadio",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Carboni A.",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Colombo L.",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Varela G.",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gilmour",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lang",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lucca",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Troilo",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Britschgi",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sorensen O.",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Diallo O.",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Elphege",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Angelino\n\n*",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Candè",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Aboukhlal",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Miller L.",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Schingtienne",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sverko",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Hainaut",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Helgason",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cissè A.",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Helland",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Alhassane",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "El Azzouzi O.",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Van Der Brempt",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fadera",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Desplanches",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Hasa",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Otoa",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Puczka",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sabelli",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Masini",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Venturino",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Provedel",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lazzari",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pellegrini Lu.",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Jean",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Maleh",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Diawara S.",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Musah",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ciurria",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Petagna\n\n*",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Marin R.",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ordonez C.",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Boloca",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lipani",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Biraghi",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Palma",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ebosse",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Chakvetadze",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Buksa",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Franjic",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sagrado",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Duncan",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Aurelio",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rossi F.\n\n*",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sportiello",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Happonen",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pessina Mas.",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "De Silvestri",
+    "squadra": "BOL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ciocci\n\n*",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sherri",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Raterink\n\n*",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Liteta",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Albarracin",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Trepy",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Tornqvist",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vigorito",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Goldaniga",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cuenca A.\n\n*",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lahdo",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Azon",
+    "squadra": "COM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Christensen O.",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lezzerini",
+    "squadra": "FIO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lolic",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Amey",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gelli J.",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Oyono J.",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Corrado",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "El Azzouzi A.",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kone B.",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Sommariva",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Stolz",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vogliacco\n\n*",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Matturro",
+    "squadra": "GEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Di Gennaro",
+    "squadra": "INT",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pinsoglio",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Rugani",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cabal",
+    "squadra": "JUV",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Motta",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Renzetti",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Patric",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Belahyane",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Przyborek",
+    "squadra": "LAZ",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fruchtl\n\n*",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Samooja\n\n*",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Perez M.\n\n*",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ndaba",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gorter",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Kaba",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Fofana Sa.",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Terracciano",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Torriani",
+    "squadra": "MIL",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pizzignacco",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Strajnar",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Antov",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bakoune",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Contini",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Marianucci",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mazzocchi",
+    "squadra": "NAP",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Corvi",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ndiaye",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Carboni F.",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Cremaschi",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "De Marzi",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gollini",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ziolkowski",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vaz",
+    "squadra": "ROM",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Russo A.",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Turati",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Missori",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pieragnolo",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Iannoni",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Moro L.",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mascardi",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Paleari",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Siviero",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Ilic",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Anjorin",
+    "squadra": "TOR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Padelli",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Piana",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Mlacic",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Abankwah",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Camara A.",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Zarraga",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bayo V.",
+    "squadra": "UDI",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Grandi",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pozzi",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Gomes",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bjarkason\n\n*",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Dagasso",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lisman",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lauberbach",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Vismara",
+    "squadra": "ATA",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Satalino",
+    "squadra": "SAS",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Penev",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Pisseri",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Radunovic",
+    "squadra": "CAG",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Lontani",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Forson O.",
+    "squadra": "MON",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "De Martis",
+    "squadra": "PAR",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Montipò",
+    "squadra": "VEN",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Omar Fayed",
+    "squadra": "FRO",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
+  },
+  {
+    "nome": "Bleve",
+    "squadra": "LEC",
+    "ruolo": "A",
+    "fantamedia": 6.0,
+    "titolarita": 80,
+    "pma": 10,
+    "foto": ""
   }
 ]
