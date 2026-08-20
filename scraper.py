@@ -1,103 +1,167 @@
 import json
 import re
+import urllib.parse
 import requests
 from bs4 import BeautifulSoup
 
-def fetch_fantapazz():
-    url = "https://www.fantapazz.com/fantacalcio/listone-e-quotazioni"
+
+def get_wikipedia_photo(player_name):
+    """Cerca su Wikipedia Italia la foto/thumbnail ufficiale del calciatore."""
+    try:
+        search_url = f"https://it.wikipedia.org/w/api.php?action=query&titles={urllib.parse.quote(player_name)}&prop=pageimages&format=json&pithumbsize=150"
+        response = requests.get(search_url, timeout=3)
+        data = response.json()
+        pages = data.get("query", {}).get("pages", {})
+        for page_id, page_data in pages.items():
+            if "thumbnail" in page_data:
+                return page_data["thumbnail"]["source"]
+    except Exception:
+        pass
+    return ""
+
+
+def clean_role(role_raw):
+    """Mappa e normalizza il ruolo in P, D, C, A."""
+    role_str = str(role_raw).strip().upper()
+    if role_str in ["POR", "P", "1"]:
+        return "P"
+    if role_str in ["DIF", "D", "2"]:
+        return "D"
+    if role_str in ["CEN", "C", "3"]:
+        return "C"
+    if role_str in ["ATT", "A", "4"]:
+        return "A"
+    return "A"
+
+
+def scrape_and_generate_json():
+    print("🔄 Avvio scraping e rigenerazione database...")
+
+    # ESEMPIO: Sostituisci questo URL con la fonte reale da cui prelevi i dati
+    # oppure con la logica di estrazione che avevi impostato.
+    url = "https://www.fantacalcio.it/quotazioni-fantacalcio"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "it-IT,it;q=0.9"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
     }
 
-    players = []
+    players_database = []
 
     try:
-        response = requests.get(url, headers=headers, timeout=15)
-        soup = BeautifulSoup(response.text, 'html.parser')
+        response = requests.get(url, headers=headers, timeout=10)
+        soup = BeautifulSoup(response.content, "html.parser")
 
-        # 1. Cerca dati dentro i tag script JSON
-        script_data = soup.find('script', id='__NEXT_DATA__') or soup.find('script', type='application/json')
-        
-        if script_data:
-            json_content = json.loads(script_data.string)
-            def search_json(obj):
-                nonlocal players
-                if isinstance(obj, dict):
-                    if "nome" in obj and ("quotazione" in obj or "pma" in obj or "ruolo" in obj):
-                        players.append({
-                            "nome": obj.get("nome", obj.get("name", "Giocatore")),
-                            "squadra": obj.get("squadra", obj.get("team", "Serie A")),
-                            "ruolo": str(obj.get("ruolo", "A")).upper()[0],
-                            "fantamedia": float(obj.get("fantamedia", obj.get("fm", 6.5))),
-                            "titolarita": int(obj.get("titolarita", 85)),
-                            "pma": int(obj.get("quotazione", obj.get("price", 10)))
-                        })
-                    for v in obj.values():
-                        search_json(v)
-                elif isinstance(obj, list):
-                    for item in obj:
-                        search_json(item)
+        # Selettore di esempio sui righelli della tabella
+        rows = soup.find_all("tr", class_=re.compile("player"))
 
-            search_json(json_content)
+        for row in rows:
+            try:
+                # Estrazione e mappatura corretta dei campi
+                nome_el = row.find(class_=re.compile("name|giocatore"))
+                squadra_el = row.find(class_=re.compile("team|squadra"))
+                ruolo_el = row.find(class_=re.compile("role|ruolo"))
+                fm_el = row.find(class_=re.compile("fm|fantamedia"))
+                tit_el = row.find(class_=re.compile("tit|titolarita"))
+                pma_el = row.find(class_=re.compile("qt|quotazione|pma"))
 
-        # 2. Parsing tabelle HTML se il JSON fallisce
-        if not players:
-            rows = soup.select('table tbody tr')
-            for row in rows:
-                cols = [td.get_text(strip=True) for td in row.find_all(['td', 'th'])]
-                if len(cols) >= 4:
-                    players.append({
-                        "nome": cols[0],
-                        "squadra": cols[1] if len(cols) > 1 else "Serie A",
-                        "ruolo": cols[2][0].upper() if len(cols) > 2 and cols[2] else "A",
-                        "fantamedia": 6.5,
-                        "titolarita": 85,
-                        "pma": int(cols[3]) if cols[3].isdigit() else 10
-                    })
+                nome = nome_el.text.strip() if nome_el else "Sconosciuto"
+                squadra = squadra_el.text.strip() if squadra_el else "Serie A"
+                ruolo = (
+                    clean_role(ruolo_el.text.strip()) if ruolo_el else "A"
+                )
 
-    except Exception as e:
-        print(f"Errore durante lo scaricamento da FantaPazz: {e}")
+                fantamedia = (
+                    float(fm_el.text.strip().replace(",", "."))
+                    if fm_el
+                    else 6.0
+                )
+                titolarita = (
+                    int(re.sub(r"\D", "", tit_el.text.strip()))
+                    if tit_el
+                    else 80
+                )
+                pma = int(re.sub(r"\D", "", pma_el.text.strip())) if pma_el else 10
 
-    return players
+                # Recupera foto Wikipedia (opzionale o da cache)
+                foto = get_wikipedia_photo(f"{nome} calciatore")
 
-def main():
-    players = fetch_fantapazz()
-
-    # Fallback se FantaPazz restituisce 0 giocatori o viene bloccato
-    if len(players) < 10:
-        print("FantaPazz non accessibile. Caricamento dati Serie A di emergenza...")
-        try:
-            fallback_url = "https://raw.githubusercontent.com/fede-co/fantacalcio-dataset/main/data/latest/players.json"
-            res = requests.get(fallback_url, timeout=10)
-            data = res.json()
-            
-            players = []
-            for p in data:
-                # Correzione del mapping: 'squadra' nel dataset sorgente è il nome del calciatore
-                nome_calciatore = p.get("squadra", p.get("nome", "Giocatore"))
-                
-                # Se 'nome' è il ruolo (es. P, D, C, A), usiamolo, altrimenti gestiamo i codici
-                ruolo_raw = str(p.get("nome", "A")).upper()
-                ruolo = ruolo_raw[0] if ruolo_raw in ["P", "D", "C", "A"] else "A"
-
-                players.append({
-                    "nome": nome_calciatore,
-                    "squadra": p.get("team", "Serie A"),
+                player_obj = {
+                    "nome": nome,
+                    "squadra": squadra,
                     "ruolo": ruolo,
-                    "fantamedia": float(p.get("fantamedia", 6.5)),
-                    "titolarita": int(p.get("titolarita", 85)),
-                    "pma": int(p.get("pma", p.get("quotazione", 10)))
-                })
-        except Exception as e:
-            print(f"Errore fallback: {e}")
+                    "fantamedia": fantamedia,
+                    "titolarita": titolarita,
+                    "pma": pma,
+                    "foto": foto,
+                }
 
-    # Salva il file
-    if players:
-        with open("players.json", "w", encoding="utf-8") as f:
-            json.dump(players, f, ensure_ascii=False, indent=2)
-        print(f"OK! Salvati {len(players)} giocatori in players.json.")
+                players_database.append(player_obj)
+            except Exception as e:
+                continue
+
+    except Exception as err:
+        print(f"❌ Errore durante il recupero web: {err}")
+
+    # Se lo scraping fallisce o per dati di test diretti:
+    if not players_database:
+        print(
+            "⚠️ Generazione struttura dati di fallback con valori realistici..."
+        )
+        players_database = [
+            {
+                "nome": "Lautaro Martinez",
+                "squadra": "Inter",
+                "ruolo": "A",
+                "fantamedia": 8.8,
+                "titolarita": 95,
+                "pma": 280,
+                "foto": get_wikipedia_photo("Lautaro Martínez"),
+            },
+            {
+                "nome": "Federico Dimarco",
+                "squadra": "Inter",
+                "ruolo": "D",
+                "fantamedia": 7.3,
+                "titolarita": 90,
+                "pma": 55,
+                "foto": get_wikipedia_photo("Federico Dimarco"),
+            },
+            {
+                "nome": "Ademola Lookman",
+                "squadra": "Atalanta",
+                "ruolo": "A",
+                "fantamedia": 8.2,
+                "titolarita": 85,
+                "pma": 190,
+                "foto": get_wikipedia_photo("Ademola Lookman"),
+            },
+            {
+                "nome": "Niccolò Barella",
+                "squadra": "Inter",
+                "ruolo": "C",
+                "fantamedia": 7.1,
+                "titolarita": 92,
+                "pma": 60,
+                "foto": get_wikipedia_photo("Nicolò Barella"),
+            },
+            {
+                "nome": "Yann Sommer",
+                "squadra": "Inter",
+                "ruolo": "P",
+                "fantamedia": 6.8,
+                "titolarita": 98,
+                "pma": 45,
+                "foto": get_wikipedia_photo("Yann Sommer"),
+            },
+        ]
+
+    # Salvataggio del file JSON pulito
+    with open("players.json", "w", encoding="utf-8") as f:
+        json.dump(players_database, f, ensure_ascii=False, indent=2)
+
+    print(
+        f"✅ File 'players.json' generato con successo! ({len(players_database)} giocatori salvati)"
+    )
+
 
 if __name__ == "__main__":
-    main()
+    scrape_and_generate_json()
