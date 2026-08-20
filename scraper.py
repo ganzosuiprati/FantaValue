@@ -17,12 +17,11 @@ def fetch_fantapazz():
         response = requests.get(url, headers=headers, timeout=15)
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # 1. Cerca dati dentro i tag script JSON (tipico di Next.js / Nuxt usati da FantaPazz)
+        # 1. Cerca dati dentro i tag script JSON
         script_data = soup.find('script', id='__NEXT_DATA__') or soup.find('script', type='application/json')
         
         if script_data:
             json_content = json.loads(script_data.string)
-            # Ricerca ricorsiva nell'albero JSON per trovare l'array dei giocatori
             def search_json(obj):
                 nonlocal players
                 if isinstance(obj, dict):
@@ -43,7 +42,7 @@ def fetch_fantapazz():
 
             search_json(json_content)
 
-        # 2. Se l'estrazione JSON fallisce, prova il parsing delle tabelle HTML
+        # 2. Parsing tabelle HTML se il JSON fallisce
         if not players:
             rows = soup.select('table tbody tr')
             for row in rows:
@@ -66,25 +65,35 @@ def fetch_fantapazz():
 def main():
     players = fetch_fantapazz()
 
-    # Salvagente: Se FantaPazz blocca le richieste o restituisce 0 giocatori, usa il listone Serie A aggiornato
+    # Fallback se FantaPazz restituisce 0 giocatori o viene bloccato
     if len(players) < 10:
-        print("FantaPazz non accessibile o protetto da anti-bot. Caricamento dati Serie A di emergenza...")
+        print("FantaPazz non accessibile. Caricamento dati Serie A di emergenza...")
         try:
             fallback_url = "https://raw.githubusercontent.com/fede-co/fantacalcio-dataset/main/data/latest/players.json"
             res = requests.get(fallback_url, timeout=10)
             data = res.json()
-            players = [{
-                "nome": p.get("nome", p.get("name", "")),
-                "squadra": p.get("squadra", p.get("team", "")),
-                "ruolo": str(p.get("ruolo", "A")).upper()[0],
-                "fantamedia": float(p.get("fantamedia", 6.0)),
-                "titolarita": int(p.get("titolarita", 80)),
-                "pma": int(p.get("quotazione", 10))
-            } for p in data]
+            
+            players = []
+            for p in data:
+                # Correzione del mapping: 'squadra' nel dataset sorgente è il nome del calciatore
+                nome_calciatore = p.get("squadra", p.get("nome", "Giocatore"))
+                
+                # Se 'nome' è il ruolo (es. P, D, C, A), usiamolo, altrimenti gestiamo i codici
+                ruolo_raw = str(p.get("nome", "A")).upper()
+                ruolo = ruolo_raw[0] if ruolo_raw in ["P", "D", "C", "A"] else "A"
+
+                players.append({
+                    "nome": nome_calciatore,
+                    "squadra": p.get("team", "Serie A"),
+                    "ruolo": ruolo,
+                    "fantamedia": float(p.get("fantamedia", 6.5)),
+                    "titolarita": int(p.get("titolarita", 85)),
+                    "pma": int(p.get("pma", p.get("quotazione", 10)))
+                })
         except Exception as e:
             print(f"Errore fallback: {e}")
 
-    # Salva sempre un file valido
+    # Salva il file
     if players:
         with open("players.json", "w", encoding="utf-8") as f:
             json.dump(players, f, ensure_ascii=False, indent=2)
