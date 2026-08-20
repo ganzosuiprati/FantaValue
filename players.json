@@ -616,6 +616,14 @@
     "pma": 10
   },
   {
+    "nome": "P",
+    "squadra": "Bleve",
+    "ruolo": "1",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
     "nome": "D",
     "squadra": "Dimarco",
     "ruolo": "4",
@@ -2034,6 +2042,14 @@
   {
     "nome": "D",
     "squadra": "Seck",
+    "ruolo": "3",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "D",
+    "squadra": "Fayed",
     "ruolo": "3",
     "fantamedia": 6.5,
     "titolarita": 85,
@@ -3554,6 +3570,14 @@
   {
     "nome": "C",
     "squadra": "Sottil",
+    "ruolo": "1",
+    "fantamedia": 6.5,
+    "titolarita": 85,
+    "pma": 10
+  },
+  {
+    "nome": "C",
+    "squadra": "Toure I.",
     "ruolo": "1",
     "fantamedia": 6.5,
     "titolarita": 85,
