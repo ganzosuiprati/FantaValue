@@ -39,18 +39,18 @@
     .pes-table tr:nth-child(even) { background: rgba(255, 255, 255, 0.03); }
     .pes-table tr:hover { background: rgba(0, 255, 204, 0.15); }
     .player-img {
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       object-fit: cover;
       border-radius: 50%;
-      border: 1px solid #00ffcc;
+      border: 2px solid #00ffcc;
     }
   </style>
 </head>
 <body class="min-h-screen p-2 md:p-6">
 
-  <!-- BANNER CREDITI -->
-  <div class="max-w-5xl mx-auto mb-3 bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 border border-cyan-400/40 p-2 text-center rounded flex items-center justify-between px-4">
+  <!-- BANNER INTRODUTTIVO -->
+  <div class="max-w-7xl mx-auto mb-3 bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 border border-cyan-400/40 p-2 text-center rounded flex items-center justify-between px-4">
     <span class="pes-font text-[10px] text-yellow-300">⚡ FANTA-VALUE ENGINE</span>
     <span class="text-sm font-bold tracking-wider text-slate-200">
       CREATED BY <span class="text-cyan-400 font-black">FRANCESCO COPPOLA</span> 
@@ -58,7 +58,7 @@
     </span>
   </div>
 
-  <header class="max-w-5xl mx-auto mb-6 flex justify-between items-center border-b-2 border-cyan-400 pb-3">
+  <header class="max-w-7xl mx-auto mb-6 flex justify-between items-center border-b-2 border-cyan-400 pb-3">
     <div class="pes-header px-6 py-1 text-white shadow-lg">
       <h1 class="pes-font text-lg md:text-xl tracking-tighter uppercase italic">FANTA-VALUE <span class="text-yellow-300">2000</span></h1>
     </div>
@@ -68,60 +68,92 @@
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto space-y-5">
-    <section class="pes-card p-4 rounded-none">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4 text-lg">
-        <div>
-          <label class="block text-cyan-400 font-bold uppercase text-sm">PARTECIPANTI</label>
-          <input type="number" id="numPartecipanti" value="10" min="4" max="16" class="w-full bg-slate-900 border-2 border-cyan-500 text-yellow-300 font-black text-center text-xl p-1 focus:outline-none focus:border-pink-500">
-        </div>
-        <div>
-          <label class="block text-cyan-400 font-bold uppercase text-sm">BUDGET TOTALE</label>
-          <input type="number" id="budgetSingolo" value="500" min="100" max="1000" class="w-full bg-slate-900 border-2 border-cyan-500 text-yellow-300 font-black text-center text-xl p-1 focus:outline-none focus:border-pink-500">
-        </div>
-        <div class="col-span-2">
-          <label class="block text-cyan-400 font-bold uppercase text-sm">RICERCA GIOCATORE / SQUADRA</label>
-          <input type="text" id="searchInput" placeholder="ES: LAUTARO, INTER, NAPOLI..." class="w-full bg-slate-900 border-2 border-cyan-500 text-white font-bold uppercase p-1 px-3 text-lg focus:outline-none focus:border-pink-500 placeholder-slate-600">
-        </div>
-      </div>
+  <main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6">
 
-      <div class="flex gap-2 justify-center my-3 text-xl font-bold">
-        <button onclick="setRole('ALL')" id="btn-ALL" class="pes-btn bg-cyan-400 text-slate-950 px-6 py-1 font-black">TUTTI</button>
-        <button onclick="setRole('P')" id="btn-P" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">POR</button>
-        <button onclick="setRole('D')" id="btn-D" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">DIF</button>
-        <button onclick="setRole('C')" id="btn-C" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">CEN</button>
-        <button onclick="setRole('A')" id="btn-A" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">ATT</button>
-      </div>
-    </section>
+    <!-- SEZIONE PRINCIPALE: FILTRI E LISTA -->
+    <div class="lg:col-span-3 space-y-5">
+      <section class="pes-card p-4 rounded-none">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4 text-lg">
+          <div>
+            <label class="block text-cyan-400 font-bold uppercase text-sm">PARTECIPANTI</label>
+            <input type="number" id="numPartecipanti" value="10" min="4" max="16" class="w-full bg-slate-900 border-2 border-cyan-500 text-yellow-300 font-black text-center text-xl p-1 focus:outline-none focus:border-pink-500">
+          </div>
+          <div>
+            <label class="block text-cyan-400 font-bold uppercase text-sm">BUDGET TOTALE</label>
+            <input type="number" id="budgetSingolo" value="1000" min="100" max="2000" step="50" class="w-full bg-slate-900 border-2 border-cyan-500 text-yellow-300 font-black text-center text-xl p-1 focus:outline-none focus:border-pink-500">
+          </div>
+          <div class="col-span-2">
+            <label class="block text-cyan-400 font-bold uppercase text-sm">RICERCA GIOCATORE / SQUADRA</label>
+            <input type="text" id="searchInput" placeholder="ES: LAUTARO, INTER, DIMARCO..." class="w-full bg-slate-900 border-2 border-cyan-500 text-white font-bold uppercase p-1 px-3 text-lg focus:outline-none focus:border-pink-500 placeholder-slate-600">
+          </div>
+        </div>
 
-    <section class="pes-card p-2 md:p-4 rounded-none">
-      <div class="flex justify-between items-center mb-2 px-2 text-xl">
-        <span class="text-pink-500 font-bold uppercase tracking-wider">LISTA CALCIATORI DISPONIBILI</span>
-        <span id="playerCount" class="pes-font text-xs text-yellow-300">0 GIOCATORI</span>
-      </div>
+        <div class="flex gap-2 justify-center my-3 text-xl font-bold">
+          <button onclick="setRole('ALL')" id="btn-ALL" class="pes-btn bg-cyan-400 text-slate-950 px-6 py-1 font-black">TUTTI</button>
+          <button onclick="setRole('P')" id="btn-P" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">POR</button>
+          <button onclick="setRole('D')" id="btn-D" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">DIF</button>
+          <button onclick="setRole('C')" id="btn-C" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">CEN</button>
+          <button onclick="setRole('A')" id="btn-A" class="pes-btn bg-slate-800 text-cyan-400 px-5 py-1 border border-cyan-500">ATT</button>
+        </div>
+      </section>
 
-      <div class="overflow-x-auto">
-        <table class="w-full text-left pes-table text-xl">
-          <thead>
-            <tr class="uppercase text-center">
-              <th class="p-2 text-left">GIOCATORE</th>
-              <th class="p-2">SQUADRA</th>
-              <th class="p-2">RUOLO</th>
-              <th class="p-2">FM</th>
-              <th class="p-2">TIT%</th>
-              <th class="p-2 text-yellow-300 font-black">PREZZO MAX</th>
-              <th class="p-2">VALUTAZIONE</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody" class="text-center divide-y divide-slate-800">
-          </tbody>
-        </table>
-      </div>
-    </section>
+      <section class="pes-card p-2 md:p-4 rounded-none">
+        <div class="flex justify-between items-center mb-2 px-2 text-xl">
+          <span class="text-pink-500 font-bold uppercase tracking-wider">LISTA CALCIATORI DISPONIBILI</span>
+          <span id="playerCount" class="pes-font text-xs text-yellow-300">0 GIOCATORI</span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left pes-table text-xl">
+            <thead>
+              <tr class="uppercase text-center">
+                <th class="p-2 text-left">GIOCATORE</th>
+                <th class="p-2">SQUADRA</th>
+                <th class="p-2">RUOLO</th>
+                <th class="p-2">FM</th>
+                <th class="p-2">TIT%</th>
+                <th class="p-2 text-yellow-300 font-black">PREZZO MAX</th>
+                <th class="p-2">STATO</th>
+                <th class="p-2">AZIONI</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody" class="text-center divide-y divide-slate-800">
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- PANNELLO LATERALE: SIMULATORE MIA ROSA -->
+    <div class="space-y-5">
+      <section class="pes-card p-4 rounded-none sticky top-4">
+        <h2 class="text-2xl font-black text-cyan-400 uppercase border-b border-cyan-500 pb-2 mb-3 flex justify-between items-center">
+          <span>LA MIA ROSA</span>
+          <span id="myTeamCount" class="text-sm text-yellow-300 pes-font">0/25</span>
+        </h2>
+
+        <div class="mb-4 bg-slate-900 p-3 border border-slate-700 space-y-2 text-lg">
+          <div class="flex justify-between">
+            <span class="text-slate-400">CREDITI RIMANENTI:</span>
+            <span id="remainingBudget" class="font-black text-yellow-300 text-2xl">1000 CR</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-400">SPESI TOTALE:</span>
+            <span id="spentBudget" class="font-bold text-pink-500">0 CR</span>
+          </div>
+        </div>
+
+        <div id="myTeamList" class="space-y-2 max-h-[60vh] overflow-y-auto pr-1 text-base">
+          <p class="text-slate-500 text-center italic py-4">Nessun giocatore acquistato.</p>
+        </div>
+      </section>
+    </div>
+
   </main>
 
   <script>
     let rawPlayers = [];
+    let myTeam = [];
     let activeRole = 'ALL';
 
     const API_URL = './players.json';
@@ -145,14 +177,28 @@
         const data = await res.json();
         if (!Array.isArray(data)) throw new Error("Formato JSON non valido");
 
-        rawPlayers = data.map(p => {
-          // Gestione dinamica chiave/valore
-          const nomeVal = p.nome || p.squadra || 'Calciatore';
-          const squadraVal = (p.squadra && p.squadra !== nomeVal && isNaN(p.squadra)) ? p.squadra : (p.club || p.team || 'Serie A');
+        rawPlayers = data.map((p, idx) => {
+          // Gestione di ripiego se nome e squadra nel file originario risultano scambiati
+          let nomeVal = p.nome;
+          let squadraVal = p.squadra;
+
+          if (!squadraVal || squadraVal.toUpperCase() === 'SERIE A') {
+            if (p.club) squadraVal = p.club;
+            else if (p.team) squadraVal = p.team;
+            else squadraVal = "Serie A";
+          }
+
+          // Se il nome contiene solo 1 o 2 lettere (es. 'P', 'D'), scambia le variabili
+          if (nomeVal && nomeVal.length <= 2 && squadraVal.length > 2) {
+            const temp = nomeVal;
+            nomeVal = squadraVal;
+            squadraVal = "Serie A";
+          }
 
           return {
-            nome: String(nomeVal).trim(),
-            squadra: String(squadraVal).trim(),
+            id: idx,
+            nome: String(nomeVal || 'Giocatore').trim(),
+            squadra: String(squadraVal || 'Serie A').trim(),
             ruolo: normalizzaRuolo(p.ruolo || p.role),
             fantamedia: parseFloat(String(p.fantamedia || p.fm || 6.0).replace(',', '.')) || 6.0,
             titolarita: parseInt(String(p.titolarita || p.starter || 80).replace('%', '')) || 80,
@@ -184,42 +230,42 @@
 
     function calculatePrices() {
       const partecipanti = parseInt(document.getElementById('numPartecipanti').value) || 10;
-      const budgetSingolo = parseInt(document.getElementById('budgetSingolo').value) || 500;
+      const budgetSingolo = parseInt(document.getElementById('budgetSingolo').value) || 1000;
 
-      // Budget per reparto in percentuale sul budget del singolo fantallenatore
-      const budgetReparto = {
-        'A': budgetSingolo * 0.50, // 50% per l'attacco
-        'C': budgetSingolo * 0.25, // 25% per il centrocampo
-        'D': budgetSingolo * 0.15, // 15% per la difesa
-        'P': budgetSingolo * 0.10  // 10% per i portieri
-      };
+      // Budget relativo assegnato al reparto per singolo partecipante
+      const repartoBudgetRatio = { 'A': 0.50, 'C': 0.25, 'D': 0.15, 'P': 0.10 };
 
-      // Calcolo indice di valore (FM + Titolarità)
-      const efsScores = rawPlayers.map(p => {
-        const bonusFM = Math.max(0, p.fantamedia - 5.5); 
-        const efs = Math.pow(bonusFM, 2.5) * (p.titolarita / 100);
-        return { ...p, efs };
+      // Moltiplicatore di scarsità basato sul numero di partecipanti alla lega
+      const scarcityMultiplier = 1 + ((partecipanti - 8) * 0.03);
+
+      // Calcolo dello Score Ponderato per ogni calciatore
+      const scoredPlayers = rawPlayers.map(p => {
+        const bonusFM = Math.max(0, p.fantamedia - 5.0);
+        const score = Math.pow(bonusFM, 2.2) * (p.titolarita / 100);
+        return { ...p, score };
       });
 
-      const maxEfsPerRuolo = { 'A': 0, 'C': 0, 'D': 0, 'P': 0 };
-      efsScores.forEach(p => {
-        if (p.efs > (maxEfsPerRuolo[p.ruolo] || 0)) maxEfsPerRuolo[p.ruolo] = p.efs;
+      // Ricerca punteggio massimo per reparto
+      const maxScorePerRole = { 'A': 0.1, 'C': 0.1, 'D': 0.1, 'P': 0.1 };
+      scoredPlayers.forEach(p => {
+        if (p.score > maxScorePerRole[p.ruolo]) maxScorePerRole[p.ruolo] = p.score;
       });
 
-      return efsScores.map(p => {
-        const maxRuolo = maxEfsPerRuolo[p.ruolo] || 1;
-        const percentualeQuota = p.efs / maxRuolo; // da 0 a 1 rispetto al top del ruolo
+      return scoredPlayers.map(p => {
+        const topRatio = p.score / maxScorePerRole[p.ruolo];
+        const budgetReparto = budgetSingolo * repartoBudgetRatio[p.ruolo];
+        
+        // Calcolo del prezzo massimo teorico consono al budget inserito
+        let pMax = Math.round(budgetReparto * topRatio * 0.65 * scarcityMultiplier);
+        pMax = Math.max(1, pMax);
 
-        // Il Top Player di un reparto prende fino al ~60-70% del budget destinato a quel reparto
-        let pMaxSingolo = Math.round((budgetReparto[p.ruolo] || 0) * percentualeQuota * 0.65);
-        pMaxSingolo = Math.max(1, pMaxSingolo);
-
-        let status = 'EQUO';
+        // Valutazione rispetto al prezzo medio di asta proporzionato (PMA)
         const pmaScalato = Math.round((p.pma / 500) * budgetSingolo);
-        if (pmaScalato > pMaxSingolo * 1.25) status = 'OVERPAY';
-        else if (pmaScalato < pMaxSingolo * 0.75) status = 'AFFARE';
+        let status = 'EQUO';
+        if (pmaScalato > pMax * 1.2) status = 'OVERPAY';
+        else if (pmaScalato < pMax * 0.8) status = 'AFFARE';
 
-        return { ...p, pMaxSingolo, status };
+        return { ...p, pMax, status };
       });
     }
 
@@ -233,7 +279,7 @@
         return matchSearch && matchRole;
       });
 
-      filtered.sort((a, b) => b.pMaxSingolo - a.pMaxSingolo);
+      filtered.sort((a, b) => b.pMax - a.pMax);
 
       document.getElementById('playerCount').innerText = `${filtered.length} GIOCATORI`;
 
@@ -243,16 +289,17 @@
       filtered.forEach(p => {
         let badge = '<span class="bg-slate-700 text-slate-300 px-2 py-0.5 text-xs font-bold">EQUO</span>';
         if (p.status === 'OVERPAY') {
-          badge = '<span class="bg-red-600 text-white px-2 py-0.5 text-xs font-black tracking-widest border border-red-400">RISCHIO</span>';
+          badge = '<span class="bg-red-600 text-white px-2 py-0.5 text-xs font-black tracking-wider">RISCHIO</span>';
         } else if (p.status === 'AFFARE') {
-          badge = '<span class="bg-emerald-500 text-slate-950 px-2 py-0.5 text-xs font-black tracking-widest border border-emerald-300">🔥 AFFARE</span>';
+          badge = '<span class="bg-emerald-500 text-slate-950 px-2 py-0.5 text-xs font-black tracking-wider">🔥 AFFARE</span>';
         }
 
-        // Generatore di Avatar Fallback se la foto Wikipedia non c'è
         const initial = p.nome.charAt(0).toUpperCase();
         const imgTag = p.foto 
-          ? `<img src="${p.foto}" class="player-img" alt="${p.nome}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(p.nome)}&background=0d1117&color=00ffcc'">`
-          : `<div class="player-img bg-slate-800 text-cyan-400 font-bold flex items-center justify-center border border-cyan-400">${initial}</div>`;
+          ? `<img src="${p.foto}" class="player-img" alt="${p.nome}" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(p.nome)}&background=0d1117&color=00ffcc'">`
+          : `<div class="player-img bg-slate-800 text-cyan-400 font-bold flex items-center justify-center">${initial}</div>`;
+
+        const isPurchased = myTeam.some(item => item.id === p.id);
 
         const tr = document.createElement('tr');
         tr.innerHTML = `
@@ -264,10 +311,74 @@
           <td class="p-2 font-bold text-cyan-400">${p.ruolo}</td>
           <td class="p-2 text-slate-200 font-bold">${p.fantamedia.toFixed(1)}</td>
           <td class="p-2 text-slate-300">${p.titolarita}%</td>
-          <td class="p-2 text-yellow-300 font-black text-2xl">${p.pMaxSingolo} <span class="text-xs text-slate-400">CR</span></td>
+          <td class="p-2 text-yellow-300 font-black text-2xl">${p.pMax} <span class="text-xs text-slate-400">CR</span></td>
           <td class="p-2">${badge}</td>
+          <td class="p-2">
+            <button onclick="buyPlayer(${p.id}, ${p.pMax})" ${isPurchased ? 'disabled' : ''} class="px-3 py-1 text-sm font-bold uppercase transition ${isPurchased ? 'bg-slate-700 text-slate-500 cursor-not-allowed' : 'bg-pink-600 hover:bg-pink-500 text-white'}">
+              ${isPurchased ? 'PRESO' : '+ PRENDI'}
+            </button>
+          </td>
         `;
         tbody.appendChild(tr);
+      });
+
+      updateMyTeamUI();
+    }
+
+    function buyPlayer(id, suggestedPrice) {
+      const player = rawPlayers.find(p => p.id === id);
+      if (!player) return;
+
+      const priceInput = prompt(`A quanti crediti hai acquistato ${player.nome}?`, suggestedPrice);
+      if (priceInput === null) return;
+
+      const pricePaid = parseInt(priceInput) || 0;
+      myTeam.push({ ...player, pricePaid, suggestedPrice });
+      renderTable();
+    }
+
+    function removePlayer(id) {
+      myTeam = myTeam.filter(p => p.id !== id);
+      renderTable();
+    }
+
+    function updateMyTeamUI() {
+      const budgetSingolo = parseInt(document.getElementById('budgetSingolo').value) || 1000;
+      const totalSpent = myTeam.reduce((acc, p) => acc + p.pricePaid, 0);
+      const remaining = budgetSingolo - totalSpent;
+
+      document.getElementById('spentBudget').innerText = `${totalSpent} CR`;
+      document.getElementById('remainingBudget').innerText = `${remaining} CR`;
+      document.getElementById('myTeamCount').innerText = `${myTeam.length}/25`;
+
+      const listContainer = document.getElementById('myTeamList');
+      if (myTeam.length === 0) {
+        listContainer.innerHTML = `<p class="text-slate-500 text-center italic py-4">Nessun giocatore acquistato.</p>`;
+        return;
+      }
+
+      listContainer.innerHTML = '';
+      myTeam.forEach(p => {
+        const diff = p.suggestedPrice - p.pricePaid;
+        let diffLabel = `<span class="text-slate-400">(${diff >= 0 ? '+' : ''}${diff} CR)</span>`;
+
+        const div = document.createElement('div');
+        div.className = "flex justify-between items-center bg-slate-900/80 p-2 border-l-4 border-cyan-400";
+        div.innerHTML = `
+          <div>
+            <span class="font-bold text-cyan-400 border border-cyan-400/40 px-1 text-xs mr-1">${p.ruolo}</span>
+            <span class="font-bold text-white uppercase">${p.nome}</span>
+            <span class="text-xs text-slate-400 block">${p.squadra}</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="text-right">
+              <span class="font-black text-yellow-300 block text-lg">${p.pricePaid} CR</span>
+              ${diffLabel}
+            </div>
+            <button onclick="removePlayer(${p.id})" class="text-red-500 hover:text-red-400 font-bold px-1 text-lg">✕</button>
+          </div>
+        `;
+        listContainer.appendChild(div);
       });
     }
 
