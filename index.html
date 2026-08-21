@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Pipita FantaValue</title>
+  <title>El Pipita FantaValue 2026</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -22,13 +22,28 @@
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Rajdhani', sans-serif; }
     body { background-color: var(--bg-color); color: var(--text); padding: 20px; }
 
-    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--cyan); padding-bottom: 10px; box-shadow: var(--glow-cyan); }
-    header h1 { font-family: 'Orbitron', sans-serif; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; font-size: 24px; text-shadow: var(--glow-cyan); display: flex; align-items: center; gap: 10px; }
-    .dev-info { text-align: right; font-size: 12px; color: var(--text-muted); font-family: 'Orbitron', sans-serif; }
-    .dev-info a { color: var(--magenta); text-decoration: none; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--cyan); padding-bottom: 12px; box-shadow: var(--glow-cyan); }
+    
+    .brand-container { display: flex; align-items: center; gap: 15px; }
+    .cyber-logo { width: 45px; height: 45px; filter: drop-shadow(0 0 8px var(--cyan)); }
+    
+    header h1 { font-family: 'Orbitron', sans-serif; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; font-size: 24px; text-shadow: var(--glow-cyan); }
+    
+    /* Box Credit Ridisegnato */
+    .dev-badge {
+      background: linear-gradient(135deg, rgba(0,240,255,0.1), rgba(255,0,85,0.1));
+      border: 1px solid var(--cyan);
+      border-radius: 6px;
+      padding: 6px 12px;
+      text-align: right;
+      box-shadow: inset 0 0 10px rgba(0,240,255,0.2);
+    }
+    .dev-badge .dev-title { font-size: 10px; color: var(--text-muted); font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+    .dev-badge .dev-name { font-size: 13px; font-weight: 700; color: #fff; font-family: 'Orbitron', sans-serif; }
+    .dev-badge a { color: var(--magenta); text-decoration: none; font-weight: bold; font-size: 11px; transition: 0.2s; }
+    .dev-badge a:hover { text-shadow: var(--glow-magenta); color: #fff; }
 
-    .main-container { display: grid; grid-template-columns: 2.2fr 1fr; gap: 20px; }
-
+    .main-container { display: grid; grid-template-columns: 2.3fr 1fr; gap: 20px; }
     .card { background: var(--panel-bg); border: 1px solid var(--cyan); border-radius: 6px; padding: 15px; box-shadow: inset 0 0 15px rgba(0,240,255,0.05); }
 
     /* Controls */
@@ -76,10 +91,19 @@
 <body>
 
   <header>
-    <h1>⚡ EL PIPITA FANTAVALUE ⚡</h1>
-    <div class="dev-info">
-      Dev: Francesco Coppola<br>
-      Instagram: <a href="https://instagram.com/ganzosuiprati" target="_blank">@ganzosuiprati</a>
+    <div class="brand-container">
+      <!-- Logo SVG Calcistico Neon -->
+      <svg class="cyber-logo" viewBox="0 0 100 100">
+        <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="#00f0ff" stroke-width="4"/>
+        <circle cx="50" cy="50" r="22" fill="none" stroke="#ff0055" stroke-width="3"/>
+        <polygon points="50,38 60,45 56,57 44,57 40,45" fill="#00f0ff"/>
+      </svg>
+      <h1>EL PIPITA FANTAVALUE</h1>
+    </div>
+    <div class="dev-badge">
+      <div class="dev-title">Developer & Lead</div>
+      <div class="dev-name">Francesco Coppola</div>
+      <a href="https://instagram.com/ganzosuiprati" target="_blank">@ganzosuiprati</a>
     </div>
   </header>
 
@@ -87,11 +111,11 @@
     <div class="card">
       <div class="controls-grid">
         <div class="input-group">
-          <label>Partecipanti</label>
+          <label>Partecipanti Lega</label>
           <input type="number" id="numPlayers" value="10" onchange="renderPlayers()">
         </div>
         <div class="input-group">
-          <label>Budget Totale</label>
+          <label>Budget Totale (CR)</label>
           <input type="number" id="totalBudget" value="1000" onchange="renderPlayers()">
         </div>
         <div class="search-box">
@@ -109,7 +133,7 @@
       </div>
 
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px;">
-        <h3 style="color: var(--magenta); font-family:'Orbitron'; font-size: 16px;">LISTA CALCIATORI REALI</h3>
+        <h3 style="color: var(--magenta); font-family:'Orbitron'; font-size: 16px;">LISTONE SERIE A 2026</h3>
         <span id="playerCount" style="color: var(--cyan); font-family:'Orbitron'; font-weight:bold;">0 GIOCATORI</span>
       </div>
 
@@ -152,7 +176,7 @@
   <div class="modal-overlay" id="buyModal">
     <div class="modal-box">
       <h2 id="modalPlayerName">NOME GIOCATORE</h2>
-      <div style="font-size:13px; color:var(--text-muted);">Prezzo Consigliato: <span id="modalTargetPrice" style="color:var(--cyan); font-weight:bold;">0 CR</span></div>
+      <div style="font-size:13px; color:var(--text-muted);">Target Ricalcolato: <span id="modalTargetPrice" style="color:var(--cyan); font-weight:bold;">0 CR</span></div>
       <input type="number" id="paidPriceInput" class="modal-input" placeholder="Prezzo pagato..." oninput="updatePriceEvaluation()">
       <div id="priceEvaluationBadge" class="price-badge badge-equo">⚖️ INSERISCI PREZZO</div>
       <button class="btn-prendi" style="width:100%; padding:10px; font-size:14px;" onclick="confirmPurchase()">AGGIUNGI ALLA ROSA</button>
@@ -181,6 +205,12 @@
       renderPlayers();
     }
 
+    function calculateDynamicPma(basePma) {
+      const totalBudget = parseFloat(document.getElementById('totalBudget').value) || 1000;
+      // Proporziona il PMA base (calcolato su scala 1000) al budget impostato
+      return Math.max(1, Math.round(basePma * (totalBudget / 1000)));
+    }
+
     function setRoleFilter(role, btn) {
       currentRoleFilter = role;
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -202,17 +232,18 @@
       document.getElementById('playerCount').innerText = `${filtered.length} GIOCATORI`;
 
       filtered.forEach(p => {
+        const dynamicPma = calculateDynamicPma(p.pma);
         const inSquad = mySquad.some(item => item.id === p.id);
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td><strong>${p.nome}</strong></td>
           <td><span style="color:var(--cyan); font-weight:bold;">${p.squadra}</span></td>
           <td><span class="role-${p.ruolo}">${p.ruolo}</span></td>
-          <td>${p.fantamedia}</td>
-          <td>${p.titolarita}%</td>
-          <td style="color: var(--yellow); font-family:'Orbitron'; font-weight: bold;">${p.pma} CR</td>
+          <td>${p.fantamedia || '-'}</td>
+          <td>${p.titolarita || 80}%</td>
+          <td style="color: var(--yellow); font-family:'Orbitron'; font-weight: bold;">${dynamicPma} CR</td>
           <td>
-            <button class="btn-analisi" onmouseenter="showAnalysis(event, ${p.pma})" onmouseleave="hideAnalysis()">ANALISI</button>
+            <button class="btn-analisi" onmouseenter="showAnalysis(event, ${dynamicPma})" onmouseleave="hideAnalysis()">ANALISI</button>
             ${inSquad 
               ? `<span style="color:var(--text-muted); font-size:11px; font-family:'Orbitron';">IN ROSA</span>` 
               : `<button class="btn-prendi" onclick="openBuyModal(${p.id})">+ PRENDI</button>`
@@ -221,14 +252,18 @@
         `;
         tbody.appendChild(tr);
       });
+
+      updateSquadUI();
     }
 
-    /* Modal e Valutazione Prezzo */
     function openBuyModal(id) {
       selectedPlayer = allPlayers.find(p => p.id === id);
+      const dynamicPma = calculateDynamicPma(selectedPlayer.pma);
+      selectedPlayer.currentPma = dynamicPma;
+
       document.getElementById('modalPlayerName').innerText = selectedPlayer.nome;
-      document.getElementById('modalTargetPrice').innerText = `${selectedPlayer.pma} CR`;
-      document.getElementById('paidPriceInput').value = selectedPlayer.pma;
+      document.getElementById('modalTargetPrice').innerText = `${dynamicPma} CR`;
+      document.getElementById('paidPriceInput').value = dynamicPma;
       updatePriceEvaluation();
       document.getElementById('buyModal').style.display = 'flex';
     }
@@ -239,7 +274,7 @@
 
     function updatePriceEvaluation() {
       const paid = parseInt(document.getElementById('paidPriceInput').value) || 0;
-      const target = selectedPlayer.pma;
+      const target = selectedPlayer.currentPma;
       const badge = document.getElementById('priceEvaluationBadge');
 
       if (paid <= target * 0.85) {
@@ -255,21 +290,18 @@
     }
 
     function confirmPurchase() {
-      const paidPrice = parseInt(document.getElementById('paidPriceInput').value) || selectedPlayer.pma;
+      const paidPrice = parseInt(document.getElementById('paidPriceInput').value) || selectedPlayer.currentPma;
       if (mySquad.length >= 25) {
         alert("Rosa piena!");
         return;
       }
       mySquad.push({ ...selectedPlayer, paidPrice });
       closeModal();
-      updateSquadUI();
       renderPlayers();
     }
 
-    /* Rimuovere Giocatore dalla Rosa */
     function removeFromSquad(id) {
       mySquad = mySquad.filter(p => p.id !== id);
-      updateSquadUI();
       renderPlayers();
     }
 
@@ -301,11 +333,10 @@
       document.getElementById('remainingCredits').innerText = `${totalBudget - totalSpent} CR`;
     }
 
-    /* Tooltip Analisi */
     function showAnalysis(e, pma) {
       const tt = document.getElementById('analysisTooltip');
       tt.innerHTML = `
-        <strong>TARGET PREZZO:</strong><br>
+        <strong>TARGET PREZZO RICALCOLATO:</strong><br>
         🔥 Affarone: ≤ ${Math.floor(pma * 0.85)} CR<br>
         ⚖️ Equo: ${Math.floor(pma * 0.86)} - ${Math.floor(pma * 1.15)} CR<br>
         ⚠️ Pacco: ≥ ${Math.floor(pma * 1.16)} CR
