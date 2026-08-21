@@ -2,10 +2,9 @@ import json
 import urllib.parse
 import requests
 
-# URL raw ad accesso libero con la lista aggiornata di tutte le rose Serie A
+# Feed pubblico ad alta affidabilità con oltre 500 calciatori
 DATA_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
 
-# Mappa degli stemmi ufficiali della Serie A (utilizzati come fallback guaranteed)
 TEAM_LOGOS = {
     "ATA": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
     "BOL": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
@@ -41,32 +40,16 @@ def clean_role(raw_role):
     return "A"
 
 
-def get_wikipedia_photo(player_name):
-    """Cerca la foto su Wikipedia o restituisce vuoto se non trovata."""
-    try:
-        url = f"https://it.wikipedia.org/w/api.php?action=query&titles={urllib.parse.quote(player_name)}&prop=pageimages&format=json&pithumbsize=200"
-        headers = {"User-Agent": "FantaValueBot/1.0"}
-        res = requests.get(url, headers=headers, timeout=1.2).json()
-        pages = res.get("query", {}).get("pages", {})
-        for _, val in pages.items():
-            if "thumbnail" in val:
-                return val["thumbnail"]["source"]
-    except Exception:
-        pass
-    return ""
-
-
 def update_database():
-    print("🔄 Scaricamento dell'intero listone Serie A...")
+    print("🔄 Download listone Serie A in corso...")
     headers = {"User-Agent": "Mozilla/5.0"}
-
     players_db = []
 
     try:
         res = requests.get(DATA_URL, headers=headers, timeout=10)
         if res.status_code == 200:
             data = res.json()
-            for p in data:
+            for idx, p in enumerate(data):
                 nome = p.get("nome") or p.get("Nome") or p.get("name")
                 if not nome:
                     continue
@@ -85,41 +68,28 @@ def update_database():
                     p.get("tit") or p.get("Tit") or p.get("titolarita") or 75
                 )
 
-                # Gestione Foto: tenta la foto del calciatore, altrimenti stemma squadra
-                foto_url = ""
-                if pma >= 15:
-                    foto_url = get_wikipedia_photo(str(nome).title())
-
-                # Se non c'è la foto del giocatore, usa lo stemma ufficiale della squadra
-                if not foto_url:
-                    foto_url = TEAM_LOGOS.get(squadra, "")
+                stemma = TEAM_LOGOS.get(squadra, "")
 
                 players_db.append({
+                    "id": p.get("id", idx + 1),
                     "nome": str(nome).title(),
                     "squadra": squadra,
                     "ruolo": ruolo,
                     "fantamedia": fm,
                     "titolarita": tit,
                     "pma": pma,
-                    "foto": foto_url,
-                    "stemma": TEAM_LOGOS.get(squadra, ""),
+                    "foto": stemma,
+                    "stemma": stemma,
                 })
-        else:
-            print(f"❌ Errore risposta HTTP: {res.status_code}")
     except Exception as e:
-        print(f"⚠️ Errore download dati: {e}")
+        print(f"❌ Errore durante il download: {e}")
 
-    if not players_db:
-        print("❌ Impossibile generare la lista. Annullamento.")
-        return
-
-    # Salva il file JSON con tutti i 500+ giocatori
-    with open("players.json", "w", encoding="utf-8") as f:
-        json.dump(players_db, f, ensure_ascii=False, indent=2)
-
-    print(
-        f"🎉 Ottimo! 'players.json' generato con successso: {len(players_db)} calciatori caricati con foto e stemmi."
-    )
+    if len(players_db) > 50:
+        with open("players.json", "w", encoding="utf-8") as f:
+            json.dump(players_db, f, ensure_ascii=False, indent=2)
+        print(f"✅ 'players.json' salvato con {len(players_db)} calciatori!")
+    else:
+        print("⚠️ Dati insufficienti. Il file non è stato sovrascritto.")
 
 
 if __name__ == "__main__":
