@@ -1,7 +1,9 @@
 import json
 import requests
 
-DATA_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
+# Endpoint per il listone completo
+DATA_URL = "https://www.fantacalcio.it/api/v1/excel/get-dataset/2024"  # Fallback JSON API completa
+SECONDARY_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
 
 TEAM_LOGOS = {
     "ATA": "https://upload.wikimedia.org/wikipedia/it/7/77/Atalanta_BC_logo.svg",
@@ -34,45 +36,55 @@ def clean_role(raw_role):
     return "A"
 
 def update_database():
-    print("🔄 Download listone intero Serie A...")
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    print("🔄 Download del listone COMPLETO Serie A in corso...")
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
     players_db = []
 
+    # Prova API Fantacalcio / Dataset
     try:
-        res = requests.get(DATA_URL, headers=headers, timeout=12)
-        if res.status_code == 200:
-            data = res.json()
-            for idx, p in enumerate(data):
-                nome = p.get("nome") or p.get("Nome") or p.get("name")
-                if not nome: continue
-                
-                squadra = str(p.get("squadra") or p.get("Squadra") or "SER")[:3].upper()
-                ruolo = clean_role(p.get("ruolo") or p.get("R") or "A")
-                pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or 1)
-                fm = float(p.get("fm") or p.get("Fm") or 6.0)
-                tit = int(p.get("tit") or p.get("Tit") or 75)
+        res = requests.get("https://raw.githubusercontent.com/vittorioparis/fantacalcio-dataset/main/data/quotazioni.json", headers=headers, timeout=12)
+        if res.status_code != 200:
+            res = requests.get(SECONDARY_URL, headers=headers, timeout=12)
+        
+        data = res.json()
+        
+        # Se il dato è dentro una chiave specifica (es. "data" o "players")
+        raw_list = data.get("data", data) if isinstance(data, dict) else data
 
-                stemma = TEAM_LOGOS.get(squadra, "")
+        for idx, p in enumerate(raw_list):
+            nome = p.get("nome") or p.get("Nome") or p.get("name") or p.get("Player")
+            if not nome: continue
+            
+            squadra = str(p.get("squadra") or p.get("Squadra") or p.get("Team") or "SER")[:3].upper()
+            ruolo = clean_role(p.get("ruolo") or p.get("R") or p.get("Role") or "A")
+            
+            # Prezzo/Quotazione di partenza
+            pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or p.get("Quotazione") or 1)
+            fm = float(p.get("fm") or p.get("Fm") or p.get("Fantamedia") or 6.0)
+            tit = int(p.get("tit") or p.get("Tit") or p.get("Titolarita") or 75)
 
-                players_db.append({
-                    "id": p.get("id", idx + 1),
-                    "nome": str(nome).title(),
-                    "squadra": squadra,
-                    "ruolo": ruolo,
-                    "fantamedia": fm,
-                    "titolarita": tit,
-                    "pma": pma,
-                    "stemma": stemma
-                })
+            stemma = TEAM_LOGOS.get(squadra, "")
+
+            players_db.append({
+                "id": p.get("id", idx + 1),
+                "nome": str(nome).strip().title(),
+                "squadra": squadra,
+                "ruolo": ruolo,
+                "fantamedia": fm,
+                "titolarita": tit,
+                "pma": pma,
+                "stemma": stemma
+            })
+
     except Exception as e:
         print(f"❌ Errore durante l'estrazione: {e}")
 
-    if len(players_db) > 100:
+    if len(players_db) > 0:
         with open("players.json", "w", encoding="utf-8") as f:
             json.dump(players_db, f, ensure_ascii=False, indent=2)
-        print(f"✅ 'players.json' salvato correttamente con {len(players_db)} calciatori!")
+        print(f"✅ 'players.json' generato con successo! Trovati {len(players_db)} calciatori.")
     else:
-        print("⚠️ Errore download. Dati non aggiornati.")
+        print("⚠️ Nessun giocatore estratto, controlla la fonte.")
 
 if __name__ == "__main__":
     update_database()
