@@ -1,80 +1,214 @@
-import json
-import requests
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantacalcio - Database Calciatori</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-# Feed JSON aggiornato con la Serie A completa
-DATA_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      padding: 20px;
+    }
 
-# Mapping loghi ufficiali ad alta risoluzione (testati per Dark Mode)
-TEAM_LOGOS = {
-    "ATA": "https://upload.wikimedia.org/wikipedia/it/7/77/Atalanta_BC_logo.svg",
-    "BOL": "https://upload.wikimedia.org/wikipedia/it/d/d8/Bologna_FC_1909_logo.svg",
-    "CAG": "https://upload.wikimedia.org/wikipedia/it/3/3d/Cagliari_Calcio_2015.svg",
-    "COM": "https://upload.wikimedia.org/wikipedia/it/2/29/Como_1907_logo.svg",
-    "EMP": "https://upload.wikimedia.org/wikipedia/it/a/a3/Empoli_FC_logo_%282021%29.svg",
-    "FIO": "https://upload.wikimedia.org/wikipedia/it/c/c2/ACF_Fiorentina_2022.svg",
-    "GEN": "https://upload.wikimedia.org/wikipedia/it/3/37/Genoa_cfc.svg",
-    "INT": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg",
-    "JUV": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juven_logo.png", # Stemma Bianco
-    "LAZ": "https://upload.wikimedia.org/wikipedia/it/a/a2/SSLazio_Logo.svg",
-    "LEC": "https://upload.wikimedia.org/wikipedia/it/a/a7/US_Lecce_2009.svg",
-    "MIL": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg",
-    "MON": "https://upload.wikimedia.org/wikipedia/it/f/f8/AC_Monza_2021.svg",
-    "NAP": "https://upload.wikimedia.org/wikipedia/commons/2/28/SSC_Napoli_2024.svg",
-    "PAR": "https://upload.wikimedia.org/wikipedia/it/0/03/Parma_Calcio_1913.svg",
-    "ROM": "https://upload.wikimedia.org/wikipedia/it/f/f7/AS_Roma_logo_%282017%29.svg",
-    "TOR": "https://upload.wikimedia.org/wikipedia/it/1/1b/Torino_FC_logo.svg",
-    "UDI": "https://upload.wikimedia.org/wikipedia/it/3/32/Udinese_Calcio_logo_2010.svg",
-    "VER": "https://upload.wikimedia.org/wikipedia/it/9/92/Hellas_Verona_FC_logo_2020.svg",
-    "VEN": "https://upload.wikimedia.org/wikipedia/it/e/eb/Venezia_FC_2022.svg"
-}
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-def clean_role(raw_role):
-    r = str(raw_role).strip().upper()
-    if r in ["P", "POR", "1"]: return "P"
-    if r in ["D", "DIF", "2"]: return "D"
-    if r in ["C", "CEN", "3"]: return "C"
-    return "A"
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00e676;
+    }
 
-def update_database():
-    print("🔄 Download listone intero Serie A...")
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    players_db = []
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
 
-    try:
-        res = requests.get(DATA_URL, headers=headers, timeout=12)
-        if res.status_code == 200:
-            data = res.json()
-            for idx, p in enumerate(data):
-                nome = p.get("nome") or p.get("Nome") or p.get("name")
-                if not nome: continue
-                
-                squadra = str(p.get("squadra") or p.get("Squadra") or "SER")[:3].upper()
-                ruolo = clean_role(p.get("ruolo") or p.get("R") or "A")
-                pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or 1)
-                fm = float(p.get("fm") or p.get("Fm") or 6.0)
-                tit = int(p.get("tit") or p.get("Tit") or 75)
+    input[type="text"] {
+      flex: 1;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      background-color: #1e1e1e;
+      color: #fff;
+      font-size: 16px;
+    }
 
-                stemma = TEAM_LOGOS.get(squadra, "")
+    .filter-btn {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2a2a2a;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
 
-                players_db.append({
-                    "id": p.get("id", idx + 1),
-                    "nome": str(nome).title(),
-                    "squadra": squadra,
-                    "ruolo": ruolo,
-                    "fantamedia": fm,
-                    "titolarita": tit,
-                    "pma": pma,
-                    "stemma": stemma
-                })
-    except Exception as e:
-        print(f"❌ Errore durante l'estrazione: {e}")
+    .filter-btn.active, .filter-btn:hover {
+      background-color: #00e676;
+      color: #000;
+    }
 
-    if len(players_db) > 100:
-        with open("players.json", "w", encoding="utf-8") as f:
-            json.dump(players_db, f, ensure_ascii=False, indent=2)
-        print(f"✅ 'players.json' salvato correttamente con {len(players_db)} calciatori!")
-    else:
-        print("⚠️ Errore download. Dati non aggiornati.")
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 15px;
+    }
 
-if __name__ == "__main__":
-    update_database()
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border: 1px solid #2c2c2c;
+    }
+
+    .card img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+
+    .role-badge {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: bold;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .role-P { background-color: #f39c12; }
+    .role-D { background-color: #27ae60; }
+    .role-C { background-color: #2980b9; }
+    .role-A { background-color: #c0392b; }
+
+    .player-info {
+      flex: 1;
+    }
+
+    .player-name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .player-details {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .stats {
+      text-align: right;
+    }
+
+    .fantamedia {
+      font-size: 18px;
+      font-weight: bold;
+      color: #00e676;
+    }
+
+    .loading {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 50px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Fantacalcio - Listone Serie A</h1>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Cerca giocatore o squadra...">
+      <button class="filter-btn active" onclick="filterRole('ALL')">TUTTI</button>
+      <button class="filter-btn" onclick="filterRole('P')">POR</button>
+      <button class="filter-btn" onclick="filterRole('D')">DIF</button>
+      <button class="filter-btn" onclick="filterRole('C')">CEN</button>
+      <button class="filter-btn" onclick="filterRole('A')">ATT</button>
+    </div>
+
+    <div id="loading" class="loading">Caricamento dati in corso...</div>
+    <div id="playersGrid" class="grid"></div>
+  </div>
+
+  <script>
+    let players = [];
+    let currentRole = 'ALL';
+
+    async function loadPlayers() {
+      try {
+        const response = await fetch('players.json');
+        if (!response.ok) throw new Error("File players.json non trovato");
+        players = await response.json();
+        document.getElementById('loading').style.display = 'none';
+        renderPlayers();
+      } catch (err) {
+        document.getElementById('loading').innerHTML = `❌ Errore nel caricamento dati.<br><small>Assicurati di aver eseguito 'python scraper.py' e di usare un server locale (es. Live Server).</small>`;
+      }
+    }
+
+    function renderPlayers() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const container = document.getElementById('playersGrid');
+      container.innerHTML = '';
+
+      const filtered = players.filter(p => {
+        const matchesRole = currentRole === 'ALL' || p.ruolo === currentRole;
+        const matchesSearch = p.nome.toLowerCase().includes(search) || p.squadra.toLowerCase().includes(search);
+        return matchesRole && matchesSearch;
+      });
+
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <span class="role-badge role-${p.ruolo}">${p.ruolo}</span>
+          ${p.stemma ? `<img src="${p.stemma}" alt="${p.squadra}">` : ''}
+          <div class="player-info">
+            <div class="player-name">${p.nome}</div>
+            <div class="player-details">${p.squadra} • Tit. ${p.titolarita}%</div>
+          </div>
+          <div class="stats">
+            <div class="fantamedia">${p.fantamedia}</div>
+            <div style="font-size: 11px; color: #777;">FM</div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterRole(role) {
+      currentRole = role;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      renderPlayers();
+    }
+
+    document.getElementById('searchInput').addEventListener('input', renderPlayers);
+
+    loadPlayers();
+  </script>
+
+</body>
+</html>
