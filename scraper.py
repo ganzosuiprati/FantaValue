@@ -3,8 +3,8 @@ import requests
 import pandas as pd
 import io
 
-# URL ufficiale del file Excel quotazioni di Fantacalcio.it
-EXCEL_URL = "https://www.fantacalcio.it/servizi/excel/quotazioni"
+# Endpoint ufficiale del listone completo in Excel
+EXCEL_URL = "https://www.fantacalcio.it/servizi/excel/quotazioni/2026"
 
 TEAM_LOGOS = {
     "ATA": "https://upload.wikimedia.org/wikipedia/it/7/77/Atalanta_BC_logo.svg",
@@ -37,16 +37,16 @@ def clean_role(raw_role):
     return "A"
 
 def update_data():
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    print("🔄 Download del file Excel ufficiale da Fantacalcio.it...")
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    }
+    print("🔄 Download del listone ufficiale da Fantacalcio.it...")
     
     try:
         res = requests.get(EXCEL_URL, headers=headers, timeout=15)
         if res.status_code == 200:
-            # Legge il file excel saltando le prime righe di intestazione di Fantacalcio
+            # Legge il file ignorando le prime 1 righe di intestazione grafico
             df = pd.read_excel(io.BytesIO(res.content), skiprows=1)
-            
-            # Normalizzazione colonne
             df.columns = [str(c).strip().lower() for c in df.columns]
             
             players_db = []
@@ -72,9 +72,11 @@ def update_data():
             with open("players.json", "w", encoding="utf-8") as f:
                 json.dump(players_db, f, ensure_ascii=False, indent=2)
                 
-            print(f"✅ Successo! Salvati {len(players_db)} calciatori in players.json.")
+            print(f"🔥 SPETTACOLO! Salvati {len(players_db)} calciatori reali in 'players.json'!")
+        else:
+            print(f"❌ Errore HTTP {res.status_code}")
     except Exception as e:
-        print(f"❌ Errore durante l'aggiornamento: {e}")
+        print(f"❌ Errore durante l'elaborazione: {e}")
 
 if __name__ == "__main__":
     update_data()
