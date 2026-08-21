@@ -1,37 +1,28 @@
-name: Aggiornamento Automatico Listone Fantacalcio
+name: Aggiornamento Lista Fantacalcio 2026
 
 on:
   schedule:
-    # Si avvia ogni notte alle 04:00 UTC
-    - cron: '0 4 * * *'
-  # Ti permette anche di lanciarlo a mano dal pulsante su GitHub se vuoi
-  workflow_dispatch:
+    - cron: '0 4 * * *' # Ogni giorno alle 04:00
+  workflow_dispatch: # Permette di lanciarlo manualmente da GitHub Actions
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout del codice
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Configura Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
+      - name: Configura Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Installa librerie
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests pandas openpyxl
+      - name: Esegui aggiornamento giocatori
+        run: python update_data.py
 
-    - name: Esegui Scraper
-      run: python scraper.py
-
-    - name: Salva e fai Push del file aggiornato
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add players.json
-        git diff-index --quiet HEAD || git commit -m "Automated: Aggiornamento listone quotazioni Fantacalcio"
-        git push
+      - name: Commit e Push dei dati aggiornati
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add players.json
+          git commit -m "Auto-update listone calciatori 2026" || exit 0
+          git push
