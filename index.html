@@ -271,5 +271,284 @@
 
     fetchPlayers();
   </script>
+  // ==========================================
+// 1. STATO GLOBALE E CONFIGURAZIONE
+// ==========================================
+let playersList = [];
+let myTeam = [];
+let totalBudget = 1000;
+let remainingBudget = 1000;
+let participants = 10;
+let currentFilter = 'ALL';
+
+// Mappa Stemmi Squadre per Fallback Immagini
+const TEAM_LOGOS = {
+  "ATA": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+  "BOL": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
+  "CAG": "https://a.espncdn.com/i/teamlogos/soccer/500/108.png",
+  "COM": "https://a.espncdn.com/i/teamlogos/soccer/500/2932.png",
+  "EMP": "https://a.espncdn.com/i/teamlogos/soccer/500/2622.png",
+  "FIO": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+  "GEN": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
+  "INT": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+  "JUV": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
+  "LAZ": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
+  "LEC": "https://a.espncdn.com/i/teamlogos/soccer/500/3440.png",
+  "MIL": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
+  "MON": "https://a.espncdn.com/i/teamlogos/soccer/500/3282.png",
+  "NAP": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+  "PAR": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+  "ROM": "https://a.espncdn.com/i/teamlogos/soccer/500/117.png",
+  "TOR": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
+  "UDI": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
+  "VER": "https://a.espncdn.com/i/teamlogos/soccer/500/2180.png",
+  "VEN": "https://a.espncdn.com/i/teamlogos/soccer/500/3283.png"
+};
+
+// ==========================================
+// 2. CARICAMENTO DATI DA PLAYERS.JSON
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+  fetchPlayers();
+});
+
+async function fetchPlayers() {
+  try {
+    const response = await fetch('./players.json');
+    if (!response.ok) throw new Error('Errore caricamento file JSON');
+    playersList = await response.json();
+    
+    // Assegna ID se mancante e aggiorna interfaccia
+    playersList = playersList.map((p, index) => ({
+      id: p.id || index + 1,
+      ...p
+    }));
+
+    renderPlayersTable();
+  } catch (error) {
+    console.error('❌ Errore nel caricamento dei giocatori:', error);
+  }
+}
+
+// ==========================================
+// 3. CALCOLO PREZZO MASSIMO ADATTIVO
+// ==========================================
+function calcolaPrezzoMax(pma, fantamedia) {
+  // Proporziona la quotazione iniziale al budget attuale
+  const basePma = Number(pma) || 1;
+  const fm = Number(fantamedia) || 6.0;
+  
+  let moltiplicatore = (totalBudget / 500);
+  let stima = Math.round(basePma * 2.2 * moltiplicatore);
+
+  // Bonu/Malus su Fantamedia
+  if (fm >= 8.0) stima += Math.round(15 * moltiplicatore);
+  else if (fm >= 7.5) stima += Math.round(8 * moltiplicatore);
+
+  return Math.max(1, stima);
+}
+
+// ==========================================
+// 4. RENDER TABELLA GIOCATORI
+// ==========================================
+function renderPlayersTable() {
+  const container = document.getElementById('players-table-body');
+  const countDisplay = document.getElementById('players-count');
+  const searchInput = document.getElementById('search-input')?.value.toLowerCase() || '';
+
+  if (!container) return;
+
+  // Filtro Ruolo e Ricerca
+  let filtered = playersList.filter(p => {
+    const matchRole = currentFilter === 'ALL' || p.ruolo === currentFilter;
+    const matchSearch = p.nome.toLowerCase().includes(searchInput) || p.squadra.toLowerCase().includes(searchInput);
+    const notTaken = !myTeam.some(taken => taken.id === p.id);
+    return matchRole && matchSearch && notTaken;
+  });
+
+  // Ordina per Prezzo Massimo Consigliato Decrescente
+  filtered.sort((a, b) => calcolaPrezzoMax(b.pma, b.fantamedia) - calcolaPrezzoMax(a.pma, a.fantamedia));
+
+  if (countDisplay) {
+    countDisplay.textContent = `${filtered.length} GIOCATORI`;
+  }
+
+  container.innerHTML = filtered.map(player => {
+    const prezzoMax = calcolaPrezzoMax(player.pma, player.fantamedia);
+    const imgUrl = player.foto || TEAM_LOGOS[player.squadra] || '';
+    const initial = player.nome.charAt(0).toUpperCase();
+
+    // Placeholder con prima lettera se non c'è neanche lo stemma
+    const avatarHTML = imgUrl 
+      ? `<img src="${imgUrl}" alt="${player.nome}" style="width:32px; height:32px; border-radius:50%; object-fit:cover; border:1px solid #00f0ff; margin-right:10px;">`
+      : `<div style="width:32px; height:32px; border-radius:50%; background:#0a0e17; border:1px solid #00f0ff; color:#00f0ff; display:flex; align-items:center; justify-content:center; font-weight:bold; margin-right:10px;">${initial}</div>`;
+
+    return `
+      <tr style="border-bottom: 1px solid rgba(0, 240, 255, 0.1);">
+        <td style="display:flex; align-items:center; padding: 10px;">
+          ${avatarHTML}
+          <span style="font-weight:bold; color:#fff;">${player.nome.toUpperCase()}</span>
+        </td>
+        <td style="color:#00f0ff; font-weight:bold;">${player.squadra}</td>
+        <td style="color:#ff0055; font-weight:bold;">${player.ruolo}</td>
+        <td>${Number(player.fantamedia).toFixed(1)}</td>
+        <td>${player.titolarita}%</td>
+        <td style="color:#ffcc00; font-weight:bold; font-size:16px;">${prezzoMax} <small>CR</small></td>
+        <td>
+          <button onclick="valutaEDAcquista(${player.id})" style="background:#ff0055; color:#fff; border:none; padding:6px 12px; font-weight:bold; border-radius:4px; cursor:pointer; box-shadow: 0 0 8px rgba(255,0,85,0.4);">
+            + PRENDI
+          </button>
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+// ==========================================
+// 5. GESTIONE ACQUISTO CON VALUTAZIONE (POPUP)
+// ==========================================
+function valutaEDAcquista(playerId) {
+  const player = playersList.find(p => p.id === playerId);
+  if (!player) return;
+
+  const prezzoConsigliato = calcolaPrezzoMax(player.pma, player.fantamedia);
+
+  const prezzoPagatoInput = prompt(
+    `A quanto hai acquistato ${player.nome.toUpperCase()}?\n(Prezzo Consigliato: ${prezzoConsigliato} CR)`
+  );
+
+  if (prezzoPagatoInput === null) return; // Annullato dall'utente
+  const prezzoPagato = parseInt(prezzoPagatoInput, 10);
+
+  if (isNaN(prezzoPagato) || prezzoPagato < 1) {
+    alert("Inserisci un prezzo di acquisto valido!");
+    return;
+  }
+
+  if (prezzoPagato > remainingBudget) {
+    alert("Crediti insufficienti per completare l'acquisto!");
+    return;
+  }
+
+  // Calcolo Esito Acquisto
+  let esitoTitle = "";
+  let esitoDesc = "";
+  let accentColor = "";
+
+  const rapporto = prezzoPagato / prezzoConsigliato;
+
+  if (rapporto <= 0.85) {
+    esitoTitle = "🔥 AFFARONE!";
+    esitoDesc = `Hai risparmiato ben ${prezzoConsigliato - prezzoPagato} CR rispetto al prezzo di mercato!`;
+    accentColor = "#00ffcc"; // Neon Cyan
+  } else if (rapporto >= 1.18) {
+    esitoTitle = "⚠️ PACCO!";
+    esitoDesc = `L'hai strapagato di ${prezzoPagato - prezzoConsigliato} CR rispetto al suo valore ideale!`;
+    accentColor = "#ff0055"; // Neon Red
+  } else {
+    esitoTitle = "⚖️ GIUSTO!";
+    esitoDesc = `Prezzo in linea con il valore del giocatore. Ottimo colpo di stabilità!`;
+    accentColor = "#ffcc00"; // Neon Gold
+  }
+
+  // Mostra Popup Modale
+  mostraModalValutazione(player, prezzoPagato, prezzoConsigliato, esitoTitle, esitoDesc, accentColor);
+
+  // Aggiungi alla rosa
+  myTeam.push({ ...player, prezzoPagato });
+  remainingBudget -= prezzoPagato;
+
+  // Aggiorna Interfaccia
+  updateUI();
+}
+
+// ==========================================
+// 6. MODAL POPUP SYNTHWAVE / CYBERPUNK
+// ==========================================
+function mostraModalValutazione(player, pagato, consigliato, titolo, desc, colore) {
+  // Rimuovi eventuali modali precedenti
+  const existing = document.getElementById('fanta-eval-modal');
+  if (existing) existing.remove();
+
+  const modalHTML = `
+    <div id="fanta-eval-modal" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(5, 7, 15, 0.9); backdrop-filter:blur(5px); display:flex; align-items:center; justify-content:center; z-index:99999; animation: fadeIn 0.2s ease-in-out;">
+      <div style="background:#0a0e17; border:2px solid ${colore}; box-shadow: 0 0 30px ${colore}; border-radius:12px; padding:30px; text-align:center; max-width:420px; width:90%; color:#fff; font-family:'Segoe UI', Roboto, sans-serif;">
+        
+        <h1 style="color:${colore}; margin:0 0 10px 0; font-size:28px; text-transform:uppercase; letter-spacing:1px;">${titolo}</h1>
+        <p style="font-size:18px; margin-bottom:15px; font-weight:bold;">${player.nome.toUpperCase()} (${player.squadra})</p>
+
+        <div style="background:rgba(255,255,255,0.05); padding:15px; border-radius:8px; margin-bottom:15px; display:flex; justify-content:space-around;">
+          <div>
+            <span style="font-size:12px; color:#888; display:block;">PAGATO</span>
+            <span style="font-size:20px; font-weight:bold; color:${colore};">${pagato} CR</span>
+          </div>
+          <div style="border-left:1px solid rgba(255,255,255,0.1);"></div>
+          <div>
+            <span style="font-size:12px; color:#888; display:block;">CONSIGLIATO</span>
+            <span style="font-size:20px; font-weight:bold; color:#fff;">${consigliato} CR</span>
+          </div>
+        </div>
+
+        <p style="font-size:14px; color:#ccc; margin-bottom:20px; line-height:1.4;">${desc}</p>
+
+        <button onclick="document.getElementById('fanta-eval-modal').remove()" style="background:${colore}; color:#000; font-weight:bold; border:none; padding:12px 28px; border-radius:6px; cursor:pointer; font-size:15px; text-transform:uppercase; box-shadow: 0 0 10px ${colore}; transition:transform 0.1s;">
+          CONFERMA E CHIUDI
+        </button>
+      </div>
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML('beforeend', modalHTML);
+}
+
+// ==========================================
+// 7. AGGIORNAMENTO ROSTER E CREDITI
+// ==========================================
+function updateUI() {
+  // Aggiorna Contatori Rosa
+  const countRosa = document.getElementById('rosa-count');
+  const creditiRim = document.getElementById('crediti-rimanenti');
+  const spesiTot = document.getElementById('spesi-totale');
+  const listRosa = document.getElementById('rosa-list');
+
+  if (countRosa) countRosa.textContent = `${myTeam.length}/25`;
+  if (creditiRim) creditiRim.textContent = `${remainingBudget} CR`;
+  if (spesiTot) spesiTot.textContent = `${totalBudget - remainingBudget} CR`;
+
+  // Renderizza Lista Calciatori in Rosa
+  if (listRosa) {
+    if (myTeam.length === 0) {
+      listRosa.innerHTML = `<p style="color:#666; font-style:italic;">Nessun giocatore acquistato.</p>`;
+    } else {
+      listRosa.innerHTML = myTeam.map(item => `
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.05);">
+          <div>
+            <strong style="color:#fff;">${item.nome}</strong> 
+            <small style="color:#00f0ff;">(${item.ruolo})</small>
+          </div>
+          <span style="color:#ffcc00; font-weight:bold;">${item.prezzoPagato} CR</span>
+        </div>
+      `).join('');
+    }
+  }
+
+  // Ricarica la tabella escludendo chi è già stato preso
+  renderPlayersTable();
+}
+
+// ==========================================
+// 8. FILTRI E INPUT UTENTE
+// ==========================================
+function setFilter(role) {
+  currentFilter = role;
+  renderPlayersTable();
+}
+
+function updateBudget(val) {
+  totalBudget = parseInt(val, 10) || 1000;
+  const giaSpesi = myTeam.reduce((acc, curr) => acc + curr.prezzoPagato, 0);
+  remainingBudget = totalBudget - giaSpesi;
+  updateUI();
+}
 </body>
 </html>
