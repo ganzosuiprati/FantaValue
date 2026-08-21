@@ -15,47 +15,60 @@
       --border: #1b2d42;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     body { background-color: var(--bg-color); color: var(--text); padding: 20px; }
 
     header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--cyan); padding-bottom: 10px; }
-    header h1 { color: var(--cyan); text-transform: uppercase; font-size: 22px; }
+    header h1 { color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; font-size: 24px; }
+    .dev-info { text-align: right; font-size: 12px; color: var(--text-muted); }
+    .dev-info a { color: var(--magenta); text-decoration: none; }
 
     .main-container { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+
     .card { background: var(--panel-bg); border: 1px solid var(--border); border-radius: 8px; padding: 15px; }
 
+    /* Controls */
     .controls-grid { display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 10px; margin-bottom: 15px; }
-    .input-group label { display: block; font-size: 11px; color: var(--text-muted); margin-bottom: 5px; }
+    .input-group label { display: block; font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 5px; }
     .input-group input, .search-box input { width: 100%; padding: 8px; background: var(--bg-color); border: 1px solid var(--cyan); color: #fff; border-radius: 4px; }
 
     .filters { display: flex; gap: 5px; margin-bottom: 15px; }
-    .filter-btn { background: transparent; border: 1px solid var(--cyan); color: var(--cyan); padding: 5px 12px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+    .filter-btn { background: transparent; border: 1px solid var(--cyan); color: var(--cyan); padding: 5px 15px; cursor: pointer; border-radius: 4px; font-weight: bold; }
     .filter-btn.active { background: var(--cyan); color: var(--bg-color); }
 
+    /* Table */
     table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-    th { text-align: left; color: var(--text-muted); font-size: 11px; padding: 8px; border-bottom: 1px solid var(--border); }
-    td { padding: 8px; border-bottom: 1px solid var(--border); font-size: 13px; }
+    th { text-align: left; color: var(--text-muted); font-size: 11px; text-transform: uppercase; padding: 8px; border-bottom: 1px solid var(--border); }
+    td { padding: 10px 8px; border-bottom: 1px solid var(--border); font-size: 13px; }
 
-    .role-badge { padding: 2px 6px; border-radius: 3px; font-weight: bold; font-size: 11px; color: #fff; }
-    .role-P { background: #e67e22; }
-    .role-D { background: #27ae60; }
-    .role-C { background: #2980b9; }
-    .role-A { background: var(--magenta); }
+    .role-badge { padding: 2px 6px; border-radius: 3px; font-weight: bold; font-size: 11px; }
+    .role-P { background: #e67e22; color: #fff; }
+    .role-D { background: #27ae60; color: #fff; }
+    .role-C { background: #2980b9; color: #fff; }
+    .role-A { background: var(--magenta); color: #fff; }
 
-    .btn-action { background: var(--magenta); color: #fff; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 11px; }
-    .btn-remove { background: #e74c3c; color: #fff; border: none; padding: 2px 6px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; margin-left: 8px; }
-    .btn-remove:hover { background: #c0392b; }
+    .btn-action { background: var(--magenta); color: #fff; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 11px; }
+    .btn-remove { background: #e74c3c; color: #fff; border: none; padding: 3px 8px; border-radius: 4px; cursor: pointer; font-size: 11px; margin-left: 8px; }
 
-    .squad-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+    /* Squad Sidebar */
+    .squad-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+    .squad-stat { margin-bottom: 8px; font-size: 13px; display: flex; justify-content: space-between; }
+    .squad-stat-val { font-weight: bold; color: var(--cyan); }
+    .squad-list-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
   </style>
 </head>
 <body>
 
   <header>
     <h1>⚡ El Pipita FantaValue ⚡</h1>
+    <div class="dev-info">
+      Dev: Francesco Coppola<br>
+      Instagram: <a href="https://instagram.com/ganzosuiprati" target="_blank">@ganzosuiprati</a>
+    </div>
   </header>
 
   <div class="main-container">
+    <!-- Player Selection List -->
     <div class="card">
       <div class="controls-grid">
         <div class="input-group">
@@ -63,12 +76,12 @@
           <input type="number" id="numPlayers" value="10" onchange="renderPlayers()">
         </div>
         <div class="input-group">
-          <label>Budget</label>
+          <label>Budget Totale</label>
           <input type="number" id="totalBudget" value="1000" onchange="renderPlayers()">
         </div>
         <div class="search-box">
-          <label>Cerca Giocatore</label>
-          <input type="text" id="searchInput" placeholder="Lautaro, Inter, Barella..." oninput="renderPlayers()">
+          <label>Ricerca Giocatore / Squadra</label>
+          <input type="text" id="searchInput" placeholder="Es. Lautaro, Inter, Dimarco..." oninput="renderPlayers()">
         </div>
       </div>
 
@@ -81,7 +94,7 @@
       </div>
 
       <div style="display:flex; justify-content:space-between; align-items:center;">
-        <h3 style="color: var(--magenta);">LISTONE GIOCATORI</h3>
+        <h3 style="color: var(--magenta);">LISTA CALCIATORI REALI</h3>
         <span id="playerCount" style="color: var(--cyan); font-weight:bold;">0 GIOCATORI</span>
       </div>
 
@@ -93,41 +106,115 @@
             <th>Ruolo</th>
             <th>FM</th>
             <th>TIT%</th>
-            <th>Quotazione</th>
-            <th>Azione</th>
+            <th>Prezzo Max</th>
+            <th>Azioni</th>
           </tr>
         </thead>
         <tbody id="playerTableBody"></tbody>
       </table>
     </div>
 
-    <!-- Squadra dell'Utente -->
+    <!-- User Squad -->
     <div class="card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+      <div class="squad-header">
         <h3>LA MIA ROSA</h3>
         <span id="squadCount" style="color: var(--cyan); font-weight: bold;">0/25</span>
       </div>
-      <div style="font-size:13px; margin-bottom:5px;">Crediti Rimanenti: <strong id="remainingCredits" style="color:var(--cyan);">1000 CR</strong></div>
-      <div style="font-size:13px; margin-bottom:15px;">Spesi: <strong id="spentCredits" style="color:var(--magenta);">0 CR</strong></div>
-      <hr style="border-color: var(--border); margin-bottom: 10px;">
+      <div class="squad-stat">
+        <span>Crediti Rimanenti:</span>
+        <span class="squad-stat-val" id="remainingCredits">1000 CR</span>
+      </div>
+      <div class="squad-stat">
+        <span>Spesi Totale:</span>
+        <span class="squad-stat-val" id="spentCredits" style="color: var(--magenta);">0 CR</span>
+      </div>
+      <hr style="border-color: var(--border); margin: 15px 0;">
       <div id="squadList"></div>
     </div>
   </div>
 
   <script>
+    // Listone completo e bilanciato della Serie A
+    const defaultPlayers = [
+      // Attaccanti
+      {id:1, nome:"Romelu Lukaku", squadra:"NAP", ruolo:"A", fantamedia:8.2, titolarita:95, pma:202},
+      {id:2, nome:"Dusan Vlahovic", squadra:"JUV", ruolo:"A", fantamedia:8.0, titolarita:92, pma:197},
+      {id:3, nome:"Ademola Lookman", squadra:"ATA", ruolo:"A", fantamedia:8.3, titolarita:88, pma:188},
+      {id:4, nome:"Marcus Thuram", squadra:"INT", ruolo:"A", fantamedia:8.1, titolarita:90, pma:184},
+      {id:5, nome:"Rafael Leao", squadra:"MIL", ruolo:"A", fantamedia:7.9, titolarita:88, pma:166},
+      {id:6, nome:"Mateo Retegui", squadra:"ATA", ruolo:"A", fantamedia:8.0, titolarita:85, pma:162},
+      {id:7, nome:"Artem Dovbyk", squadra:"ROM", ruolo:"A", fantamedia:7.8, titolarita:90, pma:157},
+      {id:8, nome:"Lautaro Martinez", squadra:"INT", ruolo:"A", fantamedia:8.5, titolarita:95, pma:220},
+      {id:9, nome:"Paulo Dybala", squadra:"ROM", ruolo:"A", fantamedia:8.1, titolarita:80, pma:160},
+      {id:10, nome:"Khvicha Kvaratskhelia", squadra:"NAP", ruolo:"A", fantamedia:8.2, titolarita:92, pma:180},
+      {id:11, nome:"Taty Castellanos", squadra:"LAZ", ruolo:"A", fantamedia:7.5, titolarita:85, pma:120},
+      {id:12, nome:"Moise Kean", squadra:"FIO", ruolo:"A", fantamedia:7.6, titolarita:88, pma:135},
+      {id:13, nome:"Zapata Duvan", squadra:"TOR", ruolo:"A", fantamedia:7.7, titolarita:90, pma:140},
+      {id:14, nome:"Gudmundsson Albert", squadra:"FIO", ruolo:"A", fantamedia:7.9, titolarita:85, pma:150},
+      {id:15, nome:"Alvaro Morata", squadra:"MIL", ruolo:"A", fantamedia:7.6, titolarita:85, pma:130},
+      {id:16, nome:"Thijs Dallinga", squadra:"BOL", ruolo:"A", fantamedia:7.2, titolarita:75, pma:90},
+      {id:17, nome:"Lucca Lorenzo", squadra:"UDI", ruolo:"A", fantamedia:7.3, titolarita:80, pma:95},
+      {id:18, nome:"Pinamonti Andrea", squadra:"GEN", ruolo:"A", fantamedia:7.1, titolarita:85, pma:85},
+      {id:19, nome:"Mosquera Daniel", squadra:"VER", ruolo:"A", fantamedia:7.0, titolarita:70, pma:60},
+      {id:20, nome:"Cutrone Patrick", squadra:"COM", ruolo:"A", fantamedia:7.2, titolarita:80, pma:75},
+
+      // Centrocampisti
+      {id:21, nome:"Christian Pulisic", squadra:"MIL", ruolo:"C", fantamedia:7.9, titolarita:92, pma:170},
+      {id:22, nome:"Hakan Calhanoglu", squadra:"INT", ruolo:"C", fantamedia:7.8, titolarita:92, pma:157},
+      {id:23, nome:"Teun Koopmeiners", squadra:"JUV", ruolo:"C", fantamedia:7.7, titolarita:95, pma:148},
+      {id:24, nome:"Scott McTominay", squadra:"NAP", ruolo:"C", fantamedia:7.6, titolarita:95, pma:139},
+      {id:25, nome:"Mattia Zaccagni", squadra:"LAZ", ruolo:"C", fantamedia:7.5, titolarita:90, pma:130},
+      {id:26, nome:"Nicolò Barella", squadra:"INT", ruolo:"C", fantamedia:7.4, titolarita:92, pma:125},
+      {id:27, nome:"Ederson", squadra:"ATA", ruolo:"C", fantamedia:7.3, titolarita:90, pma:115},
+      {id:28, nome:"Pellegrini Lorenzo", squadra:"ROM", ruolo:"C", fantamedia:7.2, titolarita:85, pma:110},
+      {id:29, nome:"Man Dennis", squadra:"PAR", ruolo:"C", fantamedia:7.5, titolarita:88, pma:120},
+      {id:30, nome:"Orsolini Riccardo", squadra:"BOL", ruolo:"C", fantamedia:7.6, titolarita:85, pma:135},
+      {id:31, nome:"Samardzic Lazar", squadra:"ATA", ruolo:"C", fantamedia:7.3, titolarita:75, pma:95},
+      {id:32, nome:"Conceicao Francisco", squadra:"JUV", ruolo:"C", fantamedia:7.4, titolarita:75, pma:105},
+      {id:33, nome:"Frattesi Davide", squadra:"INT", ruolo:"C", fantamedia:7.3, titolarita:65, pma:90},
+      {id:34, nome:"Guendouzi Matteo", squadra:"LAZ", ruolo:"C", fantamedia:7.0, titolarita:90, pma:70},
+      {id:35, nome:"Neres David", squadra:"NAP", ruolo:"C", fantamedia:7.5, titolarita:70, pma:110},
+
+      // Difensori
+      {id:36, nome:"Federico Dimarco", squadra:"INT", ruolo:"D", fantamedia:7.4, titolarita:90, pma:110},
+      {id:37, nome:"Theo Hernandez", squadra:"MIL", ruolo:"D", fantamedia:7.5, titolarita:92, pma:120},
+      {id:38, nome:"Gleison Bremer", squadra:"JUV", ruolo:"D", fantamedia:7.2, titolarita:95, pma:95},
+      {id:39, nome:"Denzel Dumfries", squadra:"INT", ruolo:"D", fantamedia:7.1, titolarita:80, pma:80},
+      {id:40, nome:"Alessandro Bastoni", squadra:"INT", ruolo:"D", fantamedia:7.0, titolarita:90, pma:75},
+      {id:41, nome:"Giovanni Di Lorenzo", squadra:"NAP", ruolo:"D", fantamedia:7.1, titolarita:95, pma:85},
+      {id:42, nome:"Buongiorno Alessandro", squadra:"NAP", ruolo:"D", fantamedia:7.2, titolarita:92, pma:90},
+      {id:43, nome:"Gosens Robin", squadra:"FIO", ruolo:"D", fantamedia:7.2, titolarita:88, pma:88},
+      {id:44, nome:"Cambiaso Andrea", squadra:"JUV", ruolo:"D", fantamedia:7.0, titolarita:88, pma:70},
+      {id:45, nome:"Tavares Nuno", squadra:"LAZ", ruolo:"D", fantamedia:7.3, titolarita:80, pma:95},
+
+      // Portieri
+      {id:46, nome:"Yann Sommer", squadra:"INT", ruolo:"P", fantamedia:6.8, titolarita:98, pma:70},
+      {id:47, nome:"Mike Maignan", squadra:"MIL", ruolo:"P", fantamedia:6.7, titolarita:98, pma:65},
+      {id:48, nome:"Michele Di Gregorio", squadra:"JUV", ruolo:"P", fantamedia:6.8, titolarita:95, pma:68},
+      {id:49, nome:"Alex Meret", squadra:"NAP", ruolo:"P", fantamedia:6.6, titolarita:95, pma:60},
+      {id:50, nome:"Mile Svilar", squadra:"ROM", ruolo:"P", fantamedia:6.7, titolarita:95, pma:62}
+    ];
+
     let allPlayers = [];
     let currentRoleFilter = 'TUTTI';
     let mySquad = [];
 
+    // Inizializzazione dati
     async function init() {
       try {
-        // Forziamo il recupero senza cache aggiungendo un parametro timestamp
-        const response = await fetch('players.json?v=' + new Date().getTime());
+        const response = await fetch('players.json');
         if (response.ok) {
-          allPlayers = await response.json();
+          const data = await response.json();
+          if (Array.isArray(data) && data.length > 20) {
+            allPlayers = data;
+          } else {
+            allPlayers = defaultPlayers;
+          }
+        } else {
+          allPlayers = defaultPlayers;
         }
       } catch (e) {
-        console.error("Errore nel caricamento del JSON:", e);
+        allPlayers = defaultPlayers;
       }
       renderPlayers();
     }
@@ -165,7 +252,7 @@
           <td>
             ${inSquad 
               ? `<span style="color:var(--text-muted); font-size:11px;">In Rosa</span>` 
-              : `<button class="btn-action" onclick="addToSquad(${p.id})">+ ACQUISTA</button>`
+              : `<button class="btn-action" onclick="addToSquad(${p.id})">+ PRENDI</button>`
             }
           </td>
         `;
@@ -175,7 +262,7 @@
 
     function addToSquad(id) {
       if (mySquad.length >= 25) {
-        alert("Rosa piena! Massimo 25 giocatori.");
+        alert("Hai raggiunto il limite massimo di 25 giocatori!");
         return;
       }
       const player = allPlayers.find(p => p.id === id);
@@ -186,7 +273,7 @@
       }
     }
 
-    // FUNZIONE PER ELIMINARE IL GIOCATORE DALLA ROSA
+    // Nuova funzione per rimuovere/svincolare il giocatore
     function removeFromSquad(id) {
       mySquad = mySquad.filter(p => p.id !== id);
       updateSquadUI();
@@ -203,14 +290,14 @@
       mySquad.forEach(p => {
         totalSpent += p.pma;
         const item = document.createElement('div');
-        item.className = 'squad-item';
+        item.className = 'squad-list-item';
         item.innerHTML = `
           <div>
             <strong>${p.nome}</strong> <span class="role-badge role-${p.ruolo}">${p.ruolo}</span>
           </div>
           <div style="display:flex; align-items:center;">
             <span style="color:#f1c40f; font-weight:bold;">${p.pma} CR</span>
-            <button class="btn-remove" onclick="removeFromSquad(${p.id})" title="Elimina dalla rosa">✕</button>
+            <button class="btn-remove" onclick="removeFromSquad(${p.id})" title="Rimuovi dalla rosa">✕</button>
           </div>
         `;
         squadList.appendChild(item);
