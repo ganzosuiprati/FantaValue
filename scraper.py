@@ -1,9 +1,11 @@
 import json
+import re
 import requests
 
-# Feed pubblico aggiornato con il listone completo della Serie A
+# Feed JSON completo per le quotazioni
 DATA_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
 
+# Loghi ad alta definizione e corretti per tema scuro
 TEAM_LOGOS = {
     "ATA": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
     "BOL": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
@@ -13,7 +15,7 @@ TEAM_LOGOS = {
     "FIO": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
     "GEN": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
     "INT": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
-    "JUV": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
+    "JUV": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juven_logo.png",  # Logo Bianco per Dark Mode
     "LAZ": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
     "LEC": "https://a.espncdn.com/i/teamlogos/soccer/500/3440.png",
     "MIL": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
@@ -40,12 +42,16 @@ def clean_role(raw_role):
 
 
 def update_database():
-    print("🔄 Download listone Serie A in corso...")
-    headers = {"User-Agent": "Mozilla/5.0"}
+    print("🔄 Download listone completo Serie A in corso...")
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        )
+    }
     players_db = []
 
     try:
-        res = requests.get(DATA_URL, headers=headers, timeout=10)
+        res = requests.get(DATA_URL, headers=headers, timeout=12)
         if res.status_code == 200:
             data = res.json()
             for idx, p in enumerate(data):
@@ -81,14 +87,17 @@ def update_database():
                     "stemma": stemma,
                 })
     except Exception as e:
-        print(f"❌ Errore durante il download: {e}")
+        print(f"❌ Errore durante lo scraping: {e}")
 
-    if len(players_db) > 50:
+    if len(players_db) > 100:
         with open("players.json", "w", encoding="utf-8") as f:
             json.dump(players_db, f, ensure_ascii=False, indent=2)
-        print(f"✅ 'players.json' salvato con successo! Calciatori presi: {len(players_db)}")
+        print(
+            f"✅ Salvato 'players.json' con successo! Totale calciatori:"
+            f" {len(players_db)}"
+        )
     else:
-        print("⚠️ Errore nel recupero dati. Operazione annullata.")
+        print("⚠️ Download fallito o dati incompleti. File non sovrascritto.")
 
 
 if __name__ == "__main__":
