@@ -1,9 +1,9 @@
 import json
 import requests
 
-# Endpoint per il listone completo
-DATA_URL = "https://www.fantacalcio.it/api/v1/excel/get-dataset/2024"  # Fallback JSON API completa
-SECONDARY_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
+# Nuova fonte GitHub aggiornata con l'intero listone di Serie A
+PRIMARY_URL = "https://raw.githubusercontent.com/vittorioparis/fantacalcio-dataset/main/data/quotazioni.json"
+SECONDARY_URL = "https://raw.githubusercontent.com/Stat-FC/fantacalcio-data/main/quotazioni_stats.json"
 
 TEAM_LOGOS = {
     "ATA": "https://upload.wikimedia.org/wikipedia/it/7/77/Atalanta_BC_logo.svg",
@@ -35,56 +35,50 @@ def clean_role(raw_role):
     if r in ["C", "CEN", "3"]: return "C"
     return "A"
 
-def update_database():
-    print("🔄 Download del listone COMPLETO Serie A in corso...")
+def fetch_data():
+    print("🔄 Connessione alla nuova fonte dati...")
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
     players_db = []
 
-    # Prova API Fantacalcio / Dataset
-    try:
-        res = requests.get("https://raw.githubusercontent.com/vittorioparis/fantacalcio-dataset/main/data/quotazioni.json", headers=headers, timeout=12)
-        if res.status_code != 200:
-            res = requests.get(SECONDARY_URL, headers=headers, timeout=12)
-        
-        data = res.json()
-        
-        # Se il dato è dentro una chiave specifica (es. "data" o "players")
-        raw_list = data.get("data", data) if isinstance(data, dict) else data
+    for url in [PRIMARY_URL, SECONDARY_URL]:
+        try:
+            res = requests.get(url, headers=headers, timeout=10)
+            if res.status_code == 200:
+                data = res.json()
+                raw_list = data.get("data", data) if isinstance(data, dict) else data
+                
+                if isinstance(raw_list, list) and len(raw_list) > 100:
+                    for idx, p in enumerate(raw_list):
+                        nome = p.get("nome") or p.get("Nome") or p.get("name") or p.get("Player")
+                        if not nome: continue
+                        
+                        squadra = str(p.get("squadra") or p.get("Squadra") or p.get("Team") or "SER")[:3].upper()
+                        ruolo = clean_role(p.get("ruolo") or p.get("R") or p.get("Role") or "A")
+                        pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or p.get("Quotazione") or 1)
+                        fm = float(p.get("fm") or p.get("Fm") or p.get("Fantamedia") or 6.0)
+                        tit = int(p.get("tit") or p.get("Tit") or p.get("Titolarita") or 75)
 
-        for idx, p in enumerate(raw_list):
-            nome = p.get("nome") or p.get("Nome") or p.get("name") or p.get("Player")
-            if not nome: continue
-            
-            squadra = str(p.get("squadra") or p.get("Squadra") or p.get("Team") or "SER")[:3].upper()
-            ruolo = clean_role(p.get("ruolo") or p.get("R") or p.get("Role") or "A")
-            
-            # Prezzo/Quotazione di partenza
-            pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or p.get("Quotazione") or 1)
-            fm = float(p.get("fm") or p.get("Fm") or p.get("Fantamedia") or 6.0)
-            tit = int(p.get("tit") or p.get("Tit") or p.get("Titolarita") or 75)
+                        players_db.append({
+                            "id": idx + 1,
+                            "nome": str(nome).strip().title(),
+                            "squadra": squadra,
+                            "ruolo": ruolo,
+                            "fantamedia": fm,
+                            "titolarita": tit,
+                            "pma": pma,
+                            "stemma": TEAM_LOGOS.get(squadra, "")
+                        })
+                    break
+        except Exception as e:
+            print(f"⚠️ Errore con la fonte {url}: {e}")
+            continue
 
-            stemma = TEAM_LOGOS.get(squadra, "")
-
-            players_db.append({
-                "id": p.get("id", idx + 1),
-                "nome": str(nome).strip().title(),
-                "squadra": squadra,
-                "ruolo": ruolo,
-                "fantamedia": fm,
-                "titolarita": tit,
-                "pma": pma,
-                "stemma": stemma
-            })
-
-    except Exception as e:
-        print(f"❌ Errore durante l'estrazione: {e}")
-
-    if len(players_db) > 0:
+    if len(players_db) > 100:
         with open("players.json", "w", encoding="utf-8") as f:
             json.dump(players_db, f, ensure_ascii=False, indent=2)
-        print(f"✅ 'players.json' generato con successo! Trovati {len(players_db)} calciatori.")
+        print(f"🔥 SPETTACOLO! Salvati {len(players_db)} calciatori in 'players.json'!")
     else:
-        print("⚠️ Nessun giocatore estratto, controlla la fonte.")
+        print("❌ Impossibile recuperare il listone intero dalle API.")
 
 if __name__ == "__main__":
-    update_database()
+    fetch_data()
