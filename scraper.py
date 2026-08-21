@@ -1,8 +1,7 @@
 import json
-import urllib.parse
 import requests
 
-# Feed pubblico ad alta affidabilità con oltre 500 calciatori
+# Feed pubblico aggiornato con il listone completo della Serie A
 DATA_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
 
 TEAM_LOGOS = {
@@ -87,9 +86,9 @@ def update_database():
     if len(players_db) > 50:
         with open("players.json", "w", encoding="utf-8") as f:
             json.dump(players_db, f, ensure_ascii=False, indent=2)
-        print(f"✅ 'players.json' salvato con {len(players_db)} calciatori!")
+        print(f"✅ 'players.json' salvato con successo! Calciatori presi: {len(players_db)}")
     else:
-        print("⚠️ Dati insufficienti. Il file non è stato sovrascritto.")
+        print("⚠️ Errore nel recupero dati. Operazione annullata.")
 
 
 if __name__ == "__main__":
