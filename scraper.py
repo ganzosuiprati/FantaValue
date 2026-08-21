@@ -1,10 +1,8 @@
 import json
 import requests
 
-# Feed JSON aggiornato con la Serie A completa
 DATA_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
 
-# Mapping loghi ufficiali ad alta risoluzione (testati per Dark Mode)
 TEAM_LOGOS = {
     "ATA": "https://upload.wikimedia.org/wikipedia/it/7/77/Atalanta_BC_logo.svg",
     "BOL": "https://upload.wikimedia.org/wikipedia/it/d/d8/Bologna_FC_1909_logo.svg",
@@ -14,7 +12,7 @@ TEAM_LOGOS = {
     "FIO": "https://upload.wikimedia.org/wikipedia/it/c/c2/ACF_Fiorentina_2022.svg",
     "GEN": "https://upload.wikimedia.org/wikipedia/it/3/37/Genoa_cfc.svg",
     "INT": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg",
-    "JUV": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juven_logo.png", # Stemma Bianco
+    "JUV": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juven_logo.png",
     "LAZ": "https://upload.wikimedia.org/wikipedia/it/a/a2/SSLazio_Logo.svg",
     "LEC": "https://upload.wikimedia.org/wikipedia/it/a/a7/US_Lecce_2009.svg",
     "MIL": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg",
