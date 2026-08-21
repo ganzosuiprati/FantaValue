@@ -1,10 +1,8 @@
 import json
 import requests
 
-# Feed JSON aggiornato con la Serie A completa
 DATA_URL = "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
 
-# Mapping loghi ufficiali ad alta risoluzione (testati per Dark Mode)
 TEAM_LOGOS = {
     "ATA": "https://upload.wikimedia.org/wikipedia/it/7/77/Atalanta_BC_logo.svg",
     "BOL": "https://upload.wikimedia.org/wikipedia/it/d/d8/Bologna_FC_1909_logo.svg",
