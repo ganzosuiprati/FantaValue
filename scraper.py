@@ -1,14 +1,10 @@
 import json
 import requests
+import pandas as pd
+import io
 
-# Fonti primarie con l'intero listone ufficiale Serie A
-SOURCES = [
-    # API / Dump Fantacalcio.it & Fantagazzetta completa
-    "https://raw.githubusercontent.com/vittorioparis/fantacalcio-dataset/main/data/quotazioni.json",
-    # Alternative / Fantaredazione dump
-    "https://raw.githubusercontent.com/Stat-FC/fantacalcio-data/main/quotazioni_stats.json",
-    "https://raw.githubusercontent.com/fede-co/fantacalcio-api/main/quotazioni.json"
-]
+# URL ufficiale del file Excel quotazioni di Fantacalcio.it
+EXCEL_URL = "https://www.fantacalcio.it/servizi/excel/quotazioni"
 
 TEAM_LOGOS = {
     "ATA": "https://upload.wikimedia.org/wikipedia/it/7/77/Atalanta_BC_logo.svg",
@@ -35,61 +31,50 @@ TEAM_LOGOS = {
 
 def clean_role(raw_role):
     r = str(raw_role).strip().upper()
-    if r in ["P", "POR", "1"]: return "P"
-    if r in ["D", "DIF", "2"]: return "D"
-    if r in ["C", "CEN", "3"]: return "C"
+    if r in ["P", "POR"]: return "P"
+    if r in ["D", "DIF"]: return "D"
+    if r in ["C", "CEN"]: return "C"
     return "A"
 
-def update_database():
-    print("🔄 Download del listone COMPLETO in corso...")
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-    }
-    players_db = []
-
-    for url in SOURCES:
-        try:
-            res = requests.get(url, headers=headers, timeout=12)
-            if res.status_code == 200:
-                data = res.json()
-                raw_list = data.get("data", data) if isinstance(data, dict) else data
+def update_data():
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    print("🔄 Download del file Excel ufficiale da Fantacalcio.it...")
+    
+    try:
+        res = requests.get(EXCEL_URL, headers=headers, timeout=15)
+        if res.status_code == 200:
+            # Legge il file excel saltando le prime righe di intestazione di Fantacalcio
+            df = pd.read_excel(io.BytesIO(res.content), skiprows=1)
+            
+            # Normalizzazione colonne
+            df.columns = [str(c).strip().lower() for c in df.columns]
+            
+            players_db = []
+            for idx, row in df.iterrows():
+                nome = row.get("nome") or row.get("calciatore")
+                if pd.isna(nome): continue
                 
-                # Accettiamo il dataset solo se contiene l'intero listone (> 200 giocatori)
-                if isinstance(raw_list, list) and len(raw_list) > 200:
-                    for idx, p in enumerate(raw_list):
-                        nome = p.get("nome") or p.get("Nome") or p.get("name") or p.get("Player")
-                        if not nome: continue
-                        
-                        squadra = str(p.get("squadra") or p.get("Squadra") or p.get("Team") or "SER")[:3].upper()
-                        ruolo = clean_role(p.get("ruolo") or p.get("R") or p.get("Role") or "A")
-                        
-                        # Quotazione / PMA
-                        pma = int(p.get("qt") or p.get("Qt") or p.get("pma") or p.get("Quotazione") or 1)
-                        fm = float(p.get("fm") or p.get("Fm") or p.get("Fantamedia") or 6.0)
-                        tit = int(p.get("tit") or p.get("Tit") or p.get("Titolarita") or 75)
+                squadra = str(row.get("squadra", "SER"))[:3].upper()
+                ruolo = clean_role(row.get("r") or row.get("ruolo", "A"))
+                pma = int(row.get("qt.a") or row.get("qt.i") or row.get("quotazione") or 1)
+                
+                players_db.append({
+                    "id": idx + 1,
+                    "nome": str(nome).strip().title(),
+                    "squadra": squadra,
+                    "ruolo": ruolo,
+                    "fantamedia": float(row.get("fm", 6.0)) if not pd.isna(row.get("fm")) else 6.0,
+                    "titolarita": int(row.get("tit", 75)) if not pd.isna(row.get("tit")) else 75,
+                    "pma": pma,
+                    "stemma": TEAM_LOGOS.get(squadra, "")
+                })
 
-                        players_db.append({
-                            "id": idx + 1,
-                            "nome": str(nome).strip().title(),
-                            "squadra": squadra,
-                            "ruolo": ruolo,
-                            "fantamedia": fm,
-                            "titolarita": tit,
-                            "pma": pma,
-                            "stemma": TEAM_LOGOS.get(squadra, "")
-                        })
-                    
-                    print(f"📡 Fonte agganciata con successo! Trovati {len(players_db)} calciatori.")
-                    break
-        except Exception as e:
-            continue
-
-    if len(players_db) > 100:
-        with open("players.json", "w", encoding="utf-8") as f:
-            json.dump(players_db, f, ensure_ascii=False, indent=2)
-        print(f"🔥 'players.json' aggiornato! Ora la tua lista ha {len(players_db)} giocatori.")
-    else:
-        print("❌ Errore nel recupero del listone completo.")
+            with open("players.json", "w", encoding="utf-8") as f:
+                json.dump(players_db, f, ensure_ascii=False, indent=2)
+                
+            print(f"✅ Successo! Salvati {len(players_db)} calciatori in players.json.")
+    except Exception as e:
+        print(f"❌ Errore durante l'aggiornamento: {e}")
 
 if __name__ == "__main__":
-    update_database()
+    update_data()
