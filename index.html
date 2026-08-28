@@ -15,6 +15,7 @@
       --cyan: #00f0ff;
       --pink: #ff0055;
       --yellow: #ffe600;
+      --green: #00ff66;
       --text-main: #e2e8f0;
       --text-muted: #64748b;
     }
@@ -185,7 +186,7 @@
       font-size: 12px;
     }
 
-    /* MODALE ACQUISTO */
+    /* MODALI */
     .modal {
       display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
       background: rgba(0,0,0,0.8); backdrop-filter: blur(4px);
@@ -193,13 +194,25 @@
     }
     .modal-content {
       background: var(--card-bg); border: 1px solid var(--cyan);
-      padding: 25px; border-radius: 8px; width: 320px; text-align: center;
+      padding: 25px; border-radius: 8px; width: 340px; text-align: center;
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
     }
     .modal-content input {
       width: 100%; padding: 10px; margin: 15px 0; background: #050811;
       border: 1px solid var(--border-color); color: #fff; font-family: 'Orbitron';
-      text-align: center; font-size: 16px;
+      text-align: center; font-size: 16px; outline: none;
     }
+
+    /* BADGE POPUP VALUTAZIONE ACQUISTO */
+    .eval-badge {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 18px; font-weight: 900;
+      margin: 15px 0; padding: 10px; border-radius: 4px;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .eval-affarone { background: rgba(0, 255, 102, 0.15); border: 1px solid var(--green); color: var(--green); }
+    .eval-giusto { background: rgba(0, 240, 255, 0.15); border: 1px solid var(--cyan); color: var(--cyan); }
+    .eval-pacco { background: rgba(255, 0, 85, 0.15); border: 1px solid var(--pink); color: var(--pink); }
   </style>
 </head>
 <body>
@@ -221,7 +234,7 @@
       <div class="top-controls">
         <div class="input-group">
           <label>Partecipanti Lega</label>
-          <input type="number" id="numPlayers" value="10" oninput="renderPlayers()">
+          <input type="number" id="numPlayers" value="8" oninput="renderPlayers()">
         </div>
         <div class="input-group">
           <label>Budget Totale (CR)</label>
@@ -229,7 +242,7 @@
         </div>
         <div class="input-group">
           <label>Ricerca Giocatore / Squadra</label>
-          <input type="text" id="searchInput" placeholder="Es. Lautaro, Inter, Dimarco..." oninput="renderPlayers()">
+          <input type="text" id="searchInput" placeholder="Es. Svilar, Inter, Dimarco..." oninput="renderPlayers()">
         </div>
       </div>
 
@@ -252,7 +265,7 @@
               <th>Giocatore</th>
               <th>Squadra</th>
               <th>Ruolo</th>
-              <th>FM</th>
+              <th>FM EST.</th>
               <th>TIT%</th>
               <th>Prezzo Max</th>
               <th>Azioni</th>
@@ -284,8 +297,8 @@
   <!-- TOOLTIP POPUP ANALISI -->
   <div id="analysisTooltip">
     <div style="color:var(--cyan); font-weight:bold; margin-bottom:4px;">ANALISI VALORE</div>
-    <div>Prezzo di Target consigliato: <span id="tooltipTarget" style="color:var(--yellow); font-weight:bold;"></span> CR</div>
-    <div style="font-size:10px; color:var(--text-muted); margin-top:4px;">Non superare questa cifra in asta!</div>
+    <div>Prezzo Target Consigliato: <span id="tooltipTarget" style="color:var(--yellow); font-weight:bold;"></span> CR</div>
+    <div style="font-size:10px; color:var(--text-muted); margin-top:4px;">In asta non andare oltre questo valore!</div>
   </div>
 
   <!-- MODALE ACQUISTO -->
@@ -300,6 +313,16 @@
     </div>
   </div>
 
+  <!-- MODALE RISULTATO VALUTAZIONE ACQUISTO -->
+  <div class="modal" id="resultModal">
+    <div class="modal-content">
+      <h3 style="font-family:'Orbitron'; color:#fff;" id="resultPlayerName">Giocatore Acquisto</h3>
+      <div id="evalBadge" class="eval-badge">AFFARONE!</div>
+      <p id="resultMessage" style="font-size:13px; color:var(--text-main); margin-bottom:15px;"></p>
+      <button class="btn-analisi" onclick="closeResultModal()">OK, PROSEGUI</button>
+    </div>
+  </div>
+
   <script>
     let allPlayers = [];
     let mySquad = [];
@@ -308,11 +331,11 @@
 
     async function loadPlayers() {
       try {
-        const res = await fetch('players.json');
+        const res = await fetch('players.json?v=' + new Date().getTime());
         allPlayers = await res.json();
         renderPlayers();
       } catch (err) {
-        console.error("Errore caricamento players.json", err);
+        console.error("Errore nel caricamento di players.json", err);
       }
     }
 
@@ -399,9 +422,43 @@
     function confirmBuy() {
       const price = parseInt(document.getElementById('buyPriceInput').value) || 1;
       const player = allPlayers.find(p => p.id === selectedPlayerId);
+      const targetPrice = calculateDynamicTarget(player.pma);
+
       mySquad.push({ ...player, buyPrice: price });
       closeBuyModal();
       renderPlayers();
+
+      showResultPopup(player.nome, price, targetPrice);
+    }
+
+    function showResultPopup(name, paid, target) {
+      const modal = document.getElementById('resultModal');
+      const badge = document.getElementById('evalBadge');
+      const msg = document.getElementById('resultMessage');
+
+      document.getElementById('resultPlayerName').innerText = name;
+
+      const diff = paid - target;
+
+      if (paid <= Math.round(target * 0.85)) {
+        badge.className = 'eval-badge eval-affarone';
+        badge.innerText = '🔥 AFFARONE!';
+        msg.innerText = `Pagato ${paid} CR! Risparmiati ${target - paid} CR rispetto alla soglia consigliata di ${target} CR. Colpaccio!`;
+      } else if (paid <= Math.round(target * 1.15)) {
+        badge.className = 'eval-badge eval-giusto';
+        badge.innerText = '⚖️ PREZZO GIUSTO';
+        msg.innerText = `Pagato ${paid} CR rispetto al valore stimato di ${target} CR. Prezzo di mercato bilanciato.`;
+      } else {
+        badge.className = 'eval-badge eval-pacco';
+        badge.innerText = '⚠️ PACCO / OVERPAY';
+        msg.innerText = `Pagato ${paid} CR, ben ${diff} CR oltre il prezzo limite di ${target} CR. Gestisci con attenzione i crediti rimasti!`;
+      }
+
+      modal.style.display = 'flex';
+    }
+
+    function closeResultModal() {
+      document.getElementById('resultModal').style.display = 'none';
     }
 
     function removePlayer(id) {
