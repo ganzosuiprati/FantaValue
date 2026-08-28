@@ -3,214 +3,327 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Pipita FantaValue 2026</title>
+  <title>EL PIPITA FANTAVALUE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-color: #030712;
-      --panel-bg: #070f1e;
+      --bg-dark: #050811;
+      --card-bg: #0b1329;
+      --border-color: #1e2c52;
       --cyan: #00f0ff;
-      --magenta: #ff0055;
-      --yellow: #f1c40f;
-      --text: #ffffff;
-      --text-muted: #8a99ad;
-      --border: #00f0ff44;
-      --glow-cyan: 0 0 10px rgba(0, 240, 255, 0.5);
-      --glow-magenta: 0 0 10px rgba(255, 0, 85, 0.5);
+      --pink: #ff0055;
+      --yellow: #ffe600;
+      --text-main: #e2e8f0;
+      --text-muted: #64748b;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Rajdhani', sans-serif; }
-    body { background-color: var(--bg-color); color: var(--text); padding: 20px; }
-
-    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--cyan); padding-bottom: 12px; box-shadow: var(--glow-cyan); }
-    .brand-container { display: flex; align-items: center; gap: 15px; }
-    .cyber-logo { width: 45px; height: 45px; filter: drop-shadow(0 0 8px var(--cyan)); }
-    header h1 { font-family: 'Orbitron', sans-serif; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; font-size: 24px; text-shadow: var(--glow-cyan); }
-    
-    .dev-badge {
-      background: linear-gradient(135deg, rgba(0,240,255,0.1), rgba(255,0,85,0.1));
-      border: 1px solid var(--cyan);
-      border-radius: 6px;
-      padding: 6px 12px;
-      text-align: right;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Rajdhani', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    .dev-badge .dev-title { font-size: 10px; color: var(--text-muted); font-family: 'Orbitron', sans-serif; text-transform: uppercase; }
-    .dev-badge .dev-name { font-size: 13px; font-weight: 700; color: #fff; font-family: 'Orbitron', sans-serif; }
-    .dev-badge a { color: var(--magenta); text-decoration: none; font-weight: bold; font-size: 11px; }
 
-    .main-container { display: grid; grid-template-columns: 2.3fr 1fr; gap: 20px; }
-    .card { background: var(--panel-bg); border: 1px solid var(--cyan); border-radius: 6px; padding: 15px; }
+    /* HEADER */
+    header {
+      background: rgba(11, 19, 41, 0.9);
+      border-bottom: 2px solid var(--cyan);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+    }
+    .logo-container { display: flex; align-items: center; gap: 12px; }
+    .hexagon {
+      width: 28px; height: 28px; background: var(--cyan);
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      box-shadow: 0 0 10px var(--cyan);
+    }
+    .logo-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 22px; font-weight: 900;
+      letter-spacing: 2px; color: #fff;
+      text-shadow: 0 0 10px var(--cyan);
+    }
+    .dev-tag { text-align: right; font-size: 11px; }
+    .dev-tag strong { color: #fff; font-size: 12px; }
+    .dev-tag a { color: var(--pink); text-decoration: none; }
 
-    .controls-grid { display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 10px; margin-bottom: 15px; }
-    .input-group label { display: block; font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 5px; font-family: 'Orbitron', sans-serif; }
-    .input-group input, .search-box input { width: 100%; padding: 8px; background: #02050d; border: 1px solid var(--cyan); color: #fff; border-radius: 4px; font-weight: bold; }
+    /* LAYOUT MAIN */
+    .main-container {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 20px;
+      padding: 20px 30px;
+      flex: 1;
+    }
 
-    .filters { display: flex; gap: 8px; margin-bottom: 15px; }
-    .filter-btn { background: transparent; border: 1px solid var(--cyan); color: var(--cyan); padding: 6px 16px; cursor: pointer; border-radius: 4px; font-weight: bold; font-family: 'Orbitron', sans-serif; }
-    .filter-btn.active { background: var(--cyan); color: #000; box-shadow: var(--glow-cyan); }
+    /* FILTRI E INPUT SUPERIORI */
+    .top-controls {
+      display: grid;
+      grid-template-columns: 180px 180px 1fr;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .input-group {
+      display: flex; flex-direction: column; gap: 5px;
+    }
+    .input-group label {
+      font-size: 11px; font-weight: 700;
+      color: var(--text-muted); text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .input-group input {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      color: #fff; padding: 10px 14px;
+      border-radius: 4px; font-family: 'Orbitron', sans-serif;
+      outline: none; transition: 0.3s;
+    }
+    .input-group input:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+    }
 
-    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-    th { text-align: left; color: var(--text-muted); font-size: 11px; text-transform: uppercase; padding: 10px 8px; border-bottom: 1px solid var(--border); font-family: 'Orbitron', sans-serif; }
-    td { padding: 10px 8px; border-bottom: 1px solid #112233; font-size: 15px; font-weight: 600; }
+    /* FILTRI RUOLO */
+    .role-filters { display: flex; gap: 8px; margin-bottom: 15px; }
+    .btn-role {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 16px; border-radius: 4px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 12px; font-weight: 700;
+      cursor: pointer; transition: 0.2s;
+    }
+    .btn-role.active, .btn-role:hover {
+      border-color: var(--cyan);
+      background: rgba(0, 240, 255, 0.1);
+      color: var(--cyan);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+    }
 
-    .role-P { color: #f39c12; }
-    .role-D { color: #2ecc71; }
-    .role-C { color: #3498db; }
-    .role-A { color: var(--magenta); }
+    /* TABELLA GIOCATORI */
+    .table-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px; overflow: hidden;
+    }
+    .table-header-bar {
+      padding: 12px 20px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .table-title { font-family: 'Orbitron', sans-serif; color: var(--pink); font-weight: 700; font-size: 14px; }
+    .table-count { font-family: 'Orbitron', sans-serif; color: var(--cyan); font-size: 13px; }
 
-    .btn-analisi { background: transparent; border: 1px solid var(--cyan); color: var(--cyan); padding: 4px 8px; border-radius: 4px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 10px; margin-right: 5px; }
-    .btn-prendi { background: var(--magenta); color: #fff; border: none; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 11px; font-weight: bold; box-shadow: var(--glow-magenta); }
-    .btn-remove { background: #e74c3c; color: #fff; border: none; padding: 3px 8px; border-radius: 4px; cursor: pointer; font-size: 11px; margin-left: 8px; font-family: 'Orbitron', sans-serif; }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th {
+      padding: 12px 16px; font-size: 11px; color: var(--text-muted);
+      text-transform: uppercase; border-bottom: 1px solid var(--border-color);
+    }
+    td { padding: 12px 16px; font-size: 14px; border-bottom: 1px solid rgba(30, 44, 82, 0.5); }
+    tr:hover { background: rgba(0, 240, 255, 0.03); }
 
-    .squad-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
-    .squad-stat { margin-bottom: 8px; font-size: 14px; display: flex; justify-content: space-between; font-weight: bold; }
-    .squad-stat-val { font-family: 'Orbitron', sans-serif; color: var(--cyan); }
-    .squad-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #112233; font-size: 14px; }
+    .role-P { color: #ffe600; font-weight: bold; }
+    .role-D { color: #00f0ff; font-weight: bold; }
+    .role-C { color: #00ff66; font-weight: bold; }
+    .role-A { color: #ff0055; font-weight: bold; }
 
-    .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; justify-content: center; align-items: center; z-index: 1000; }
-    .modal-box { background: var(--panel-bg); border: 2px solid var(--cyan); border-radius: 8px; padding: 25px; width: 350px; text-align: center; box-shadow: var(--glow-cyan); position: relative; }
-    .modal-box h2 { font-family: 'Orbitron', sans-serif; color: var(--cyan); margin-bottom: 15px; text-transform: uppercase; }
-    .modal-input { width: 100%; padding: 10px; background: #000; border: 1px solid var(--cyan); color: var(--yellow); font-size: 18px; font-family: 'Orbitron', sans-serif; text-align: center; margin: 15px 0; }
-    .price-badge { padding: 8px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; display: block; border: 1px solid; }
-    .badge-affarone { background: rgba(46, 204, 113, 0.2); color: #2ecc71; border-color: #2ecc71; }
-    .badge-equo { background: rgba(241, 196, 15, 0.2); color: #f1c40f; border-color: #f1c40f; }
-    .badge-pacco { background: rgba(231, 76, 60, 0.2); color: #e74c3c; border-color: #e74c3c; }
+    .btn-analisi {
+      background: transparent; border: 1px solid var(--cyan);
+      color: var(--cyan); padding: 4px 10px; border-radius: 3px;
+      font-size: 11px; font-family: 'Orbitron'; cursor: pointer; transition: 0.2s;
+    }
+    .btn-analisi:hover { background: var(--cyan); color: #000; }
 
-    .tooltip { position: absolute; background: #020813; border: 1px solid var(--cyan); padding: 10px; border-radius: 4px; font-size: 11px; z-index: 500; display: none; box-shadow: var(--glow-cyan); text-align: left; }
+    .btn-prendi {
+      background: var(--pink); border: none;
+      color: #fff; padding: 5px 12px; border-radius: 3px;
+      font-size: 11px; font-family: 'Orbitron'; font-weight: bold;
+      cursor: pointer; margin-left: 5px; box-shadow: 0 0 8px rgba(255, 0, 85, 0.4);
+      transition: 0.2s;
+    }
+    .btn-prendi:hover { transform: scale(1.05); }
+
+    /* PANNELLO DESTRO - LA MIA ROSA */
+    .rosa-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px; padding: 20px;
+      display: flex; flex-direction: column; gap: 15px;
+    }
+    .rosa-header {
+      display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid var(--border-color); padding-bottom: 10px;
+    }
+    .rosa-title { font-family: 'Orbitron', sans-serif; font-size: 16px; color: #fff; }
+    .rosa-count { font-family: 'Orbitron'; color: var(--cyan); font-weight: bold; }
+
+    .stat-box {
+      background: rgba(5, 8, 17, 0.6); padding: 12px; border-radius: 4px;
+      display: flex; justify-content: space-between; font-size: 13px; font-weight: 700;
+    }
+
+    .squad-list { flex: 1; overflow-y: auto; max-height: 500px; display: flex; flex-direction: column; gap: 8px; }
+    .squad-item {
+      background: rgba(30, 44, 82, 0.3); border: 1px solid var(--border-color);
+      padding: 10px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center;
+    }
+
+    /* TOOLTIP POPUP ANALISI */
+    #analysisTooltip {
+      position: absolute; display: none; background: #081026;
+      border: 1px solid var(--cyan); padding: 12px 16px; border-radius: 6px;
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.3); pointer-events: none; z-index: 1000;
+      font-size: 12px;
+    }
+
+    /* MODALE ACQUISTO */
+    .modal {
+      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8); backdrop-filter: blur(4px);
+      justify-content: center; align-items: center; z-index: 2000;
+    }
+    .modal-content {
+      background: var(--card-bg); border: 1px solid var(--cyan);
+      padding: 25px; border-radius: 8px; width: 320px; text-align: center;
+    }
+    .modal-content input {
+      width: 100%; padding: 10px; margin: 15px 0; background: #050811;
+      border: 1px solid var(--border-color); color: #fff; font-family: 'Orbitron';
+      text-align: center; font-size: 16px;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="brand-container">
-      <svg class="cyber-logo" viewBox="0 0 100 100">
-        <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="#00f0ff" stroke-width="4"/>
-        <circle cx="50" cy="50" r="22" fill="none" stroke="#ff0055" stroke-width="3"/>
-        <polygon points="50,38 60,45 56,57 44,57 40,45" fill="#00f0ff"/>
-      </svg>
-      <h1>EL PIPITA FANTAVALUE</h1>
+    <div class="logo-container">
+      <div class="hexagon"></div>
+      <div class="logo-title">EL PIPITA FANTAVALUE</div>
     </div>
-    <div class="dev-badge">
-      <div class="dev-title">Developer & Lead</div>
-      <div class="dev-name">Francesco Coppola</div>
+    <div class="dev-tag">
+      DEVELOPER & LEAD<br>
+      <strong>Francesco Coppola</strong><br>
       <a href="https://instagram.com/ganzosuiprati" target="_blank">@ganzosuiprati</a>
     </div>
   </header>
 
   <div class="main-container">
-    <div class="card">
-      <div class="controls-grid">
+    <div>
+      <div class="top-controls">
         <div class="input-group">
           <label>Partecipanti Lega</label>
-          <input type="number" id="numPlayers" value="10" onchange="renderPlayers()">
+          <input type="number" id="numPlayers" value="10" oninput="renderPlayers()">
         </div>
         <div class="input-group">
           <label>Budget Totale (CR)</label>
-          <input type="number" id="totalBudget" value="1000" onchange="renderPlayers()">
+          <input type="number" id="totalBudget" value="1000" oninput="renderPlayers()">
         </div>
-        <div class="search-box">
+        <div class="input-group">
           <label>Ricerca Giocatore / Squadra</label>
           <input type="text" id="searchInput" placeholder="Es. Lautaro, Inter, Dimarco..." oninput="renderPlayers()">
         </div>
       </div>
 
-      <div class="filters">
-        <button class="filter-btn active" onclick="setRoleFilter('TUTTI', this)">TUTTI</button>
-        <button class="filter-btn" onclick="setRoleFilter('P', this)">POR</button>
-        <button class="filter-btn" onclick="setRoleFilter('D', this)">DIF</button>
-        <button class="filter-btn" onclick="setRoleFilter('C', this)">CEN</button>
-        <button class="filter-btn" onclick="setRoleFilter('A', this)">ATT</button>
+      <div class="role-filters">
+        <button class="btn-role active" onclick="setFilter('TUTTI', this)">TUTTI</button>
+        <button class="btn-role" onclick="setFilter('P', this)">POR</button>
+        <button class="btn-role" onclick="setFilter('D', this)">DIF</button>
+        <button class="btn-role" onclick="setFilter('C', this)">CEN</button>
+        <button class="btn-role" onclick="setFilter('A', this)">ATT</button>
       </div>
 
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px;">
-        <h3 style="color: var(--magenta); font-family:'Orbitron'; font-size: 16px;">LISTONE SERIE A 2026</h3>
-        <span id="playerCount" style="color: var(--cyan); font-family:'Orbitron'; font-weight:bold;">0 GIOCATORI</span>
+      <div class="table-container">
+        <div class="table-header-bar">
+          <div class="table-title">LISTONE SERIE A 2026</div>
+          <div class="table-count" id="playerCount">0 GIOCATORI</div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Giocatore</th>
+              <th>Squadra</th>
+              <th>Ruolo</th>
+              <th>FM</th>
+              <th>TIT%</th>
+              <th>Prezzo Max</th>
+              <th>Azioni</th>
+            </tr>
+          </thead>
+          <tbody id="playerTableBody"></tbody>
+        </table>
       </div>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Giocatore</th>
-            <th>Squadra</th>
-            <th>Ruolo</th>
-            <th>FM</th>
-            <th>TIT%</th>
-            <th>Prezzo Max</th>
-            <th>Azioni</th>
-          </tr>
-        </thead>
-        <tbody id="playerTableBody"></tbody>
-      </table>
     </div>
 
-    <div class="card">
-      <div class="squad-header">
-        <h3 style="font-family:'Orbitron'; color:#fff;">LA MIA ROSA</h3>
-        <span id="squadCount" style="color: var(--cyan); font-family:'Orbitron'; font-weight: bold; font-size:18px;">0/25</span>
+    <!-- SIDEBAR ROSA -->
+    <div class="rosa-panel">
+      <div class="rosa-header">
+        <div class="rosa-title">LA MIA ROSA</div>
+        <div class="rosa-count" id="squadCount">0/25</div>
       </div>
-      <div class="squad-stat">
+      <div class="stat-box">
         <span>CREDITI RIMANENTI:</span>
-        <span class="squad-stat-val" id="remainingCredits">1000 CR</span>
+        <span id="remainingCredits" style="color:var(--cyan)">1000 CR</span>
       </div>
-      <div class="squad-stat">
+      <div class="stat-box">
         <span>SPESI TOTALE:</span>
-        <span class="squad-stat-val" id="spentCredits" style="color: var(--magenta);">0 CR</span>
+        <span id="totalSpent" style="color:var(--pink)">0 CR</span>
       </div>
-      <hr style="border-color: var(--border); margin: 15px 0;">
-      <div id="squadList"></div>
+      <div class="squad-list" id="squadList"></div>
     </div>
   </div>
 
-  <div class="modal-overlay" id="buyModal">
-    <div class="modal-box">
-      <h2 id="modalPlayerName">NOME GIOCATORE</h2>
-      <div style="font-size:13px; color:var(--text-muted);">Target Ricalcolato: <span id="modalTargetPrice" style="color:var(--cyan); font-weight:bold;">0 CR</span></div>
-      <input type="number" id="paidPriceInput" class="modal-input" placeholder="Prezzo pagato..." oninput="updatePriceEvaluation()">
-      <div id="priceEvaluationBadge" class="price-badge badge-equo">⚖️ INSERISCI PREZZO</div>
-      <button class="btn-prendi" style="width:100%; padding:10px; font-size:14px;" onclick="confirmPurchase()">AGGIUNGI ALLA ROSA</button>
-      <button class="btn-analisi" style="width:100%; margin-top:8px; border:none; color:var(--text-muted);" onclick="closeModal()">ANNULLA</button>
-    </div>
+  <!-- TOOLTIP POPUP ANALISI -->
+  <div id="analysisTooltip">
+    <div style="color:var(--cyan); font-weight:bold; margin-bottom:4px;">ANALISI VALORE</div>
+    <div>Prezzo di Target consigliato: <span id="tooltipTarget" style="color:var(--yellow); font-weight:bold;"></span> CR</div>
+    <div style="font-size:10px; color:var(--text-muted); margin-top:4px;">Non superare questa cifra in asta!</div>
   </div>
 
-  <div class="tooltip" id="analysisTooltip"></div>
+  <!-- MODALE ACQUISTO -->
+  <div class="modal" id="buyModal">
+    <div class="modal-content">
+      <h3 style="font-family:'Orbitron'; color:var(--cyan);" id="modalPlayerName">Acquista Giocatore</h3>
+      <input type="number" id="buyPriceInput" placeholder="Prezzo pagato in CR">
+      <div style="display:flex; gap:10px; justify-content:center;">
+        <button class="btn-analisi" onclick="closeBuyModal()">ANNULLA</button>
+        <button class="btn-prendi" onclick="confirmBuy()">CONFERMA</button>
+      </div>
+    </div>
+  </div>
 
   <script>
     let allPlayers = [];
-    let currentRoleFilter = 'TUTTI';
     let mySquad = [];
-    let selectedPlayer = null;
+    let currentRoleFilter = 'TUTTI';
+    let selectedPlayerId = null;
 
-    // PASSAGGIO 3: FETCH SENZA CACHE
-    async function init() {
+    async function loadPlayers() {
       try {
-        const response = await fetch('./players.json?t=' + new Date().getTime());
-        if (response.ok) {
-          allPlayers = await response.json();
-        }
-      } catch (e) {
-        console.error("Errore nel caricamento del JSON", e);
+        const res = await fetch('players.json');
+        allPlayers = await res.json();
+        renderPlayers();
+      } catch (err) {
+        console.error("Errore caricamento players.json", err);
       }
-      renderPlayers();
     }
 
-    // PASSAGGIO 2: ALGORITMO DI RICALCOLO DINAMICO
     function calculateDynamicTarget(basePma) {
-      if (!basePma) return 1;
-      const totalBudget = parseFloat(document.getElementById('totalBudget').value) || 1000;
-      const numTeams = parseInt(document.getElementById('numPlayers').value) || 10;
-
-      const budgetRatio = totalBudget / 500;
-      const teamsRatio = 1 + (numTeams - 8) * 0.075;
-
-      const dynamicPrice = Math.round((basePma / 2) * budgetRatio * teamsRatio);
-      return Math.max(1, dynamicPrice);
-    }
-
-    function setRoleFilter(role, btn) {
-      currentRoleFilter = role;
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderPlayers();
+      const numPlayers = parseInt(document.getElementById('numPlayers').value) || 10;
+      const totalBudget = parseInt(document.getElementById('totalBudget').value) || 1000;
+      
+      const factorLega = 10 / numPlayers;
+      const factorBudget = totalBudget / 1000;
+      
+      return Math.max(1, Math.round(basePma * factorLega * factorBudget));
     }
 
     function renderPlayers() {
@@ -231,7 +344,6 @@
         const inSquad = mySquad.some(item => item.id === p.id);
         const tr = document.createElement('tr');
         
-        // PASSAGGIO 1: PASSAGGIO DELL'ID SPECIFICO PER EVITARE BUG SOMMER
         tr.innerHTML = `
           <td><strong>${p.nome}</strong></td>
           <td><span style="color:var(--cyan); font-weight:bold;">${p.squadra}</span></td>
@@ -253,54 +365,46 @@
       updateSquadUI();
     }
 
-    // PASSAGGIO 1: SELEZIONE DEL GIOCATORE CORRETTO NEL MODALE
-    function openBuyModal(id) {
-      selectedPlayer = allPlayers.find(p => p.id === id);
-      if (!selectedPlayer) return;
-
-      const dynamicPma = calculateDynamicTarget(selectedPlayer.pma);
-      selectedPlayer.currentPma = dynamicPma;
-
-      document.getElementById('modalPlayerName').innerText = selectedPlayer.nome;
-      document.getElementById('modalTargetPrice').innerText = `${dynamicPma} CR`;
-      document.getElementById('paidPriceInput').value = dynamicPma;
-      updatePriceEvaluation();
-      document.getElementById('buyModal').style.display = 'flex';
-    }
-
-    function closeModal() {
-      document.getElementById('buyModal').style.display = 'none';
-    }
-
-    function updatePriceEvaluation() {
-      const paid = parseInt(document.getElementById('paidPriceInput').value) || 0;
-      const target = selectedPlayer.currentPma;
-      const badge = document.getElementById('priceEvaluationBadge');
-
-      if (paid <= target * 0.85) {
-        badge.className = "price-badge badge-affarone";
-        badge.innerText = "🔥 AFFARONE";
-      } else if (paid <= target * 1.15) {
-        badge.className = "price-badge badge-equo";
-        badge.innerText = "⚖️ PREZZO EQUO";
-      } else {
-        badge.className = "price-badge badge-pacco";
-        badge.innerText = "⚠️ PACCO";
-      }
-    }
-
-    function confirmPurchase() {
-      const paidPrice = parseInt(document.getElementById('paidPriceInput').value) || selectedPlayer.currentPma;
-      if (mySquad.length >= 25) {
-        alert("Rosa piena!");
-        return;
-      }
-      mySquad.push({ ...selectedPlayer, paidPrice });
-      closeModal();
+    function setFilter(role, btn) {
+      currentRoleFilter = role;
+      document.querySelectorAll('.btn-role').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
       renderPlayers();
     }
 
-    function removeFromSquad(id) {
+    function showAnalysis(e, price) {
+      const tooltip = document.getElementById('analysisTooltip');
+      document.getElementById('tooltipTarget').innerText = price;
+      tooltip.style.display = 'block';
+      tooltip.style.left = e.pageX + 10 + 'px';
+      tooltip.style.top = e.pageY + 10 + 'px';
+    }
+
+    function hideAnalysis() {
+      document.getElementById('analysisTooltip').style.display = 'none';
+    }
+
+    function openBuyModal(id) {
+      selectedPlayerId = id;
+      const player = allPlayers.find(p => p.id === id);
+      document.getElementById('modalPlayerName').innerText = player.nome;
+      document.getElementById('buyPriceInput').value = calculateDynamicTarget(player.pma);
+      document.getElementById('buyModal').style.display = 'flex';
+    }
+
+    function closeBuyModal() {
+      document.getElementById('buyModal').style.display = 'none';
+    }
+
+    function confirmBuy() {
+      const price = parseInt(document.getElementById('buyPriceInput').value) || 1;
+      const player = allPlayers.find(p => p.id === selectedPlayerId);
+      mySquad.push({ ...player, buyPrice: price });
+      closeBuyModal();
+      renderPlayers();
+    }
+
+    function removePlayer(id) {
       mySquad = mySquad.filter(p => p.id !== id);
       renderPlayers();
     }
@@ -308,49 +412,31 @@
     function updateSquadUI() {
       const squadList = document.getElementById('squadList');
       squadList.innerHTML = '';
-
-      let totalSpent = 0;
-      const totalBudget = parseInt(document.getElementById('totalBudget').value) || 1000;
-
+      
+      let spent = 0;
       mySquad.forEach(p => {
-        totalSpent += p.paidPrice;
+        spent += p.buyPrice;
         const item = document.createElement('div');
         item.className = 'squad-item';
         item.innerHTML = `
           <div>
-            <strong>${p.nome}</strong> <span class="role-${p.ruolo}">[${p.ruolo}]</span>
+            <strong style="color:#fff;">${p.nome}</strong> <span class="role-${p.ruolo}">(${p.ruolo})</span>
           </div>
-          <div style="display:flex; align-items:center;">
-            <span style="color:var(--yellow); font-family:'Orbitron'; font-weight:bold; margin-right:5px;">${p.paidPrice} CR</span>
-            <button class="btn-remove" onclick="removeFromSquad(${p.id})" title="Rimuovi">✕</button>
+          <div>
+            <span style="color:var(--yellow); font-family:'Orbitron'; font-weight:bold; margin-right:8px;">${p.buyPrice} CR</span>
+            <button onclick="removePlayer(${p.id})" style="background:none; border:none; color:var(--pink); cursor:pointer;">✕</button>
           </div>
         `;
         squadList.appendChild(item);
       });
 
+      const totalBudget = parseInt(document.getElementById('totalBudget').value) || 1000;
       document.getElementById('squadCount').innerText = `${mySquad.length}/25`;
-      document.getElementById('spentCredits').innerText = `${totalSpent} CR`;
-      document.getElementById('remainingCredits').innerText = `${totalBudget - totalSpent} CR`;
+      document.getElementById('totalSpent').innerText = `${spent} CR`;
+      document.getElementById('remainingCredits').innerText = `${totalBudget - spent} CR`;
     }
 
-    function showAnalysis(e, pma) {
-      const tt = document.getElementById('analysisTooltip');
-      tt.innerHTML = `
-        <strong>TARGET PREZZO RICALCOLATO:</strong><br>
-        🔥 Affarone: ≤ ${Math.floor(pma * 0.85)} CR<br>
-        ⚖️ Equo: ${Math.floor(pma * 0.86)} - ${Math.floor(pma * 1.15)} CR<br>
-        ⚠️ Pacco: ≥ ${Math.floor(pma * 1.16)} CR
-      `;
-      tt.style.left = (e.pageX - 150) + 'px';
-      tt.style.top = (e.pageY + 15) + 'px';
-      tt.style.display = 'block';
-    }
-
-    function hideAnalysis() {
-      document.getElementById('analysisTooltip').style.display = 'none';
-    }
-
-    window.onload = init;
+    window.onload = loadPlayers;
   </script>
 </body>
 </html>
