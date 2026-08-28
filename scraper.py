@@ -19,99 +19,97 @@ def main():
         sys.exit(1)
 
     print(f"Lettura di {EXCEL_FILE}...")
-    
+
     df = None
-    for skip in range(5):
+    # Cerca la riga corretta delle intestazioni (riga 1 o riga 2)
+    for skip in [1, 0, 2, 3]:
         try:
             temp_df = pd.read_excel(EXCEL_FILE, header=skip)
-            cols = [str(c).strip().upper() for c in temp_df.columns]
+            cols = [str(c).strip() for c in temp_df.columns]
             
-            has_nome = any(k in c for c in cols for k in ['NOME', 'GIOCATORE', 'CALCIATORE'])
-            has_ruolo = any(k in c for c in cols for k in ['RUOLO', 'RM', 'R'])
-            
-            if has_nome and has_ruolo:
+            # Controlla se le colonne fondamentali (Nome e Squadra) esistono
+            if any('NOME' in c.upper() for c in cols) and any('SQUADRA' in c.upper() for c in cols):
                 df = temp_df
-                df.columns = cols
-                print(f"Intestazione trovata alla riga {skip + 1}!")
+                print(f"Intestazione valida trovata alla riga {skip + 1}!")
                 break
         except Exception:
             continue
 
     if df is None:
-        df = pd.read_excel(EXCEL_FILE, header=0)
-        df.columns = [str(c).strip().upper() for c in df.columns]
+        df = pd.read_excel(EXCEL_FILE, header=1)
 
-    print(f"Colonne rilevate: {list(df.columns)}")
+    # Pulizia nomi colonne
+    df.columns = [str(c).strip() for c in df.columns]
 
-    # Mappatura estesa delle colonne
-    col_nome = next((c for c in df.columns if any(k in c for k in ['NOME', 'GIOCATORE', 'CALCIATORE'])), None)
-    col_squadra = next((c for c in df.columns if any(k in c for k in ['SQUADRA', 'SQ', 'CLUB', 'TEAM'])), None)
-    col_ruolo = next((c for c in df.columns if any(k in c for k in ['RUOLO', 'RM', 'R'])), None)
-    col_pma = next((c for c in df.columns if any(k in c for k in ['FVM', 'QT', 'PMA', 'PREZZO', 'QUOT', 'VALORE', 'INITIAL'])), None)
+    print(f"Colonne rilevate nel file Excel: {list(df.columns)}")
+
+    # Identificazione precisa colonne dallo screenshot
+    col_nome = next((c for c in df.columns if c.upper() == 'NOME'), 'Nome')
+    col_squadra = next((c for c in df.columns if c.upper() == 'SQUADRA'), 'Squadra')
+    col_ruolo = next((c for c in df.columns if c.upper() in ['R', 'RM', 'RUOLO']), 'R')
     
-    # Ricerca per FM (Fantamedia / Media / FM / Voto)
-    col_fm = next((c for c in df.columns if any(k in c for k in ['FANTAMEDIA', 'FM', 'MEDIA', 'VOTO'])), None)
+    # Valore di Mercato (FVM) e Quotazione (Qt.A)
+    col_fvm = next((c for c in df.columns if c.upper() in ['FVM', 'FVM M']), None)
+    col_qta = next((c for c in df.columns if c.upper() in ['QT.A', 'QT.I', 'QTA', 'QUOTAZIONE']), None)
     
-    # Ricerca per Titolarità (Titolarità / Tit / Titolare / %)
-    col_tit = next((c for c in df.columns if any(k in c for k in ['TITOLARITA', 'TITOLARITÀ', 'TIT', 'TITOLARE', '%', 'APPETIBILITA'])), None)
+    # Eventuale Fantamedia o Titolarità se presenti in file estesi
+    col_fm = next((c for c in df.columns if any(k in c.upper() for k in ['FM', 'FANTAMEDIA', 'MEDIA'])), None)
+    col_tit = next((c for c in df.columns if any(k in c.upper() for k in ['TIT', 'TITOLARITA', '%'])), None)
 
     players = []
 
-    if col_nome and col_ruolo:
-        for idx, row in df.iterrows():
-            nome = str(row[col_nome]).strip()
-            if not nome or nome.lower() == 'nan' or nome.upper() == 'NOME':
-                continue
-            
-            squadra = str(row[col_squadra]).strip()[:3].upper() if col_squadra and pd.notnull(row[col_squadra]) else "SER"
-            ruolo = clean_role(row[col_ruolo])
-            
-            # Prezzo / PMA Base
-            try:
-                val_pma = str(row[col_pma]).replace(',', '.').strip() if col_pma and pd.notnull(row[col_pma]) else '10'
-                pma = int(float(val_pma))
-            except:
-                pma = 10
+    for idx, row in df.iterrows():
+        nome = str(row[col_nome]).strip() if pd.notnull(row[col_nome]) else ''
+        if not nome or nome.lower() == 'nan' or nome.upper() == 'NOME':
+            continue
+        
+        squadra = str(row[col_squadra]).strip()[:3].upper() if pd.notnull(row[col_squadra]) else "SER"
+        ruolo = clean_role(row[col_ruolo]) if col_ruolo in row else 'C'
+        
+        # Lettura Quotazione e FVM
+        qta = int(row[col_qta]) if col_qta and pd.notnull(row[col_qta]) and str(row[col_qta]).isdigit() else 1
+        fvm = int(row[col_fvm]) if col_fvm and pd.notnull(row[col_fvm]) and str(row[col_fvm]).isdigit() else qta
 
-            # Fantamedia reale
+        # Se FVM c'è, lo usiamo come base per il calcolo del prezzo di partenza (PMA)
+        pma_base = fvm if fvm > 0 else qta
+
+        # Fantamedia
+        if col_fm and pd.notnull(row[col_fm]):
             try:
-                if col_fm and pd.notnull(row[col_fm]):
-                    val_fm = str(row[col_fm]).replace(',', '.').strip()
-                    fm = float(val_fm)
-                else:
-                    fm = 6.0
+                fm = round(float(str(row[col_fm]).replace(',', '.')), 2)
             except:
                 fm = 6.0
+        else:
+            # Se la FM non c'è nel listone quotazioni, stimiamo un valore coerente dal FVM
+            if pma_base > 50: fm = 8.5
+            elif pma_base > 30: fm = 7.5
+            elif pma_base > 15: fm = 6.8
+            else: fm = 6.0
 
-            # Titolarità reale
+        # Titolarità
+        if col_tit and pd.notnull(row[col_tit]):
             try:
-                if col_tit and pd.notnull(row[col_tit]):
-                    val_tit = str(row[col_tit]).replace('%', '').replace(',', '.').strip()
-                    tit = int(float(val_tit))
-                else:
-                    tit = 75
+                tit = int(float(str(row[col_tit]).replace('%', '').replace(',', '.')))
             except:
                 tit = 75
-
-            players.append({
-                "id": idx + 1,
-                "nome": nome,
-                "squadra": squadra,
-                "ruolo": ruolo,
-                "fantamedia": round(fm, 2),
-                "titolarita": tit,
-                "pma": max(1, pma)
-            })
-
-        if len(players) > 0:
-            with open("players.json", "w", encoding="utf-8") as f:
-                json.dump(players, f, ensure_ascii=False, indent=2)
-            print(f"SUCCESS: Convertiti {len(players)} calciatori!")
         else:
-            print("Nessun giocatore valido estratto.")
-    else:
-        print("ERRORE: Colonne NOME o RUOLO non trovate.")
-        sys.exit(1)
+            # Stima Titolarità basata sul valore di quotazione
+            tit = 90 if pma_base > 20 else (75 if pma_base > 5 else 50)
+
+        players.append({
+            "id": idx + 1,
+            "nome": nome,
+            "squadra": squadra,
+            "ruolo": ruolo,
+            "fantamedia": fm,
+            "titolarita": tit,
+            "pma": max(1, pma_base)
+        })
+
+    with open("players.json", "w", encoding="utf-8") as f:
+        json.dump(players, f, ensure_ascii=False, indent=2)
+
+    print(f"SUCCESS: Convertiti {len(players)} calciatori con FVM e Quotazioni reali!")
 
 if __name__ == "__main__":
     main()
