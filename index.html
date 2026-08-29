@@ -3,371 +3,478 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FANTA VALUE 2000</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@600;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <title>Fanta Value 2000 - Retrogaming Auction Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-dark: #040814;
-      --card-bg: rgba(10, 18, 42, 0.85);
-      --border-color: #1e3a8a;
-      --cyan: #00f0ff;
-      --pink: #ff0055;
-      --yellow: #ffe600;
-      --green: #00ff66;
-      --pes-blue: #0044ff;
-      --text-main: #e2e8f0;
-      --text-muted: #64748b;
+      --bg-dark: #050b14;
+      --panel-bg: rgba(10, 20, 38, 0.85);
+      --neon-blue: #00f0ff;
+      --neon-magenta: #ff0055;
+      --neon-yellow: #ffea00;
+      --neon-green: #00ff66;
+      --text-main: #e0f7ff;
+      --border-color: #1a3a60;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
     body {
       background-color: var(--bg-dark);
-      background-image: radial-gradient(circle at 50% 50%, #0a1838 0%, #040814 100%);
       color: var(--text-main);
       font-family: 'Rajdhani', sans-serif;
-      min-height: 100vh;
+      height: 100vh;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      overflow-x: hidden;
     }
 
-    /* EFFETTO CRT SCANLINE STILE PES ANNI 2000 */
-    body::before {
-      content: " ";
-      display: block;
-      position: fixed;
-      top: 0; left: 0; bottom: 0; right: 0;
-      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
-      background-size: 100% 4px;
-      z-index: 999;
-      pointer-events: none;
-      opacity: 0.6;
-    }
-
-    /* HEADER STILE ARCADE */
+    /* HEADER */
     header {
-      background: linear-gradient(90deg, #050b1e 0%, #0a1b4d 50%, #050b1e 100%);
-      border-bottom: 3px solid var(--cyan);
-      padding: 12px 25px;
+      background: linear-gradient(90deg, #02060d 0%, #0a1b36 50%, #02060d 100%);
+      border-bottom: 2px solid var(--neon-blue);
+      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
     }
-    .logo-container { display: flex; align-items: center; gap: 15px; }
-    .pes-badge {
-      background: var(--pink);
-      color: #fff;
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .season-badge {
       font-family: 'Press Start 2P', cursive;
       font-size: 10px;
+      background: var(--neon-magenta);
+      color: #fff;
       padding: 4px 8px;
-      transform: skew(-10deg);
-      box-shadow: 2px 2px 0px var(--cyan);
+      border-radius: 4px;
+      box-shadow: 0 0 8px var(--neon-magenta);
     }
-    .logo-title {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 24px; font-weight: 900;
-      letter-spacing: 2px; color: #fff;
-      text-shadow: 3px 3px 0px var(--pes-blue), 0 0 10px var(--cyan);
-      font-style: italic;
-    }
-    .dev-tag { text-align: right; font-size: 11px; font-family: 'Orbitron', sans-serif; }
-    .dev-tag strong { color: var(--yellow); }
-    .dev-tag a { color: var(--cyan); text-decoration: none; }
 
-    /* LAYOUT PRINCIPALE COLLASSABILE */
-    .app-wrapper {
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 18px;
+      color: #fff;
+      text-shadow: 2px 2px var(--neon-blue);
+      letter-spacing: -1px;
+    }
+
+    .developer-credits {
+      font-size: 12px;
+      color: #8ab4f8;
+      text-align: right;
+    }
+
+    .developer-credits span {
+      color: var(--neon-blue);
+      font-weight: 700;
+    }
+
+    /* MAIN CONTENT */
+    .app-container {
       display: flex;
       flex: 1;
+      height: calc(100vh - 55px);
       position: relative;
+    }
+
+    /* LEFT PANEL: FILTERS & LISTONE */
+    .left-panel {
+      flex: 1;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
       overflow: hidden;
     }
 
-    .main-content {
-      flex: 1;
-      padding: 20px;
-      transition: all 0.3s ease;
-    }
-
-    /* CONTROLLI E FILTRI */
-    .top-controls {
-      display: grid;
-      grid-template-columns: 160px 160px 1fr;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
-    .input-group { display: flex; flex-direction: column; gap: 5px; }
-    .input-group label {
-      font-size: 11px; font-weight: 700;
-      color: var(--cyan); text-transform: uppercase;
-      font-family: 'Orbitron';
-    }
-    .input-group input {
-      background: var(--card-bg);
+    .controls-grid {
+      background: var(--panel-bg);
       border: 1px solid var(--border-color);
-      color: #fff; padding: 10px;
-      border-radius: 4px; font-family: 'Orbitron', sans-serif;
-      outline: none; transition: 0.3s;
-    }
-    .input-group input:focus {
-      border-color: var(--cyan);
-      box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+      border-radius: 6px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.05);
     }
 
-    /* SEZIONE FILTRI TAG */
-    .filter-bar {
+    .inputs-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 15px;
-      background: rgba(5, 11, 30, 0.6);
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid rgba(0, 240, 255, 0.2);
+      gap: 15px;
+      align-items: center;
     }
-    .filter-group-title {
-      font-family: 'Orbitron'; font-size: 11px; color: var(--text-muted);
-      width: 100%; margin-bottom: 2px; text-transform: uppercase;
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .input-group label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--neon-blue);
+      text-transform: uppercase;
+    }
+
+    .input-group input, .input-group select {
+      background: #020a16;
+      border: 1px solid var(--border-color);
+      color: #fff;
+      padding: 6px 10px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    .input-group input:focus {
+      border-color: var(--neon-blue);
+      box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+    }
+
+    .search-input {
+      flex: 1;
+    }
+
+    .filter-section {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #6c8cae;
+      text-transform: uppercase;
+      margin-right: 5px;
     }
 
     .btn-filter {
-      background: var(--card-bg);
+      background: #08162a;
       border: 1px solid var(--border-color);
-      color: var(--text-main);
-      padding: 6px 14px; border-radius: 3px;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 11px; font-weight: 700;
-      cursor: pointer; transition: 0.2s;
-      text-transform: uppercase;
+      color: #fff;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
     }
-    .btn-filter.active, .btn-filter:hover {
-      border-color: var(--yellow);
-      background: rgba(255, 230, 0, 0.15);
-      color: var(--yellow);
-      box-shadow: 0 0 10px rgba(255, 230, 0, 0.3);
+
+    .btn-filter:hover, .btn-filter.active {
+      background: var(--neon-blue);
+      color: #000;
+      box-shadow: 0 0 10px var(--neon-blue);
+      border-color: var(--neon-blue);
     }
 
     .btn-tag {
-      border-color: rgba(0, 240, 255, 0.4);
-      color: var(--cyan);
+      border-color: #2a4c7e;
     }
+
     .btn-tag.active {
-      background: var(--cyan) !important;
-      color: #000 !important;
-      box-shadow: 0 0 12px var(--cyan) !important;
+      background: var(--neon-yellow);
+      color: #000;
+      box-shadow: 0 0 10px var(--neon-yellow);
+      border-color: var(--neon-yellow);
     }
 
-    /* TABELLA CON DRAG & DROP */
+    /* TABLE */
     .table-container {
-      background: var(--card-bg);
-      border: 2px solid var(--border-color);
-      border-radius: 6px; overflow: hidden;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      flex: 1;
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      overflow-y: auto;
+      position: relative;
     }
-    .table-header-bar {
-      padding: 12px 20px;
-      background: linear-gradient(90deg, #0f172a, #1e293b);
-      display: flex; justify-content: space-between; align-items: center;
-      border-bottom: 2px solid var(--cyan);
-    }
-    .table-title { font-family: 'Orbitron', sans-serif; color: var(--pink); font-weight: 900; font-size: 14px; letter-spacing: 1px; }
 
-    table { width: 100%; border-collapse: collapse; text-align: left; }
+    .listone-header {
+      background: #061325;
+      padding: 10px 15px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .listone-title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 11px;
+      color: var(--neon-magenta);
+    }
+
+    .player-count {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+      color: var(--neon-blue);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
     th {
-      padding: 12px 16px; font-size: 11px; color: var(--cyan); font-family: 'Orbitron';
-      text-transform: uppercase; border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.3);
+      background: #040c18;
+      color: #6c8cae;
+      font-size: 11px;
+      padding: 10px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 37px;
+      z-index: 9;
     }
-    td { padding: 10px 16px; font-size: 14px; border-bottom: 1px solid rgba(30, 58, 138, 0.3); }
-    
-    tr.draggable-row { cursor: grab; transition: background 0.2s; }
-    tr.draggable-row:hover { background: rgba(0, 240, 255, 0.08); }
-    tr.draggable-row:active { cursor: grabbing; }
 
-    .role-P { color: #ffe600; font-weight: bold; }
-    .role-D { color: #00f0ff; font-weight: bold; }
-    .role-C { color: #00ff66; font-weight: bold; }
-    .role-A { color: #ff0055; font-weight: bold; }
+    td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #0d223a;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    tr:hover {
+      background: rgba(0, 240, 255, 0.05);
+    }
+
+    tr.draggable-row {
+      cursor: grab;
+    }
+
+    .role-badge {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .role-P { background: #e67e22; color: #fff; }
+    .role-D { background: #27ae60; color: #fff; }
+    .role-C { background: #2980b9; color: #fff; }
+    .role-A { background: #c0392b; color: #fff; }
+
+    .price-tag {
+      color: var(--neon-yellow);
+      font-weight: 700;
+    }
 
     .tag-badge {
-      font-size: 9px; padding: 2px 5px; border-radius: 2px;
-      font-family: 'Orbitron'; margin-left: 6px; font-weight: bold;
-    }
-    .tag-top { background: rgba(255, 0, 85, 0.2); border: 1px solid var(--pink); color: var(--pink); }
-    .tag-scommessa { background: rgba(255, 230, 0, 0.2); border: 1px solid var(--yellow); color: var(--yellow); }
-    .tag-rigorista { background: rgba(0, 255, 102, 0.2); border: 1px solid var(--green); color: var(--green); }
-
-    .btn-analisi {
-      background: transparent; border: 1px solid var(--cyan);
-      color: var(--cyan); padding: 4px 10px; border-radius: 3px;
-      font-size: 11px; font-family: 'Orbitron'; cursor: pointer; transition: 0.2s;
-    }
-    .btn-analisi:hover { background: var(--cyan); color: #000; }
-
-    .btn-prendi {
-      background: var(--pink); border: none;
-      color: #fff; padding: 5px 12px; border-radius: 3px;
-      font-size: 11px; font-family: 'Orbitron'; font-weight: bold;
-      cursor: pointer; margin-left: 5px; box-shadow: 0 0 8px rgba(255, 0, 85, 0.4);
-      transition: 0.2s;
+      font-size: 9px;
+      padding: 2px 5px;
+      border-radius: 3px;
+      margin-left: 4px;
+      background: #102a45;
+      color: var(--neon-blue);
+      border: 1px solid var(--neon-blue);
     }
 
-    /* SIDEBAR LA MIA ROSA (COLLASSABILE & DROP ZONE) */
-    .sidebar-wrapper {
+    .btn-action {
+      background: var(--neon-magenta);
+      border: none;
+      color: #fff;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 3px;
+      cursor: pointer;
+      box-shadow: 0 0 5px var(--neon-magenta);
+    }
+
+    .btn-action:hover {
+      opacity: 0.9;
+    }
+
+    /* RIGHT PANEL: SIDEBAR ROSA */
+    .right-panel {
+      width: 340px;
+      background: #030a14;
+      border-left: 2px solid var(--border-color);
       display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
-      transition: margin-right 0.3s ease;
     }
-    .sidebar-wrapper.collapsed {
+
+    .right-panel.collapsed {
       margin-right: -340px;
     }
 
     .toggle-sidebar-btn {
       position: absolute;
-      left: -32px;
-      top: 20px;
-      width: 32px;
-      height: 45px;
-      background: var(--pes-blue);
-      border: 1px solid var(--cyan);
+      left: -28px;
+      top: 15px;
+      width: 28px;
+      height: 40px;
+      background: var(--border-color);
+      border: 1px solid var(--neon-blue);
       border-right: none;
-      color: #fff;
-      font-family: 'Orbitron';
-      font-weight: bold;
-      cursor: pointer;
+      color: var(--neon-blue);
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 6px 0 0 6px;
-      box-shadow: -4px 0 10px rgba(0, 240, 255, 0.3);
-      z-index: 10;
+      cursor: pointer;
+      border-radius: 4px 0 0 4px;
+      font-weight: bold;
     }
 
-    .rosa-panel {
-      width: 340px;
-      background: var(--card-bg);
-      border-left: 2px solid var(--cyan);
-      padding: 20px;
-      display: flex; flex-direction: column; gap: 15px;
-      box-shadow: -10px 0 20px rgba(0,0,0,0.5);
-      transition: all 0.2s;
+    .sidebar-header {
+      padding: 12px 15px;
+      background: #061325;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    /* STILE DROP TARGET QUANDO SI TRASCINA UN GIOCATORE */
-    .rosa-panel.drag-over {
-      background: rgba(0, 240, 255, 0.15);
-      border-left: 3px dashed var(--yellow);
-      box-shadow: -10px 0 30px rgba(0, 240, 255, 0.6);
+    .sidebar-title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 11px;
+      color: #fff;
     }
 
-    .rosa-header {
-      display: flex; justify-content: space-between; align-items: center;
-      border-bottom: 2px solid var(--border-color); padding-bottom: 10px;
+    .budget-summary {
+      padding: 15px;
+      background: var(--panel-bg);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
-    .rosa-title { font-family: 'Orbitron', sans-serif; font-size: 16px; color: #fff; font-style: italic; }
 
-    .stat-box {
-      background: rgba(4, 8, 20, 0.8); padding: 12px; border-radius: 4px;
-      display: flex; justify-content: space-between; font-size: 13px; font-weight: 700;
+    .budget-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .budget-value {
+      color: var(--neon-green);
+    }
+
+    .spent-value {
+      color: var(--neon-magenta);
+    }
+
+    .rosa-list {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .rosa-item {
+      background: #06162d;
       border: 1px solid var(--border-color);
+      padding: 8px 10px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .squad-list { flex: 1; overflow-y: auto; max-height: calc(100vh - 280px); display: flex; flex-direction: column; gap: 8px; }
-    .squad-item {
-      background: rgba(15, 23, 42, 0.8); border: 1px solid var(--border-color);
-      padding: 10px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center;
+    .rosa-item-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    /* TOOLTIP ANALISI */
-    #analysisTooltip {
-      position: absolute; display: none; background: #060d26;
-      border: 1px solid var(--cyan); padding: 12px 16px; border-radius: 6px;
-      box-shadow: 0 0 15px rgba(0, 240, 255, 0.4); pointer-events: none; z-index: 1000;
-      font-size: 12px; min-width: 220px;
+    .btn-remove {
+      background: transparent;
+      border: none;
+      color: #ff4757;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
     }
-
-    /* MODALE ACQUISTO */
-    .modal {
-      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.85); backdrop-filter: blur(5px);
-      justify-content: center; align-items: center; z-index: 2000;
-    }
-    .modal-content {
-      background: var(--card-bg); border: 2px solid var(--cyan);
-      padding: 25px; border-radius: 8px; width: 380px; text-align: center;
-      box-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
-    }
-    .modal-content input {
-      width: 100%; padding: 12px; margin: 15px 0 10px 0; background: #040814;
-      border: 1px solid var(--border-color); color: #fff; font-family: 'Orbitron';
-      text-align: center; font-size: 20px; outline: none; border-radius: 4px;
-    }
-    .modal-content input:focus { border-color: var(--cyan); }
-
-    .eval-badge {
-      font-family: 'Orbitron', sans-serif; font-size: 15px; font-weight: 900;
-      margin: 10px 0 15px 0; padding: 8px 12px; border-radius: 4px;
-      text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;
-    }
-    .eval-affarone { background: rgba(0, 255, 102, 0.15); border: 1px solid var(--green); color: var(--green); }
-    .eval-giusto { background: rgba(0, 240, 255, 0.15); border: 1px solid var(--cyan); color: var(--cyan); }
-    .eval-pacco { background: rgba(255, 0, 85, 0.15); border: 1px solid var(--pink); color: var(--pink); }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo-container">
-      <div class="pes-badge">SEASON 2026</div>
-      <div class="logo-title">FANTA VALUE 2000</div>
+    <div class="logo-area">
+      <span class="season-badge">SEASON 2026</span>
+      <h1>FANTA VALUE 2000</h1>
     </div>
-    <div class="dev-tag">
+    <div class="developer-credits">
       DEVELOPER & LEAD<br>
-      <strong>Francesco Coppola</strong> | <a href="https://instagram.com/ganzosuiprati" target="_blank">@ganzosuiprati</a>
+      Francesco Coppola | <span>@ganzosuiprati</span>
     </div>
   </header>
 
-  <div class="app-wrapper">
-    <!-- CONTENUTO PRINCIPALE -->
-    <div class="main-content">
-      <div class="top-controls">
-        <div class="input-group">
-          <label>Partecipanti Lega</label>
-          <input type="number" id="numPlayers" value="12" oninput="renderPlayers()">
+  <div class="app-container">
+    
+    <!-- PANNELLO SINISTRO -->
+    <div class="left-panel">
+      
+      <!-- CONTROLLI E FILTRI -->
+      <div class="controls-grid">
+        <div class="inputs-row">
+          <div class="input-group">
+            <label>Partecipanti Lega</label>
+            <input type="number" id="numTeams" value="8" min="4" max="16" style="width: 70px;">
+          </div>
+          <div class="input-group">
+            <label>Budget Totale (CR)</label>
+            <input type="number" id="totalBudget" value="1000" step="50" style="width: 90px;">
+          </div>
+          <div class="input-group search-input">
+            <label>Ricerca Giocatore / Squadra</label>
+            <input type="text" id="searchInput" placeholder="Es. Svilar, Inter, Dimarco..">
+          </div>
         </div>
-        <div class="input-group">
-          <label>Budget Totale (CR)</label>
-          <input type="number" id="totalBudget" value="1000" oninput="renderPlayers()">
+
+        <!-- FILTRI RUOLO -->
+        <div class="filter-section">
+          <span class="filter-label">Filtra per Ruolo:</span>
+          <button class="btn-filter active" data-role="ALL">TUTTI</button>
+          <button class="btn-filter" data-role="P">POR</button>
+          <button class="btn-filter" data-role="D">DIF</button>
+          <button class="btn-filter" data-role="C">CEN</button>
+          <button class="btn-filter" data-role="A">ATT</button>
         </div>
-        <div class="input-group">
-          <label>Ricerca Giocatore / Squadra</label>
-          <input type="text" id="searchInput" placeholder="Es. Svilar, Inter, Dimarco..." oninput="renderPlayers()">
+
+        <!-- FILTRI SPECIALI -->
+        <div class="filter-section">
+          <span class="filter-label">Filtri Speciali:</span>
+          <button class="btn-filter btn-tag" data-tag="TOP">🔥 TOP REPARTO</button>
+          <button class="btn-filter btn-tag" data-tag="TITOLARE">🛡️ TITOLARI</button>
+          <button class="btn-filter btn-tag" data-tag="SCOMMESSA">💡 SCOMMESSE</button>
+          <button class="btn-filter btn-tag" data-tag="RIGORISTA">⚽ RIGORISTI</button>
+          <button class="btn-filter btn-tag" data-tag="JOLLY">🃏 JOLLY</button>
         </div>
       </div>
 
-      <!-- BARRA FILTRI RUOLO E TAG SPECIALI -->
-      <div class="filter-bar">
-        <div class="filter-group-title">Filtra per Ruolo:</div>
-        <button class="btn-filter active" onclick="setRoleFilter('TUTTI', this)">TUTTI</button>
-        <button class="btn-filter" onclick="setRoleFilter('P', this)">POR</button>
-        <button class="btn-filter" onclick="setRoleFilter('D', this)">DIF</button>
-        <button class="btn-filter" onclick="setRoleFilter('C', this)">CEN</button>
-        <button class="btn-filter" onclick="setRoleFilter('A', this)">ATT</button>
-
-        <div class="filter-group-title" style="margin-top: 8px;">Filtri Speciali:</div>
-        <button class="btn-filter btn-tag" onclick="toggleTagFilter('TOP', this)">🔥 TOP REPARTO</button>
-        <button class="btn-filter btn-tag" onclick="toggleTagFilter('TITOLARE', this)">🛡️ TITOLARI</button>
-        <button class="btn-filter btn-tag" onclick="toggleTagFilter('SCOMMESSA', this)">💡 SCOMMESSE</button>
-        <button class="btn-filter btn-tag" onclick="toggleTagFilter('RIGORISTA', this)">⚽ RIGORISTI</button>
-        <button class="btn-filter btn-tag" onclick="toggleTagFilter('JOLLY', this)">🃏 JOLLY</button>
-      </div>
-
-      <div class="table-container">
-        <div class="table-header-bar">
-          <div class="table-title">LISTONE CALCIATORI (TRASCINA IN ROSA PER ACQUISTARE)</div>
-          <div class="table-count" id="playerCount" style="font-family:'Orbitron'; color:var(--cyan);">0 GIOCATORI</div>
+      <!-- TABELLA GIOCATORI -->
+      <div class="table-container" id="dropTargetRemove">
+        <div class="listone-header">
+          <span class="listone-title">LISTONE CALCIATORI (TRASCINA IN ROSA PER ACQUISTARE)</span>
+          <span class="player-count" id="playerCount">0 GIOCATORI</span>
         </div>
         <table>
           <thead>
@@ -376,303 +483,238 @@
               <th>Squadra</th>
               <th>Ruolo</th>
               <th>FM</th>
-              <th>TIT%</th>
+              <th>Tit%</th>
               <th>Prezzo Max</th>
               <th>Azioni</th>
             </tr>
           </thead>
-          <tbody id="playerTableBody"></tbody>
+          <tbody id="playerTableBody">
+            <!-- Righe inserite via JS -->
+          </tbody>
         </table>
       </div>
+
     </div>
 
-    <!-- SIDEBAR LA MIA ROSA COLLASSABILE -->
-    <div class="sidebar-wrapper" id="sidebarWrapper">
-      <button class="toggle-sidebar-btn" onclick="toggleSidebar()" id="toggleBtn">►</button>
+    <!-- PANNELLO DESTRO (SIDEBAR ROSA) -->
+    <div class="right-panel" id="sidebarRosa">
+      <button class="toggle-sidebar-btn" id="toggleSidebar">◀</button>
       
-      <div class="rosa-panel" id="rosaPanel" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
-        <div class="rosa-header">
-          <div class="rosa-title">LA MIA ROSA</div>
-          <div class="rosa-count" id="squadCount" style="font-family:'Orbitron'; color:var(--cyan); font-weight:bold;">0/25</div>
-        </div>
-        
-        <div class="stat-box">
+      <div class="sidebar-header">
+        <span class="sidebar-title">LA MIA ROSA</span>
+        <span class="player-count" id="rosaCount">0/25</span>
+      </div>
+
+      <div class="budget-summary">
+        <div class="budget-row">
           <span>CREDITI RIMANENTI:</span>
-          <span id="remainingCredits" style="color:var(--cyan)">1000 CR</span>
+          <span class="budget-value" id="remainingBudget">1000 CR</span>
         </div>
-        <div class="stat-box">
+        <div class="budget-row">
           <span>SPESI TOTALE:</span>
-          <span id="totalSpent" style="color:var(--pink)">0 CR</span>
+          <span class="spent-value" id="spentBudget">0 CR</span>
         </div>
+      </div>
 
-        <div class="squad-list" id="squadList"></div>
+      <div class="rosa-list" id="rosaList">
+        <!-- Calciatori acquistati -->
       </div>
     </div>
-  </div>
 
-  <!-- TOOLTIP ANALISI -->
-  <div id="analysisTooltip">
-    <div style="color:var(--cyan); font-weight:bold; margin-bottom:4px; font-family:'Orbitron';">ANALISI VALORE</div>
-    <div>Target Consigliato: <span id="tooltipTarget" style="color:var(--yellow); font-weight:bold;"></span> CR</div>
-    <div id="tooltipStatus" style="margin-top:5px; font-weight:bold; font-size:11px;"></div>
-  </div>
-
-  <!-- MODALE ACQUISTO -->
-  <div class="modal" id="buyModal">
-    <div class="modal-content">
-      <h3 style="font-family:'Orbitron'; color:var(--cyan);" id="modalPlayerName">Acquista Giocatore</h3>
-      <p style="font-size:12px; color:var(--text-muted); margin-top:4px;">Target Consigliato: <strong id="modalTargetPrice" style="color:var(--yellow);">--</strong> CR</p>
-      
-      <input type="number" id="buyPriceInput" placeholder="Inserisci prezzo" oninput="updateLiveEvaluation()">
-      
-      <div id="liveEvalBadge" class="eval-badge eval-giusto">⚖️ EQUILIBRATO</div>
-      <p id="liveEvalMessage" style="font-size:12px; color:var(--text-main); margin-bottom:15px;">Digita il prezzo pagato in asta...</p>
-      
-      <div style="display:flex; gap:10px; justify-content:center;">
-        <button class="btn-analisi" onclick="closeBuyModal()">ANNULLA</button>
-        <button class="btn-prendi" onclick="confirmBuy()">CONFERMA ACQUISTO</button>
-      </div>
-    </div>
   </div>
 
   <script>
     let allPlayers = [];
-    let mySquad = [];
-    let currentRoleFilter = 'TUTTI';
-    let activeTagFilters = new Set();
-    let selectedPlayerId = null;
+    let myRosa = [];
+    let activeRoleFilter = 'ALL';
+    let activeTagFilter = null;
 
-    async function loadPlayers() {
-      try {
-        const res = await fetch('players.json?v=' + new Date().getTime());
-        allPlayers = await res.json();
-        renderPlayers();
-      } catch (err) {
-        console.error("Errore nel caricamento di players.json", err);
+    // Generatore dinamico di Tag basato su statistiche
+    function generateAutoTags(player) {
+      const tags = player.tags || [];
+      
+      // Dynamic TOP threshold depending on position
+      const topThreshold = player.ruolo === 'A' ? 70 : (player.ruolo === 'C' ? 35 : 30);
+      if (player.pma >= topThreshold || player.fantamedia >= 8.0) {
+        if (!tags.includes('TOP')) tags.push('TOP');
       }
+      
+      if (player.titolarita >= 80) {
+        if (!tags.includes('TITOLARE')) tags.push('TITOLARE');
+      }
+      
+      if (player.pma >= 5 && player.pma <= 22 && player.titolarita >= 60) {
+        if (!tags.includes('SCOMMESSA')) tags.push('SCOMMESSA');
+      }
+      
+      if (player.titolarita >= 40 && player.titolarita <= 75) {
+        if (!tags.includes('JOLLY')) tags.push('JOLLY');
+      }
+
+      return tags;
     }
 
-    function calculateDynamicTarget(basePma) {
-      const numPlayers = parseInt(document.getElementById('numPlayers').value) || 12;
-      const totalBudget = parseInt(document.getElementById('totalBudget').value) || 1000;
-      return Math.max(1, Math.round(basePma * (10 / numPlayers) * (totalBudget / 1000)));
-    }
+    // Caricamento dati da JSON
+    fetch('players.json')
+      .then(res => res.json())
+      .then(data => {
+        allPlayers = data.map(player => ({
+          ...player,
+          tags: generateAutoTags(player)
+        }));
+        renderTable();
+      })
+      .catch(err => console.error("Errore caricamento players.json:", err));
 
-    function renderPlayers() {
-      const search = document.getElementById('searchInput').value.toLowerCase();
+    // Render della tabella
+    function renderTable() {
       const tbody = document.getElementById('playerTableBody');
+      const searchVal = document.getElementById('searchInput').value.toLowerCase();
       tbody.innerHTML = '';
 
       const filtered = allPlayers.filter(p => {
-        const matchesRole = currentRoleFilter === 'TUTTI' || p.ruolo === currentRoleFilter;
-        const matchesSearch = p.nome.toLowerCase().includes(search) || p.squadra.toLowerCase().includes(search);
-        
-        let matchesTags = true;
-        if (activeTagFilters.size > 0) {
-          const tags = p.tags || [];
-          matchesTags = Array.from(activeTagFilters).every(tag => tags.includes(tag));
+        // Controllo se già acquistato
+        if (myRosa.some(r => r.id === p.id)) return false;
+
+        // Filtro Ruolo
+        if (activeRoleFilter !== 'ALL' && p.ruolo !== activeRoleFilter) return false;
+
+        // Filtro Tag Speciali
+        if (activeTagFilter && (!p.tags || !p.tags.includes(activeTagFilter))) return false;
+
+        // Filtro Ricerca Testuale
+        if (searchVal) {
+          const matchName = p.nome.toLowerCase().includes(searchVal);
+          const matchTeam = p.squadra.toLowerCase().includes(searchVal);
+          if (!matchName && !matchTeam) return false;
         }
 
-        return matchesRole && matchesSearch && matchesTags;
+        return true;
       });
 
-      document.getElementById('playerCount').innerText = `${filtered.length} GIOCATORI`;
+      document.getElementById('playerCount').textContent = `${filtered.length} GIOCATORI`;
 
       filtered.forEach(p => {
-        const dynamicPma = calculateDynamicTarget(p.pma);
-        const inSquad = mySquad.some(item => item.id === p.id);
         const tr = document.createElement('tr');
         tr.className = 'draggable-row';
-        tr.draggable = !inSquad;
-        tr.ondragstart = (e) => handleDragStart(e, p.id);
-        
-        // Tag Badges
-        let tagBadgesHtml = '';
-        if (p.tags) {
-          if (p.tags.includes('TOP')) tagBadgesHtml += `<span class="tag-badge tag-top">TOP</span>`;
-          if (p.tags.includes('SCOMMESSA')) tagBadgesHtml += `<span class="tag-badge tag-scommessa">SCOMMESSA</span>`;
-          if (p.tags.includes('RIGORISTA')) tagBadgesHtml += `<span class="tag-badge tag-rigorista">RIG</span>`;
-        }
+        tr.draggable = true;
+        tr.ondragstart = (e) => e.dataTransfer.setData('text/plain', p.id);
+
+        const tagsHtml = p.tags ? p.tags.map(t => `<span class="tag-badge">${t}</span>`).join('') : '';
 
         tr.innerHTML = `
-          <td><strong>${p.nome}</strong>${tagBadgesHtml}</td>
-          <td><span style="color:var(--cyan); font-weight:bold;">${p.squadra}</span></td>
-          <td><span class="role-${p.ruolo}">${p.ruolo}</span></td>
-          <td>${p.fantamedia || '-'}</td>
-          <td>${p.titolarita || 80}%</td>
-          <td style="color: var(--yellow); font-family:'Orbitron'; font-weight: bold;">${dynamicPma} CR</td>
+          <td><strong>${p.nome}</strong> ${tagsHtml}</td>
+          <td>${p.squadra}</td>
+          <td><span class="role-badge role-${p.ruolo}">${p.ruolo}</span></td>
+          <td>${p.fantamedia.toFixed(1)}</td>
+          <td>${p.titolarita}%</td>
+          <td class="price-tag">${p.pma} CR</td>
           <td>
-            <button class="btn-analisi" onmouseenter="showAnalysis(event, ${dynamicPma})" onmouseleave="hideAnalysis()">ANALISI</button>
-            ${inSquad 
-              ? `<span style="color:var(--text-muted); font-size:11px; font-family:'Orbitron'; margin-left:8px;">IN ROSA</span>` 
-              : `<button class="btn-prendi" onclick="openBuyModal(${p.id})">+ PRENDI</button>`
-            }
+            <button class="btn-action" onclick="buyPlayer(${p.id})">+ PRENDI</button>
           </td>
         `;
         tbody.appendChild(tr);
       });
-
-      updateSquadUI();
     }
 
-    /* FILTRI */
-    function setRoleFilter(role, btn) {
-      currentRoleFilter = role;
-      document.querySelectorAll('.btn-filter:not(.btn-tag)').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderPlayers();
-    }
+    // Gestione Filtri Ruolo
+    document.querySelectorAll('[data-role]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('[data-role]').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        activeRoleFilter = e.target.getAttribute('data-role');
+        renderTable();
+      });
+    });
 
-    function toggleTagFilter(tag, btn) {
-      if (activeTagFilters.has(tag)) {
-        activeTagFilters.delete(tag);
-        btn.classList.remove('active');
-      } else {
-        activeTagFilters.add(tag);
-        btn.classList.add('active');
-      }
-      renderPlayers();
-    }
+    // Gestione Filtri Tag Speciali
+    document.querySelectorAll('[data-tag]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const tag = e.target.getAttribute('data-tag');
+        if (activeTagFilter === tag) {
+          activeTagFilter = null;
+          e.target.classList.remove('active');
+        } else {
+          document.querySelectorAll('[data-tag]').forEach(b => b.classList.remove('active'));
+          e.target.classList.add('active');
+          activeTagFilter = tag;
+        }
+        renderTable();
+      });
+    });
 
-    /* TOGGLE SIDEBAR LATERALE */
-    function toggleSidebar() {
-      const wrapper = document.getElementById('sidebarWrapper');
-      const btn = document.getElementById('toggleBtn');
-      wrapper.classList.toggle('collapsed');
-      btn.innerText = wrapper.classList.contains('collapsed') ? '◄' : '►';
-    }
+    // Listener Ricerca Testuale
+    document.getElementById('searchInput').addEventListener('input', renderTable);
 
-    /* DRAG & DROP GIOCATORI */
-    function handleDragStart(e, playerId) {
-      e.dataTransfer.setData('text/plain', playerId);
-    }
-
-    function handleDragOver(e) {
-      e.preventDefault();
-      document.getElementById('rosaPanel').classList.add('drag-over');
-    }
-
-    function handleDragLeave(e) {
-      document.getElementById('rosaPanel').classList.remove('drag-over');
-    }
-
-    function handleDrop(e) {
-      e.preventDefault();
-      document.getElementById('rosaPanel').classList.remove('drag-over');
-      const playerId = parseInt(e.dataTransfer.getData('text/plain'));
-      if (playerId && !mySquad.some(p => p.id === playerId)) {
-        openBuyModal(playerId);
-      }
-    }
-
-    /* TOOLTIP HOVER */
-    function showAnalysis(e, targetPrice) {
-      const tooltip = document.getElementById('analysisTooltip');
-      const statusBox = document.getElementById('tooltipStatus');
-      document.getElementById('tooltipTarget').innerText = targetPrice;
-      
-      if (targetPrice >= 40) {
-        statusBox.innerHTML = '<span style="color:var(--pink)">🔥 TOP DI REPARTO</span>';
-      } else if (targetPrice >= 15) {
-        statusBox.innerHTML = '<span style="color:var(--cyan)">🛡️ TITOLARE SICURO</span>';
-      } else {
-        statusBox.innerHTML = '<span style="color:var(--yellow)">💡 SCOMMESSA / LOW-COST</span>';
-      }
-
-      tooltip.style.display = 'block';
-      tooltip.style.left = e.pageX + 12 + 'px';
-      tooltip.style.top = e.pageY + 12 + 'px';
-    }
-
-    function hideAnalysis() {
-      document.getElementById('analysisTooltip').style.display = 'none';
-    }
-
-    /* MODALE ACQUISTO */
-    function openBuyModal(id) {
-      selectedPlayerId = id;
+    // Acquista Giocatore
+    function buyPlayer(id) {
       const player = allPlayers.find(p => p.id === id);
-      const target = calculateDynamicTarget(player.pma);
-
-      document.getElementById('modalPlayerName').innerText = player.nome;
-      document.getElementById('modalTargetPrice').innerText = target;
-      document.getElementById('buyPriceInput').value = target;
-
-      document.getElementById('buyModal').style.display = 'flex';
-      updateLiveEvaluation();
-    }
-
-    function closeBuyModal() {
-      document.getElementById('buyModal').style.display = 'none';
-    }
-
-    function updateLiveEvaluation() {
-      if (!selectedPlayerId) return;
-
-      const player = allPlayers.find(p => p.id === selectedPlayerId);
-      const target = calculateDynamicTarget(player.pma);
-      const paid = parseInt(document.getElementById('buyPriceInput').value) || 0;
-
-      const badge = document.getElementById('liveEvalBadge');
-      const msg = document.getElementById('liveEvalMessage');
-
-      if (paid <= Math.round(target * 0.85)) {
-        badge.className = 'eval-badge eval-affarone';
-        badge.innerText = '🔥 AFFARONE!';
-        msg.innerText = `Risparmi ${target - paid} CR sul valore stimato!`;
-      } else if (paid <= Math.round(target * 1.15)) {
-        badge.className = 'eval-badge eval-giusto';
-        badge.innerText = '⚖️ EQUILIBRATO';
-        msg.innerText = `Prezzo corretto in linea con il target (${target} CR).`;
-      } else {
-        badge.className = 'eval-badge eval-pacco';
-        badge.innerText = '⚠️ PACCO / OVERPAY';
-        msg.innerText = `Stai pagando +${paid - target} CR oltre la soglia consigliata!`;
+      if (player && !myRosa.some(r => r.id === id)) {
+        myRosa.push(player);
+        renderTable();
+        renderRosa();
       }
     }
 
-    function confirmBuy() {
-      const price = parseInt(document.getElementById('buyPriceInput').value) || 1;
-      const player = allPlayers.find(p => p.id === selectedPlayerId);
-
-      mySquad.push({ ...player, buyPrice: price });
-      closeBuyModal();
-      renderPlayers();
-    }
-
+    // Rimuovi Giocatore
     function removePlayer(id) {
-      mySquad = mySquad.filter(p => p.id !== id);
-      renderPlayers();
+      myRosa = myRosa.filter(p => p.id !== id);
+      renderTable();
+      renderRosa();
     }
 
-    function updateSquadUI() {
-      const squadList = document.getElementById('squadList');
-      squadList.innerHTML = '';
-      
+    // Render Rosa e Calcolo Budget
+    function renderRosa() {
+      const rosaList = document.getElementById('rosaList');
+      const totalBudget = parseFloat(document.getElementById('totalBudget').value) || 1000;
+      rosaList.innerHTML = '';
+
       let spent = 0;
-      mySquad.forEach(p => {
-        spent += p.buyPrice;
-        const item = document.createElement('div');
-        item.className = 'squad-item';
-        item.innerHTML = `
-          <div>
-            <strong style="color:#fff;">${p.nome}</strong> <span class="role-${p.ruolo}">(${p.ruolo})</span>
+
+      myRosa.forEach(p => {
+        spent += p.pma;
+        const div = document.createElement('div');
+        div.className = 'rosa-item';
+        div.innerHTML = `
+          <div class="rosa-item-info">
+            <span class="role-badge role-${p.ruolo}">${p.ruolo}</span>
+            <div>
+              <strong>${p.nome}</strong>
+              <div style="font-size: 11px; color: #6c8cae;">${p.squadra}</div>
+            </div>
           </div>
-          <div>
-            <span style="color:var(--yellow); font-family:'Orbitron'; font-weight:bold; margin-right:8px;">${p.buyPrice} CR</span>
-            <button onclick="removePlayer(${p.id})" style="background:none; border:none; color:var(--pink); cursor:pointer; font-weight:bold;">✕</button>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="price-tag">${p.pma} CR</span>
+            <button class="btn-remove" onclick="removePlayer(${p.id})">✕</button>
           </div>
         `;
-        squadList.appendChild(item);
+        rosaList.appendChild(div);
       });
 
-      const totalBudget = parseInt(document.getElementById('totalBudget').value) || 1000;
-      document.getElementById('squadCount').innerText = `${mySquad.length}/25`;
-      document.getElementById('totalSpent').innerText = `${spent} CR`;
-      document.getElementById('remainingCredits').innerText = `${totalBudget - spent} CR`;
+      document.getElementById('spentBudget').textContent = `${spent} CR`;
+      document.getElementById('remainingBudget').textContent = `${totalBudget - spent} CR`;
+      document.getElementById('rosaCount').textContent = `${myRosa.length}/25`;
     }
 
-    window.onload = loadPlayers;
+    // Toggle Sidebar Destra
+    const sidebar = document.getElementById('sidebarRosa');
+    const toggleBtn = document.getElementById('toggleSidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+      toggleBtn.textContent = sidebar.classList.contains('collapsed') ? '▶' : '◀';
+    });
+
+    // Drag and Drop Event Handlers
+    sidebar.addEventListener('dragover', (e) => e.preventDefault());
+    sidebar.addEventListener('drop', (e) => {
+      e.preventDefault();
+      const id = parseInt(e.dataTransfer.getData('text/plain'));
+      if (id) buyPlayer(id);
+    });
+
+    // Aggiornamento dinamico budget totale al cambio input
+    document.getElementById('totalBudget').addEventListener('input', renderRosa);
   </script>
 </body>
 </html>
