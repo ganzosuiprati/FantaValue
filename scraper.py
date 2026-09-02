@@ -5,28 +5,11 @@ import sys
 
 EXCEL_FILE = "Quotazioni_Fantacalcio_Stagione_2026_27.xlsx"
 
-# 1° Rigorista ufficiale per squadra
 RIGORISTI_PRIMI = [
-    "Calhanoglu",        # Inter
-    "Vlahovic",          # Juventus
-    "Pulisic",           # Milan
-    "De Bruyne",         # Napoli
-    "Scamacca",          # Atalanta
-    "Dybala",            # Roma
-    "Zaccagni",          # Lazio
-    "Gudmundsson",       # Fiorentina
-    "Orsolini",          # Bologna
-    "Vlasic",            # Torino
-    "Da Cunha",          # Como
-    "Messias",           # Genoa
-    "Nzola",             # Cagliari
-    "Pessina",           # Monza
-    "Bernabé",           # Parma
-    "Berardi",           # Sassuolo
-    "Davis",             # Udinese
-    "Geubbels",          # Lecce
-    "Busio",             # Venezia
-    "Calò"               # Frosinone
+    "Calhanoglu", "Vlahovic", "Pulisic", "De Bruyne", "Scamacca", 
+    "Dybala", "Zaccagni", "Gudmundsson", "Orsolini", "Vlasic", 
+    "Da Cunha", "Messias", "Nzola", "Pessina", "Bernabé", 
+    "Berardi", "Davis", "Geubbels", "Busio", "Calò"
 ]
 
 def clean_role(role_raw):
@@ -45,13 +28,26 @@ def is_primo_rigorista(nome):
             return True
     return False
 
+def clean_int(val, default=1):
+    try:
+        if pd.isna(val): return default
+        num = int(float(str(val).replace(',', '.')))
+        return num if num > 0 else default
+    except:
+        return default
+
+def clean_float(val, default=6.0):
+    try:
+        if pd.isna(val): return default
+        return round(float(str(val).replace(',', '.')), 2)
+    except:
+        return default
+
 def main():
     target_file = EXCEL_FILE if os.path.exists(EXCEL_FILE) else "Quotazioni_Fantacalcio_Stagione_2026_27_2.xlsx"
     if not os.path.exists(target_file):
-        print(f"Errore: File Excel non trovato.")
+        print("Errore: File Excel non trovato.")
         sys.exit(1)
-
-    print(f"Elaborazione di: {target_file}")
 
     df = pd.read_excel(target_file, sheet_name=0, header=1)
     df.columns = [str(c).strip() for c in df.columns]
@@ -74,26 +70,13 @@ def main():
         squadra = str(row[col_squadra]).strip()[:12].upper() if pd.notnull(row[col_squadra]) else "SER"
         ruolo = clean_role(row[col_ruolo]) if col_ruolo in row else 'C'
         
-        qta = int(row[col_qta]) if col_qta and pd.notnull(row[col_qta]) and str(row[col_qta]).isdigit() else 1
-        fvm = int(row[col_fvm]) if col_fvm and pd.notnull(row[col_fvm]) and str(row[col_fvm]).isdigit() else qta
+        qta = clean_int(row[col_qta] if col_qta and col_qta in row else 1, default=1)
+        fvm = clean_int(row[col_fvm] if col_fvm and col_fvm in row else qta, default=qta)
 
         pma_base = fvm if fvm > 0 else qta
 
-        if col_fm and pd.notnull(row[col_fm]):
-            try:
-                fm = round(float(str(row[col_fm]).replace(',', '.')), 2)
-            except:
-                fm = 6.0
-        else:
-            fm = 6.0
-
-        if col_tit and pd.notnull(row[col_tit]):
-            try:
-                tit = int(float(str(row[col_tit]).replace('%', '').replace(',', '.')))
-            except:
-                tit = 75
-        else:
-            tit = 75
+        fm = clean_float(row[col_fm] if col_fm and col_fm in row else 6.0, default=6.0)
+        tit = clean_int(row[col_tit] if col_tit and col_tit in row else 75, default=75)
 
         tags = []
         if is_primo_rigorista(nome):
@@ -106,14 +89,15 @@ def main():
             "ruolo": ruolo,
             "fantamedia": fm,
             "titolarita": tit,
-            "pma_base": max(1, pma_base), # Base parametrata a 1000 CR / 8 partecipanti
+            "pma_base": int(pma_base),
+            "pma": int(pma_base),
             "tags": tags
         })
 
     with open("players.json", "w", encoding="utf-8") as f:
         json.dump(players, f, ensure_ascii=False, indent=2)
 
-    print(f"SUCCESSO: Esportati {len(players)} calciatori in players.json!")
+    print(f"Salvati {len(players)} giocatori in players.json!")
 
 if __name__ == "__main__":
     main()
