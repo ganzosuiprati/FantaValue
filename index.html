@@ -17,12 +17,7 @@
       --border-color: #1a3a60;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      user-select: none;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
 
     body {
       background-color: var(--bg-dark);
@@ -34,7 +29,6 @@
       flex-direction: column;
     }
 
-    /* HEADER */
     header {
       background: linear-gradient(90deg, #02060d 0%, #0a1b36 50%, #02060d 100%);
       border-bottom: 2px solid var(--neon-blue);
@@ -45,11 +39,7 @@
       box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
     }
 
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    .logo-area { display: flex; align-items: center; gap: 12px; }
 
     .season-badge {
       font-family: 'Press Start 2P', cursive;
@@ -66,37 +56,14 @@
       font-size: 18px;
       color: #fff;
       text-shadow: 2px 2px var(--neon-blue);
-      letter-spacing: -1px;
     }
 
-    .developer-credits {
-      font-size: 12px;
-      color: #8ab4f8;
-      text-align: right;
-    }
+    .developer-credits { font-size: 12px; color: #8ab4f8; text-align: right; }
+    .developer-credits span { color: var(--neon-blue); font-weight: 700; }
 
-    .developer-credits span {
-      color: var(--neon-blue);
-      font-weight: 700;
-    }
+    .app-container { display: flex; flex: 1; height: calc(100vh - 55px); position: relative; }
 
-    /* MAIN CONTAINER */
-    .app-container {
-      display: flex;
-      flex: 1;
-      height: calc(100vh - 55px);
-      position: relative;
-    }
-
-    /* PANNELLO SINISTRO */
-    .left-panel {
-      flex: 1;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      overflow: hidden;
-    }
+    .left-panel { flex: 1; padding: 15px; display: flex; flex-direction: column; gap: 15px; overflow: hidden; }
 
     .controls-grid {
       background: var(--panel-bg);
@@ -106,29 +73,13 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.05);
     }
 
-    .inputs-row {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
+    .inputs-row { display: flex; gap: 15px; align-items: center; }
 
-    .input-group {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .input-group label {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--neon-blue);
-      text-transform: uppercase;
-    }
-
-    .input-group input, .input-group select {
+    .input-group { display: flex; flex-direction: column; gap: 4px; }
+    .input-group label { font-size: 11px; font-weight: 700; color: var(--neon-blue); text-transform: uppercase; }
+    .input-group input {
       background: #020a16;
       border: 1px solid var(--border-color);
       color: #fff;
@@ -139,30 +90,10 @@
       border-radius: 4px;
       outline: none;
     }
+    .search-input { flex: 1; }
 
-    .input-group input:focus {
-      border-color: var(--neon-blue);
-      box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
-    }
-
-    .search-input {
-      flex: 1;
-    }
-
-    .filter-section {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .filter-label {
-      font-size: 11px;
-      font-weight: 700;
-      color: #6c8cae;
-      text-transform: uppercase;
-      margin-right: 5px;
-    }
+    .filter-section { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .filter-label { font-size: 11px; font-weight: 700; color: #6c8cae; text-transform: uppercase; margin-right: 5px; }
 
     .btn-filter {
       background: #08162a;
@@ -173,32 +104,12 @@
       font-weight: 700;
       border-radius: 4px;
       cursor: pointer;
-      transition: all 0.2s;
     }
 
-    .btn-filter:hover, .btn-filter.active {
-      background: var(--neon-blue);
-      color: #000;
-      box-shadow: 0 0 10px var(--neon-blue);
-      border-color: var(--neon-blue);
-    }
+    .btn-filter.active { background: var(--neon-blue); color: #000; box-shadow: 0 0 10px var(--neon-blue); }
+    .btn-tag.active { background: var(--neon-yellow); color: #000; box-shadow: 0 0 10px var(--neon-yellow); }
 
-    .btn-tag.active {
-      background: var(--neon-yellow);
-      color: #000;
-      box-shadow: 0 0 10px var(--neon-yellow);
-      border-color: var(--neon-yellow);
-    }
-
-    /* TABELLA */
-    .table-container {
-      flex: 1;
-      background: var(--panel-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      overflow-y: auto;
-      position: relative;
-    }
+    .table-container { flex: 1; background: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; overflow-y: auto; }
 
     .listone-header {
       background: #061325;
@@ -206,30 +117,15 @@
       border-bottom: 1px solid var(--border-color);
       display: flex;
       justify-content: space-between;
-      align-items: center;
       position: sticky;
       top: 0;
       z-index: 10;
     }
 
-    .listone-title {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 11px;
-      color: var(--neon-magenta);
-    }
+    .listone-title { font-family: 'Press Start 2P', cursive; font-size: 11px; color: var(--neon-magenta); }
+    .player-count { font-family: 'Press Start 2P', cursive; font-size: 10px; color: var(--neon-blue); }
 
-    .player-count {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 10px;
-      color: var(--neon-blue);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-    }
-
+    table { width: 100%; border-collapse: collapse; text-align: left; }
     th {
       background: #040c18;
       color: #6c8cae;
@@ -241,47 +137,17 @@
       top: 37px;
       z-index: 9;
     }
+    td { padding: 8px 10px; border-bottom: 1px solid #0d223a; font-size: 14px; font-weight: 600; }
+    tr:hover { background: rgba(0, 240, 255, 0.05); }
 
-    td {
-      padding: 8px 10px;
-      border-bottom: 1px solid #0d223a;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    tr:hover {
-      background: rgba(0, 240, 255, 0.05);
-    }
-
-    .role-badge {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      line-height: 20px;
-      text-align: center;
-      border-radius: 3px;
-      font-size: 11px;
-      font-weight: 700;
-    }
+    .role-badge { display: inline-block; width: 20px; height: 20px; line-height: 20px; text-align: center; border-radius: 3px; font-size: 11px; font-weight: 700; }
     .role-P { background: #e67e22; color: #fff; }
     .role-D { background: #27ae60; color: #fff; }
     .role-C { background: #2980b9; color: #fff; }
     .role-A { background: #c0392b; color: #fff; }
 
-    .price-tag {
-      color: var(--neon-yellow);
-      font-weight: 700;
-    }
-
-    .tag-badge {
-      font-size: 9px;
-      padding: 2px 5px;
-      border-radius: 3px;
-      margin-left: 4px;
-      background: #102a45;
-      color: var(--neon-blue);
-      border: 1px solid var(--neon-blue);
-    }
+    .price-tag { color: var(--neon-yellow); font-weight: 700; }
+    .tag-badge { font-size: 9px; padding: 2px 5px; border-radius: 3px; margin-left: 4px; background: #102a45; color: var(--neon-blue); border: 1px solid var(--neon-blue); }
 
     .btn-action {
       background: var(--neon-magenta);
@@ -292,110 +158,49 @@
       font-weight: 700;
       border-radius: 3px;
       cursor: pointer;
-      box-shadow: 0 0 5px var(--neon-magenta);
     }
 
-    .btn-action:hover {
-      opacity: 0.9;
-    }
-
-    /* PANNELLO DESTRO (ROSA) */
-    .right-panel {
-      width: 360px;
-      background: #030a14;
-      border-left: 2px solid var(--border-color);
-      display: flex;
-      flex-direction: column;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-    }
-
-    .right-panel.collapsed {
-      margin-right: -360px;
-    }
+    .right-panel { width: 360px; background: #030a14; border-left: 2px solid var(--border-color); display: flex; flex-direction: column; transition: all 0.3s; }
+    .right-panel.collapsed { margin-right: -360px; }
 
     .toggle-sidebar-btn {
-      position: absolute;
-      left: -28px;
-      top: 15px;
-      width: 28px;
-      height: 40px;
-      background: var(--border-color);
-      border: 1px solid var(--neon-blue);
-      border-right: none;
-      color: var(--neon-blue);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      border-radius: 4px 0 0 4px;
-      font-weight: bold;
+      position: absolute; left: -28px; top: 15px; width: 28px; height: 40px;
+      background: var(--border-color); border: 1px solid var(--neon-blue); border-right: none;
+      color: var(--neon-blue); display: flex; align-items: center; justify-content: center; cursor: pointer;
     }
 
-    .sidebar-header {
-      padding: 12px 15px;
-      background: #061325;
-      border-bottom: 1px solid var(--border-color);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    .sidebar-header { padding: 12px 15px; background: #061325; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; }
+    .sidebar-title { font-family: 'Press Start 2P', cursive; font-size: 11px; color: #fff; }
 
-    .sidebar-title {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 11px;
-      color: #fff;
-    }
-
-    .budget-summary {
-      padding: 15px;
-      background: var(--panel-bg);
-      border-bottom: 1px solid var(--border-color);
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .budget-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 13px;
-      font-weight: 700;
-    }
-
+    .budget-summary { padding: 15px; background: var(--panel-bg); border-bottom: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 8px; }
+    .budget-row { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; }
     .budget-value { color: var(--neon-green); }
     .spent-value { color: var(--neon-magenta); }
 
-    .rosa-list {
-      flex: 1;
-      padding: 10px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .rosa-item {
-      background: #06162d;
-      border: 1px solid var(--border-color);
-      padding: 8px 10px;
-      border-radius: 4px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    .rosa-list { flex: 1; padding: 10px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+    .rosa-item { background: #06162d; border: 1px solid var(--border-color); padding: 8px 10px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
 
     .eval-affarone { color: var(--neon-green); font-weight: 700; font-size: 11px; }
     .eval-equo { color: var(--neon-yellow); font-weight: 700; font-size: 11px; }
     .eval-pacco { color: var(--neon-magenta); font-weight: 700; font-size: 11px; }
 
-    .btn-remove {
-      background: transparent;
-      border: none;
-      color: #ff4757;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 14px;
+    .btn-remove { background: transparent; border: none; color: #ff4757; cursor: pointer; font-weight: bold; font-size: 14px; }
+
+    /* MODALE ACQUISTO INTERATTIVO */
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center; z-index: 99;
+    }
+    .modal-overlay.hidden { display: none; }
+    .modal-box {
+      background: #08162a; border: 2px solid var(--neon-blue); border-radius: 8px;
+      padding: 20px; width: 320px; display: flex; flex-direction: column; gap: 12px;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    }
+    .modal-title { font-family: 'Press Start 2P', cursive; font-size: 12px; color: #fff; }
+    .live-eval-box {
+      padding: 8px; text-align: center; border-radius: 4px; background: #020a16;
+      border: 1px solid var(--border-color); font-weight: bold; font-size: 14px;
     }
   </style>
 </head>
@@ -433,7 +238,7 @@
         </div>
 
         <div class="filter-section">
-          <span class="filter-label">Filtra per Ruolo:</span>
+          <span class="filter-label">Filtra Ruolo:</span>
           <button class="btn-filter active" data-role="ALL">TUTTI</button>
           <button class="btn-filter" data-role="P">POR</button>
           <button class="btn-filter" data-role="D">DIF</button>
@@ -443,7 +248,7 @@
 
         <div class="filter-section">
           <span class="filter-label">Filtri Speciali:</span>
-          <button class="btn-filter btn-tag" data-tag="TOP">🔥 TOP REPARTO</button>
+          <button class="btn-filter btn-tag" data-tag="TOP">🔥 TOP</button>
           <button class="btn-filter btn-tag" data-tag="TITOLARE">🛡️ TITOLARI</button>
           <button class="btn-filter btn-tag" data-tag="SCOMMESSA">💡 SCOMMESSE</button>
           <button class="btn-filter btn-tag" data-tag="RIGORISTA">⚽ RIGORISTI</button>
@@ -498,38 +303,65 @@
 
   </div>
 
+  <!-- POPUP PER L'INSERIMENTO PREZZO CON NOTIFICA LIVE -->
+  <div class="modal-overlay hidden" id="buyModal">
+    <div class="modal-box">
+      <span class="modal-title" id="modalPlayerName">ACQUISTA GIOCATORE</span>
+      <div style="font-size:13px; color:#8ab4f8;">PMA Consegnato: <strong id="modalPmaVal" style="color:var(--neon-yellow)">-</strong> CR</div>
+      
+      <div class="input-group">
+        <label>Prezzo d'acquisto effettivo (CR):</label>
+        <input type="number" id="modalPriceInput" value="1" min="1">
+      </div>
+
+      <div class="live-eval-box" id="modalLiveEval">
+        INSERISCI PREZZO
+      </div>
+
+      <div style="display:flex; gap:10px; margin-top:5px;">
+        <button class="btn-action" style="flex:1; background:var(--neon-green); color:#000;" id="modalConfirmBtn">CONFERMA</button>
+        <button class="btn-action" style="flex:1; background:#ff4757;" id="modalCancelBtn">ANNULLA</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     let allPlayers = [];
     let myRosa = [];
     let activeRoleFilter = 'ALL';
     let activeTagFilter = null;
+    let selectedPlayer = null;
 
-    function generateAutoTags(player) {
-      const tags = player.tags || [];
+    // Ricalcola il PMA in base ai crediti totali e ai partecipanti della lega
+    function calculateDynamicPMA(pmaBase) {
+      const budget = parseFloat(document.getElementById('totalBudget').value) || 1000;
+      const teams = parseFloat(document.getElementById('numTeams').value) || 8;
+      
+      // Fattore crediti (base = 1000) e fattore partecipanti (base = 8)
+      const budgetFactor = budget / 1000.0;
+      const teamsFactor = 8.0 / teams;
+
+      const dynamicPma = Math.round(pmaBase * budgetFactor * teamsFactor);
+      return Math.max(1, dynamicPma);
+    }
+
+    function generateAutoTags(player, currentPma) {
+      const tags = player.tags ? [...player.tags] : [];
       const topThreshold = player.ruolo === 'A' ? 70 : (player.ruolo === 'C' ? 35 : 30);
       
-      if ((player.pma >= topThreshold || player.fantamedia >= 8.0) && !tags.includes('TOP')) {
-        tags.push('TOP');
-      }
-      if (player.titolarita >= 80 && !tags.includes('TITOLARE')) {
-        tags.push('TITOLARE');
-      }
-      if (player.pma >= 5 && player.pma <= 22 && player.titolarita >= 60 && !tags.includes('SCOMMESSA')) {
-        tags.push('SCOMMESSA');
-      }
-      if (player.titolarita >= 40 && player.titolarita <= 75 && !tags.includes('JOLLY')) {
-        tags.push('JOLLY');
-      }
+      if ((currentPma >= topThreshold || player.fantamedia >= 8.0) && !tags.includes('TOP')) tags.push('TOP');
+      if (player.titolarita >= 80 && !tags.includes('TITOLARE')) tags.push('TITOLARE');
+      if (currentPma >= 5 && currentPma <= 22 && player.titolarita >= 60 && !tags.includes('SCOMMESSA')) tags.push('SCOMMESSA');
+      if (player.titolarita >= 40 && player.titolarita <= 75 && !tags.includes('JOLLY')) tags.push('JOLLY');
+      
       return tags;
     }
 
-    fetch('players.json')
+    // Caricamento JSON con CACHE BUSTER per forzare sempre i dati nuovi
+    fetch('players.json?v=' + new Date().getTime())
       .then(res => res.json())
       .then(data => {
-        allPlayers = data.map(p => ({
-          ...p,
-          tags: generateAutoTags(p)
-        }));
+        allPlayers = data;
         renderTable();
       })
       .catch(err => console.error("Errore caricamento dati:", err));
@@ -542,7 +374,12 @@
       const filtered = allPlayers.filter(p => {
         if (myRosa.some(r => r.id === p.id)) return false;
         if (activeRoleFilter !== 'ALL' && p.ruolo !== activeRoleFilter) return false;
-        if (activeTagFilter && (!p.tags || !p.tags.includes(activeTagFilter))) return false;
+        
+        const currentPma = calculateDynamicPMA(p.pma_base);
+        const tags = generateAutoTags(p, currentPma);
+
+        if (activeTagFilter && !tags.includes(activeTagFilter)) return false;
+
         if (searchVal) {
           const matchName = p.nome.toLowerCase().includes(searchVal);
           const matchTeam = p.squadra.toLowerCase().includes(searchVal);
@@ -555,7 +392,9 @@
 
       filtered.forEach(p => {
         const tr = document.createElement('tr');
-        const tagsHtml = p.tags ? p.tags.map(t => `<span class="tag-badge">${t}</span>`).join('') : '';
+        const currentPma = calculateDynamicPMA(p.pma_base);
+        const tags = generateAutoTags(p, currentPma);
+        const tagsHtml = tags.map(t => `<span class="tag-badge">${t}</span>`).join('');
 
         tr.innerHTML = `
           <td><strong>${p.nome}</strong> ${tagsHtml}</td>
@@ -563,23 +402,67 @@
           <td><span class="role-badge role-${p.ruolo}">${p.ruolo}</span></td>
           <td>${p.fantamedia.toFixed(1)}</td>
           <td>${p.titolarita}%</td>
-          <td class="price-tag">${p.pma} CR</td>
+          <td class="price-tag">${currentPma} CR</td>
           <td>
-            <button class="btn-action" onclick="buyPlayer(${p.id})">+ PRENDI</button>
+            <button class="btn-action" onclick="openBuyModal(${p.id})">+ PRENDI</button>
           </td>
         `;
         tbody.appendChild(tr);
       });
     }
 
-    function buyPlayer(id) {
-      const player = allPlayers.find(p => p.id === id);
-      if (!player) return;
+    // APERTURA MODALE ACQUISTO INTERATTIVA
+    function openBuyModal(id) {
+      selectedPlayer = allPlayers.find(p => p.id === id);
+      if (!selectedPlayer) return;
 
-      const inputVal = prompt(`Inserisci il prezzo d'acquisto effettivo per ${player.nome} (PMA Consigliato: ${player.pma} CR):`, player.pma);
-      if (inputVal === null) return;
+      const currentPma = calculateDynamicPMA(selectedPlayer.pma_base);
 
-      const paidPrice = parseInt(inputVal);
+      document.getElementById('modalPlayerName').textContent = selectedPlayer.nome;
+      document.getElementById('modalPmaVal').textContent = currentPma;
+      document.getElementById('modalPriceInput').value = currentPma;
+      
+      updateLiveEval();
+
+      document.getElementById('buyModal').classList.remove('hidden');
+      document.getElementById('modalPriceInput').focus();
+    }
+
+    // AGGIORNAMENTO LIVE DELLA VALUTAZIONE IN TEMPO REALE
+    function updateLiveEval() {
+      if (!selectedPlayer) return;
+      const currentPma = calculateDynamicPMA(selectedPlayer.pma_base);
+      const paidPrice = parseInt(document.getElementById('modalPriceInput').value) || 0;
+      const evalBox = document.getElementById('modalLiveEval');
+
+      if (paidPrice <= 0) {
+        evalBox.textContent = "INSERISCI UN PREZZO";
+        evalBox.className = "live-eval-box";
+        return;
+      }
+
+      if (paidPrice <= Math.round(currentPma * 0.85)) {
+        evalBox.textContent = "🔥 AFFARONE! (Sotto del " + Math.round((1 - paidPrice/currentPma)*100) + "%)";
+        evalBox.style.color = "var(--neon-green)";
+        evalBox.style.borderColor = "var(--neon-green)";
+      } else if (paidPrice >= Math.round(currentPma * 1.25)) {
+        evalBox.textContent = "📦 PACCO! (Sopra del " + Math.round((paidPrice/currentPma - 1)*100) + "%)";
+        evalBox.style.color = "var(--neon-magenta)";
+        evalBox.style.borderColor = "var(--neon-magenta)";
+      } else {
+        evalBox.textContent = "✅ PREZZO EQUO";
+        evalBox.style.color = "var(--neon-yellow)";
+        evalBox.style.borderColor = "var(--neon-yellow)";
+      }
+    }
+
+    document.getElementById('modalPriceInput').addEventListener('input', updateLiveEval);
+
+    document.getElementById('modalConfirmBtn').addEventListener('click', () => {
+      if (!selectedPlayer) return;
+      const currentPma = calculateDynamicPMA(selectedPlayer.pma_base);
+      const paidPrice = parseInt(document.getElementById('modalPriceInput').value);
+
       if (isNaN(paidPrice) || paidPrice < 1) {
         alert("Inserisci un prezzo valido!");
         return;
@@ -588,24 +471,29 @@
       let evaluation = "EQUO";
       let evalClass = "eval-equo";
 
-      if (paidPrice <= Math.round(player.pma * 0.85)) {
+      if (paidPrice <= Math.round(currentPma * 0.85)) {
         evaluation = "🔥 AFFARONE";
         evalClass = "eval-affarone";
-      } else if (paidPrice >= Math.round(player.pma * 1.25)) {
+      } else if (paidPrice >= Math.round(currentPma * 1.25)) {
         evaluation = "📦 PACCO";
         evalClass = "eval-pacco";
       }
 
       myRosa.push({
-        ...player,
+        ...selectedPlayer,
         paidPrice: paidPrice,
         evaluation: evaluation,
         evalClass: evalClass
       });
 
+      document.getElementById('buyModal').classList.add('hidden');
       renderTable();
       renderRosa();
-    }
+    });
+
+    document.getElementById('modalCancelBtn').addEventListener('click', () => {
+      document.getElementById('buyModal').classList.add('hidden');
+    });
 
     function removePlayer(id) {
       myRosa = myRosa.filter(p => p.id !== id);
@@ -668,7 +556,10 @@
     });
 
     document.getElementById('searchInput').addEventListener('input', renderTable);
-    document.getElementById('totalBudget').addEventListener('input', renderRosa);
+    
+    // Ricalcola la tabella in tempo reale quando cambi Crediti o Partecipanti
+    document.getElementById('totalBudget').addEventListener('input', () => { renderTable(); renderRosa(); });
+    document.getElementById('numTeams').addEventListener('input', () => { renderTable(); renderRosa(); });
 
     const sidebar = document.getElementById('sidebarRosa');
     document.getElementById('toggleSidebar').addEventListener('click', () => {
