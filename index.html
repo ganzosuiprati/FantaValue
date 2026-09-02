@@ -80,7 +80,7 @@
       font-weight: 700;
     }
 
-    /* MAIN CONTENT */
+    /* MAIN CONTAINER */
     .app-container {
       display: flex;
       flex: 1;
@@ -88,7 +88,7 @@
       position: relative;
     }
 
-    /* LEFT PANEL: FILTERS & LISTONE */
+    /* PANNELLO SINISTRO */
     .left-panel {
       flex: 1;
       padding: 15px;
@@ -183,10 +183,6 @@
       border-color: var(--neon-blue);
     }
 
-    .btn-tag {
-      border-color: #2a4c7e;
-    }
-
     .btn-tag.active {
       background: var(--neon-yellow);
       color: #000;
@@ -194,7 +190,7 @@
       border-color: var(--neon-yellow);
     }
 
-    /* TABLE */
+    /* TABELLA */
     .table-container {
       flex: 1;
       background: var(--panel-bg);
@@ -257,10 +253,6 @@
       background: rgba(0, 240, 255, 0.05);
     }
 
-    tr.draggable-row {
-      cursor: grab;
-    }
-
     .role-badge {
       display: inline-block;
       width: 20px;
@@ -307,9 +299,9 @@
       opacity: 0.9;
     }
 
-    /* RIGHT PANEL: SIDEBAR ROSA */
+    /* PANNELLO DESTRO (ROSA) */
     .right-panel {
-      width: 340px;
+      width: 360px;
       background: #030a14;
       border-left: 2px solid var(--border-color);
       display: flex;
@@ -319,7 +311,7 @@
     }
 
     .right-panel.collapsed {
-      margin-right: -340px;
+      margin-right: -360px;
     }
 
     .toggle-sidebar-btn {
@@ -371,13 +363,8 @@
       font-weight: 700;
     }
 
-    .budget-value {
-      color: var(--neon-green);
-    }
-
-    .spent-value {
-      color: var(--neon-magenta);
-    }
+    .budget-value { color: var(--neon-green); }
+    .spent-value { color: var(--neon-magenta); }
 
     .rosa-list {
       flex: 1;
@@ -398,11 +385,9 @@
       align-items: center;
     }
 
-    .rosa-item-info {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .eval-affarone { color: var(--neon-green); font-weight: 700; font-size: 11px; }
+    .eval-equo { color: var(--neon-yellow); font-weight: 700; font-size: 11px; }
+    .eval-pacco { color: var(--neon-magenta); font-weight: 700; font-size: 11px; }
 
     .btn-remove {
       background: transparent;
@@ -429,10 +414,8 @@
 
   <div class="app-container">
     
-    <!-- PANNELLO SINISTRO -->
     <div class="left-panel">
       
-      <!-- CONTROLLI E FILTRI -->
       <div class="controls-grid">
         <div class="inputs-row">
           <div class="input-group">
@@ -445,11 +428,10 @@
           </div>
           <div class="input-group search-input">
             <label>Ricerca Giocatore / Squadra</label>
-            <input type="text" id="searchInput" placeholder="Es. Svilar, Inter, Dimarco..">
+            <input type="text" id="searchInput" placeholder="Es. Lautaro, Inter, Dimarco..">
           </div>
         </div>
 
-        <!-- FILTRI RUOLO -->
         <div class="filter-section">
           <span class="filter-label">Filtra per Ruolo:</span>
           <button class="btn-filter active" data-role="ALL">TUTTI</button>
@@ -459,7 +441,6 @@
           <button class="btn-filter" data-role="A">ATT</button>
         </div>
 
-        <!-- FILTRI SPECIALI -->
         <div class="filter-section">
           <span class="filter-label">Filtri Speciali:</span>
           <button class="btn-filter btn-tag" data-tag="TOP">🔥 TOP REPARTO</button>
@@ -470,10 +451,9 @@
         </div>
       </div>
 
-      <!-- TABELLA GIOCATORI -->
-      <div class="table-container" id="dropTargetRemove">
+      <div class="table-container">
         <div class="listone-header">
-          <span class="listone-title">LISTONE CALCIATORI (TRASCINA IN ROSA PER ACQUISTARE)</span>
+          <span class="listone-title">LISTONE CALCIATORI</span>
           <span class="player-count" id="playerCount">0 GIOCATORI</span>
         </div>
         <table>
@@ -484,19 +464,16 @@
               <th>Ruolo</th>
               <th>FM</th>
               <th>Tit%</th>
-              <th>Prezzo Max</th>
-              <th>Azioni</th>
+              <th>Prezzo Max (PMA)</th>
+              <th>Azione</th>
             </tr>
           </thead>
-          <tbody id="playerTableBody">
-            <!-- Righe inserite via JS -->
-          </tbody>
+          <tbody id="playerTableBody"></tbody>
         </table>
       </div>
 
     </div>
 
-    <!-- PANNELLO DESTRO (SIDEBAR ROSA) -->
     <div class="right-panel" id="sidebarRosa">
       <button class="toggle-sidebar-btn" id="toggleSidebar">◀</button>
       
@@ -516,9 +493,7 @@
         </div>
       </div>
 
-      <div class="rosa-list" id="rosaList">
-        <!-- Calciatori acquistati -->
-      </div>
+      <div class="rosa-list" id="rosaList"></div>
     </div>
 
   </div>
@@ -529,66 +504,50 @@
     let activeRoleFilter = 'ALL';
     let activeTagFilter = null;
 
-    // Generatore dinamico di Tag basato su statistiche
     function generateAutoTags(player) {
       const tags = player.tags || [];
-      
-      // Dynamic TOP threshold depending on position
       const topThreshold = player.ruolo === 'A' ? 70 : (player.ruolo === 'C' ? 35 : 30);
-      if (player.pma >= topThreshold || player.fantamedia >= 8.0) {
-        if (!tags.includes('TOP')) tags.push('TOP');
-      }
       
-      if (player.titolarita >= 80) {
-        if (!tags.includes('TITOLARE')) tags.push('TITOLARE');
+      if ((player.pma >= topThreshold || player.fantamedia >= 8.0) && !tags.includes('TOP')) {
+        tags.push('TOP');
       }
-      
-      if (player.pma >= 5 && player.pma <= 22 && player.titolarita >= 60) {
-        if (!tags.includes('SCOMMESSA')) tags.push('SCOMMESSA');
+      if (player.titolarita >= 80 && !tags.includes('TITOLARE')) {
+        tags.push('TITOLARE');
       }
-      
-      if (player.titolarita >= 40 && player.titolarita <= 75) {
-        if (!tags.includes('JOLLY')) tags.push('JOLLY');
+      if (player.pma >= 5 && player.pma <= 22 && player.titolarita >= 60 && !tags.includes('SCOMMESSA')) {
+        tags.push('SCOMMESSA');
       }
-
+      if (player.titolarita >= 40 && player.titolarita <= 75 && !tags.includes('JOLLY')) {
+        tags.push('JOLLY');
+      }
       return tags;
     }
 
-    // Caricamento dati da JSON
     fetch('players.json')
       .then(res => res.json())
       .then(data => {
-        allPlayers = data.map(player => ({
-          ...player,
-          tags: generateAutoTags(player)
+        allPlayers = data.map(p => ({
+          ...p,
+          tags: generateAutoTags(p)
         }));
         renderTable();
       })
-      .catch(err => console.error("Errore caricamento players.json:", err));
+      .catch(err => console.error("Errore caricamento dati:", err));
 
-    // Render della tabella
     function renderTable() {
       const tbody = document.getElementById('playerTableBody');
       const searchVal = document.getElementById('searchInput').value.toLowerCase();
       tbody.innerHTML = '';
 
       const filtered = allPlayers.filter(p => {
-        // Controllo se già acquistato
         if (myRosa.some(r => r.id === p.id)) return false;
-
-        // Filtro Ruolo
         if (activeRoleFilter !== 'ALL' && p.ruolo !== activeRoleFilter) return false;
-
-        // Filtro Tag Speciali
         if (activeTagFilter && (!p.tags || !p.tags.includes(activeTagFilter))) return false;
-
-        // Filtro Ricerca Testuale
         if (searchVal) {
           const matchName = p.nome.toLowerCase().includes(searchVal);
           const matchTeam = p.squadra.toLowerCase().includes(searchVal);
           if (!matchName && !matchTeam) return false;
         }
-
         return true;
       });
 
@@ -596,10 +555,6 @@
 
       filtered.forEach(p => {
         const tr = document.createElement('tr');
-        tr.className = 'draggable-row';
-        tr.draggable = true;
-        tr.ondragstart = (e) => e.dataTransfer.setData('text/plain', p.id);
-
         const tagsHtml = p.tags ? p.tags.map(t => `<span class="tag-badge">${t}</span>`).join('') : '';
 
         tr.innerHTML = `
@@ -617,7 +572,77 @@
       });
     }
 
-    // Gestione Filtri Ruolo
+    function buyPlayer(id) {
+      const player = allPlayers.find(p => p.id === id);
+      if (!player) return;
+
+      const inputVal = prompt(`Inserisci il prezzo d'acquisto effettivo per ${player.nome} (PMA Consigliato: ${player.pma} CR):`, player.pma);
+      if (inputVal === null) return;
+
+      const paidPrice = parseInt(inputVal);
+      if (isNaN(paidPrice) || paidPrice < 1) {
+        alert("Inserisci un prezzo valido!");
+        return;
+      }
+
+      let evaluation = "EQUO";
+      let evalClass = "eval-equo";
+
+      if (paidPrice <= Math.round(player.pma * 0.85)) {
+        evaluation = "🔥 AFFARONE";
+        evalClass = "eval-affarone";
+      } else if (paidPrice >= Math.round(player.pma * 1.25)) {
+        evaluation = "📦 PACCO";
+        evalClass = "eval-pacco";
+      }
+
+      myRosa.push({
+        ...player,
+        paidPrice: paidPrice,
+        evaluation: evaluation,
+        evalClass: evalClass
+      });
+
+      renderTable();
+      renderRosa();
+    }
+
+    function removePlayer(id) {
+      myRosa = myRosa.filter(p => p.id !== id);
+      renderTable();
+      renderRosa();
+    }
+
+    function renderRosa() {
+      const rosaList = document.getElementById('rosaList');
+      const totalBudget = parseFloat(document.getElementById('totalBudget').value) || 1000;
+      rosaList.innerHTML = '';
+
+      let spent = 0;
+
+      myRosa.forEach(p => {
+        spent += p.paidPrice;
+        const div = document.createElement('div');
+        div.className = 'rosa-item';
+        div.innerHTML = `
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span class="role-badge role-${p.ruolo}">${p.ruolo}</span>
+            <div>
+              <strong>${p.nome}</strong>
+              <div style="font-size:11px; color:#6c8cae;">${p.squadra} • Pagato: ${p.paidPrice} CR</div>
+              <div class="${p.evalClass}">${p.evaluation}</div>
+            </div>
+          </div>
+          <button class="btn-remove" onclick="removePlayer(${p.id})">✕</button>
+        `;
+        rosaList.appendChild(div);
+      });
+
+      document.getElementById('spentBudget').textContent = `${spent} CR`;
+      document.getElementById('remainingBudget').textContent = `${totalBudget - spent} CR`;
+      document.getElementById('rosaCount').textContent = `${myRosa.length}/25`;
+    }
+
     document.querySelectorAll('[data-role]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         document.querySelectorAll('[data-role]').forEach(b => b.classList.remove('active'));
@@ -627,7 +652,6 @@
       });
     });
 
-    // Gestione Filtri Tag Speciali
     document.querySelectorAll('[data-tag]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         const tag = e.target.getAttribute('data-tag');
@@ -643,78 +667,14 @@
       });
     });
 
-    // Listener Ricerca Testuale
     document.getElementById('searchInput').addEventListener('input', renderTable);
-
-    // Acquista Giocatore
-    function buyPlayer(id) {
-      const player = allPlayers.find(p => p.id === id);
-      if (player && !myRosa.some(r => r.id === id)) {
-        myRosa.push(player);
-        renderTable();
-        renderRosa();
-      }
-    }
-
-    // Rimuovi Giocatore
-    function removePlayer(id) {
-      myRosa = myRosa.filter(p => p.id !== id);
-      renderTable();
-      renderRosa();
-    }
-
-    // Render Rosa e Calcolo Budget
-    function renderRosa() {
-      const rosaList = document.getElementById('rosaList');
-      const totalBudget = parseFloat(document.getElementById('totalBudget').value) || 1000;
-      rosaList.innerHTML = '';
-
-      let spent = 0;
-
-      myRosa.forEach(p => {
-        spent += p.pma;
-        const div = document.createElement('div');
-        div.className = 'rosa-item';
-        div.innerHTML = `
-          <div class="rosa-item-info">
-            <span class="role-badge role-${p.ruolo}">${p.ruolo}</span>
-            <div>
-              <strong>${p.nome}</strong>
-              <div style="font-size: 11px; color: #6c8cae;">${p.squadra}</div>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <span class="price-tag">${p.pma} CR</span>
-            <button class="btn-remove" onclick="removePlayer(${p.id})">✕</button>
-          </div>
-        `;
-        rosaList.appendChild(div);
-      });
-
-      document.getElementById('spentBudget').textContent = `${spent} CR`;
-      document.getElementById('remainingBudget').textContent = `${totalBudget - spent} CR`;
-      document.getElementById('rosaCount').textContent = `${myRosa.length}/25`;
-    }
-
-    // Toggle Sidebar Destra
-    const sidebar = document.getElementById('sidebarRosa');
-    const toggleBtn = document.getElementById('toggleSidebar');
-
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-      toggleBtn.textContent = sidebar.classList.contains('collapsed') ? '▶' : '◀';
-    });
-
-    // Drag and Drop Event Handlers
-    sidebar.addEventListener('dragover', (e) => e.preventDefault());
-    sidebar.addEventListener('drop', (e) => {
-      e.preventDefault();
-      const id = parseInt(e.dataTransfer.getData('text/plain'));
-      if (id) buyPlayer(id);
-    });
-
-    // Aggiornamento dinamico budget totale al cambio input
     document.getElementById('totalBudget').addEventListener('input', renderRosa);
+
+    const sidebar = document.getElementById('sidebarRosa');
+    document.getElementById('toggleSidebar').addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+      document.getElementById('toggleSidebar').textContent = sidebar.classList.contains('collapsed') ? '▶' : '◀';
+    });
   </script>
 </body>
 </html>
