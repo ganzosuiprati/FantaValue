@@ -12,7 +12,6 @@
       --cola-black: #120304;
       --soda-cream: #fff8e7;
       --fizz-yellow: #ffeb3b;
-      --bubble-white: rgba(255, 255, 255, 0.2);
       --card-bg: #1c0608;
       --border-red: #5e0e12;
     }
@@ -29,7 +28,6 @@
       overflow: hidden;
     }
 
-    /* Container Smartphone Frame */
     .app-frame {
       width: 100%;
       max-width: 430px;
@@ -42,7 +40,6 @@
       overflow: hidden;
     }
 
-    /* Header Cola Style */
     header {
       background: linear-gradient(135deg, var(--cola-red), var(--cola-dark-red));
       padding: 15px 20px;
@@ -58,9 +55,6 @@
       font-size: 22px;
       color: var(--soda-cream);
       text-shadow: 2px 2px 0px var(--cola-black);
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
 
     .matchday-badge {
@@ -70,10 +64,8 @@
       padding: 4px 10px;
       border-radius: 20px;
       font-size: 11px;
-      text-transform: uppercase;
     }
 
-    /* Tab Contents Scrollable Area */
     .content-area {
       flex: 1;
       overflow-y: auto;
@@ -89,14 +81,12 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Card Styling */
     .soda-card {
       background: var(--card-bg);
       border: 1.5px solid var(--border-red);
       border-radius: 16px;
       padding: 15px;
       margin-bottom: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
     .card-header {
@@ -104,12 +94,8 @@
       font-size: 16px;
       color: var(--fizz-yellow);
       margin-bottom: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
-    /* Probabili Formazioni UI */
     .match-box {
       background: #2a0a0d;
       border-radius: 12px;
@@ -138,7 +124,6 @@
       color: var(--cola-red);
       font-size: 12px;
       margin-bottom: 6px;
-      text-transform: uppercase;
     }
 
     .player-line { padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
@@ -150,11 +135,10 @@
       padding: 6px 10px;
       border-radius: 8px;
       font-size: 11px;
-      margin-top: 6px;
+      margin-top: 8px;
       font-weight: 600;
     }
 
-    /* Mia Formazione Builder & Modulo Consigliato */
     .field-container {
       background: linear-gradient(180deg, #184e28 0%, #0d3018 100%);
       border: 2px solid #2e8b57;
@@ -165,7 +149,6 @@
       flex-direction: column;
       justify-content: space-around;
       margin-bottom: 15px;
-      position: relative;
     }
 
     .module-selector {
@@ -201,7 +184,6 @@
       margin-bottom: 12px;
     }
 
-    /* News & consigliati UI */
     .news-badge {
       display: inline-block;
       padding: 3px 8px;
@@ -214,7 +196,6 @@
     .badge-CONSIGLIATI { background: #f57f17; color: #fff; }
     .badge-INFORTUNI { background: #c62828; color: #fff; }
 
-    /* Bottom App Bar Mobile */
     .bottom-nav {
       position: absolute;
       bottom: 0;
@@ -238,13 +219,21 @@
       font-size: 10px;
       font-weight: 700;
       cursor: pointer;
-      text-decoration: none;
       width: 25%;
     }
 
     .nav-item .icon { font-size: 18px; }
     .nav-item.active { color: var(--fizz-yellow); }
-    .nav-item.active .icon { transform: scale(1.15); transition: transform 0.2s; }
+    
+    .error-msg {
+      padding: 12px;
+      background: rgba(230, 28, 36, 0.2);
+      border: 1px solid var(--cola-red);
+      border-radius: 10px;
+      font-size: 12px;
+      color: #ff8a80;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -253,7 +242,7 @@
     
     <header>
       <div class="brand-title">🥤 My FantaCola</div>
-      <div class="matchday-badge" id="giornataBadge">28ª GIORNATA</div>
+      <div class="matchday-badge" id="giornataBadge">LIVE</div>
     </header>
 
     <div class="content-area">
@@ -261,22 +250,18 @@
       <!-- TAB 1: PROBABILI FORMAZIONI -->
       <div class="tab-content active" id="tab-formazioni">
         <div class="soda-card">
-          <div class="card-header">
-            <span>⚽ LIVE PROBABILI FORMAZIONI</span>
-          </div>
-          <div id="formazioniList">Caricamento formazioni...</div>
+          <div class="card-header">📋 LIVE PROBABILI FORMAZIONI</div>
+          <div id="formazioniList">Caricamento dati live in corso...</div>
         </div>
       </div>
 
-      <!-- TAB 2: LA MIA FORMAZIONE & MODULI -->
+      <!-- TAB 2: SCHIERA TEAM -->
       <div class="tab-content" id="tab-schiera">
         <div class="soda-card">
-          <div class="card-header">
-            <span>🛡️ SCHIERA FORMAZIONE</span>
-          </div>
+          <div class="card-header">🛡️ SCHIERA FORMAZIONE</div>
           
           <div class="recommended-box">
-            💡 <strong>Modulo Consigliato FantaCola:</strong> <span id="recommendedModule" style="color:var(--fizz-yellow); font-weight:bold;">3-4-3</span> (in base alle percentuali dei tuoi titolari)
+            💡 <strong>Modulo Consigliato:</strong> <span style="color:var(--fizz-yellow);">3-4-3</span>
           </div>
 
           <div style="font-size: 11px; margin-bottom: 6px; color:#a38284;">Scegli Modulo:</div>
@@ -287,32 +272,25 @@
             <button class="btn-module" onclick="setModule('4-4-2', this)">4-4-2</button>
           </div>
 
-          <div class="field-container" id="fieldGraphic">
-            <!-- Calciatori piazzati sul campo -->
-          </div>
+          <div class="field-container" id="fieldGraphic"></div>
         </div>
       </div>
 
-      <!-- TAB 3: NEWS & CONSIGLIATI -->
+      <!-- TAB 3: NEWS & TOP -->
       <div class="tab-content" id="tab-news">
         <div class="soda-card">
-          <div class="card-header">
-            <span>📰 ULTIME NEWS & CONSIGLI</span>
-          </div>
-          <div id="newsList">Caricamento notizie...</div>
+          <div class="card-header">📰 ULTIME NEWS & CONSIGLI</div>
+          <div id="newsList">Caricamento news...</div>
         </div>
 
         <div class="soda-card">
-          <div class="card-header">
-            <span>⭐ CONSIGLIATI PER RUOLO</span>
-          </div>
-          <div id="consigliatiList" style="font-size: 13px;"></div>
+          <div class="card-header">⭐ CONSIGLIATI PER RUOLO</div>
+          <div id="consigliatiList" style="font-size: 13px;">Caricamento consigliati...</div>
         </div>
       </div>
 
     </div>
 
-    <!-- BOTTOM APP BAR -->
     <nav class="bottom-nav">
       <div class="nav-item active" onclick="switchTab('tab-formazioni', this)">
         <span class="icon">📋</span>
@@ -331,86 +309,106 @@
   </div>
 
   <script>
-    let appData = null;
+    async function loadData() {
+      try {
+        // Fetch dinamico con timestamp per evitare la cache di GitHub Pages
+        const response = await fetch('./fantacola_data.json?t=' + new Date().getTime());
+        
+        if (!response.ok) {
+          throw new Error("File fantacola_data.json non ancora generato.");
+        }
 
-    // Caricamento Dati JSON con Cache Buster
-    fetch('fantacola_data.json?v=' + new Date().getTime())
-      .then(res => res.json())
-      .then(data => {
-        appData = data;
-        renderAll();
-      })
-      .catch(err => console.error("Errore dati FantaCola:", err));
+        const appData = await response.json();
+        renderUI(appData);
 
-    function renderAll() {
-      if(!appData) return;
+      } catch (err) {
+        console.warn("Attesa aggiornamento dati:", err);
+        document.getElementById('formazioniList').innerHTML = `
+          <div class="error-msg">
+            ⚙️ <strong>Aggiornamento in corso...</strong><br>
+            La GitHub Action sta generando i dati aggiornati di oggi. Ricarica tra un minuto!
+          </div>
+        `;
+      }
+    }
 
-      document.getElementById('giornataBadge').textContent = `${appData.giornata}ª GIORNATA`;
+    function renderUI(appData) {
+      if (appData.giornata) {
+        document.getElementById('giornataBadge').textContent = `${appData.giornata}ª GIORNATA`;
+      }
 
       // 1. Render Formazioni
       const formContainer = document.getElementById('formazioniList');
       formContainer.innerHTML = '';
 
-      appData.partite.forEach(p => {
-        const matchBox = document.createElement('div');
-        matchBox.className = 'match-box';
-        
-        let ballottaggiHtml = '';
-        p.squadre.casa.ballottaggi.concat(p.squadre.trasferta.ballottaggi).forEach(b => {
-          ballottaggiHtml += `<div class="ballottaggio-tag">⚔️ Ballottaggio: ${b.p1} vs ${b.p2}</div>`;
-        });
+      if (appData.partite && appData.partite.length > 0) {
+        appData.partite.forEach(p => {
+          const matchBox = document.createElement('div');
+          matchBox.className = 'match-box';
+          
+          let ballottaggiHtml = '';
+          if (p.squadre.casa.ballottaggi || p.squadre.trasferta.ballottaggi) {
+            const list = [...(p.squadre.casa.ballottaggi || []), ...(p.squadre.trasferta.ballottaggi || [])];
+            list.forEach(b => {
+              ballottaggiHtml += `<div class="ballottaggio-tag">⚔️ Ballottaggio: ${b}</div>`;
+            });
+          }
 
-        matchBox.innerHTML = `
-          <div class="teams-header">${p.match} <span style="font-size:11px; color:var(--fizz-yellow); block;">(${p.orario})</span></div>
-          <div class="lineup-grid">
-            <div class="team-col">
-              <h4>${p.squadre.casa.nome} (${p.squadre.casa.modulo_probabile})</h4>
-              ${p.squadre.casa.titolari.map(pt => `<div class="player-line">• ${pt}</div>`).join('')}
+          matchBox.innerHTML = `
+            <div class="teams-header">${p.match} <span style="font-size:11px; color:var(--fizz-yellow);">(${p.orario || 'TBA'})</span></div>
+            <div class="lineup-grid">
+              <div class="team-col">
+                <h4>${p.squadre.casa.nome} (${p.squadre.casa.modulo_probabile || ''})</h4>
+                ${p.squadre.casa.titolari ? p.squadre.casa.titolari.map(pt => `<div class="player-line">• ${pt}</div>`).join('') : ''}
+              </div>
+              <div class="team-col">
+                <h4>${p.squadre.trasferta.nome} (${p.squadre.trasferta.modulo_probabile || ''})</h4>
+                ${p.squadre.trasferta.titolari ? p.squadre.trasferta.titolari.map(pt => `<div class="player-line">• ${pt}</div>`).join('') : ''}
+              </div>
             </div>
-            <div class="team-col">
-              <h4>${p.squadre.trasferta.nome} (${p.squadre.trasferta.modulo_probabile})</h4>
-              ${p.squadre.trasferta.titolari.map(pt => `<div class="player-line">• ${pt}</div>`).join('')}
-            </div>
-          </div>
-          ${ballottaggiHtml}
-        `;
-        formContainer.appendChild(matchBox);
-      });
+            ${ballottaggiHtml}
+          `;
+          formContainer.appendChild(matchBox);
+        });
+      }
 
       // 2. Render News
       const newsContainer = document.getElementById('newsList');
       newsContainer.innerHTML = '';
-      appData.news.forEach(n => {
-        const item = document.createElement('div');
-        item.style.marginBottom = "12px";
-        item.innerHTML = `
-          <span class="news-badge badge-${n.tipo}">${n.tipo}</span>
-          <strong style="display:block; font-size:14px; color:#fff;">${n.titolo}</strong>
-          <p style="font-size:12px; color:#c7a3a5;">${n.testo}</p>
-        `;
-        newsContainer.appendChild(item);
-      });
+      if (appData.news && appData.news.length > 0) {
+        appData.news.forEach(n => {
+          const item = document.createElement('div');
+          item.style.marginBottom = "12px";
+          item.innerHTML = `
+            <span class="news-badge badge-${n.tipo}">${n.tipo}</span>
+            <strong style="display:block; font-size:14px; color:#fff;">${n.titolo}</strong>
+            <p style="font-size:12px; color:#c7a3a5;">${n.testo}</p>
+          `;
+          newsContainer.appendChild(item);
+        });
+      }
 
       // 3. Render Consigliati
-      const consContainer = document.getElementById('consigliatiList');
-      consContainer.innerHTML = `
-        <p><strong>🧤 Portieri:</strong> ${appData.consigliati_ruolo.P.join(', ')}</p>
-        <p style="margin-top:4px;"><strong>🛡️ Difensori:</strong> ${appData.consigliati_ruolo.D.join(', ')}</p>
-        <p style="margin-top:4px;"><strong>⚙️ Centrocampisti:</strong> ${appData.consigliati_ruolo.C.join(', ')}</p>
-        <p style="margin-top:4px;"><strong>⚽ Attaccanti:</strong> ${appData.consigliati_ruolo.A.join(', ')}</p>
-      `;
+      if (appData.consigliati_ruolo) {
+        document.getElementById('consigliatiList').innerHTML = `
+          <p><strong>🧤 Portieri:</strong> ${appData.consigliati_ruolo.P ? appData.consigliati_ruolo.P.join(', ') : '-'}</p>
+          <p style="margin-top:6px;"><strong>🛡️ Difensori:</strong> ${appData.consigliati_ruolo.D ? appData.consigliati_ruolo.D.join(', ') : '-'}</p>
+          <p style="margin-top:6px;"><strong>⚙️ Centrocampisti:</strong> ${appData.consigliati_ruolo.C ? appData.consigliati_ruolo.C.join(', ') : '-'}</p>
+          <p style="margin-top:6px;"><strong>⚽ Attaccanti:</strong> ${appData.consigliati_ruolo.A ? appData.consigliati_ruolo.A.join(', ') : '-'}</p>
+        `;
+      }
 
       renderField('3-4-3');
     }
 
     function renderField(modulo) {
-      const field = document.getElementById('fieldGraphic');
-      field.innerHTML = `
-        <div style="text-align:center; color:#fff; font-size:12px; font-weight:bold;">ATTACCO</div>
+      const parts = modulo.split('-');
+      document.getElementById('fieldGraphic').innerHTML = `
+        <div style="text-align:center; color:#fff; font-size:11px; font-weight:bold;">ATTACCO (${parts[2]})</div>
         <div style="display:flex; justify-content:space-around; color:var(--fizz-yellow); font-size:18px;">⚽ ⚽ ⚽</div>
-        <div style="text-align:center; color:#fff; font-size:12px; font-weight:bold;">CENTROCAMPO</div>
+        <div style="text-align:center; color:#fff; font-size:11px; font-weight:bold;">CENTROCAMPO (${parts[1]})</div>
         <div style="display:flex; justify-content:space-around; color:#fff; font-size:18px;">🏃 🏃 🏃 🏃</div>
-        <div style="text-align:center; color:#fff; font-size:12px; font-weight:bold;">DIFESA</div>
+        <div style="text-align:center; color:#fff; font-size:11px; font-weight:bold;">DIFESA (${parts[0]})</div>
         <div style="display:flex; justify-content:space-around; color:#2196f3; font-size:18px;">🛡️ 🛡️ 🛡️</div>
         <div style="text-align:center; color:#ff9800; font-size:18px;">🧤</div>
       `;
@@ -425,10 +423,12 @@
     function switchTab(tabId, el) {
       document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-      
       document.getElementById(tabId).classList.add('active');
       el.classList.add('active');
     }
+
+    // Inizializzazione al caricamento
+    window.addEventListener('DOMContentLoaded', loadData);
   </script>
 </body>
 </html>
