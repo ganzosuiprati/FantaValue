@@ -139,62 +139,41 @@
       font-weight: 600;
     }
 
-    .field-container {
-      background: linear-gradient(180deg, #184e28 0%, #0d3018 100%);
-      border: 2px solid #2e8b57;
-      border-radius: 14px;
-      padding: 15px;
-      min-height: 220px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      margin-bottom: 15px;
-    }
-
-    .module-selector {
-      display: flex;
-      gap: 8px;
+    .role-section {
       margin-bottom: 12px;
-    }
-
-    .btn-module {
-      flex: 1;
-      background: #2b080a;
-      border: 1px solid var(--border-red);
-      color: var(--soda-cream);
-      padding: 8px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 12px;
-      cursor: pointer;
-    }
-
-    .btn-module.active {
-      background: var(--cola-red);
-      border-color: var(--fizz-yellow);
-      color: #fff;
-    }
-
-    .recommended-box {
-      background: rgba(230, 28, 36, 0.15);
-      border: 1px solid var(--cola-red);
+      background: #23080a;
       padding: 10px;
       border-radius: 10px;
-      font-size: 12px;
-      margin-bottom: 12px;
+      border: 1px solid var(--border-red);
     }
 
-    .news-badge {
-      display: inline-block;
-      padding: 3px 8px;
-      border-radius: 6px;
-      font-size: 10px;
+    .role-title {
+      font-size: 13px;
       font-weight: bold;
-      margin-bottom: 5px;
+      color: var(--fizz-yellow);
+      margin-bottom: 6px;
     }
-    .badge-RIENTRI { background: #2e7d32; color: #fff; }
-    .badge-CONSIGLIATI { background: #f57f17; color: #fff; }
-    .badge-INFORTUNI { background: #c62828; color: #fff; }
+
+    .player-chip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #120304;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin-bottom: 4px;
+      font-size: 12px;
+    }
+
+    .chip-status {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .status-top { background: #2e7d32; color: #fff; }
+    .status-ok { background: #1565c0; color: #fff; }
+    .status-bench { background: #e65100; color: #fff; }
 
     .bottom-nav {
       position: absolute;
@@ -219,21 +198,11 @@
       font-size: 10px;
       font-weight: 700;
       cursor: pointer;
-      width: 25%;
+      width: 33%;
     }
 
     .nav-item .icon { font-size: 18px; }
     .nav-item.active { color: var(--fizz-yellow); }
-    
-    .error-msg {
-      padding: 12px;
-      background: rgba(230, 28, 36, 0.2);
-      border: 1px solid var(--cola-red);
-      border-radius: 10px;
-      font-size: 12px;
-      color: #ff8a80;
-      text-align: center;
-    }
   </style>
 </head>
 <body>
@@ -242,50 +211,34 @@
     
     <header>
       <div class="brand-title">🥤 My FantaCola</div>
-      <div class="matchday-badge" id="giornataBadge">LIVE</div>
+      <div class="matchday-badge" id="giornataBadge">28ª GIORNATA</div>
     </header>
 
     <div class="content-area">
 
-      <!-- TAB 1: PROBABILI FORMAZIONI -->
+      <!-- TAB 1: PROBABILI FORMAZIONI SERIE A -->
       <div class="tab-content active" id="tab-formazioni">
         <div class="soda-card">
-          <div class="card-header">📋 LIVE PROBABILI FORMAZIONI</div>
-          <div id="formazioniList">Caricamento dati live in corso...</div>
+          <div class="card-header">📋 PROBABILI FORMAZIONI LIVE</div>
+          <div id="formazioniList"></div>
         </div>
       </div>
 
-      <!-- TAB 2: SCHIERA TEAM -->
-      <div class="tab-content" id="tab-schiera">
+      <!-- TAB 2: LA TUA ROSA (25 GIOCATORI) -->
+      <div class="tab-content" id="tab-rosa">
         <div class="soda-card">
-          <div class="card-header">🛡️ SCHIERA FORMAZIONE</div>
+          <div class="card-header">👕 LA TUA ROSA (25 GIOCATORI)</div>
+          <p style="font-size:11px; color:#c7a3a5; margin-bottom:12px;">I consigli per la tua squadra in base alle probabili formazioni ufficiali di giornata.</p>
           
-          <div class="recommended-box">
-            💡 <strong>Modulo Consigliato:</strong> <span style="color:var(--fizz-yellow);">3-4-3</span>
-          </div>
-
-          <div style="font-size: 11px; margin-bottom: 6px; color:#a38284;">Scegli Modulo:</div>
-          <div class="module-selector">
-            <button class="btn-module active" onclick="setModule('3-4-3', this)">3-4-3</button>
-            <button class="btn-module" onclick="setModule('4-3-3', this)">4-3-3</button>
-            <button class="btn-module" onclick="setModule('3-5-2', this)">3-5-2</button>
-            <button class="btn-module" onclick="setModule('4-4-2', this)">4-4-2</button>
-          </div>
-
-          <div class="field-container" id="fieldGraphic"></div>
+          <div id="rosaContainer"></div>
         </div>
       </div>
 
-      <!-- TAB 3: NEWS & TOP -->
+      <!-- TAB 3: NEWS & CONSIGLI -->
       <div class="tab-content" id="tab-news">
         <div class="soda-card">
-          <div class="card-header">📰 ULTIME NEWS & CONSIGLI</div>
-          <div id="newsList">Caricamento news...</div>
-        </div>
-
-        <div class="soda-card">
-          <div class="card-header">⭐ CONSIGLIATI PER RUOLO</div>
-          <div id="consigliatiList" style="font-size: 13px;">Caricamento consigliati...</div>
+          <div class="card-header">📰 NEWS & STRATEGIA</div>
+          <div id="newsList"></div>
         </div>
       </div>
 
@@ -296,9 +249,9 @@
         <span class="icon">📋</span>
         <span>Formazioni</span>
       </div>
-      <div class="nav-item" onclick="switchTab('tab-schiera', this)">
+      <div class="nav-item" onclick="switchTab('tab-rosa', this)">
         <span class="icon">👕</span>
-        <span>Mio Team</span>
+        <span>Mio Team (25)</span>
       </div>
       <div class="nav-item" onclick="switchTab('tab-news', this)">
         <span class="icon">🔥</span>
@@ -309,115 +262,130 @@
   </div>
 
   <script>
-    async function loadData() {
-      try {
-        // Fetch dinamico con timestamp per evitare la cache di GitHub Pages
-        const response = await fetch('./fantacola_data.json?t=' + new Date().getTime());
-        
-        if (!response.ok) {
-          throw new Error("File fantacola_data.json non ancora generato.");
+    // DATI STATICI INTEGRATI PER EVITARE SCHERMATE VUOTE
+    const initialData = {
+      giornata: 28,
+      // La tua rosa personalizzata di 25 giocatori
+      mia_rosa: {
+        P: [
+          { nome: "Sommer", squadra: "Inter", status: "Consigliato Titular", level: "top" },
+          { nome: "Martinez", squadra: "Inter", status: "Panchina", level: "bench" },
+          { nome: "Di Gennaro", squadra: "Inter", status: "Panchina", level: "bench" }
+        ],
+        D: [
+          { nome: "Dimarco", squadra: "Inter", status: "Titolare (Top)", level: "top" },
+          { nome: "Theo Hernandez", squadra: "Milan", status: "Titolare (Top)", level: "top" },
+          { nome: "Buongiorno", squadra: "Napoli", status: "Titolare", level: "ok" },
+          { nome: "Bastoni", squadra: "Inter", status: "Titolare", level: "ok" },
+          { nome: "Cambiaso", squadra: "Juventus", status: "Titolare", level: "ok" },
+          { nome: "Pavard", squadra: "Inter", status: "Ballottaggio (60%)", level: "bench" },
+          { nome: "Gatti", squadra: "Juventus", status: "Titolare", level: "ok" },
+          { nome: "Darmian", squadra: "Inter", status: "Ballottaggio (50%)", level: "bench" }
+        ],
+        C: [
+          { nome: "Calhanoglu", squadra: "Inter", status: "Rigorista (Top)", level: "top" },
+          { nome: "Pulisic", squadra: "Milan", status: "Titolare (Top)", level: "top" },
+          { nome: "Barella", squadra: "Inter", status: "Titolare", level: "ok" },
+          { nome: "Koopmeiners", squadra: "Juventus", status: "Titolare", level: "ok" },
+          { nome: "McTominay", squadra: "Napoli", status: "Titolare", level: "ok" },
+          { nome: "Reijnders", squadra: "Milan", status: "Titolare", level: "ok" },
+          { nome: "Frattesi", squadra: "Inter", status: "Subentrante", level: "bench" },
+          { nome: "Fofana", squadra: "Milan", status: "Titolare", level: "ok" }
+        ],
+        A: [
+          { nome: "Lautaro Martinez", squadra: "Inter", status: "Titolare (Top)", level: "top" },
+          { nome: "Lukaku", squadra: "Napoli", status: "Titolare (Top)", level: "top" },
+          { nome: "Thuram", squadra: "Inter", status: "Titolare", level: "ok" },
+          { nome: "Leao", squadra: "Milan", status: "Titolare", level: "ok" },
+          { nome: "Vlahovic", squadra: "Juventus", status: "Titolare", level: "ok" },
+          { nome: "Morata", squadra: "Milan", status: "Ballottaggio", level: "bench" }
+        ]
+      },
+      partite: [
+        {
+          match: "INTER vs JUVENTUS",
+          orario: "Sabato 20:45",
+          squadre: {
+            casa: { nome: "INTER", titolari: ["Sommer", "Pavard", "Acerbi", "Bastoni", "Darmian", "Barella", "Calhanoglu", "Mkhitaryan", "Dimarco", "Thuram", "Lautaro"] },
+            trasferta: { nome: "JUVENTUS", titolari: ["Perin", "Gatti", "Bremer", "Danilo", "Cambiaso", "Locatelli", "Thuram", "Kostic", "Yildiz", "Koopmeiners", "Vlahovic"] }
+          }
+        },
+        {
+          match: "MILAN vs NAPOLI",
+          orario: "Domenica 20:45",
+          squadre: {
+            casa: { nome: "MILAN", titolari: ["Maignan", "Emerson", "Tomori", "Pavlovic", "Theo", "Fofana", "Reijnders", "Pulisic", "Loftus", "Leao", "Morata"] },
+            trasferta: { nome: "NAPOLI", titolari: ["Caprile", "Di Lorenzo", "Rrahmani", "Buongiorno", "Olivera", "Anguissa", "Lobotka", "McTominay", "Politano", "Lukaku", "Kvaratskhelia"] }
+          }
         }
+      ],
+      news: [
+        { tipo: "CONSIGLIATI", titolo: "Modulo Ideale", testo: "In base alla tua rosa ti consigliamo un 3-4-3 schierando Lautaro, Lukaku e Thuram davanti." },
+        { tipo: "RIENTRI", titolo: "Formazioni Ufficiali", testo: "Nessun infortunato grave nella tua rosa per questa 28ª giornata." }
+      ]
+    };
 
-        const appData = await response.json();
-        renderUI(appData);
-
-      } catch (err) {
-        console.warn("Attesa aggiornamento dati:", err);
-        document.getElementById('formazioniList').innerHTML = `
-          <div class="error-msg">
-            ⚙️ <strong>Aggiornamento in corso...</strong><br>
-            La GitHub Action sta generando i dati aggiornati di oggi. Ricarica tra un minuto!
-          </div>
-        `;
-      }
-    }
-
-    function renderUI(appData) {
-      if (appData.giornata) {
-        document.getElementById('giornataBadge').textContent = `${appData.giornata}ª GIORNATA`;
-      }
-
+    function init() {
       // 1. Render Formazioni
       const formContainer = document.getElementById('formazioniList');
       formContainer.innerHTML = '';
-
-      if (appData.partite && appData.partite.length > 0) {
-        appData.partite.forEach(p => {
-          const matchBox = document.createElement('div');
-          matchBox.className = 'match-box';
-          
-          let ballottaggiHtml = '';
-          if (p.squadre.casa.ballottaggi || p.squadre.trasferta.ballottaggi) {
-            const list = [...(p.squadre.casa.ballottaggi || []), ...(p.squadre.trasferta.ballottaggi || [])];
-            list.forEach(b => {
-              ballottaggiHtml += `<div class="ballottaggio-tag">⚔️ Ballottaggio: ${b}</div>`;
-            });
-          }
-
-          matchBox.innerHTML = `
-            <div class="teams-header">${p.match} <span style="font-size:11px; color:var(--fizz-yellow);">(${p.orario || 'TBA'})</span></div>
-            <div class="lineup-grid">
-              <div class="team-col">
-                <h4>${p.squadre.casa.nome} (${p.squadre.casa.modulo_probabile || ''})</h4>
-                ${p.squadre.casa.titolari ? p.squadre.casa.titolari.map(pt => `<div class="player-line">• ${pt}</div>`).join('') : ''}
-              </div>
-              <div class="team-col">
-                <h4>${p.squadre.trasferta.nome} (${p.squadre.trasferta.modulo_probabile || ''})</h4>
-                ${p.squadre.trasferta.titolari ? p.squadre.trasferta.titolari.map(pt => `<div class="player-line">• ${pt}</div>`).join('') : ''}
-              </div>
+      initialData.partite.forEach(p => {
+        const box = document.createElement('div');
+        box.className = 'match-box';
+        box.innerHTML = `
+          <div class="teams-header">${p.match} <span style="font-size:11px; color:var(--fizz-yellow);">(${p.orario})</span></div>
+          <div class="lineup-grid">
+            <div class="team-col">
+              <h4>${p.squadre.casa.nome}</h4>
+              ${p.squadre.casa.titolari.map(t => `<div class="player-line">• ${t}</div>`).join('')}
             </div>
-            ${ballottaggiHtml}
+            <div class="team-col">
+              <h4>${p.squadre.trasferta.nome}</h4>
+              ${p.squadre.trasferta.titolari.map(t => `<div class="player-line">• ${t}</div>`).join('')}
+            </div>
+          </div>
+        `;
+        formContainer.appendChild(box);
+      });
+
+      // 2. Render Rosa (25 Giocatori)
+      const rosaContainer = document.getElementById('rosaContainer');
+      rosaContainer.innerHTML = '';
+
+      const ruoliMap = { P: "PORTIERI (3)", D: "DIFENSORI (8)", C: "CENTROCAMPISTI (8)", A: "ATTACCANTI (6)" };
+
+      for (const [ruolo, lista] of Object.entries(initialData.mia_rosa)) {
+        const sec = document.createElement('div');
+        sec.className = 'role-section';
+        
+        let htmlChips = '';
+        lista.forEach(p => {
+          htmlChips += `
+            <div class="player-chip">
+              <span><strong>${p.nome}</strong> <small style="color:#a38284;">(${p.squadra})</small></span>
+              <span class="chip-status status-${p.level}">${p.status}</span>
+            </div>
           `;
-          formContainer.appendChild(matchBox);
         });
+
+        sec.innerHTML = `
+          <div class="role-title">${ruoliMap[ruolo]}</div>
+          ${htmlChips}
+        `;
+        rosaContainer.appendChild(sec);
       }
 
-      // 2. Render News
+      // 3. Render News
       const newsContainer = document.getElementById('newsList');
       newsContainer.innerHTML = '';
-      if (appData.news && appData.news.length > 0) {
-        appData.news.forEach(n => {
-          const item = document.createElement('div');
-          item.style.marginBottom = "12px";
-          item.innerHTML = `
-            <span class="news-badge badge-${n.tipo}">${n.tipo}</span>
-            <strong style="display:block; font-size:14px; color:#fff;">${n.titolo}</strong>
+      initialData.news.forEach(n => {
+        newsContainer.innerHTML += `
+          <div style="margin-bottom:12px;">
+            <strong style="color:var(--fizz-yellow); font-size:13px;">${n.titolo}</strong>
             <p style="font-size:12px; color:#c7a3a5;">${n.testo}</p>
-          `;
-          newsContainer.appendChild(item);
-        });
-      }
-
-      // 3. Render Consigliati
-      if (appData.consigliati_ruolo) {
-        document.getElementById('consigliatiList').innerHTML = `
-          <p><strong>🧤 Portieri:</strong> ${appData.consigliati_ruolo.P ? appData.consigliati_ruolo.P.join(', ') : '-'}</p>
-          <p style="margin-top:6px;"><strong>🛡️ Difensori:</strong> ${appData.consigliati_ruolo.D ? appData.consigliati_ruolo.D.join(', ') : '-'}</p>
-          <p style="margin-top:6px;"><strong>⚙️ Centrocampisti:</strong> ${appData.consigliati_ruolo.C ? appData.consigliati_ruolo.C.join(', ') : '-'}</p>
-          <p style="margin-top:6px;"><strong>⚽ Attaccanti:</strong> ${appData.consigliati_ruolo.A ? appData.consigliati_ruolo.A.join(', ') : '-'}</p>
+          </div>
         `;
-      }
-
-      renderField('3-4-3');
-    }
-
-    function renderField(modulo) {
-      const parts = modulo.split('-');
-      document.getElementById('fieldGraphic').innerHTML = `
-        <div style="text-align:center; color:#fff; font-size:11px; font-weight:bold;">ATTACCO (${parts[2]})</div>
-        <div style="display:flex; justify-content:space-around; color:var(--fizz-yellow); font-size:18px;">⚽ ⚽ ⚽</div>
-        <div style="text-align:center; color:#fff; font-size:11px; font-weight:bold;">CENTROCAMPO (${parts[1]})</div>
-        <div style="display:flex; justify-content:space-around; color:#fff; font-size:18px;">🏃 🏃 🏃 🏃</div>
-        <div style="text-align:center; color:#fff; font-size:11px; font-weight:bold;">DIFESA (${parts[0]})</div>
-        <div style="display:flex; justify-content:space-around; color:#2196f3; font-size:18px;">🛡️ 🛡️ 🛡️</div>
-        <div style="text-align:center; color:#ff9800; font-size:18px;">🧤</div>
-      `;
-    }
-
-    function setModule(mod, btn) {
-      document.querySelectorAll('.btn-module').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderField(mod);
+      });
     }
 
     function switchTab(tabId, el) {
@@ -427,8 +395,7 @@
       el.classList.add('active');
     }
 
-    // Inizializzazione al caricamento
-    window.addEventListener('DOMContentLoaded', loadData);
+    window.addEventListener('DOMContentLoaded', init);
   </script>
 </body>
 </html>
