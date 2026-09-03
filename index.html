@@ -129,9 +129,7 @@
 
     .team-col h4 { color: var(--fizz-yellow); font-size: 12px; margin-bottom: 8px; text-transform: uppercase; }
 
-    .player-line {
-      margin-bottom: 8px;
-    }
+    .player-line { margin-bottom: 8px; }
 
     .player-info {
       display: flex;
@@ -141,7 +139,6 @@
       margin-bottom: 2px;
     }
 
-    /* BARRA PERCENTUALE DI TITOLARITA' */
     .perc-bar-bg {
       width: 100%;
       height: 6px;
@@ -160,11 +157,7 @@
     .bg-mid { background-color: var(--progress-orange); }
     .bg-low { background-color: var(--progress-red); }
 
-    /* MENU AUTOCOMPLETE LISTONE */
-    .autocomplete-container {
-      position: relative;
-      margin-bottom: 12px;
-    }
+    .autocomplete-container { position: relative; margin-bottom: 12px; }
 
     .search-select {
       width: 100%;
@@ -199,10 +192,7 @@
       border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
-    .autocomplete-item:hover {
-      background: var(--cola-red);
-      color: #fff;
-    }
+    .autocomplete-item:hover { background: var(--cola-red); color: #fff; }
 
     .player-chip {
       display: flex;
@@ -216,7 +206,6 @@
       font-size: 12px;
     }
 
-    /* NAV BAR MOBILE FIX */
     .bottom-nav {
       position: fixed;
       bottom: 0;
@@ -253,7 +242,6 @@
 <body>
 
   <div class="app-frame">
-    
     <header>
       <div class="brand-title">🥤 My FantaCola</div>
       <div class="matchday-badge" id="giornataBadge">LIVE</div>
@@ -261,25 +249,25 @@
 
     <div class="content-area">
 
-      <!-- TAB 1: PROBABILI FORMAZIONI CON BARRE PERCENTUALI -->
+      <!-- TAB 1: PROBABILI FORMAZIONI -->
       <div class="tab-content active" id="tab-formazioni">
         <div class="soda-card">
-          <div class="card-header">📋 TUTTE LE PARTITE E % TITOLARITÀ</div>
-          <div id="formazioniList">Caricamento partite in corso...</div>
+          <div class="card-header">📋 PROBABILI FORMAZIONI FANTACALCIO.IT</div>
+          <div id="formazioniList">Caricamento in corso...</div>
         </div>
       </div>
 
-      <!-- TAB 2: SELEZIONE DINAMICA DELLA ROSA DAL LISTONE -->
+      <!-- TAB 2: SELEZIONE ROSA DAL LISTONE -->
       <div class="tab-content" id="tab-rosa">
         <div class="soda-card">
           <div class="card-header">
-            <span>👕 SELEZIONA MIO TEAM (<span id="rosaCounter">0</span>/25)</span>
+            <span>👕 SELEZIONA ROSA (<span id="rosaCounter">0</span>/25)</span>
           </div>
 
-          <p style="font-size:11px; color:#c7a3a5; margin-bottom:10px;">Digita il nome per cercare e selezionare i calciatori direttamente dal listone ufficiale:</p>
+          <p style="font-size:11px; color:#c7a3a5; margin-bottom:10px;">Cerca e seleziona i calciatori dal listone ufficiale scaricato:</p>
 
           <div class="autocomplete-container">
-            <input type="text" id="addPlayerInput" class="search-select" placeholder="🔍 Cerca calciatore dal listone..." autocomplete="off">
+            <input type="text" id="addPlayerInput" class="search-select" placeholder="🔍 Cerca calciatore..." autocomplete="off">
             <div id="autocompleteResults" class="autocomplete-results" style="display:none;"></div>
           </div>
           
@@ -291,13 +279,12 @@
       <div class="tab-content" id="tab-advice">
         <div class="soda-card">
           <div class="card-header">💡 CONSIGLI SCHIERAMENTO</div>
-          <div id="adviceContent" style="font-size:13px;">Seleziona la tua rosa per elaborare la formazione migliore.</div>
+          <div id="adviceContent" style="font-size:13px;">Seleziona la tua rosa per generare i consigli.</div>
         </div>
       </div>
 
     </div>
 
-    <!-- NAVBAR MOBILE -->
     <nav class="bottom-nav">
       <div class="nav-item active" onclick="switchTab('tab-formazioni', this)">
         <span class="icon">📋</span>
@@ -312,7 +299,6 @@
         <span>Consigli</span>
       </div>
     </nav>
-
   </div>
 
   <script>
@@ -327,15 +313,14 @@
         renderRosa();
         renderAdvice();
       } catch (e) {
-        console.warn("Utilizzo dati locali/fallback:", e);
-        renderRosa();
+        document.getElementById('formazioniList').innerHTML = "<p style='font-size:12px; color:#e74c3c;'>Errore caricamento dati live da fantacola_data.json. Verificare le Actions di GitHub.</p>";
       }
     }
 
     function renderFormazioni() {
       const container = document.getElementById('formazioniList');
-      if (!liveData || !liveData.partite) {
-        container.innerHTML = "<p style='font-size:12px;'>Probabili formazioni in fase di aggiornamento...</p>";
+      if (!liveData || !liveData.partite || liveData.partite.length === 0) {
+        container.innerHTML = "<p style='font-size:12px;'>Nessuna partita disponibile al momento.</p>";
         return;
       }
 
@@ -365,11 +350,11 @@
           <div class="lineup-grid">
             <div class="team-col">
               <h4>${p.squadre.casa.nome}</h4>
-              ${p.squadre.casa.titolari.map(renderPlayerLine).join('')}
+              ${p.squadre.casa.titolari.length > 0 ? p.squadre.casa.titolari.map(renderPlayerLine).join('') : '<p style="font-size:10px;">In aggiornamento</p>'}
             </div>
             <div class="team-col">
               <h4>${p.squadre.trasferta.nome}</h4>
-              ${p.squadre.trasferta.titolari.map(renderPlayerLine).join('')}
+              ${p.squadre.trasferta.titolari.length > 0 ? p.squadre.trasferta.titolari.map(renderPlayerLine).join('') : '<p style="font-size:10px;">In aggiornamento</p>'}
             </div>
           </div>
         `;
@@ -377,7 +362,6 @@
       });
     }
 
-    // GESTIONE AUTOCOMPLETE DAL LISTONE
     const inputSearch = document.getElementById('addPlayerInput');
     const resultsBox = document.getElementById('autocompleteResults');
 
@@ -389,7 +373,6 @@
       }
 
       const matches = liveData.listone.filter(p => p.nome.toLowerCase().includes(query)).slice(0, 10);
-      
       if (matches.length === 0) {
         resultsBox.style.display = 'none';
         return;
@@ -412,7 +395,7 @@
 
     function selectPlayerFromListone(player) {
       if (myCustomRosa.length >= 25) {
-        alert("Hai già raggiunto il limite di 25 calciatori!");
+        alert("Hai raggiunto il limite massimo di 25 calciatori!");
         return;
       }
       if (!myCustomRosa.some(p => p.nome.toLowerCase() === player.nome.toLowerCase())) {
@@ -429,7 +412,7 @@
       display.innerHTML = '';
 
       if (myCustomRosa.length === 0) {
-        display.innerHTML = "<p style='font-size:12px; color:#a38284;'>Nessun calciatore presente. Cerca e seleziona i 25 calciatori sopra.</p>";
+        display.innerHTML = "<p style='font-size:12px; color:#a38284;'>Nessun calciatore selezionato.</p>";
         return;
       }
 
@@ -456,7 +439,7 @@
     }
 
     function getPlayerLivePerc(nome) {
-      if (!liveData || !liveData.partite) return 20; // Valore base panchina
+      if (!liveData || !liveData.partite) return 20;
       const clean = nome.toLowerCase();
       for (const m of liveData.partite) {
         for (const pl of m.squadre.casa.titolari) {
@@ -479,15 +462,14 @@
     function renderAdvice() {
       const adv = document.getElementById('adviceContent');
       if (myCustomRosa.length === 0) {
-        adv.innerHTML = "<p>Seleziona i calciatori dal listone per calcolare la formazione ottimale.</p>";
+        adv.innerHTML = "<p>Aggiungi i tuoi giocatori per elaborare i consigli.</p>";
         return;
       }
 
       const titolariTop = myCustomRosa.filter(p => getPlayerLivePerc(p.nome) >= 70);
-
       adv.innerHTML = `
-        <p>📊 <strong>Stato Rosa:</strong> Hai <strong>${titolariTop.length}</strong> calciatori con oltre il 70% di titolarità questa giornata.</p>
-        <p style="margin-top:8px;">💡 <strong>Consiglio Modulo:</strong> ${titolariTop.length >= 8 ? '4-3-3 o 3-4-3 per massimizzare il bonus attacco.' : '3-5-2 per garantire voti sicuri a centrocampo.'}</p>
+        <p>📊 <strong>Stato Rosa:</strong> Hai <strong>${titolariTop.length}</strong> calciatori schierati titolari in questo turno.</p>
+        <p style="margin-top:8px;">💡 <strong>Consiglio Modulo:</strong> ${titolariTop.length >= 8 ? '3-4-3 o 4-3-3 per spingere in attacco.' : '3-5-2 per coprire il centrocampo.'}</p>
       `;
     }
 
