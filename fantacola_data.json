@@ -1,4 +1,2657 @@
 {
-  "last_update": "2026-09-03",
-  "partite": []
+  "giornata": 3,
+  "last_update": "Avanzato in Tempo Reale",
+  "partite": [
+    {
+      "match": "GENOA vs COMO",
+      "squadre": {
+        "casa": {
+          "nome": "GENOA",
+          "titolari": [
+            "Bijlow",
+            "Marcandalli",
+            "Ostigard",
+            "Vasquez",
+            "Ellertsson",
+            "Frendrup",
+            "Sow",
+            "Mitaj",
+            "Baldanzi",
+            "Vitinha",
+            "Colombo"
+          ]
+        },
+        "trasferta": {
+          "nome": "COMO",
+          "titolari": [
+            "Butez",
+            "Couto",
+            "Chalobah",
+            "Ramon",
+            "Valle",
+            "Da Cunha",
+            "Perrone",
+            "Diao",
+            "Paz N.",
+            "Baturina",
+            "Kean"
+          ]
+        }
+      }
+    },
+    {
+      "match": "FIORENTINA vs TORINO",
+      "squadre": {
+        "casa": {
+          "nome": "FIORENTINA",
+          "titolari": [
+            "De Gea",
+            "Jimenez A.",
+            "Dragusin",
+            "Viery",
+            "Valdepenas",
+            "Ndour",
+            "Oulai",
+            "Atta",
+            "Mastantuono",
+            "Njie",
+            "Pellegrino M."
+          ]
+        },
+        "trasferta": {
+          "nome": "TORINO",
+          "titolari": [
+            "Perri",
+            "Comuzzo",
+            "Coco",
+            "Comert",
+            "Belghali",
+            "Gineitis",
+            "Fitz-Jim",
+            "Cacciamani",
+            "Adams C.",
+            "Vlasic",
+            "Simeone"
+          ]
+        }
+      }
+    }
+  ],
+  "listone": [
+    {
+      "nome": "Svilar",
+      "squadra": "Roma",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Martinez Jo.",
+      "squadra": "Inter",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Carnesecchi",
+      "squadra": "Atalanta",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Butez",
+      "squadra": "Como",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Vicario",
+      "squadra": "Juventus",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Maignan",
+      "squadra": "Milan",
+      "ruolo": "P"
+    },
+    {
+      "nome": "De Gea",
+      "squadra": "Fiorentina",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Meret",
+      "squadra": "Napoli",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Skorupski",
+      "squadra": "Bologna",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Caprile",
+      "squadra": "Cagliari",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Di Gregorio",
+      "squadra": "Juventus",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Mandas",
+      "squadra": "Lazio",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Okoye",
+      "squadra": "Udinese",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Bijlow",
+      "squadra": "Genoa",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Falcone",
+      "squadra": "Lecce",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Daffara",
+      "squadra": "Parma",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Muric",
+      "squadra": "Sassuolo",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Perin",
+      "squadra": "Juventus",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Stankovic F.",
+      "squadra": "Venezia",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Thiam",
+      "squadra": "Monza",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Milinkovic-Savic V.",
+      "squadra": "Napoli",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Palmisani",
+      "squadra": "Frosinone",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Desplanches",
+      "squadra": "Frosinone",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Provedel",
+      "squadra": "Inter",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Sportiello",
+      "squadra": "Atalanta",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Happonen",
+      "squadra": "Bologna",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Pessina Mas.",
+      "squadra": "Bologna",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Sherri",
+      "squadra": "Cagliari",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Tornqvist",
+      "squadra": "Como",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Vigorito",
+      "squadra": "Como",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Christensen O.",
+      "squadra": "Fiorentina",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Lezzerini",
+      "squadra": "Fiorentina",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Lolic",
+      "squadra": "Frosinone",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Sommariva",
+      "squadra": "Genoa",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Stolz",
+      "squadra": "Genoa",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Di Gennaro",
+      "squadra": "Inter",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Pinsoglio",
+      "squadra": "Juventus",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Motta",
+      "squadra": "Lazio",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Renzetti",
+      "squadra": "Lazio",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Terracciano",
+      "squadra": "Milan",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Torriani",
+      "squadra": "Milan",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Pizzignacco",
+      "squadra": "Monza",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Strajnar",
+      "squadra": "Monza",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Contini",
+      "squadra": "Napoli",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Corvi",
+      "squadra": "Parma",
+      "ruolo": "P"
+    },
+    {
+      "nome": "De Marzi",
+      "squadra": "Roma",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Gollini",
+      "squadra": "Roma",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Russo A.",
+      "squadra": "Sassuolo",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Turati",
+      "squadra": "Sassuolo",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Mascardi",
+      "squadra": "Torino",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Paleari",
+      "squadra": "Torino",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Siviero",
+      "squadra": "Torino",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Padelli",
+      "squadra": "Udinese",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Piana",
+      "squadra": "Udinese",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Grandi",
+      "squadra": "Venezia",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Pozzi",
+      "squadra": "Venezia",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Vismara",
+      "squadra": "Atalanta",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Satalino",
+      "squadra": "Sassuolo",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Penev",
+      "squadra": "Lecce",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Pisseri",
+      "squadra": "Frosinone",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Radunovic",
+      "squadra": "Cagliari",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Montipò",
+      "squadra": "Venezia",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Bleve",
+      "squadra": "Lecce",
+      "ruolo": "P"
+    },
+    {
+      "nome": "Dimarco",
+      "squadra": "Inter",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Molina N.",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Wesley",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Akanji",
+      "squadra": "Inter",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bremer",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Mancini",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bastoni",
+      "squadra": "Inter",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Pavlovic",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Rrahmani",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kalulu",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "N'Dicka",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Solet",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Stones",
+      "squadra": "Inter",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Gila",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Di Lorenzo",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Spence",
+      "squadra": "Inter",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ostigard",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bisseck",
+      "squadra": "Inter",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Scalvini",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ramon",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Dodò",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Hermoso",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Vasquez",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Cambiaso",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Chalobah T.",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Hien",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Zappacosta",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Lucumì",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Miranda J.",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Mina",
+      "squadra": "Cagliari",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Dragusin",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Jimenez A.",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Norton-Cuffy",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Celik",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bartesaghi",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Spinazzola",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Delprato",
+      "squadra": "Parma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Valeri",
+      "squadra": "Parma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Koulierakis",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Vojvoda",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Couto",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Obert",
+      "squadra": "Cagliari",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kaiki",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Carlos Augusto",
+      "squadra": "Inter",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Doekhi",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Romagnoli",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Tiago Gabriel",
+      "squadra": "Lecce",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Gabbia",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Tomori",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Buongiorno",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Idzes",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Coco",
+      "squadra": "Torino",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ismajli",
+      "squadra": "Torino",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kristensen T.",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ahanor",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bellanova",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bernasconi",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Heggem",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Zortea",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Valle",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Valdepenas",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Viery",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Monterisi",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Marcandalli",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Pavard",
+      "squadra": "Inter",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Tavares N.",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Marusic",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Gallo",
+      "squadra": "Lecce",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Mangas",
+      "squadra": "Monza",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Beukema",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Comuzzo",
+      "squadra": "Torino",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kamara H.",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bella-Kotchap",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Obrador",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kolasinac",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Vitik",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Holm",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kofler",
+      "squadra": "Cagliari",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Zè Pedro",
+      "squadra": "Cagliari",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kempf",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Parisi",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bracaglia",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Oyono A.",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Martin",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kelly L.",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Pedraza",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Gaspar K.",
+      "squadra": "Lecce",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Veiga D.",
+      "squadra": "Lecce",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Olivera",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Rensch",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Pedersen",
+      "squadra": "Torino",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Moreno M.",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Haps",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Fortini",
+      "squadra": "Torino",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Leysen F.",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Zappa",
+      "squadra": "Cagliari",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Smolcic I.",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Pongracic",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Calvani",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Mitaj",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Gatti",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Siebert",
+      "squadra": "Lecce",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Delli Carri",
+      "squadra": "Monza",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Lucchesi",
+      "squadra": "Monza",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Birindelli",
+      "squadra": "Monza",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Valenti",
+      "squadra": "Parma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ghilardi",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Walukiewicz",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Doig",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Comert",
+      "squadra": "Torino",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kabasele",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bertola",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Zanoli",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Arizala",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Halhal",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Correia T.",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Terzic",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Favasuli",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kossounou",
+      "squadra": "Atalanta",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Casale",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Rodriguez Ju.",
+      "squadra": "Cagliari",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Idrissi R.",
+      "squadra": "Cagliari",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ranieri L.",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Joao Mario",
+      "squadra": "Fiorentina",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Akpoguma",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Cittadini",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Provstgaard",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Floriani Mussolini",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "De Winter",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Estupinan",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Kouadio",
+      "squadra": "Monza",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Carboni A.",
+      "squadra": "Monza",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Troilo",
+      "squadra": "Parma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Britschgi",
+      "squadra": "Parma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Candè",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Schingtienne",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Sverko",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Hainaut",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Helland",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Alhassane",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Van Der Brempt",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Otoa",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Puczka",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Sabelli",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Lazzari",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Pellegrini Lu.",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Jean",
+      "squadra": "Lecce",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Diawara S.",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Marin R.",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Biraghi",
+      "squadra": "Torino",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Palma",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ebosse",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Franjic",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Sagrado",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Aurelio",
+      "squadra": "Cagliari",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Terracciano F.",
+      "squadra": "Milan",
+      "ruolo": "D"
+    },
+    {
+      "nome": "De Silvestri",
+      "squadra": "Bologna",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Goldaniga",
+      "squadra": "Como",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Amey",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Oyono J.",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Corrado",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Matturro",
+      "squadra": "Genoa",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Rugani",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Cabal",
+      "squadra": "Juventus",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Patric",
+      "squadra": "Lazio",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ndaba",
+      "squadra": "Lecce",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Antov",
+      "squadra": "Monza",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Bakoune",
+      "squadra": "Monza",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Marianucci",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Mazzocchi",
+      "squadra": "Napoli",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ndiaye",
+      "squadra": "Parma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Carboni F.",
+      "squadra": "Parma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Ziolkowski",
+      "squadra": "Roma",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Missori",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Pieragnolo",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Mlacic",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Abankwah",
+      "squadra": "Udinese",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Gomes",
+      "squadra": "Venezia",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Odenthal",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Omar Fayed",
+      "squadra": "Frosinone",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Cinquegrano",
+      "squadra": "Sassuolo",
+      "ruolo": "D"
+    },
+    {
+      "nome": "Paz N.",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "McTominay",
+      "squadra": "Napoli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Calhanoglu",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Orsolini",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Pulisic",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Rabiot",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Baturina",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Mora",
+      "squadra": "Roma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Da Cunha",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Zaniolo",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Atta",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Barella",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "McKennie",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Zaccagni",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "De Bruyne",
+      "squadra": "Napoli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Vlasic",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Gudmundsson A.",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Taylor K.",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ederson D.S.",
+      "squadra": "Atalanta",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Samardzic",
+      "squadra": "Atalanta",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Rodriguez Je.",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Alajbegovic",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Conceicao",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Modric",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Mastantuono",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Moreira",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Jones C.",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Rowe",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Baldanzi",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Zambo Anguissa",
+      "squadra": "Napoli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Perrone",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Zielinski",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Thuram K.",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Saelemaekers",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Politano",
+      "squadra": "Napoli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Konè M.",
+      "squadra": "Roma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Thorstvedt",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Casadei",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ekkelenkamp",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Pellegrini Lo.",
+      "squadra": "Roma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Pasalic",
+      "squadra": "Atalanta",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Bernardeschi",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Mandragora",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Cancellieri",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Isaksen",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Konè I.",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Odgaard",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Cambiaghi",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Fagioli",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ndour",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Diouf",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Sucic P.",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Locatelli",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Colpani",
+      "squadra": "Monza",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Vergara",
+      "squadra": "Napoli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Cristante",
+      "squadra": "Roma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Schmid",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Gaetano",
+      "squadra": "Atalanta",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ferguson",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Fazzini",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Calò",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Frendrup",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Frattesi",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Pessina",
+      "squadra": "Monza",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Lobotka",
+      "squadra": "Napoli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Bernabè",
+      "squadra": "Parma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Volpato",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Oristanio",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Unai Gomez",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Sow",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Zalewski",
+      "squadra": "Atalanta",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Pobega",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Adopo",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Winks",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Caqueret",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Liberali",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Oulai",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ellertsson",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Zhegrova",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Rovella",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Coulibaly L.",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Pierotti",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Chukwueze",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Akinsanmiro",
+      "squadra": "Monza",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Nicolussi Caviglia",
+      "squadra": "Parma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Karlstrom",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Basic",
+      "squadra": "Venezia",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Tourè I.",
+      "squadra": "Monza",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Amondarain",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Romano",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Felici",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Milla",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Addai",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Zerbin",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Meichtry",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Traorè Hj.",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Mkhitaryan",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Koopmeiners",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Dele-Bashiru",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Berisha M.",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Gandelman",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Fofana Y.",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Keita M.",
+      "squadra": "Parma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Pisilli",
+      "squadra": "Roma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Matic",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Adzic",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Bakola",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Cacciamani",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Gineitis",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Piotrowski",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Busio",
+      "squadra": "Venezia",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Sohm",
+      "squadra": "Venezia",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Perez K.",
+      "squadra": "Venezia",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Grillitsch",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "De Roon",
+      "squadra": "Atalanta",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Moro N.",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Prati",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Fabbian",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Cichella",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Koutsoupias",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Amorim",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Luis Henrique",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Douglas Luiz",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Cataldi",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ngom",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ricci S.",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Jashari",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Loftus-Cheek",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Folorunsho",
+      "squadra": "Napoli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Almqvist",
+      "squadra": "Parma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "El Aynaoui",
+      "squadra": "Roma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Fitz-Jim",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ilkhan",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Njie",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Sulemana I.",
+      "squadra": "Atalanta",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Dominguez B.",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Deiola",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Brescianini",
+      "squadra": "Fiorentina",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Gelli F.",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Fini",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Messias",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Stankovic A.",
+      "squadra": "Inter",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Miretti",
+      "squadra": "Juventus",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Colombo L.",
+      "squadra": "Monza",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Gilmour",
+      "squadra": "Napoli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Sorensen O.",
+      "squadra": "Parma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Diallo O.",
+      "squadra": "Parma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Aboukhlal",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Miller L.",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Helgason",
+      "squadra": "Venezia",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Cissè A.",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "El Azzouzi O.",
+      "squadra": "Bologna",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Fadera",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Hasa",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Masini",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Venturino",
+      "squadra": "Genoa",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Maleh",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Musah",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ciurria",
+      "squadra": "Monza",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ordonez C.",
+      "squadra": "Parma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Boloca",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Lipani",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Chakvetadze",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Duncan",
+      "squadra": "Venezia",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Liteta",
+      "squadra": "Cagliari",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Lahdo",
+      "squadra": "Como",
+      "ruolo": "C"
+    },
+    {
+      "nome": "El Azzouzi A.",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Kone B.",
+      "squadra": "Frosinone",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Belahyane",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Przyborek",
+      "squadra": "Lazio",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Gorter",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Kaba",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Fofana Sa.",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Cremaschi",
+      "squadra": "Parma",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Iannoni",
+      "squadra": "Sassuolo",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ilic",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Anjorin",
+      "squadra": "Torino",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Camara A.",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Zarraga",
+      "squadra": "Udinese",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Dagasso",
+      "squadra": "Venezia",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Forson O.",
+      "squadra": "Monza",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Laerke",
+      "squadra": "Lecce",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Comotto",
+      "squadra": "Milan",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Martinez L.",
+      "squadra": "Inter",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Malen",
+      "squadra": "Roma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Thuram",
+      "squadra": "Inter",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Hojlund",
+      "squadra": "Napoli",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Ramos G.",
+      "squadra": "Milan",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Kolo Muani",
+      "squadra": "Juventus",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Kean",
+      "squadra": "Fiorentina",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Yildiz",
+      "squadra": "Juventus",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Douvikas",
+      "squadra": "Como",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Scamacca",
+      "squadra": "Atalanta",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Davis K.",
+      "squadra": "Udinese",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Krstovic",
+      "squadra": "Atalanta",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Leao",
+      "squadra": "Milan",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Berardi",
+      "squadra": "Sassuolo",
+      "ruolo": "A"
+    },
+    {
+      "nome": "De Ketelaere",
+      "squadra": "Atalanta",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Dovbyk",
+      "squadra": "Bologna",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Esposito F.P.",
+      "squadra": "Inter",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Pellegrino M.",
+      "squadra": "Fiorentina",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Laurientè",
+      "squadra": "Sassuolo",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Simeone",
+      "squadra": "Torino",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Santos A.",
+      "squadra": "Napoli",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Dybala",
+      "squadra": "Roma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Castro S.",
+      "squadra": "Roma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Raspadori",
+      "squadra": "Atalanta",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Esposito Se.",
+      "squadra": "Cagliari",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Nkunku",
+      "squadra": "Milan",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Pinamonti",
+      "squadra": "Sassuolo",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Kevin Carlos",
+      "squadra": "Cagliari",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Soulè",
+      "squadra": "Roma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Adams A.",
+      "squadra": "Venezia",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Diao",
+      "squadra": "Como",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Colombo",
+      "squadra": "Genoa",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Tourè E.",
+      "squadra": "Parma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Dia",
+      "squadra": "Lazio",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Ratkov",
+      "squadra": "Lazio",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Bowie",
+      "squadra": "Sassuolo",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Romero D.",
+      "squadra": "Parma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Ghedjemis",
+      "squadra": "Frosinone",
+      "ruolo": "A"
+    },
+    {
+      "nome": "David",
+      "squadra": "Juventus",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Geubbels",
+      "squadra": "Lecce",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Cutrone",
+      "squadra": "Monza",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Adams C.",
+      "squadra": "Torino",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Piccoli",
+      "squadra": "Bologna",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Vitinha O.",
+      "squadra": "Genoa",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Yeboah J.",
+      "squadra": "Venezia",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Rrahmani Al.",
+      "squadra": "Venezia",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Raimondo",
+      "squadra": "Frosinone",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Bonny",
+      "squadra": "Inter",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Stulic",
+      "squadra": "Lecce",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Zapata D.",
+      "squadra": "Torino",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Sulemana K.",
+      "squadra": "Atalanta",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Mutandwa",
+      "squadra": "Cagliari",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Boga",
+      "squadra": "Juventus",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Noslin",
+      "squadra": "Lazio",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Gimenez",
+      "squadra": "Milan",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Neres",
+      "squadra": "Napoli",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Maldini",
+      "squadra": "Cagliari",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Camarda",
+      "squadra": "Milan",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Mota",
+      "squadra": "Monza",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Frigan",
+      "squadra": "Parma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Adorante",
+      "squadra": "Venezia",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Milik",
+      "squadra": "Juventus",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Borrelli",
+      "squadra": "Cagliari",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Mendy P.",
+      "squadra": "Cagliari",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Morata",
+      "squadra": "Como",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Kvernadze",
+      "squadra": "Frosinone",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Havel",
+      "squadra": "Genoa",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Giovane",
+      "squadra": "Napoli",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Kulenovic",
+      "squadra": "Torino",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Gueye",
+      "squadra": "Udinese",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Robinson J.",
+      "squadra": "Monza",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Kuhn",
+      "squadra": "Como",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Ekhator",
+      "squadra": "Juventus",
+      "ruolo": "A"
+    },
+    {
+      "nome": "N'Dri",
+      "squadra": "Lecce",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Varela G.",
+      "squadra": "Monza",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Lang",
+      "squadra": "Napoli",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Lucca",
+      "squadra": "Napoli",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Elphege",
+      "squadra": "Parma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Buksa",
+      "squadra": "Udinese",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Albarracin",
+      "squadra": "Cagliari",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Trepy",
+      "squadra": "Cagliari",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Azon",
+      "squadra": "Como",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Vaz",
+      "squadra": "Roma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Bayo V.",
+      "squadra": "Udinese",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Lisman",
+      "squadra": "Venezia",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Lauberbach",
+      "squadra": "Venezia",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Lontani",
+      "squadra": "Parma",
+      "ruolo": "A"
+    },
+    {
+      "nome": "De Martis",
+      "squadra": "Parma",
+      "ruolo": "A"
+    }
+  ]
 }
