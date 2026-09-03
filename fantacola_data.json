@@ -1,6 +1,6 @@
 {
-  "giornata": "Giornata Live",
-  "last_update": "In tempo reale",
+  "giornata": "Giornata Serie A Live",
+  "last_update": "Aggiornato in Tempo Reale da Fantacalcio.it",
   "partite": [
     {
       "match": "GENOA vs COMO",
@@ -9,23 +9,91 @@
           "nome": "GENOA",
           "titolari": [
             {
-              "nome": "Bijlow",
-              "percentuale": 90
+              "nome": "Colombo",
+              "percentuale": 75
             },
             {
-              "nome": "Ostigard",
-              "percentuale": 85
+              "nome": "Colombo",
+              "percentuale": 75
             },
             {
-              "nome": "Vasquez",
-              "percentuale": 80
+              "nome": "Vitinha O.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Vitinha O.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Baldanzi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Baldanzi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mitaj",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mitaj",
+              "percentuale": 75
+            },
+            {
+              "nome": "Sow",
+              "percentuale": 75
+            },
+            {
+              "nome": "Sow",
+              "percentuale": 75
             },
             {
               "nome": "Frendrup",
-              "percentuale": 95
+              "percentuale": 75
             },
             {
-              "nome": "Vitinha",
+              "nome": "Frendrup",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ellertsson",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ellertsson",
+              "percentuale": 75
+            },
+            {
+              "nome": "Vasquez",
+              "percentuale": 75
+            },
+            {
+              "nome": "Vasquez",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ostigard",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ostigard",
+              "percentuale": 75
+            },
+            {
+              "nome": "Marcandalli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Marcandalli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bijlow",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bijlow",
               "percentuale": 75
             }
           ]
@@ -34,20 +102,92 @@
           "nome": "COMO",
           "titolari": [
             {
-              "nome": "Butez",
-              "percentuale": 90
-            },
-            {
-              "nome": "Paz N.",
-              "percentuale": 85
+              "nome": "Kean",
+              "percentuale": 75
             },
             {
               "nome": "Kean",
-              "percentuale": 90
+              "percentuale": 75
+            },
+            {
+              "nome": "Baturina",
+              "percentuale": 75
+            },
+            {
+              "nome": "Baturina",
+              "percentuale": 75
+            },
+            {
+              "nome": "Paz N.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Paz N.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Diao",
+              "percentuale": 75
+            },
+            {
+              "nome": "Diao",
+              "percentuale": 75
+            },
+            {
+              "nome": "Perrone",
+              "percentuale": 75
+            },
+            {
+              "nome": "Perrone",
+              "percentuale": 75
             },
             {
               "nome": "Da Cunha",
-              "percentuale": 70
+              "percentuale": 75
+            },
+            {
+              "nome": "Da Cunha",
+              "percentuale": 75
+            },
+            {
+              "nome": "Valle",
+              "percentuale": 75
+            },
+            {
+              "nome": "Valle",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ramon",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ramon",
+              "percentuale": 75
+            },
+            {
+              "nome": "Chalobah T.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Chalobah T.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Couto",
+              "percentuale": 75
+            },
+            {
+              "nome": "Couto",
+              "percentuale": 75
+            },
+            {
+              "nome": "Butez",
+              "percentuale": 75
+            },
+            {
+              "nome": "Butez",
+              "percentuale": 75
             }
           ]
         }
@@ -60,20 +200,92 @@
           "nome": "FIORENTINA",
           "titolari": [
             {
-              "nome": "De Gea",
-              "percentuale": 95
+              "nome": "Pellegrino M.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pellegrino M.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Njie",
+              "percentuale": 75
+            },
+            {
+              "nome": "Njie",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mastantuono",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mastantuono",
+              "percentuale": 75
+            },
+            {
+              "nome": "Atta",
+              "percentuale": 75
+            },
+            {
+              "nome": "Atta",
+              "percentuale": 75
+            },
+            {
+              "nome": "Fagioli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Fagioli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ndour",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ndour",
+              "percentuale": 75
+            },
+            {
+              "nome": "Valdepenas",
+              "percentuale": 75
+            },
+            {
+              "nome": "Valdepenas",
+              "percentuale": 75
+            },
+            {
+              "nome": "Viery",
+              "percentuale": 75
+            },
+            {
+              "nome": "Viery",
+              "percentuale": 75
             },
             {
               "nome": "Dragusin",
-              "percentuale": 80
+              "percentuale": 75
             },
             {
-              "nome": "Mandragora",
-              "percentuale": 70
+              "nome": "Dragusin",
+              "percentuale": 75
             },
             {
-              "nome": "Kean",
-              "percentuale": 90
+              "nome": "Jimenez A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Jimenez A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "De Gea",
+              "percentuale": 75
+            },
+            {
+              "nome": "De Gea",
+              "percentuale": 75
             }
           ]
         },
@@ -81,12 +293,16 @@
           "nome": "TORINO",
           "titolari": [
             {
-              "nome": "Milinkovic",
-              "percentuale": 90
+              "nome": "Simeone",
+              "percentuale": 75
             },
             {
-              "nome": "Coco",
-              "percentuale": 85
+              "nome": "Simeone",
+              "percentuale": 75
+            },
+            {
+              "nome": "Vlasic",
+              "percentuale": 75
             },
             {
               "nome": "Vlasic",
@@ -94,80 +310,173 @@
             },
             {
               "nome": "Adams C.",
-              "percentuale": 80
+              "percentuale": 75
+            },
+            {
+              "nome": "Adams C.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Cacciamani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Cacciamani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Fitz-Jim",
+              "percentuale": 75
+            },
+            {
+              "nome": "Fitz-Jim",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mandragora",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mandragora",
+              "percentuale": 75
+            },
+            {
+              "nome": "Belghali",
+              "percentuale": 75
+            },
+            {
+              "nome": "Belghali",
+              "percentuale": 75
+            },
+            {
+              "nome": "Comert",
+              "percentuale": 75
+            },
+            {
+              "nome": "Comert",
+              "percentuale": 75
+            },
+            {
+              "nome": "Coco",
+              "percentuale": 75
+            },
+            {
+              "nome": "Coco",
+              "percentuale": 75
+            },
+            {
+              "nome": "Comuzzo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Comuzzo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Perri",
+              "percentuale": 75
+            },
+            {
+              "nome": "Perri",
+              "percentuale": 75
             }
           ]
         }
       }
     },
     {
-      "match": "INTER vs JUVENTUS",
+      "match": "INTER vs NAPOLI",
       "squadre": {
         "casa": {
           "nome": "INTER",
           "titolari": [
             {
-              "nome": "Sommer",
-              "percentuale": 95
+              "nome": "Esposito F.P.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Esposito F.P.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Martinez L.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Martinez L.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Dimarco",
+              "percentuale": 75
+            },
+            {
+              "nome": "Dimarco",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zielinski",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zielinski",
+              "percentuale": 75
+            },
+            {
+              "nome": "Calhanoglu",
+              "percentuale": 75
+            },
+            {
+              "nome": "Calhanoglu",
+              "percentuale": 75
             },
             {
               "nome": "Barella",
-              "percentuale": 90
+              "percentuale": 75
             },
             {
-              "nome": "Lautaro",
-              "percentuale": 85
+              "nome": "Barella",
+              "percentuale": 75
             },
             {
-              "nome": "Thuram",
-              "percentuale": 80
-            }
-          ]
-        },
-        "trasferta": {
-          "nome": "JUVENTUS",
-          "titolari": [
-            {
-              "nome": "Di Gregorio",
-              "percentuale": 90
+              "nome": "Diouf",
+              "percentuale": 75
             },
             {
-              "nome": "Bremer",
-              "percentuale": 95
+              "nome": "Diouf",
+              "percentuale": 75
             },
             {
-              "nome": "Yildiz",
-              "percentuale": 80
+              "nome": "Bastoni",
+              "percentuale": 75
             },
             {
-              "nome": "Vlahovic",
-              "percentuale": 85
-            }
-          ]
-        }
-      }
-    },
-    {
-      "match": "MILAN vs NAPOLI",
-      "squadre": {
-        "casa": {
-          "nome": "MILAN",
-          "titolari": [
-            {
-              "nome": "Maignan",
-              "percentuale": 95
+              "nome": "Bastoni",
+              "percentuale": 75
             },
             {
-              "nome": "Hernandez",
-              "percentuale": 90
+              "nome": "Akanji",
+              "percentuale": 75
             },
             {
-              "nome": "Reijnders",
-              "percentuale": 85
+              "nome": "Akanji",
+              "percentuale": 75
             },
             {
-              "nome": "Leao",
-              "percentuale": 80
+              "nome": "Bisseck",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bisseck",
+              "percentuale": 75
+            },
+            {
+              "nome": "Martinez Jo.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Martinez Jo.",
+              "percentuale": 75
             }
           ]
         },
@@ -175,113 +484,282 @@
           "nome": "NAPOLI",
           "titolari": [
             {
-              "nome": "Meret",
-              "percentuale": 90
+              "nome": "Santos A.",
+              "percentuale": 75
             },
             {
-              "nome": "Di Lorenzo",
-              "percentuale": 95
+              "nome": "Santos A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Hojlund",
+              "percentuale": 75
+            },
+            {
+              "nome": "Hojlund",
+              "percentuale": 75
+            },
+            {
+              "nome": "Politano",
+              "percentuale": 75
+            },
+            {
+              "nome": "Politano",
+              "percentuale": 75
+            },
+            {
+              "nome": "De Bruyne",
+              "percentuale": 75
+            },
+            {
+              "nome": "De Bruyne",
+              "percentuale": 75
             },
             {
               "nome": "Lobotka",
-              "percentuale": 90
+              "percentuale": 75
             },
             {
-              "nome": "Lukaku",
-              "percentuale": 85
+              "nome": "Lobotka",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zambo Anguissa",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zambo Anguissa",
+              "percentuale": 75
+            },
+            {
+              "nome": "Spinazzola",
+              "percentuale": 75
+            },
+            {
+              "nome": "Spinazzola",
+              "percentuale": 75
+            },
+            {
+              "nome": "Marin R.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Marin R.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Rrahmani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Rrahmani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Di Lorenzo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Di Lorenzo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Meret",
+              "percentuale": 75
+            },
+            {
+              "nome": "Meret",
+              "percentuale": 75
             }
           ]
         }
       }
     },
     {
-      "match": "ROMA vs LAZIO",
+      "match": "ROMA vs ATALANTA",
       "squadre": {
         "casa": {
           "nome": "ROMA",
           "titolari": [
             {
-              "nome": "Svilar",
-              "percentuale": 95
+              "nome": "Malen",
+              "percentuale": 75
+            },
+            {
+              "nome": "Malen",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mora",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mora",
+              "percentuale": 75
+            },
+            {
+              "nome": "Dybala",
+              "percentuale": 75
+            },
+            {
+              "nome": "Dybala",
+              "percentuale": 75
+            },
+            {
+              "nome": "Wesley",
+              "percentuale": 75
+            },
+            {
+              "nome": "Wesley",
+              "percentuale": 75
+            },
+            {
+              "nome": "Cristante",
+              "percentuale": 75
+            },
+            {
+              "nome": "Cristante",
+              "percentuale": 75
+            },
+            {
+              "nome": "Konè M.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Konè M.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Molina N.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Molina N.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Hermoso",
+              "percentuale": 75
+            },
+            {
+              "nome": "Hermoso",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ghilardi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ghilardi",
+              "percentuale": 75
             },
             {
               "nome": "Mancini",
-              "percentuale": 90
-            },
-            {
-              "nome": "Pellegrini",
               "percentuale": 75
             },
             {
-              "nome": "Dovbyk",
-              "percentuale": 85
+              "nome": "Mancini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Svilar",
+              "percentuale": 75
+            },
+            {
+              "nome": "Svilar",
+              "percentuale": 75
             }
           ]
         },
         "trasferta": {
-          "nome": "LAZIO",
-          "titolari": [
-            {
-              "nome": "Provedel",
-              "percentuale": 90
-            },
-            {
-              "nome": "Romagnoli",
-              "percentuale": 85
-            },
-            {
-              "nome": "Guendouzi",
-              "percentuale": 90
-            },
-            {
-              "nome": "Castellanos",
-              "percentuale": 80
-            }
-          ]
-        }
-      }
-    },
-    {
-      "match": "ATALANTA vs BOLOGNA",
-      "squadre": {
-        "casa": {
           "nome": "ATALANTA",
           "titolari": [
             {
-              "nome": "Carnesecchi",
-              "percentuale": 90
+              "nome": "Rowe",
+              "percentuale": 75
+            },
+            {
+              "nome": "Rowe",
+              "percentuale": 75
+            },
+            {
+              "nome": "Scamacca",
+              "percentuale": 75
+            },
+            {
+              "nome": "Scamacca",
+              "percentuale": 75
+            },
+            {
+              "nome": "De Ketelaere",
+              "percentuale": 75
+            },
+            {
+              "nome": "De Ketelaere",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ederson D.S.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ederson D.S.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gaetano",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gaetano",
+              "percentuale": 75
+            },
+            {
+              "nome": "Samardzic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Samardzic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bernasconi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bernasconi",
+              "percentuale": 75
             },
             {
               "nome": "Scalvini",
-              "percentuale": 80
+              "percentuale": 75
             },
             {
-              "nome": "Lookman",
-              "percentuale": 85
+              "nome": "Scalvini",
+              "percentuale": 75
             },
             {
-              "nome": "Retegui",
-              "percentuale": 90
-            }
-          ]
-        },
-        "trasferta": {
-          "nome": "BOLOGNA",
-          "titolari": [
-            {
-              "nome": "Skorupski",
-              "percentuale": 90
+              "nome": "Kossounou",
+              "percentuale": 75
             },
             {
-              "nome": "Beukema",
-              "percentuale": 85
+              "nome": "Kossounou",
+              "percentuale": 75
             },
             {
-              "nome": "Orsolini",
-              "percentuale": 80
+              "nome": "Bellanova",
+              "percentuale": 75
             },
             {
-              "nome": "Castro",
+              "nome": "Bellanova",
+              "percentuale": 75
+            },
+            {
+              "nome": "Carnesecchi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Carnesecchi",
               "percentuale": 75
             }
           ]
@@ -289,167 +767,98 @@
       }
     },
     {
-      "match": "VERONA vs CAGLIARI",
+      "match": "FROSINONE vs VENEZIA",
       "squadre": {
         "casa": {
-          "nome": "VERONA",
+          "nome": "FROSINONE",
           "titolari": [
             {
-              "nome": "Montipò",
-              "percentuale": 90
-            },
-            {
-              "nome": "Dawidowicz",
-              "percentuale": 80
-            },
-            {
-              "nome": "Duda",
-              "percentuale": 85
-            },
-            {
-              "nome": "Tengstedt",
+              "nome": "Raimondo",
               "percentuale": 75
-            }
-          ]
-        },
-        "trasferta": {
-          "nome": "CAGLIARI",
-          "titolari": [
-            {
-              "nome": "Scuffet",
-              "percentuale": 90
             },
             {
-              "nome": "Mina",
-              "percentuale": 85
-            },
-            {
-              "nome": "Marin",
-              "percentuale": 80
-            },
-            {
-              "nome": "Piccoli",
-              "percentuale": 80
-            }
-          ]
-        }
-      }
-    },
-    {
-      "match": "MONZA vs PARMA",
-      "squadre": {
-        "casa": {
-          "nome": "MONZA",
-          "titolari": [
-            {
-              "nome": "Turati",
-              "percentuale": 90
-            },
-            {
-              "nome": "Izzo",
-              "percentuale": 80
-            },
-            {
-              "nome": "Pessina",
-              "percentuale": 85
-            },
-            {
-              "nome": "Djuric",
-              "percentuale": 80
-            }
-          ]
-        },
-        "trasferta": {
-          "nome": "PARMA",
-          "titolari": [
-            {
-              "nome": "Suzuki",
-              "percentuale": 90
-            },
-            {
-              "nome": "Delprato",
-              "percentuale": 85
-            },
-            {
-              "nome": "Bernabé",
-              "percentuale": 85
-            },
-            {
-              "nome": "Bonny",
-              "percentuale": 80
-            }
-          ]
-        }
-      }
-    },
-    {
-      "match": "LECCE vs EMPOLI",
-      "squadre": {
-        "casa": {
-          "nome": "LECCE",
-          "titolari": [
-            {
-              "nome": "Falcone",
-              "percentuale": 95
-            },
-            {
-              "nome": "Baschirotto",
-              "percentuale": 90
-            },
-            {
-              "nome": "Ramadani",
-              "percentuale": 85
-            },
-            {
-              "nome": "Krstovic",
-              "percentuale": 85
-            }
-          ]
-        },
-        "trasferta": {
-          "nome": "EMPOLI",
-          "titolari": [
-            {
-              "nome": "Vasquez",
-              "percentuale": 90
-            },
-            {
-              "nome": "Ismajli",
-              "percentuale": 85
-            },
-            {
-              "nome": "Fazzini",
-              "percentuale": 80
-            },
-            {
-              "nome": "Colombo",
+              "nome": "Raimondo",
               "percentuale": 75
-            }
-          ]
-        }
-      }
-    },
-    {
-      "match": "UDINESE vs VENEZIA",
-      "squadre": {
-        "casa": {
-          "nome": "UDINESE",
-          "titolari": [
-            {
-              "nome": "Okoye",
-              "percentuale": 90
             },
             {
-              "nome": "Bijol",
-              "percentuale": 90
+              "nome": "Kvernadze",
+              "percentuale": 75
             },
             {
-              "nome": "Lovric",
-              "percentuale": 80
+              "nome": "Kvernadze",
+              "percentuale": 75
             },
             {
-              "nome": "Lucca",
-              "percentuale": 85
+              "nome": "Schmid",
+              "percentuale": 75
+            },
+            {
+              "nome": "Schmid",
+              "percentuale": 75
+            },
+            {
+              "nome": "Fini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Fini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Calò",
+              "percentuale": 75
+            },
+            {
+              "nome": "Calò",
+              "percentuale": 75
+            },
+            {
+              "nome": "Masini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Masini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bracaglia",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bracaglia",
+              "percentuale": 75
+            },
+            {
+              "nome": "Monterisi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Monterisi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Calvani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Calvani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Oyono A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Oyono A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Palmisani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Palmisani",
+              "percentuale": 75
             }
           ]
         },
@@ -457,20 +866,1047 @@
           "nome": "VENEZIA",
           "titolari": [
             {
-              "nome": "Stankovic",
-              "percentuale": 85
+              "nome": "Adams A.",
+              "percentuale": 75
             },
             {
-              "nome": "Svoboda",
-              "percentuale": 80
+              "nome": "Adams A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Yeboah J.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Yeboah J.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Haps",
+              "percentuale": 75
+            },
+            {
+              "nome": "Haps",
+              "percentuale": 75
+            },
+            {
+              "nome": "Basic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Basic",
+              "percentuale": 75
             },
             {
               "nome": "Busio",
-              "percentuale": 85
+              "percentuale": 75
             },
             {
-              "nome": "Pohjanpalo",
-              "percentuale": 85
+              "nome": "Busio",
+              "percentuale": 75
+            },
+            {
+              "nome": "Perez K.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Perez K.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mazzocchi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mazzocchi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Halhal",
+              "percentuale": 75
+            },
+            {
+              "nome": "Halhal",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bella-Kotchap",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bella-Kotchap",
+              "percentuale": 75
+            },
+            {
+              "nome": "Schingtienne",
+              "percentuale": 75
+            },
+            {
+              "nome": "Schingtienne",
+              "percentuale": 75
+            },
+            {
+              "nome": "Stankovic F.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Stankovic F.",
+              "percentuale": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "PARMA vs MONZA",
+      "squadre": {
+        "casa": {
+          "nome": "PARMA",
+          "titolari": [
+            {
+              "nome": "Tourè E.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Tourè E.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Romero D.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Romero D.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Valeri",
+              "percentuale": 75
+            },
+            {
+              "nome": "Valeri",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ordonez C.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ordonez C.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Keita M.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Keita M.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bernabè",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bernabè",
+              "percentuale": 75
+            },
+            {
+              "nome": "Britschgi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Britschgi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Diego Carlos",
+              "percentuale": 75
+            },
+            {
+              "nome": "Diego Carlos",
+              "percentuale": 75
+            },
+            {
+              "nome": "Troilo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Troilo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Delprato",
+              "percentuale": 75
+            },
+            {
+              "nome": "Delprato",
+              "percentuale": 75
+            },
+            {
+              "nome": "Corvi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Corvi",
+              "percentuale": 75
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "MONZA",
+          "titolari": [
+            {
+              "nome": "Cutrone",
+              "percentuale": 75
+            },
+            {
+              "nome": "Cutrone",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ngonge",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ngonge",
+              "percentuale": 75
+            },
+            {
+              "nome": "Colpani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Colpani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mangas",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mangas",
+              "percentuale": 75
+            },
+            {
+              "nome": "Folorunsho",
+              "percentuale": 75
+            },
+            {
+              "nome": "Folorunsho",
+              "percentuale": 75
+            },
+            {
+              "nome": "Akinsanmiro",
+              "percentuale": 75
+            },
+            {
+              "nome": "Akinsanmiro",
+              "percentuale": 75
+            },
+            {
+              "nome": "Birindelli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Birindelli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Carboni A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Carboni A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Lucchesi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Lucchesi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ziolkowski",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ziolkowski",
+              "percentuale": 75
+            },
+            {
+              "nome": "Tornqvist",
+              "percentuale": 75
+            },
+            {
+              "nome": "Tornqvist",
+              "percentuale": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "BOLOGNA vs SASSUOLO",
+      "squadre": {
+        "casa": {
+          "nome": "BOLOGNA",
+          "titolari": [
+            {
+              "nome": "Cambiaghi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Cambiaghi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Piccoli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Piccoli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bernardeschi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bernardeschi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pobega",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pobega",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ferguson",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ferguson",
+              "percentuale": 75
+            },
+            {
+              "nome": "Odgaard",
+              "percentuale": 75
+            },
+            {
+              "nome": "Odgaard",
+              "percentuale": 75
+            },
+            {
+              "nome": "Miranda J.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Miranda J.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Theate",
+              "percentuale": 75
+            },
+            {
+              "nome": "Theate",
+              "percentuale": 75
+            },
+            {
+              "nome": "Heggem",
+              "percentuale": 75
+            },
+            {
+              "nome": "Heggem",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zortea",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zortea",
+              "percentuale": 75
+            },
+            {
+              "nome": "Skorupski",
+              "percentuale": 75
+            },
+            {
+              "nome": "Skorupski",
+              "percentuale": 75
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "SASSUOLO",
+          "titolari": [
+            {
+              "nome": "Laurientè",
+              "percentuale": 75
+            },
+            {
+              "nome": "Laurientè",
+              "percentuale": 75
+            },
+            {
+              "nome": "Esposito Se.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Esposito Se.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Berardi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Berardi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bakola",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bakola",
+              "percentuale": 75
+            },
+            {
+              "nome": "Matic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Matic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Thorstvedt",
+              "percentuale": 75
+            },
+            {
+              "nome": "Thorstvedt",
+              "percentuale": 75
+            },
+            {
+              "nome": "Doig",
+              "percentuale": 75
+            },
+            {
+              "nome": "Doig",
+              "percentuale": 75
+            },
+            {
+              "nome": "Leysen F.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Leysen F.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Idzes",
+              "percentuale": 75
+            },
+            {
+              "nome": "Idzes",
+              "percentuale": 75
+            },
+            {
+              "nome": "Van Der Brempt",
+              "percentuale": 75
+            },
+            {
+              "nome": "Van Der Brempt",
+              "percentuale": 75
+            },
+            {
+              "nome": "Muric",
+              "percentuale": 75
+            },
+            {
+              "nome": "Muric",
+              "percentuale": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "JUVENTUS vs MILAN",
+      "squadre": {
+        "casa": {
+          "nome": "JUVENTUS",
+          "titolari": [
+            {
+              "nome": "Kolo Muani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Kolo Muani",
+              "percentuale": 75
+            },
+            {
+              "nome": "Boga",
+              "percentuale": 75
+            },
+            {
+              "nome": "Boga",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gonzalez N.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gonzalez N.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Conceicao",
+              "percentuale": 75
+            },
+            {
+              "nome": "Conceicao",
+              "percentuale": 75
+            },
+            {
+              "nome": "Douglas Luiz",
+              "percentuale": 75
+            },
+            {
+              "nome": "Douglas Luiz",
+              "percentuale": 75
+            },
+            {
+              "nome": "Locatelli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Locatelli",
+              "percentuale": 75
+            },
+            {
+              "nome": "Celik",
+              "percentuale": 75
+            },
+            {
+              "nome": "Celik",
+              "percentuale": 75
+            },
+            {
+              "nome": "Lucumì",
+              "percentuale": 75
+            },
+            {
+              "nome": "Lucumì",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bremer",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bremer",
+              "percentuale": 75
+            },
+            {
+              "nome": "Kalulu",
+              "percentuale": 75
+            },
+            {
+              "nome": "Kalulu",
+              "percentuale": 75
+            },
+            {
+              "nome": "Vicario",
+              "percentuale": 75
+            },
+            {
+              "nome": "Vicario",
+              "percentuale": 75
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "MILAN",
+          "titolari": [
+            {
+              "nome": "Ramos G.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ramos G.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Cissè A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Cissè A.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Rabiot",
+              "percentuale": 75
+            },
+            {
+              "nome": "Rabiot",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bartesaghi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Bartesaghi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Musah",
+              "percentuale": 75
+            },
+            {
+              "nome": "Musah",
+              "percentuale": 75
+            },
+            {
+              "nome": "Modric",
+              "percentuale": 75
+            },
+            {
+              "nome": "Modric",
+              "percentuale": 75
+            },
+            {
+              "nome": "Chukwueze",
+              "percentuale": 75
+            },
+            {
+              "nome": "Chukwueze",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pavlovic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pavlovic",
+              "percentuale": 75
+            },
+            {
+              "nome": "De Winter",
+              "percentuale": 75
+            },
+            {
+              "nome": "De Winter",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gila",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gila",
+              "percentuale": 75
+            },
+            {
+              "nome": "Maignan",
+              "percentuale": 75
+            },
+            {
+              "nome": "Maignan",
+              "percentuale": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "CAGLIARI vs LECCE",
+      "squadre": {
+        "casa": {
+          "nome": "CAGLIARI",
+          "titolari": [
+            {
+              "nome": "Kevin Carlos",
+              "percentuale": 75
+            },
+            {
+              "nome": "Kevin Carlos",
+              "percentuale": 75
+            },
+            {
+              "nome": "Maldini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Maldini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Fazzini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Fazzini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Romano",
+              "percentuale": 75
+            },
+            {
+              "nome": "Romano",
+              "percentuale": 75
+            },
+            {
+              "nome": "Winks",
+              "percentuale": 75
+            },
+            {
+              "nome": "Winks",
+              "percentuale": 75
+            },
+            {
+              "nome": "Adopo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Adopo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Obert",
+              "percentuale": 75
+            },
+            {
+              "nome": "Obert",
+              "percentuale": 75
+            },
+            {
+              "nome": "Rodriguez Ju.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Rodriguez Ju.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Deiola",
+              "percentuale": 75
+            },
+            {
+              "nome": "Deiola",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zè Pedro",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zè Pedro",
+              "percentuale": 75
+            },
+            {
+              "nome": "Caprile",
+              "percentuale": 75
+            },
+            {
+              "nome": "Caprile",
+              "percentuale": 75
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "LECCE",
+          "titolari": [
+            {
+              "nome": "Monteiro J.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Monteiro J.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Stulic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Stulic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pierotti",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pierotti",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gorter",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gorter",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ilic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ilic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Coulibaly L.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Coulibaly L.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gallo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gallo",
+              "percentuale": 75
+            },
+            {
+              "nome": "Tiago Gabriel",
+              "percentuale": 75
+            },
+            {
+              "nome": "Tiago Gabriel",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gaspar K.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Gaspar K.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Veiga D.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Veiga D.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Falcone",
+              "percentuale": 75
+            },
+            {
+              "nome": "Falcone",
+              "percentuale": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "UDINESE vs LAZIO",
+      "squadre": {
+        "casa": {
+          "nome": "UDINESE",
+          "titolari": [
+            {
+              "nome": "Davis K.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Davis K.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Unai Gomez",
+              "percentuale": 75
+            },
+            {
+              "nome": "Unai Gomez",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ekkelenkamp",
+              "percentuale": 75
+            },
+            {
+              "nome": "Ekkelenkamp",
+              "percentuale": 75
+            },
+            {
+              "nome": "Kamara H.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Kamara H.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Karlstrom",
+              "percentuale": 75
+            },
+            {
+              "nome": "Karlstrom",
+              "percentuale": 75
+            },
+            {
+              "nome": "Piotrowski",
+              "percentuale": 75
+            },
+            {
+              "nome": "Piotrowski",
+              "percentuale": 75
+            },
+            {
+              "nome": "Vojvoda",
+              "percentuale": 75
+            },
+            {
+              "nome": "Vojvoda",
+              "percentuale": 75
+            },
+            {
+              "nome": "Solet",
+              "percentuale": 75
+            },
+            {
+              "nome": "Solet",
+              "percentuale": 75
+            },
+            {
+              "nome": "Kabasele",
+              "percentuale": 75
+            },
+            {
+              "nome": "Kabasele",
+              "percentuale": 75
+            },
+            {
+              "nome": "Abankwah",
+              "percentuale": 75
+            },
+            {
+              "nome": "Abankwah",
+              "percentuale": 75
+            },
+            {
+              "nome": "Okoye",
+              "percentuale": 75
+            },
+            {
+              "nome": "Okoye",
+              "percentuale": 75
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "LAZIO",
+          "titolari": [
+            {
+              "nome": "Zaccagni",
+              "percentuale": 75
+            },
+            {
+              "nome": "Zaccagni",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pinamonti",
+              "percentuale": 75
+            },
+            {
+              "nome": "Pinamonti",
+              "percentuale": 75
+            },
+            {
+              "nome": "Isaksen",
+              "percentuale": 75
+            },
+            {
+              "nome": "Isaksen",
+              "percentuale": 75
+            },
+            {
+              "nome": "Taylor K.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Taylor K.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Belahyane",
+              "percentuale": 75
+            },
+            {
+              "nome": "Belahyane",
+              "percentuale": 75
+            },
+            {
+              "nome": "Frattesi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Frattesi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Tavares N.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Tavares N.",
+              "percentuale": 75
+            },
+            {
+              "nome": "Provstgaard",
+              "percentuale": 75
+            },
+            {
+              "nome": "Provstgaard",
+              "percentuale": 75
+            },
+            {
+              "nome": "Doekhi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Doekhi",
+              "percentuale": 75
+            },
+            {
+              "nome": "Floriani Mussolini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Floriani Mussolini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mandas",
+              "percentuale": 75
+            },
+            {
+              "nome": "Mandas",
+              "percentuale": 75
             }
           ]
         }
