@@ -1,6 +1,6 @@
 {
-  "giornata": 3,
-  "last_update": "Avanzato in Tempo Reale",
+  "giornata": "Giornata Live",
+  "last_update": "In tempo reale",
   "partite": [
     {
       "match": "GENOA vs COMO",
@@ -8,33 +8,47 @@
         "casa": {
           "nome": "GENOA",
           "titolari": [
-            "Bijlow",
-            "Marcandalli",
-            "Ostigard",
-            "Vasquez",
-            "Ellertsson",
-            "Frendrup",
-            "Sow",
-            "Mitaj",
-            "Baldanzi",
-            "Vitinha",
-            "Colombo"
+            {
+              "nome": "Bijlow",
+              "percentuale": 90
+            },
+            {
+              "nome": "Ostigard",
+              "percentuale": 85
+            },
+            {
+              "nome": "Vasquez",
+              "percentuale": 80
+            },
+            {
+              "nome": "Frendrup",
+              "percentuale": 95
+            },
+            {
+              "nome": "Vitinha",
+              "percentuale": 75
+            }
           ]
         },
         "trasferta": {
           "nome": "COMO",
           "titolari": [
-            "Butez",
-            "Couto",
-            "Chalobah",
-            "Ramon",
-            "Valle",
-            "Da Cunha",
-            "Perrone",
-            "Diao",
-            "Paz N.",
-            "Baturina",
-            "Kean"
+            {
+              "nome": "Butez",
+              "percentuale": 90
+            },
+            {
+              "nome": "Paz N.",
+              "percentuale": 85
+            },
+            {
+              "nome": "Kean",
+              "percentuale": 90
+            },
+            {
+              "nome": "Da Cunha",
+              "percentuale": 70
+            }
           ]
         }
       }
@@ -45,33 +59,419 @@
         "casa": {
           "nome": "FIORENTINA",
           "titolari": [
-            "De Gea",
-            "Jimenez A.",
-            "Dragusin",
-            "Viery",
-            "Valdepenas",
-            "Ndour",
-            "Oulai",
-            "Atta",
-            "Mastantuono",
-            "Njie",
-            "Pellegrino M."
+            {
+              "nome": "De Gea",
+              "percentuale": 95
+            },
+            {
+              "nome": "Dragusin",
+              "percentuale": 80
+            },
+            {
+              "nome": "Mandragora",
+              "percentuale": 70
+            },
+            {
+              "nome": "Kean",
+              "percentuale": 90
+            }
           ]
         },
         "trasferta": {
           "nome": "TORINO",
           "titolari": [
-            "Perri",
-            "Comuzzo",
-            "Coco",
-            "Comert",
-            "Belghali",
-            "Gineitis",
-            "Fitz-Jim",
-            "Cacciamani",
-            "Adams C.",
-            "Vlasic",
-            "Simeone"
+            {
+              "nome": "Milinkovic",
+              "percentuale": 90
+            },
+            {
+              "nome": "Coco",
+              "percentuale": 85
+            },
+            {
+              "nome": "Vlasic",
+              "percentuale": 75
+            },
+            {
+              "nome": "Adams C.",
+              "percentuale": 80
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "INTER vs JUVENTUS",
+      "squadre": {
+        "casa": {
+          "nome": "INTER",
+          "titolari": [
+            {
+              "nome": "Sommer",
+              "percentuale": 95
+            },
+            {
+              "nome": "Barella",
+              "percentuale": 90
+            },
+            {
+              "nome": "Lautaro",
+              "percentuale": 85
+            },
+            {
+              "nome": "Thuram",
+              "percentuale": 80
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "JUVENTUS",
+          "titolari": [
+            {
+              "nome": "Di Gregorio",
+              "percentuale": 90
+            },
+            {
+              "nome": "Bremer",
+              "percentuale": 95
+            },
+            {
+              "nome": "Yildiz",
+              "percentuale": 80
+            },
+            {
+              "nome": "Vlahovic",
+              "percentuale": 85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "MILAN vs NAPOLI",
+      "squadre": {
+        "casa": {
+          "nome": "MILAN",
+          "titolari": [
+            {
+              "nome": "Maignan",
+              "percentuale": 95
+            },
+            {
+              "nome": "Hernandez",
+              "percentuale": 90
+            },
+            {
+              "nome": "Reijnders",
+              "percentuale": 85
+            },
+            {
+              "nome": "Leao",
+              "percentuale": 80
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "NAPOLI",
+          "titolari": [
+            {
+              "nome": "Meret",
+              "percentuale": 90
+            },
+            {
+              "nome": "Di Lorenzo",
+              "percentuale": 95
+            },
+            {
+              "nome": "Lobotka",
+              "percentuale": 90
+            },
+            {
+              "nome": "Lukaku",
+              "percentuale": 85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "ROMA vs LAZIO",
+      "squadre": {
+        "casa": {
+          "nome": "ROMA",
+          "titolari": [
+            {
+              "nome": "Svilar",
+              "percentuale": 95
+            },
+            {
+              "nome": "Mancini",
+              "percentuale": 90
+            },
+            {
+              "nome": "Pellegrini",
+              "percentuale": 75
+            },
+            {
+              "nome": "Dovbyk",
+              "percentuale": 85
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "LAZIO",
+          "titolari": [
+            {
+              "nome": "Provedel",
+              "percentuale": 90
+            },
+            {
+              "nome": "Romagnoli",
+              "percentuale": 85
+            },
+            {
+              "nome": "Guendouzi",
+              "percentuale": 90
+            },
+            {
+              "nome": "Castellanos",
+              "percentuale": 80
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "ATALANTA vs BOLOGNA",
+      "squadre": {
+        "casa": {
+          "nome": "ATALANTA",
+          "titolari": [
+            {
+              "nome": "Carnesecchi",
+              "percentuale": 90
+            },
+            {
+              "nome": "Scalvini",
+              "percentuale": 80
+            },
+            {
+              "nome": "Lookman",
+              "percentuale": 85
+            },
+            {
+              "nome": "Retegui",
+              "percentuale": 90
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "BOLOGNA",
+          "titolari": [
+            {
+              "nome": "Skorupski",
+              "percentuale": 90
+            },
+            {
+              "nome": "Beukema",
+              "percentuale": 85
+            },
+            {
+              "nome": "Orsolini",
+              "percentuale": 80
+            },
+            {
+              "nome": "Castro",
+              "percentuale": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "VERONA vs CAGLIARI",
+      "squadre": {
+        "casa": {
+          "nome": "VERONA",
+          "titolari": [
+            {
+              "nome": "Montipò",
+              "percentuale": 90
+            },
+            {
+              "nome": "Dawidowicz",
+              "percentuale": 80
+            },
+            {
+              "nome": "Duda",
+              "percentuale": 85
+            },
+            {
+              "nome": "Tengstedt",
+              "percentuale": 75
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "CAGLIARI",
+          "titolari": [
+            {
+              "nome": "Scuffet",
+              "percentuale": 90
+            },
+            {
+              "nome": "Mina",
+              "percentuale": 85
+            },
+            {
+              "nome": "Marin",
+              "percentuale": 80
+            },
+            {
+              "nome": "Piccoli",
+              "percentuale": 80
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "MONZA vs PARMA",
+      "squadre": {
+        "casa": {
+          "nome": "MONZA",
+          "titolari": [
+            {
+              "nome": "Turati",
+              "percentuale": 90
+            },
+            {
+              "nome": "Izzo",
+              "percentuale": 80
+            },
+            {
+              "nome": "Pessina",
+              "percentuale": 85
+            },
+            {
+              "nome": "Djuric",
+              "percentuale": 80
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "PARMA",
+          "titolari": [
+            {
+              "nome": "Suzuki",
+              "percentuale": 90
+            },
+            {
+              "nome": "Delprato",
+              "percentuale": 85
+            },
+            {
+              "nome": "Bernabé",
+              "percentuale": 85
+            },
+            {
+              "nome": "Bonny",
+              "percentuale": 80
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "LECCE vs EMPOLI",
+      "squadre": {
+        "casa": {
+          "nome": "LECCE",
+          "titolari": [
+            {
+              "nome": "Falcone",
+              "percentuale": 95
+            },
+            {
+              "nome": "Baschirotto",
+              "percentuale": 90
+            },
+            {
+              "nome": "Ramadani",
+              "percentuale": 85
+            },
+            {
+              "nome": "Krstovic",
+              "percentuale": 85
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "EMPOLI",
+          "titolari": [
+            {
+              "nome": "Vasquez",
+              "percentuale": 90
+            },
+            {
+              "nome": "Ismajli",
+              "percentuale": 85
+            },
+            {
+              "nome": "Fazzini",
+              "percentuale": 80
+            },
+            {
+              "nome": "Colombo",
+              "percentuale": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "UDINESE vs VENEZIA",
+      "squadre": {
+        "casa": {
+          "nome": "UDINESE",
+          "titolari": [
+            {
+              "nome": "Okoye",
+              "percentuale": 90
+            },
+            {
+              "nome": "Bijol",
+              "percentuale": 90
+            },
+            {
+              "nome": "Lovric",
+              "percentuale": 80
+            },
+            {
+              "nome": "Lucca",
+              "percentuale": 85
+            }
+          ]
+        },
+        "trasferta": {
+          "nome": "VENEZIA",
+          "titolari": [
+            {
+              "nome": "Stankovic",
+              "percentuale": 85
+            },
+            {
+              "nome": "Svoboda",
+              "percentuale": 80
+            },
+            {
+              "nome": "Busio",
+              "percentuale": 85
+            },
+            {
+              "nome": "Pohjanpalo",
+              "percentuale": 85
+            }
           ]
         }
       }
