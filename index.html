@@ -2,570 +2,433 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fanta Value 2000 - Retrogaming Auction Assistant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>My FantaCola 🥤 Live Matchday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-dark: #050b14;
-      --panel-bg: rgba(10, 20, 38, 0.85);
-      --neon-blue: #00f0ff;
-      --neon-magenta: #ff0055;
-      --neon-yellow: #ffea00;
-      --neon-green: #00ff66;
-      --text-main: #e0f7ff;
-      --border-color: #1a3a60;
+      --cola-red: #e61c24;
+      --cola-dark-red: #9e0b11;
+      --cola-black: #120304;
+      --soda-cream: #fff8e7;
+      --fizz-yellow: #ffeb3b;
+      --bubble-white: rgba(255, 255, 255, 0.2);
+      --card-bg: #1c0608;
+      --border-red: #5e0e12;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Quicksand', sans-serif; -webkit-tap-highlight-color: transparent; }
 
     body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: 'Rajdhani', sans-serif;
-      height: 100vh;
-      overflow: hidden;
+      background-color: var(--cola-black);
+      color: var(--soda-cream);
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
     }
 
+    /* Container Smartphone Frame */
+    .app-frame {
+      width: 100%;
+      max-width: 430px;
+      height: 100vh;
+      background: linear-gradient(180deg, #2b080a 0%, var(--cola-black) 100%);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 0 30px rgba(230, 28, 36, 0.3);
+      overflow: hidden;
+    }
+
+    /* Header Cola Style */
     header {
-      background: linear-gradient(90deg, #02060d 0%, #0a1b36 50%, #02060d 100%);
-      border-bottom: 2px solid var(--neon-blue);
-      padding: 10px 20px;
+      background: linear-gradient(135deg, var(--cola-red), var(--cola-dark-red));
+      padding: 15px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+      border-bottom: 3px solid var(--fizz-yellow);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     }
 
-    .logo-area { display: flex; align-items: center; gap: 12px; }
-
-    .season-badge {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 10px;
-      background: var(--neon-magenta);
-      color: #fff;
-      padding: 4px 8px;
-      border-radius: 4px;
-      box-shadow: 0 0 8px var(--neon-magenta);
-    }
-
-    h1 {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 18px;
-      color: #fff;
-      text-shadow: 2px 2px var(--neon-blue);
-    }
-
-    .developer-credits { font-size: 12px; color: #8ab4f8; text-align: right; }
-    .developer-credits span { color: var(--neon-blue); font-weight: 700; }
-
-    .app-container { display: flex; flex: 1; height: calc(100vh - 55px); position: relative; }
-
-    .left-panel { flex: 1; padding: 15px; display: flex; flex-direction: column; gap: 15px; overflow: hidden; }
-
-    .controls-grid {
-      background: var(--panel-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      padding: 12px;
+    .brand-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: 22px;
+      color: var(--soda-cream);
+      text-shadow: 2px 2px 0px var(--cola-black);
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      align-items: center;
+      gap: 8px;
     }
 
-    .inputs-row { display: flex; gap: 15px; align-items: center; }
-
-    .input-group { display: flex; flex-direction: column; gap: 4px; }
-    .input-group label { font-size: 11px; font-weight: 700; color: var(--neon-blue); text-transform: uppercase; }
-    .input-group input {
-      background: #020a16;
-      border: 1px solid var(--border-color);
-      color: #fff;
-      padding: 6px 10px;
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      border-radius: 4px;
-      outline: none;
-    }
-    .search-input { flex: 1; }
-
-    .filter-section { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .filter-label { font-size: 11px; font-weight: 700; color: #6c8cae; text-transform: uppercase; margin-right: 5px; }
-
-    .btn-filter {
-      background: #08162a;
-      border: 1px solid var(--border-color);
-      color: #fff;
-      padding: 5px 12px;
-      font-size: 12px;
+    .matchday-badge {
+      background: var(--fizz-yellow);
+      color: var(--cola-black);
       font-weight: 700;
-      border-radius: 4px;
-      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      text-transform: uppercase;
     }
 
-    .btn-filter.active { background: var(--neon-blue); color: #000; box-shadow: 0 0 10px var(--neon-blue); }
-    .btn-tag.active { background: var(--neon-yellow); color: #000; box-shadow: 0 0 10px var(--neon-yellow); }
+    /* Tab Contents Scrollable Area */
+    .content-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 15px;
+      padding-bottom: 80px;
+    }
 
-    .table-container { flex: 1; background: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 6px; overflow-y: auto; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.25s ease-in-out; }
 
-    .listone-header {
-      background: #061325;
-      padding: 10px 15px;
-      border-bottom: 1px solid var(--border-color);
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Card Styling */
+    .soda-card {
+      background: var(--card-bg);
+      border: 1.5px solid var(--border-red);
+      border-radius: 16px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .card-header {
+      font-family: 'Fredoka One', cursive;
+      font-size: 16px;
+      color: var(--fizz-yellow);
+      margin-bottom: 10px;
       display: flex;
       justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      align-items: center;
     }
 
-    .listone-title { font-family: 'Press Start 2P', cursive; font-size: 11px; color: var(--neon-magenta); }
-    .player-count { font-family: 'Press Start 2P', cursive; font-size: 10px; color: var(--neon-blue); }
-
-    table { width: 100%; border-collapse: collapse; text-align: left; }
-    th {
-      background: #040c18;
-      color: #6c8cae;
-      font-size: 11px;
-      padding: 10px;
-      text-transform: uppercase;
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 37px;
-      z-index: 9;
+    /* Probabili Formazioni UI */
+    .match-box {
+      background: #2a0a0d;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 12px;
     }
-    td { padding: 8px 10px; border-bottom: 1px solid #0d223a; font-size: 14px; font-weight: 600; }
-    tr:hover { background: rgba(0, 240, 255, 0.05); }
 
-    .role-badge { display: inline-block; width: 20px; height: 20px; line-height: 20px; text-align: center; border-radius: 3px; font-size: 11px; font-weight: 700; }
-    .role-P { background: #e67e22; color: #fff; }
-    .role-D { background: #27ae60; color: #fff; }
-    .role-C { background: #2980b9; color: #fff; }
-    .role-A { background: #c0392b; color: #fff; }
-
-    .price-tag { color: var(--neon-yellow); font-weight: 700; }
-    .tag-badge { font-size: 9px; padding: 2px 5px; border-radius: 3px; margin-left: 4px; background: #102a45; color: var(--neon-blue); border: 1px solid var(--neon-blue); }
-
-    .btn-action {
-      background: var(--neon-magenta);
-      border: none;
-      color: #fff;
-      padding: 4px 8px;
-      font-size: 11px;
+    .teams-header {
+      text-align: center;
       font-weight: 700;
-      border-radius: 3px;
+      color: var(--soda-cream);
+      font-size: 15px;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed var(--border-red);
+      padding-bottom: 6px;
+    }
+
+    .lineup-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      font-size: 13px;
+    }
+
+    .team-col h4 {
+      color: var(--cola-red);
+      font-size: 12px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .player-line { padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+
+    .ballottaggio-tag {
+      background: rgba(255, 235, 59, 0.15);
+      border: 1px solid var(--fizz-yellow);
+      color: var(--fizz-yellow);
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 11px;
+      margin-top: 6px;
+      font-weight: 600;
+    }
+
+    /* Mia Formazione Builder & Modulo Consigliato */
+    .field-container {
+      background: linear-gradient(180deg, #184e28 0%, #0d3018 100%);
+      border: 2px solid #2e8b57;
+      border-radius: 14px;
+      padding: 15px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .module-selector {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .btn-module {
+      flex: 1;
+      background: #2b080a;
+      border: 1px solid var(--border-red);
+      color: var(--soda-cream);
+      padding: 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 12px;
       cursor: pointer;
     }
 
-    .right-panel { width: 360px; background: #030a14; border-left: 2px solid var(--border-color); display: flex; flex-direction: column; transition: all 0.3s; }
-    .right-panel.collapsed { margin-right: -360px; }
-
-    .toggle-sidebar-btn {
-      position: absolute; left: -28px; top: 15px; width: 28px; height: 40px;
-      background: var(--border-color); border: 1px solid var(--neon-blue); border-right: none;
-      color: var(--neon-blue); display: flex; align-items: center; justify-content: center; cursor: pointer;
+    .btn-module.active {
+      background: var(--cola-red);
+      border-color: var(--fizz-yellow);
+      color: #fff;
     }
 
-    .sidebar-header { padding: 12px 15px; background: #061325; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; }
-    .sidebar-title { font-family: 'Press Start 2P', cursive; font-size: 11px; color: #fff; }
-
-    .budget-summary { padding: 15px; background: var(--panel-bg); border-bottom: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 8px; }
-    .budget-row { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; }
-    .budget-value { color: var(--neon-green); }
-    .spent-value { color: var(--neon-magenta); }
-
-    .rosa-list { flex: 1; padding: 10px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
-    .rosa-item { background: #06162d; border: 1px solid var(--border-color); padding: 8px 10px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
-
-    .eval-affarone { color: var(--neon-green); font-weight: 700; font-size: 11px; }
-    .eval-equo { color: var(--neon-yellow); font-weight: 700; font-size: 11px; }
-    .eval-pacco { color: var(--neon-magenta); font-weight: 700; font-size: 11px; }
-
-    .btn-remove { background: transparent; border: none; color: #ff4757; cursor: pointer; font-weight: bold; font-size: 14px; }
-
-    /* MODALE ACQUISTO INTERATTIVO */
-    .modal-overlay {
-      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center; z-index: 99;
+    .recommended-box {
+      background: rgba(230, 28, 36, 0.15);
+      border: 1px solid var(--cola-red);
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      margin-bottom: 12px;
     }
-    .modal-overlay.hidden { display: none; }
-    .modal-box {
-      background: #08162a; border: 2px solid var(--neon-blue); border-radius: 8px;
-      padding: 20px; width: 320px; display: flex; flex-direction: column; gap: 12px;
-      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+
+    /* News & consigliati UI */
+    .news-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
-    .modal-title { font-family: 'Press Start 2P', cursive; font-size: 12px; color: #fff; }
-    .live-eval-box {
-      padding: 8px; text-align: center; border-radius: 4px; background: #020a16;
-      border: 1px solid var(--border-color); font-weight: bold; font-size: 14px;
+    .badge-RIENTRI { background: #2e7d32; color: #fff; }
+    .badge-CONSIGLIATI { background: #f57f17; color: #fff; }
+    .badge-INFORTUNI { background: #c62828; color: #fff; }
+
+    /* Bottom App Bar Mobile */
+    .bottom-nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 65px;
+      background: #120304;
+      border-top: 1.5px solid var(--border-red);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 100;
     }
+
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      color: #8c6b6d;
+      font-size: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      width: 25%;
+    }
+
+    .nav-item .icon { font-size: 18px; }
+    .nav-item.active { color: var(--fizz-yellow); }
+    .nav-item.active .icon { transform: scale(1.15); transition: transform 0.2s; }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo-area">
-      <span class="season-badge">SEASON 2026</span>
-      <h1>FANTA VALUE 2000</h1>
-    </div>
-    <div class="developer-credits">
-      DEVELOPER & LEAD<br>
-      Francesco Coppola | <span>@ganzosuiprati</span>
-    </div>
-  </header>
-
-  <div class="app-container">
+  <div class="app-frame">
     
-    <div class="left-panel">
-      
-      <div class="controls-grid">
-        <div class="inputs-row">
-          <div class="input-group">
-            <label>Partecipanti Lega</label>
-            <input type="number" id="numTeams" value="8" min="4" max="16" style="width: 70px;">
-          </div>
-          <div class="input-group">
-            <label>Budget Totale (CR)</label>
-            <input type="number" id="totalBudget" value="1000" step="50" style="width: 90px;">
-          </div>
-          <div class="input-group search-input">
-            <label>Ricerca Giocatore / Squadra</label>
-            <input type="text" id="searchInput" placeholder="Es. Lautaro, Inter, Dimarco..">
-          </div>
-        </div>
+    <header>
+      <div class="brand-title">🥤 My FantaCola</div>
+      <div class="matchday-badge" id="giornataBadge">28ª GIORNATA</div>
+    </header>
 
-        <div class="filter-section">
-          <span class="filter-label">Filtra Ruolo:</span>
-          <button class="btn-filter active" data-role="ALL">TUTTI</button>
-          <button class="btn-filter" data-role="P">POR</button>
-          <button class="btn-filter" data-role="D">DIF</button>
-          <button class="btn-filter" data-role="C">CEN</button>
-          <button class="btn-filter" data-role="A">ATT</button>
-        </div>
+    <div class="content-area">
 
-        <div class="filter-section">
-          <span class="filter-label">Filtri Speciali:</span>
-          <button class="btn-filter btn-tag" data-tag="TOP">🔥 TOP</button>
-          <button class="btn-filter btn-tag" data-tag="TITOLARE">🛡️ TITOLARI</button>
-          <button class="btn-filter btn-tag" data-tag="SCOMMESSA">💡 SCOMMESSE</button>
-          <button class="btn-filter btn-tag" data-tag="RIGORISTA">⚽ RIGORISTI</button>
-          <button class="btn-filter btn-tag" data-tag="JOLLY">🃏 JOLLY</button>
+      <!-- TAB 1: PROBABILI FORMAZIONI -->
+      <div class="tab-content active" id="tab-formazioni">
+        <div class="soda-card">
+          <div class="card-header">
+            <span>⚽ LIVE PROBABILI FORMAZIONI</span>
+          </div>
+          <div id="formazioniList">Caricamento formazioni...</div>
         </div>
       </div>
 
-      <div class="table-container">
-        <div class="listone-header">
-          <span class="listone-title">LISTONE CALCIATORI</span>
-          <span class="player-count" id="playerCount">0 GIOCATORI</span>
+      <!-- TAB 2: LA MIA FORMAZIONE & MODULI -->
+      <div class="tab-content" id="tab-schiera">
+        <div class="soda-card">
+          <div class="card-header">
+            <span>🛡️ SCHIERA FORMAZIONE</span>
+          </div>
+          
+          <div class="recommended-box">
+            💡 <strong>Modulo Consigliato FantaCola:</strong> <span id="recommendedModule" style="color:var(--fizz-yellow); font-weight:bold;">3-4-3</span> (in base alle percentuali dei tuoi titolari)
+          </div>
+
+          <div style="font-size: 11px; margin-bottom: 6px; color:#a38284;">Scegli Modulo:</div>
+          <div class="module-selector">
+            <button class="btn-module active" onclick="setModule('3-4-3', this)">3-4-3</button>
+            <button class="btn-module" onclick="setModule('4-3-3', this)">4-3-3</button>
+            <button class="btn-module" onclick="setModule('3-5-2', this)">3-5-2</button>
+            <button class="btn-module" onclick="setModule('4-4-2', this)">4-4-2</button>
+          </div>
+
+          <div class="field-container" id="fieldGraphic">
+            <!-- Calciatori piazzati sul campo -->
+          </div>
         </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Giocatore</th>
-              <th>Squadra</th>
-              <th>Ruolo</th>
-              <th>FM</th>
-              <th>Tit%</th>
-              <th>Prezzo Max (PMA)</th>
-              <th>Azione</th>
-            </tr>
-          </thead>
-          <tbody id="playerTableBody"></tbody>
-        </table>
+      </div>
+
+      <!-- TAB 3: NEWS & CONSIGLIATI -->
+      <div class="tab-content" id="tab-news">
+        <div class="soda-card">
+          <div class="card-header">
+            <span>📰 ULTIME NEWS & CONSIGLI</span>
+          </div>
+          <div id="newsList">Caricamento notizie...</div>
+        </div>
+
+        <div class="soda-card">
+          <div class="card-header">
+            <span>⭐ CONSIGLIATI PER RUOLO</span>
+          </div>
+          <div id="consigliatiList" style="font-size: 13px;"></div>
+        </div>
       </div>
 
     </div>
 
-    <div class="right-panel" id="sidebarRosa">
-      <button class="toggle-sidebar-btn" id="toggleSidebar">◀</button>
-      
-      <div class="sidebar-header">
-        <span class="sidebar-title">LA MIA ROSA</span>
-        <span class="player-count" id="rosaCount">0/25</span>
+    <!-- BOTTOM APP BAR -->
+    <nav class="bottom-nav">
+      <div class="nav-item active" onclick="switchTab('tab-formazioni', this)">
+        <span class="icon">📋</span>
+        <span>Formazioni</span>
       </div>
-
-      <div class="budget-summary">
-        <div class="budget-row">
-          <span>CREDITI RIMANENTI:</span>
-          <span class="budget-value" id="remainingBudget">1000 CR</span>
-        </div>
-        <div class="budget-row">
-          <span>SPESI TOTALE:</span>
-          <span class="spent-value" id="spentBudget">0 CR</span>
-        </div>
+      <div class="nav-item" onclick="switchTab('tab-schiera', this)">
+        <span class="icon">👕</span>
+        <span>Mio Team</span>
       </div>
-
-      <div class="rosa-list" id="rosaList"></div>
-    </div>
-
-  </div>
-
-  <!-- POPUP PER L'INSERIMENTO PREZZO CON NOTIFICA LIVE -->
-  <div class="modal-overlay hidden" id="buyModal">
-    <div class="modal-box">
-      <span class="modal-title" id="modalPlayerName">ACQUISTA GIOCATORE</span>
-      <div style="font-size:13px; color:#8ab4f8;">PMA Consegnato: <strong id="modalPmaVal" style="color:var(--neon-yellow)">-</strong> CR</div>
-      
-      <div class="input-group">
-        <label>Prezzo d'acquisto effettivo (CR):</label>
-        <input type="number" id="modalPriceInput" value="1" min="1">
+      <div class="nav-item" onclick="switchTab('tab-news', this)">
+        <span class="icon">🔥</span>
+        <span>News & Top</span>
       </div>
+    </nav>
 
-      <div class="live-eval-box" id="modalLiveEval">
-        INSERISCI PREZZO
-      </div>
-
-      <div style="display:flex; gap:10px; margin-top:5px;">
-        <button class="btn-action" style="flex:1; background:var(--neon-green); color:#000;" id="modalConfirmBtn">CONFERMA</button>
-        <button class="btn-action" style="flex:1; background:#ff4757;" id="modalCancelBtn">ANNULLA</button>
-      </div>
-    </div>
   </div>
 
   <script>
-    let allPlayers = [];
-    let myRosa = [];
-    let activeRoleFilter = 'ALL';
-    let activeTagFilter = null;
-    let selectedPlayer = null;
+    let appData = null;
 
-    // Ricalcola il PMA in base ai crediti totali e ai partecipanti della lega
-    function calculateDynamicPMA(pmaBase) {
-      const budget = parseFloat(document.getElementById('totalBudget').value) || 1000;
-      const teams = parseFloat(document.getElementById('numTeams').value) || 8;
-      
-      // Fattore crediti (base = 1000) e fattore partecipanti (base = 8)
-      const budgetFactor = budget / 1000.0;
-      const teamsFactor = 8.0 / teams;
-
-      const dynamicPma = Math.round(pmaBase * budgetFactor * teamsFactor);
-      return Math.max(1, dynamicPma);
-    }
-
-    function generateAutoTags(player, currentPma) {
-      const tags = player.tags ? [...player.tags] : [];
-      const topThreshold = player.ruolo === 'A' ? 70 : (player.ruolo === 'C' ? 35 : 30);
-      
-      if ((currentPma >= topThreshold || player.fantamedia >= 8.0) && !tags.includes('TOP')) tags.push('TOP');
-      if (player.titolarita >= 80 && !tags.includes('TITOLARE')) tags.push('TITOLARE');
-      if (currentPma >= 5 && currentPma <= 22 && player.titolarita >= 60 && !tags.includes('SCOMMESSA')) tags.push('SCOMMESSA');
-      if (player.titolarita >= 40 && player.titolarita <= 75 && !tags.includes('JOLLY')) tags.push('JOLLY');
-      
-      return tags;
-    }
-
-    // Caricamento JSON con CACHE BUSTER per forzare sempre i dati nuovi
-    fetch('players.json?v=' + new Date().getTime())
+    // Caricamento Dati JSON con Cache Buster
+    fetch('fantacola_data.json?v=' + new Date().getTime())
       .then(res => res.json())
       .then(data => {
-        allPlayers = data;
-        renderTable();
+        appData = data;
+        renderAll();
       })
-      .catch(err => console.error("Errore caricamento dati:", err));
+      .catch(err => console.error("Errore dati FantaCola:", err));
 
-    function renderTable() {
-      const tbody = document.getElementById('playerTableBody');
-      const searchVal = document.getElementById('searchInput').value.toLowerCase();
-      tbody.innerHTML = '';
+    function renderAll() {
+      if(!appData) return;
 
-      const filtered = allPlayers.filter(p => {
-        if (myRosa.some(r => r.id === p.id)) return false;
-        if (activeRoleFilter !== 'ALL' && p.ruolo !== activeRoleFilter) return false;
+      document.getElementById('giornataBadge').textContent = `${appData.giornata}ª GIORNATA`;
+
+      // 1. Render Formazioni
+      const formContainer = document.getElementById('formazioniList');
+      formContainer.innerHTML = '';
+
+      appData.partite.forEach(p => {
+        const matchBox = document.createElement('div');
+        matchBox.className = 'match-box';
         
-        const currentPma = calculateDynamicPMA(p.pma_base);
-        const tags = generateAutoTags(p, currentPma);
+        let ballottaggiHtml = '';
+        p.squadre.casa.ballottaggi.concat(p.squadre.trasferta.ballottaggi).forEach(b => {
+          ballottaggiHtml += `<div class="ballottaggio-tag">⚔️ Ballottaggio: ${b.p1} vs ${b.p2}</div>`;
+        });
 
-        if (activeTagFilter && !tags.includes(activeTagFilter)) return false;
-
-        if (searchVal) {
-          const matchName = p.nome.toLowerCase().includes(searchVal);
-          const matchTeam = p.squadra.toLowerCase().includes(searchVal);
-          if (!matchName && !matchTeam) return false;
-        }
-        return true;
-      });
-
-      document.getElementById('playerCount').textContent = `${filtered.length} GIOCATORI`;
-
-      filtered.forEach(p => {
-        const tr = document.createElement('tr');
-        const currentPma = calculateDynamicPMA(p.pma_base);
-        const tags = generateAutoTags(p, currentPma);
-        const tagsHtml = tags.map(t => `<span class="tag-badge">${t}</span>`).join('');
-
-        tr.innerHTML = `
-          <td><strong>${p.nome}</strong> ${tagsHtml}</td>
-          <td>${p.squadra}</td>
-          <td><span class="role-badge role-${p.ruolo}">${p.ruolo}</span></td>
-          <td>${p.fantamedia.toFixed(1)}</td>
-          <td>${p.titolarita}%</td>
-          <td class="price-tag">${currentPma} CR</td>
-          <td>
-            <button class="btn-action" onclick="openBuyModal(${p.id})">+ PRENDI</button>
-          </td>
-        `;
-        tbody.appendChild(tr);
-      });
-    }
-
-    // APERTURA MODALE ACQUISTO INTERATTIVA
-    function openBuyModal(id) {
-      selectedPlayer = allPlayers.find(p => p.id === id);
-      if (!selectedPlayer) return;
-
-      const currentPma = calculateDynamicPMA(selectedPlayer.pma_base);
-
-      document.getElementById('modalPlayerName').textContent = selectedPlayer.nome;
-      document.getElementById('modalPmaVal').textContent = currentPma;
-      document.getElementById('modalPriceInput').value = currentPma;
-      
-      updateLiveEval();
-
-      document.getElementById('buyModal').classList.remove('hidden');
-      document.getElementById('modalPriceInput').focus();
-    }
-
-    // AGGIORNAMENTO LIVE DELLA VALUTAZIONE IN TEMPO REALE
-    function updateLiveEval() {
-      if (!selectedPlayer) return;
-      const currentPma = calculateDynamicPMA(selectedPlayer.pma_base);
-      const paidPrice = parseInt(document.getElementById('modalPriceInput').value) || 0;
-      const evalBox = document.getElementById('modalLiveEval');
-
-      if (paidPrice <= 0) {
-        evalBox.textContent = "INSERISCI UN PREZZO";
-        evalBox.className = "live-eval-box";
-        return;
-      }
-
-      if (paidPrice <= Math.round(currentPma * 0.85)) {
-        evalBox.textContent = "🔥 AFFARONE! (Sotto del " + Math.round((1 - paidPrice/currentPma)*100) + "%)";
-        evalBox.style.color = "var(--neon-green)";
-        evalBox.style.borderColor = "var(--neon-green)";
-      } else if (paidPrice >= Math.round(currentPma * 1.25)) {
-        evalBox.textContent = "📦 PACCO! (Sopra del " + Math.round((paidPrice/currentPma - 1)*100) + "%)";
-        evalBox.style.color = "var(--neon-magenta)";
-        evalBox.style.borderColor = "var(--neon-magenta)";
-      } else {
-        evalBox.textContent = "✅ PREZZO EQUO";
-        evalBox.style.color = "var(--neon-yellow)";
-        evalBox.style.borderColor = "var(--neon-yellow)";
-      }
-    }
-
-    document.getElementById('modalPriceInput').addEventListener('input', updateLiveEval);
-
-    document.getElementById('modalConfirmBtn').addEventListener('click', () => {
-      if (!selectedPlayer) return;
-      const currentPma = calculateDynamicPMA(selectedPlayer.pma_base);
-      const paidPrice = parseInt(document.getElementById('modalPriceInput').value);
-
-      if (isNaN(paidPrice) || paidPrice < 1) {
-        alert("Inserisci un prezzo valido!");
-        return;
-      }
-
-      let evaluation = "EQUO";
-      let evalClass = "eval-equo";
-
-      if (paidPrice <= Math.round(currentPma * 0.85)) {
-        evaluation = "🔥 AFFARONE";
-        evalClass = "eval-affarone";
-      } else if (paidPrice >= Math.round(currentPma * 1.25)) {
-        evaluation = "📦 PACCO";
-        evalClass = "eval-pacco";
-      }
-
-      myRosa.push({
-        ...selectedPlayer,
-        paidPrice: paidPrice,
-        evaluation: evaluation,
-        evalClass: evalClass
-      });
-
-      document.getElementById('buyModal').classList.add('hidden');
-      renderTable();
-      renderRosa();
-    });
-
-    document.getElementById('modalCancelBtn').addEventListener('click', () => {
-      document.getElementById('buyModal').classList.add('hidden');
-    });
-
-    function removePlayer(id) {
-      myRosa = myRosa.filter(p => p.id !== id);
-      renderTable();
-      renderRosa();
-    }
-
-    function renderRosa() {
-      const rosaList = document.getElementById('rosaList');
-      const totalBudget = parseFloat(document.getElementById('totalBudget').value) || 1000;
-      rosaList.innerHTML = '';
-
-      let spent = 0;
-
-      myRosa.forEach(p => {
-        spent += p.paidPrice;
-        const div = document.createElement('div');
-        div.className = 'rosa-item';
-        div.innerHTML = `
-          <div style="display:flex; align-items:center; gap:8px;">
-            <span class="role-badge role-${p.ruolo}">${p.ruolo}</span>
-            <div>
-              <strong>${p.nome}</strong>
-              <div style="font-size:11px; color:#6c8cae;">${p.squadra} • Pagato: ${p.paidPrice} CR</div>
-              <div class="${p.evalClass}">${p.evaluation}</div>
+        matchBox.innerHTML = `
+          <div class="teams-header">${p.match} <span style="font-size:11px; color:var(--fizz-yellow); block;">(${p.orario})</span></div>
+          <div class="lineup-grid">
+            <div class="team-col">
+              <h4>${p.squadre.casa.nome} (${p.squadre.casa.modulo_probabile})</h4>
+              ${p.squadre.casa.titolari.map(pt => `<div class="player-line">• ${pt}</div>`).join('')}
+            </div>
+            <div class="team-col">
+              <h4>${p.squadre.trasferta.nome} (${p.squadre.trasferta.modulo_probabile})</h4>
+              ${p.squadre.trasferta.titolari.map(pt => `<div class="player-line">• ${pt}</div>`).join('')}
             </div>
           </div>
-          <button class="btn-remove" onclick="removePlayer(${p.id})">✕</button>
+          ${ballottaggiHtml}
         `;
-        rosaList.appendChild(div);
+        formContainer.appendChild(matchBox);
       });
 
-      document.getElementById('spentBudget').textContent = `${spent} CR`;
-      document.getElementById('remainingBudget').textContent = `${totalBudget - spent} CR`;
-      document.getElementById('rosaCount').textContent = `${myRosa.length}/25`;
+      // 2. Render News
+      const newsContainer = document.getElementById('newsList');
+      newsContainer.innerHTML = '';
+      appData.news.forEach(n => {
+        const item = document.createElement('div');
+        item.style.marginBottom = "12px";
+        item.innerHTML = `
+          <span class="news-badge badge-${n.tipo}">${n.tipo}</span>
+          <strong style="display:block; font-size:14px; color:#fff;">${n.titolo}</strong>
+          <p style="font-size:12px; color:#c7a3a5;">${n.testo}</p>
+        `;
+        newsContainer.appendChild(item);
+      });
+
+      // 3. Render Consigliati
+      const consContainer = document.getElementById('consigliatiList');
+      consContainer.innerHTML = `
+        <p><strong>🧤 Portieri:</strong> ${appData.consigliati_ruolo.P.join(', ')}</p>
+        <p style="margin-top:4px;"><strong>🛡️ Difensori:</strong> ${appData.consigliati_ruolo.D.join(', ')}</p>
+        <p style="margin-top:4px;"><strong>⚙️ Centrocampisti:</strong> ${appData.consigliati_ruolo.C.join(', ')}</p>
+        <p style="margin-top:4px;"><strong>⚽ Attaccanti:</strong> ${appData.consigliati_ruolo.A.join(', ')}</p>
+      `;
+
+      renderField('3-4-3');
     }
 
-    document.querySelectorAll('[data-role]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        document.querySelectorAll('[data-role]').forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
-        activeRoleFilter = e.target.getAttribute('data-role');
-        renderTable();
-      });
-    });
+    function renderField(modulo) {
+      const field = document.getElementById('fieldGraphic');
+      field.innerHTML = `
+        <div style="text-align:center; color:#fff; font-size:12px; font-weight:bold;">ATTACCO</div>
+        <div style="display:flex; justify-content:space-around; color:var(--fizz-yellow); font-size:18px;">⚽ ⚽ ⚽</div>
+        <div style="text-align:center; color:#fff; font-size:12px; font-weight:bold;">CENTROCAMPO</div>
+        <div style="display:flex; justify-content:space-around; color:#fff; font-size:18px;">🏃 🏃 🏃 🏃</div>
+        <div style="text-align:center; color:#fff; font-size:12px; font-weight:bold;">DIFESA</div>
+        <div style="display:flex; justify-content:space-around; color:#2196f3; font-size:18px;">🛡️ 🛡️ 🛡️</div>
+        <div style="text-align:center; color:#ff9800; font-size:18px;">🧤</div>
+      `;
+    }
 
-    document.querySelectorAll('[data-tag]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const tag = e.target.getAttribute('data-tag');
-        if (activeTagFilter === tag) {
-          activeTagFilter = null;
-          e.target.classList.remove('active');
-        } else {
-          document.querySelectorAll('[data-tag]').forEach(b => b.classList.remove('active'));
-          e.target.classList.add('active');
-          activeTagFilter = tag;
-        }
-        renderTable();
-      });
-    });
+    function setModule(mod, btn) {
+      document.querySelectorAll('.btn-module').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderField(mod);
+    }
 
-    document.getElementById('searchInput').addEventListener('input', renderTable);
-    
-    // Ricalcola la tabella in tempo reale quando cambi Crediti o Partecipanti
-    document.getElementById('totalBudget').addEventListener('input', () => { renderTable(); renderRosa(); });
-    document.getElementById('numTeams').addEventListener('input', () => { renderTable(); renderRosa(); });
-
-    const sidebar = document.getElementById('sidebarRosa');
-    document.getElementById('toggleSidebar').addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-      document.getElementById('toggleSidebar').textContent = sidebar.classList.contains('collapsed') ? '▶' : '◀';
-    });
+    function switchTab(tabId, el) {
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      
+      document.getElementById(tabId).classList.add('active');
+      el.classList.add('active');
+    }
   </script>
 </body>
 </html>
