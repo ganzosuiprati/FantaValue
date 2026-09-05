@@ -7,22 +7,22 @@
       "squadra_trasferta": "COMO",
       "formazione_casa": [
         {
+          "nome": "Osmajic",
+          "percentuale": 50,
+          "ruolo": "A"
+        },
+        {
           "nome": "Colombo",
           "percentuale": 50,
           "ruolo": "A"
         },
         {
-          "nome": "Vitinha O.",
+          "nome": "Ellertsson",
           "percentuale": 50,
           "ruolo": "A"
         },
         {
           "nome": "Baldanzi",
-          "percentuale": 50,
-          "ruolo": "A"
-        },
-        {
-          "nome": "Mitaj",
           "percentuale": 50,
           "ruolo": "A"
         },
@@ -37,7 +37,7 @@
           "ruolo": "A"
         },
         {
-          "nome": "Ellertsson",
+          "nome": "Sabelli",
           "percentuale": 50,
           "ruolo": "A"
         },
@@ -64,7 +64,7 @@
       ],
       "formazione_trasferta": [
         {
-          "nome": "Kean",
+          "nome": "Douvikas",
           "percentuale": 50,
           "ruolo": "A"
         },
@@ -213,7 +213,7 @@
           "ruolo": "A"
         },
         {
-          "nome": "Belghali",
+          "nome": "Fortini",
           "percentuale": 50,
           "ruolo": "A"
         },
@@ -317,7 +317,7 @@
           "ruolo": "A"
         },
         {
-          "nome": "De Bruyne",
+          "nome": "Vergara",
           "percentuale": 50,
           "ruolo": "A"
         },
@@ -1145,7 +1145,7 @@
           "ruolo": "A"
         },
         {
-          "nome": "Isaksen",
+          "nome": "Gudmundsson A.",
           "percentuale": 50,
           "ruolo": "A"
         },
